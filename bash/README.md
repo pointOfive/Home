@@ -3,11 +3,11 @@
 I've worked in CLI environments for over 15 years, including
 
 - *cloud computing environments*
-  - e.g., AWS ec2 (webscrapping example) and EMR (sparkML example) suites 
+  - e.g., AWS EC2 (webscrapping example) and EMR (sparkML example) suites 
 - *high performance computing environments*
   - e.g., large batch alignments and counting submissions
 - *dedicated local servers*
-  - e.g., NGS demultiplexing/filtering/trimming file processing
+  - e.g., NGS file processing: demultiplexing, filtering, and trimming 
 - *personal mac laptop*
   - e.g., git tutorial
 
