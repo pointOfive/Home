@@ -13,14 +13,15 @@ I've worked in CLI environments for over 15 years, including
 
 Specific tools I'm familiar with include
 
-- editors: emacs/vi
-- networking: scp/ssh/wget/curl
-- permissions: chown/chmod
-- compression: tar/gz/bzip
-- search: grep/find
-- scripting: $var/if/for/'`"
-- piping: |/>>/>
-- search/replace: sed/tr
-- navigation: ls/pwd/cd/mkdir
-- displaying: wc/cat/head
-- monitoring: top/kill
+|------------:|:------------------|
+| editors     | emacs/vi          |
+| networking  | scp/ssh/wget/curl |
+| permissions | chown/chmod       |
+| compression | tar/gz/bzip       |
+| search      | grep/find         |
+| scripting   | $var/if/for/'`"   |
+| piping      | |/>>/>            |
+| replace     | sed/tr            |
+| navigation  | ls/pwd/cd/mkdir   |
+| displaying  | wc/cat/head       |
+| monitoring  | top/kill          |
