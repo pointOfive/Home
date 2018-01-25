@@ -1,14 +1,13 @@
 # Computing
 
-I've worked in CLI environments for over 15 years, 
-and have familiarity with
+I've worked in scientific computing contexts for over 15 years 
+using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Examples/), and Matplot. 
+Additionally, I have experience with
 
-- **Local Servers**
-  - Max/Linux
-- **High Performance Computing**
-  - Batch Submission
-- **Cloud Computing**
-  - AWS EC2/EMR/S3
+- **Cloud Computing** ([AWS EC2/EMR/S3](https://aws.amazon.com))
+- **High Performance Computing** (Batch Submission)
+- **Open Source Software Pipelines** (Bioinformatics)
+- **Bash Environments** (Mac/Linux)
 
 
 ## AWS EC2/EMR/S3
@@ -20,14 +19,14 @@ AWS cloud computation infrastructurs
 - SparkML
 
 
-## High Performance Computing (HPC)
+## HPC
 
 I've developed, managed, and run bioinformatics pipelines for NGS data both on 
 
-- dedicated local 32BG/80TB linux servers
+- dedicated local 32GB/80TB linux servers
 - HPC batch submission environments
 
-| [TACC][https://www.tacc.utexas.edu] (slurm) | [TAMU HPCR](https://hprc.tamu.edu) (LSF) |
+| [TACC](https://www.tacc.utexas.edu) (slurm) | [TAMU HPCR](https://hprc.tamu.edu) (LSF) |
 :---------------------------------------------|:-----------------------------------------|
 | Queue/Node Type                             | Core Memory				 |
 | Node Count   	 			      | Node Count				 |
@@ -51,24 +50,18 @@ Bioinformatics data pipelining tasks included
 
 ## Bash
 
-Specific CLI tools I'm familiar with include
+Specific Bash environment tools I'm familiar with include
 
-| Area        | Tool               |
-|:------------|-------------------:|
-| editors     | emacs/vi           |
-| networking  | scp/ssh/wget/curl  |
-| permissions | chown/chmod        |
-| compression | tar/gz/bzip        |
-| search      | grep/find          |
-| scripting   | $var/if/for/'`"    |
-| piping      | \|/>>/>            |
-| replace     | sed/tr             |
-| navigation  | ls/pwd/cd/mkdir    |
-| displaying  | wc/cat/head        |
-| monitoring  | top/kill/md5/du/df |
-
-
-## Github
-
-
-
+| Task        | Tool                    |
+|:------------|------------------------:|
+| edit        | emacs, vi               |
+| transfer    | scp, wget, curl, ssh    |
+| access      | chown, chmod            |
+| script      | $var, if, for, ', `, "  |
+| manipulate  | awk, sed, tr            |
+| pipe        | \|, >>, >               |
+| search      | grep, find              |
+| display     | wc, cat, head           |
+| compression | tar, gz, bzip           |
+| navigate    | ls, pwd, cd, mkdir      |
+| monitor     | top, kill, md5, du, df  |
