@@ -18,7 +18,7 @@ Specific tools I'm familiar with include
 - permissions: chown/chmod
 - compression: tar/gz/bzip
 - search: grep/find
-- scripting: $var/if/for/'"`
+- scripting: $var/if/for/'`"
 - piping: |/>>/>
 - search/replace: sed/tr
 - navigation: ls/pwd/cd/mkdir
