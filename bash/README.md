@@ -13,6 +13,7 @@ I've worked in CLI environments for over 15 years, including
 
 Specific tools I'm familiar with include
 
+| blah        | blah              |
 |------------:|:------------------|
 | editors     | emacs/vi          |
 | networking  | scp/ssh/wget/curl |
