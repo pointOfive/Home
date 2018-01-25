@@ -20,7 +20,7 @@ Specific tools I'm familiar with include
 | compression | tar/gz/bzip       |
 | search      | grep/find         |
 | scripting   | $var/if/for/'`"   |
-| piping      | |/>>/>            |
+| piping      | \|/>>/>           |
 | replace     | sed/tr            |
 | navigation  | ls/pwd/cd/mkdir   |
 | displaying  | wc/cat/head       |
