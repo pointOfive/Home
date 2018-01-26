@@ -44,7 +44,7 @@ At UT I was a part of an increadibly strong team of postdocs and graduate studen
 molecular biology, ecology, botony, plant physiology, and field managers to myself (who provided
 [Bioinformatic](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools) and
 [Statistical](https://github.com/pointOfive/Examples/tree/master/Papers#publications) support to the lab).
-The combined expertise in the lab comprised a molecular marker based breeding program
+The combined expertise in the lab comprised a molecular marker based crop development program
 with tens of field sites ranging from Mexico to Illinois and 
 explored the GxE interactions of plant ecotypes versus environmental conditions.
 And the job included the very interesting perk of needing to be an actual plant farmer every now and again
@@ -53,9 +53,26 @@ when planting and sample collection season came around.
 
 ## TAMU
 
-[TAMU AgriLife Bioinformatics Services](http://www.txgen.tamu.edu)
+Prior to moving to Austin, I spent several very enjoyable years in
+[College Station, Texas](https://www.google.com/maps/place/College+Station,+TX/@30.5907759,-100.7740924,6z/data=!4m5!3m4!1s0x8646848619463ca3:0xc969c74db6bf6ac9!8m2!3d30.627977!4d-96.3344068), home of the
+[Aggies](https://medium.com/@ln_ib/reload-collected-texas-a-m-aggie-jokes-4f74c2d86f34) of
+[Texas A&M University](https://borlaug.tamu.edu).  If you're from Texas you know what Texas A&M is, but it was only
+about the time of my arrival to Texas A&M that the rest of the country also found out (and that probably had something to do with
+[Johnny Football](https://www.youtube.com/watch?v=7kVxxdFOcQQ), as opposed to my arrival alone).
+While at TAMU I worked for the [AgriLife Bioinformatics Services Core](http://www.txgen.tamu.edu)
+helping support adoption of nextgen genomic sequencing technology.
+This involved providing consultation, contracting, and educational services
+for the TAMU academic and industry research community.
+While at A&M I interfaced with a very diverse set of research and application areas,
+but consistently interacted with the agricultural community.  
+And in addtiotion to providing a very pleasant opportunity to experience a dimension of Texas
+that was new to me, this is what eventually led to my interest in moving to Austin
+to join the crop development program at UT. 
 
-## Postdoctoral
+
+## Postdoc
+
+The reason I ended up working in genetic technologies in the first place was because 
 
 [Training Program in Biostatistics, Bioinformatics, Nutrition and Cancer](https://www.stat.tamu.edu/train/index.html)
 
