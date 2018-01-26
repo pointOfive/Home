@@ -64,8 +64,8 @@ helping support adoption of nextgen genomic sequencing technology.
 This involved providing consultation, contracting, and educational services
 for the TAMU academic and industry research community.
 While at A&M I interfaced with a very diverse set of research and application areas,
-but consistently interacted with the agricultural community.  
-And in addtiotion to providing a very pleasant opportunity to experience a dimension of Texas
+but consistently interacted with the agricultural community.
+And in addition to providing a very pleasant opportunity to experience a dimension of Texas
 that was new to me, this is what eventually led to my interest in moving to Austin
 to join the crop development program at UT. 
 
