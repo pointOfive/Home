@@ -12,7 +12,7 @@ in nature. As such, I've really enjoyed living close to Central Park on a quiet(
 [Upper West Side](https://www.google.com/maps/@40.7851626,-73.9739507,14z) street (near
 [Zabars](https://www.google.com/maps/place/Zabar's/@40.7848188,-73.984094,16z/data=!4m5!3m4!1s0x89c258862e7ae59b:0x161b26b78af02870!8m2!3d40.7848148!4d-73.9797113),
 the [AMNH](https://www.google.com/maps/place/American+Museum+of+Natural+History/@40.7802558,-73.9829629,15z/data=!4m5!3m4!1s0x89c258f4b00f7a09:0xa27d8172624c5db1!8m2!3d40.7813241!4d-73.9739882), and
-[Riverside Park][https://www.google.com/maps/@40.8027274,-73.9705007,14z]).
+[Riverside Park](https://www.google.com/maps/@40.8027274,-73.9705007,14z).
 [Central Park](https://www.google.com/maps/place/Central+Park/@40.7438632,-74.0175455,12z/data=!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551) and the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City)
 feel like the best things ever invented -- I am very appreciative of the opportunity I've had to live in, explore, and enjoy this unique city. 
 
