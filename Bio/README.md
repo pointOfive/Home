@@ -2,24 +2,27 @@
 
 ## NYC
 
-Last year I had the chance to move to NYC and it was such an exciting opportunity
-for adventure and growth that I had to go for it (...a definite must on the ol' life resume...).
+Last year I had the chance to move to NYC and it was such an exciting opportunity 
+for adventure and growth that I had to go for it 
 The energy and diversity (read, people) of this city are so amazing and
 confirmed for me that the sense of pacing and life 
 cities provide give me a very vibrant and motivating ingredient in my life.
 On the other hand, there's a great sense of peace and accomplishment to be found
 in nature. As such, I've really enjoyed living close to Central Park on a quiet(er)
-[Upper West Side](https://www.google.com/maps/place/American+Museum+of+Natural+History/@40.7802558,-73.9829629,15z/data=!4m5!3m4!1s0x89c258f4b00f7a09:0xa27d8172624c5db1!8m2!3d40.7813241!4d-73.9739882) street (near Zabars grocery, the Amerian Museum of Natural History, and Riverside Park).
-Central Park (and the Subway System) in Manhattan feel like the best things ever invented -- I am
-very appreciative of the opportunity I've had to live in, explore, and enjoy this exciting city. 
+[Upper West Side](https://www.google.com/maps/@40.7851626,-73.9739507,14z) street (near
+[Zabars](https://www.google.com/maps/place/Zabar's/@40.7848188,-73.984094,16z/data=!4m5!3m4!1s0x89c258862e7ae59b:0x161b26b78af02870!8m2!3d40.7848148!4d-73.9797113),
+the [AMNH](https://www.google.com/maps/place/American+Museum+of+Natural+History/@40.7802558,-73.9829629,15z/data=!4m5!3m4!1s0x89c258f4b00f7a09:0xa27d8172624c5db1!8m2!3d40.7813241!4d-73.9739882), and
+[Riverside Park][https://www.google.com/maps/@40.8027274,-73.9705007,14z]).
+[Central Park](https://www.google.com/maps/place/Central+Park/@40.7438632,-74.0175455,12z/data=!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551) and the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City)
+feel like the best things ever invented -- I am very appreciative of the opportunity I've had to live in, explore, and enjoy this unique city. 
 
 ## ATX
 
 The opportunity to come to NYC materialized because I had spent the previous year or so
-extending my [Bioinformatics/Science skill set](https://github.com/pointOfive/Examples/tree/master/Compute#hpc)
-into a [Data Science/Predictive Methodology skill set](https://github.com/pointOfive/Examples/tree/master/Lectures).
+extending my [Bioinformatics](https://github.com/pointOfive/Examples/tree/master/Compute#hpc) skill set
+into a [Data Science](https://github.com/pointOfive/Examples/tree/master/Lectures) skill set.
 Despite having a [PhD in Statistics and doing a lot of data analysis](https://github.com/pointOfive/Examples/tree/master/Papers#publications),
-much of the modern data analysis toolset, (e.g., (Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP, etc.)[https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material])
+much of the modern data analysis toolset, (e.g., [Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP, etc.](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material))
 was new(ish) to me.  But picking up these tools never felt "hard" or "foreign" -- they're very comfortable and seemless extensions of my skill set.
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Examples/tree/master/Code),
 [organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#aws-ec2emrs3) and
