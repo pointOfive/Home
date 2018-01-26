@@ -2,10 +2,10 @@
 
 ## NYC
 
-Last year I embarked on an exciting adventure/career opportunity by moving to NYC.
-The energy and diversity (read, people) of this city are amazing,
-and my experience here has confirmed that the sense of pacing and life 
-in cities provides a very vibrant and motivating ingredient for me in my life.
+Last year I embarked on an exciting adventure/career opportunity, and moved to NYC.
+The energy and diversity (read, people) in this city are amazing,
+and my experience here has confirmed for me that the sense of pacing and life 
+in cities provides a very vibrant and motivating ingredient in my life.
 On the other hand, there's a great sense of peace and accomplishment to be found
 in nature. And as such, I've really enjoyed living close to [Central Park](https://www.google.com/maps/place/Central+Park/@40.7438632,-74.0175455,12z/data=!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551) on a quiet(er)
 [Upper West Side](https://www.google.com/maps/@40.7851626,-73.9739507,14z) street (near
@@ -14,8 +14,7 @@ the [AMNH](https://www.google.com/maps/place/American+Museum+of+Natural+History/
 [Riverside Park](https://www.google.com/maps/@40.8027274,-73.9705007,14z)).
 Aside from Central Park (which is obviously the best thing a city ever did for itself) I am
 unendingly impressed with the efficieny of the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City).
-(this characteristic, however, appears to quite clearly distinguish me as being "not from here").
-I am very appreciative of the opportunity I've had to live in, explore, and enjoy this unique city.
+(which clearly clearly distinguish me as a non-native), and I am very appreciative of the opportunity I've had to live in, explore, and enjoy this unique city.
 
 
 ## ATX
