@@ -1,0 +1,16 @@
+In command line on the ec2 server:
+
+Edit your crontab with this command:
+
+export EDITOR=nano
+crontab -e
+And add this line to the bottom
+
+@reboot cd ~/Notebook; source ~/.bashrc; ~/anaconda2/bin/jupyter notebook >>~/cronrun.log 2>&1
+
+
+Save, quit, and reboot. with
+
+sudo reboot
+
+Note: you get charged a full hour every time you start an AWS instance. I don't think you get charged for just doing a reboot.

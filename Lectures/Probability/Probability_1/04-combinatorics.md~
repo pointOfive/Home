@@ -1,0 +1,745 @@
+# Calculate permutations and combinations and distinguish between them
+
+Combinatorics is a field of mathematics concerned with counting the possible orderings and combinations of elements within a set. 
+It is often used for determining the proportion of outcomes within a sample space comprising an event of interest.
+
+### Factorials
+
+A _factorial_ is represented by the exclamation mark, **!**. 
+The factorial of a positive integer *n* is the product of *n* and all positive integers less than *n*. For example:
+
+$$ 4! = 4 \times 3 \times 2 \times 1 = 24 $$
+
+Zero is a special case.
+
+$$ 0! = 1 $$
+
+A factorial represents the number of possible orderings of *n* items. A common example has to do with selecting lottery balls.
+
+
+If we have four balls in a jar and randomly select one, there are four possible outcomes:
+
+![combinatorics1](./images/first_row_combo.png)
+
+If we subsequently select a second ball, then, for each of these four options, 
+there are three possibilities for the second ball (assuming we've held on to the first ball). 
+This is called selection _without replacement_:
+
+![combinatorics2](./images/second_row_combo.png)
+
+There will then be two possibilities for the third ball, and one possibility for the fourth, for a total of 24 possible orderings.
+
+
+#### !challenge
+
+* type: number
+* id: comb1
+* title: Combinatorics 1
+* decimal: 1
+
+#### !question
+Question 1
+
+Abbott, Bertie, Costello, Pickles, Shasta and Max -- six dogs -- 
+are competing in the Fog City Dog Show. 
+They must each run the agility course, one at a time. 
+In how many different orders can the six dogs run the course?
+
+#### !end-question
+
+### !placeholder
+enter your answer here
+### !end-placeholder
+
+### !answer
+720
+### !end-answer
+
+#### !explanation
+We are arranging all 6 dogs in an 'order matters' situation. 
+There are six dogs that could go first, 5 dogs that could go second for each dog that goes first, etc. 
+This is \\( 6 \times 5 \times 4 \times 3 \times 2 \times 1 or 6! = 720\\)
+#### !end-explanation
+
+#### !end-challenge
+
+## Permutations
+
+The set of _permutations_ is all the different ways to choose, without replacement, a different order of a subset of things.
+
+The lottery example above is a special case of a permutation in which we select every member of the set. 
+But this needn't always be the case.
+For example, you could randomly select 3 different (unique) letters from the alphabet, 
+and for example, X-B-T would be a different permutation than T-X-B.
+
+Continuing with the lottery example, what if we started with 10 balls and wished to select 4, 
+one at a time, without relacement, where the winning ticket must match those 4 numbers in order? 
+How many different possible winning combinations are there?
+
+There are now 10 possibilities for selecting the first ball. 
+After the first selection, there will be 9 possibilities for the second, 
+then 8 possibilities for the 3rd, and 7 possibilities for the 4th.
+That's \\( 10 \times 9 \times 8 \times 7 \\) or 5040 possibilities. 
+Notice that this is the beginning of \\(10!\\), 
+but it's as though we've crossed out the \\( 6 \times 5 \times 4 \times 3 \times 2 \times 1 \\) portion.
+
+The formula for permutations reflects this:
+
+$$ nPr = \frac{n!}{(n-r)!} $$
+
+Let's get a little deeper into why this is true. 
+Thinking back to the special case of selecting all items, if we had 10 items, 
+there would \\(10!\\) possible orderings (which is:  3,628,800). 
+It makes sense that all possible combinations of 4 balls will show up in the first four slots of these \\(10!\\) orderings
+-- but they'll each show up many times. How many? \\(6!\\), 
+the number of possible permutations that can follow a specific sequence of 4 balls. 
+So if we want to know how many distinct 4-ball orderings exist, we can start with the \\(10!\\) 
+possibilities for all 10 balls, then divide by \\(6!\\)
+(which represents the number of possible orderings that could follow each 4-ball ordering).
+
+
+#### !challenge
+
+* type: number
+* id: comb2
+* title: Combinatorics 2
+
+#### !question
+Question 2
+
+Three dogs will earn ribbons: blue, red, and white. How many distinct ways can the ribbons be distributed amongst the 6 competitors?
+
+#### !end-question
+
+### !placeholder
+enter your answer here
+### !end-placeholder
+
+### !answer
+120
+### !end-answer
+
+#### !explanation
+
+Since order matters, this will be a permutation. We compute \\(6P3 = 6!/3! = 120\\).
+
+We can arrive at this by asking how many different ways we can select a first place dog (6), 
+then a second place (5 for each possible 1st place), then a third place (4 for each possible combination of 1st and 2nd). 
+This is equivalent to writing \\(6!/3!\\) which can be reduced to \\(6 \times 5 \times 4\\).
+
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+## Combinations
+
+
+_Combinations_ are like permutations, except now order doesn't matter. 
+Combinations just asks: "How many ways can we combine a certain sized subset of these things?".
+Returning to our lottery example, what if there was also a prize for correctly guessing all four numbers in *any* order? 
+If you bought a ticket for numbers 3, 4, 7, and 9, how many ways could you win? 
+Well, you could win with 3, 4, 7, 9, or 9, 3, 7, 4, or 4, 7, 9, 3...etc. 
+We already know from learning about factorials that there are 4! ways to order these numbers. 
+So this tells us that for each of the 5040 possible permutations from above, 
+each distinct combination (unordered grouping) is represented 4!=24 times. 
+So, in order to get the number of combinations, we should divide 5040 by 24 to get 210. 
+We can generalize this as:
+
+$$ nCr = \frac{nPr}{r!} = \frac{n!}{{(n-r)!r!}} $$
+
+A common alternative notation to \\(nCr\\) for combinations is 
+
+$${{n}\choose{r}}$$
+
+but regardless, both notations are read as "n choose r".
+
+
+#### !challenge
+
+* type: number
+* id: comb3
+* title: Combinatorics 3
+
+#### !question
+Question 3
+
+Independent of the ribbon ceremony, two dogs will win the congeniality award. How many possible combinations of congeniality winners are there?
+
+#### !end-question
+
+### !placeholder
+enter your answer here
+### !end-placeholder
+
+### !answer
+15
+### !end-answer
+
+#### !explanation
+In this case order does not matter, so this will be a combination. We compute 
+\\({{6}\choose{2}} = 6C2 = 6!/(4!2!) = 15\\)
+#### !end-explanation
+
+#### !end-challenge
+
+
+## Multiplication Rule
+
+All of the above counting procedures, factorials, permutations, and combinations, had a 
+kind of "sequential" and "order of process" sort of feel to them.  To really accentuate this characteristic
+consider the following question: "How many four-letter strings can you make out of the 26 letters of the English alphabet?"
+
+The answer of course is that you have 26 options for the first character,
+26 options for the second character, 26 options for the third, and
+26 for the last. That's \\(26^4\\). 
+And this phenomenon is known as the _multiplication rule_ (not to be confused with the 
+related, but distinct, chain rule). 
+Notice how for the multiplication rule -- unlike for factorials, permutations, and combinations -- 
+the number of options didn't change as the process progressed along. Why is that?
+
+Well, it has to do with the notion of independence, which we've previously defined as a characteristic of
+two events \\(E_1\\) and \\(E_2\\) indicating that \\(Pr(E_2|E_1) = Pr(E_2) \\) and \\(Pr(E_1|E_2) = Pr(E_1) \\) 
+or equivalently, that \\(Pr(E_1 \cap E_2) = Pr(E_1)Pr(E_2)\\).  
+But the characteristic that we're seeing here is actually a little bit stronger than just independence. 
+It is actually the notion that randomly choosing a letter from the alphabet is unaffected by the 
+previous or subsequent letters drawn (this is indeed the independence) but also that the 
+options available from one step to the next do not change.  This means the randomness is 
+question is _identical_ as well as being independent.  This is a very central and powerful
+notion in statistics and such a process is referred to as being 
+_independently and identically distributed_, or _i.i.d._, which is the common shorthand for this property. 
+
+What we actually are seeing with the multiplication rule is a sequence of i.i.d. events.
+Whereas in the case of factorials, permutations, and combinations we are actually 
+seeing a single joint event that can be expressed using the chain rule as a series of 
+conditional events.  I.e., we have identified the distinction between 
+
+
+$$ Pr(E_1 \cap E_2 \cap \cdots \cap E_m) = Pr(E_1)Pr(E_2)\cdots Pr(E_n) $$
+
+and
+
+$$ Pr(E_1 \cap E_2 \cap \cdots \cap E_m) = Pr(E_1)Pr(E_2|E_1)\cdots Pr(E_m|E_{n-1}, E_{n-2}, \cdots, E_{1}) $$
+
+or independence and the chain rule, 
+where the former is actually made up of *n* i.i.d. experiments and the latter is actully 
+just one single complicated experiment with lots of dependencies between it's different components. 
+
+But now we're talking about probabilities and previously we were talking about counting.  
+How do these notions share this connection?  
+Well, it turns out that all probability boils down to is the notion of set size,
+which is a count.  And we make it a probabilitity by dividing our set size in question 
+(the number of possible outcomes that comprise an event of interest) by the total 
+number of outcomes in the whole sample space \\(S_X\\) (which is of course also a set -- 
+but just the set of all possible outcomes \\(x\\) of experiment \\(X\\)).  
+So since counting is so fundamental to probability, you won't be surprised to find that 
+there is a special notation to designate the size, or the _cardinality_ (i.e., number of elements)
+of a set; namely,
+
+$$ card(E_1) = |E_1| $$
+
+
+<div class='bg-info' style='padding:8px;border-style:solid;border-width:2px;border-color:#00BFFF'>
+<strong>Aside:</strong><br>
+The "|E|" notation may seem a little strange at first.  But actually, this is a very common
+mathematical notational style to specify size in many, many contexts.  First, you may remember this
+as the notation of absolute value, which gets at the absolute size of something regardless of it's sign.
+In fact, this notion of the absolute size measurement of an object is generalized 
+in what is called the L-1 norm.  And there is a related measure of size known as the L-2 norm
+that similarly measures the size of an object in a particular manner. And in fact there 
+is any L-k norm you would like in a given situation, and even and L-infinity norm!  
+But the L-1 and L-2 norms remain the most useful and widely used.  Now even 
+the term "norm" itself probably seems a bit strange.  But this is a formal mathematical 
+term to denote size in the context of vectors.  So, the notation for the size, or magnitude, of a 
+vector looks an awful lot like the notion of size of a set that we have now encountered here. 
+Actually, these norms, particularly the L-1 and L-2 norms are critical to modern machine learning
+data science tools because they provide the basis for a very important process known as 
+"model regularization" which is a way in which highly complex and sophisticated models 
+can applied to data while being careful to avoid "overfitting", or making the model try to
+capture idiosyncrisies in the data that don't generalize beyond the immediate data on which
+the model is being fit.  We shall return to these topics, including these norm measures of 
+vector sizes later. 
+</div>
+
+
+## Counting Cards
+
+Now, since we've been talking about cardinality, it seems only approriate that we turn
+to everyone's favorite probability topic: cards!  But of course it's only a serendipitous coincidence 
+that these two words sound the same.  
+
+The key to calcualting probabilities in gambling games, e.g., [poker](http://www.bicyclecards.com/how-to-play/basics-of-poker/), is being able to 
+count all the outcomes comprising an event \\(E_1\\) of interest, e.g., "a royal flush", and compare the cardinality (i.e., size)
+of the event to the size of the complete sample space \\(S_X\\).  That is
+
+$$ Pr(E_1) = \frac{|E_1|}{|S_X|} $$
+
+So, for example, there are four ways to get a royal flush and \\(52P5\\) total hands in poker.
+So \\(Pr("poyal flush") = \frac{|"poyal flush"|}{|"poker hands"|} = \frac{4}{52P5}\\).  Let's have you jump
+in straight away and see if you can carefully count events set sizes and use these cardinalities
+to calculate probabilities (and further use these probabilities to reason through other considerations).
+
+#### !challenge
+
+* type: multiple-choice
+* id: comb4
+* title: A counting problem shedding light on independence and sequential experiments
+
+#### !question
+Question 4
+
+In a previous section we saw that drawing a "3" and drawing a "club" were independent events since 
+\\(Pr(\text{"3"}|\text{"club"}) = Pr(\text{"3"})\\),
+or equivalently, \\(Pr(\text{"3"} \cap \text{"club"}) = Pr(\text{"3"}) Pr(\text{"club"})\\).
+Therefore, is it true that 
+\\(Pr(\text{"first drawing a 3 and then drawing a clubs"}) = Pr(\text{"3"}) Pr(\text{"club"})\\)?
+
+#### !end-question
+
+### !options
+* yes, it's true
+* these statements describe different experiments, so no, it's not true
+### !end-options
+
+### !answer
+yes, it's true
+### !end-answer
+
+#### !explanation
+
+In fact it is true that 
+$$Pr(\text{"first drawing a 3 and then drawing a clubs"}) = Pr(\text{"3"}) Pr(\text{"club"})$$
+It can be seen directly from the calculation
+$$ \frac{3\times 13+1\times 12)}{52 \times 51}) = \frac{1}{13}\frac{1}{4} $$
+which simply relies upon accurately enumerating the possible outcomes 
+of the events in question, i.e., "first drawing a 3 and then drawing a clubs"
+and of course the sample space \\(S_X\\) itself in order to compute 
+actual probabilities. 
+
+But this may seem unsatisfactory as justification or as an explanation because
+clearly these two probability statements describe completely different physical processies:
+one is a statement concerned about outcome probabilities associated with drawing a single card 
+while the other is concerned about outcome probabilities associated with drawing two cards sequentially!!
+Well this is the very strange and temporally agnostic nature of probability:
+because these two events "3" and "club" are independent, even when they are considered sequentially
+in time, they exhibit no probabilistic influence upon each other.  While getting the "3 of clubs" 
+on a first draw would seem to have to influence the subsequent chance of getting a club on the second draw,
+the alternative outcomes of getting a "3 not of clubs" on the first draw work to counter
+balance the initially expected influence, and they make it more likely to get a club on the second draw.
+At the end of the day it's a total wash because over the whole space of possible 2 card draw outcomes,
+there's no seeing a 3 first exerts no bias or influence on seeing a club second, and vice versa. 
+And this is of course because there was no dependency or bias between these two events in the first place. 
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+So the last question should have driven home the relationship between counting and probability.  
+Probabilities in _discrete_ settings such as a poker hand experiment often simply boil down to counting.
+
+<div class='bg-info' style='padding:8px;border-style:solid;border-width:2px;border-color:#00BFFF'>
+<strong>Aside:</strong><br>
+The notion of an experiement with a discrete sample space (such as poker) is a very important one
+in statistics and probability.  As we shall soon see, it is the defining characteristic delineating
+the two primary classes or random distributions: discrete and continuous.  When using a poker hand 
+experiment as an example, it is easy to conflate the term "discrete" to the term "finite". 
+For example, one might imprecicely say that "there are only a finite number of poker hands,
+which is why a poker hand experiment is defined by a discrete sample space".  But this is 
+only partially correct.  Much like independence implied zero correlation (but not the other way around),
+a finite sample space implies a discrete sample space.  But a discrete sample space need not be
+finite!  This may at first seem propsterous, but it is actually a mathematical distinction between
+the sizes of different sets.  This is because it turns out that mathematics can define different sizes 
+of infinity! Just to start with, there is countable infinity and uncountable inifinity!! What??? Well
+take the set of non-negative integers "0, 1, 2, ..." and do on.  This is a set that is certainly not
+finite.  There are an infinite number of such integers.  But they are, in some sense, "countable".
+I.e., we can line them up and start counting them.  On the other hand, the set of any real number
+you can write down (e.g., 3.14...) has no such ordering.  But it of course is also an unending (i.e., infinite) 
+set of numbers (since I can keep writing out the "..." portion of "3.14..." number above as long as 
+I want).  But the set of all possible real numbers is not countable in the same way as the set of all integers.  
+Thus we say the set of all possible real numbers is uncountably inifinity, and thus there are more of them
+than the set of integers (of which there are only a measly countable inifinity...).  But now of course
+the set of all integers is ALSO discrete (which now we know simply means "countable" -- but not even necessarily 
+countably inifinite).  So in summary, no, discrete need not be finite. 
+</div>
+
+Let's use these to tackle a few more questions.
+
+
+#### !challenge
+
+* type: number
+* id: comb5
+* title: Poker hand probabilities
+* decimal: 4
+
+#### !question
+Question 5
+
+What is the probability of getting a three of a kind that is not part of a full house in a single five card hand?
+
+Hints:
+- How many unique five card hands are there?
+- How many hands have three (but not four) of the same value?
+- How many full house hands are there?
+
+#### !end-question
+
+### !placeholder
+give your answer as a decimal rounded to four places
+### !end-placeholder
+
+### !answer
+.0211
+### !end-answer
+
+#### !explanation
+
+- There are a total of \\( {{52}\choose{5}} = 2598960 \\) poker hands. 
+
+- There are a total of \\( 13 \times {{4}\choose{3}} \times {{48}\choose{2}} = 58656 \\) hands that have three of the same value present
+since for any of the 13 card values we must choose 3 of the 4, and then we can choose any two remaining cards so long as we don't get four of a kind
+with our initial set of three.
+
+- There are a total of \\( 13 \times {{4}\choose{3}} \\) * \\( 12 \times {{4}\choose{2}} = 3744 \\) full house hands
+since there are 13 choices for the "set of three" and then 12 choices for the "set of two"
+and we must choose 3 of 4 for the "set of three" and 2 of 4 for the "set of two".
+
+So the probability we're looking for is 
+
+$$ frac{ 13 \times {{4}\choose{3}} \times {{48}\choose{2}} - 13 \times {{4}\choose{3}} \times  12 \times {{4}\choose{2}}}{{{52}\choose{5}}} = \frac{58656-3744}{2598960} = 0.02112845138 $$
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+
+#### !challenge
+
+* type: number
+* id: comb6
+* title: Poker hand conditional probabilities
+* decimal: 4
+
+#### !question
+Question 6
+
+What is the probability of drawing a full house in a single five card hand given that you know a set of two is present in your hand?
+
+Hint:
+What is the probability of drawing a full house in a single five card hand given that you know a set of three is present in your hand?
+
+#### !end-question
+
+### !placeholder
+give your answer as a decimal rounded to four places
+### !end-placeholder
+
+### !answer
+.0028
+### !end-answer
+
+#### !explanation
+
+
+- There are a total of \\( 13 \times {{4}\choose{2}} \times {{48}\choose{3}  = 1349088 \\) hands that have two of the same value present
+since for any of the 13 card values we must choose 2 of the 4, and then we can choose any three remaining cards so long as we don't get 
+a three of a kind with our initial pair.
+
+- There are a total of \\( 13 \times {{4}\choose{3}} \\) * \\( 12 \times {{4}\choose{2}} = 3744 \\) full house hands
+since there are 13 choices for the "set of three" and then 12 choices for the "set of two"
+and we must choose 3 of 4 for the "set of three" and 2 of 4 for the "set of two".
+
+So the probability we're looking for is 
+
+$$ frac{ 13 \times {{4}\choose{3}} * 12\times {{4}\choose{2}}}{ 13 \times {{4}\choose{2}} \times {{48}\choose{3}} } = \frac{3744}{1349088} = 0.0027752081406105457 $$
+
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+
+
+
+#### !challenge
+
+* type: multiple-choice
+* id: comb7
+* title: Independence of sequential cards
+
+#### !question
+Question 7
+ 
+There are 26 red cards and 26 black cards in a deck: are the events "you draw a red card first" and "you draw a red card second" independent?
+
+
+#### !end-question
+
+### !options
+* yes, they're independent 
+* no, they're not independent
+### !end-options
+
+### !answer
+no, they're not independent
+### !end-answer
+
+#### !explanation
+
+This problem may seem surprisingly tricky, but of course
+
+$$ Pr(\text{"you draw a red card second"} | \text{"you draw a red card first"}) \not= Pr(\text{"you draw a red card second"}) $$
+
+or, equivalently,
+
+$$ Pr(\text{"you draw a red card first"| \cap \text{"you draw a red card second"}) \not= Pr(\text{"you draw a red card first"}) Pr(\text{"you draw a red card second"}) $$
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+#### !challenge
+
+* type: number
+* id: comb8
+* title: Poker hand conditional probabilities
+* decimal: 4
+
+#### !question
+Question 8
+ 
+What is the chance you get a "pair-hand" in a single five card hand on three hands in a row, assuming you reshuffle the full deck after each hand?
+
+
+#### !end-question
+
+### !placeholder
+give your answer as a decimal rounded to four places
+### !end-placeholder
+
+### !answer
+.0755
+### !end-answer
+
+#### !explanation
+
+- There are a total of \\( {{52}\choose{5}} = 2598960 \\) poker hands. 
+
+- There are \\( 13 \times {{4}\choose{2}} \frac{\times 48 \times 44 \times 40}{3!} \\) pair-hands 
+since we have 13 suit choices for the pair, we must choose 2 of the 4, and then the final three cards must 
+not match any of other cards.  We divide by \\(3!\)) because the are \\(3 \times 2 \times 1\\) possible 
+orderings of the same 3 cards, so we need to not count these -- they result in the same hand.  
+
+So the probability of a pair-hand is \\(\frac{13 \times {{4}\choose{2}} \frac{\times 48 \times 44 \times 40}{3!}}{{{52}\choose{5}}} = \frac{1098240}{2598960} = 0.4225690276110444\\)
+
+Since the deck is reshuffled each time, each hand is independent.  Thus, the probability of three pair-hands in a row is 
+
+$$ \left( \frac{1098240}{2598960}\right)^3 $$
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+### !challenge
+
+* type: code-snippet
+* language: python2.7
+* id: comb9
+* title: Medical testing
+
+### !question
+Question 9
+
+Write a function which accepts as input 
+
+- size of a set of distinct items 
+- number of times to draw from this set
+- if items are to be replaced after drawing
+- if order matters when evaluating the set of drawn items 
+
+and PRINTS to the screen the total number of unique outcome-sets that could be drawn under the given specifications 
+and RETURNS a string, either 
+
+- "multiplication rule"
+- "combinations"
+- "permutations", or 
+- "factorial (permuations special case)" 
+
+indicating the combinatoric principal that was used to compute the number of possible unique outcomes-sets.
+
+Note: The function need not support `with_replacement=True, order_matters=FALSE`.
+
+### !end-question
+
+### !placeholder
+
+```python
+
+def CountingMachine(set_size=10, sample_size=5, with_replacement=True, order_matters=True):
+    '''
+    Print out the total number of possible outcome-sets to the screen and
+    return a string from the set 
+
+    - "multiplication rule"
+    - "combinations"
+    - "permutations", or
+    - "factorial (permuations special case)"
+
+    indicating the combinatorial principal used to compute the total number of possible outcomes-sets, e.g.:
+
+    >>> combinatorial_principal = CountingMachine(3, 2, True, True)
+    9
+    >>> print(combinatorial_principal) 
+    "multiplication rule"
+
+    >>> combinatorial_principal = CountingMachine(3, 2, False, False)
+    3
+    >>> print(combinatorial_principal) 
+    "combinations"
+
+    >>> combinatorial_principal = CountingMachine(3, 2, False, True)
+    6
+    >>> print(combinatorial_principal) 
+    "permutations"
+
+    >>> combinatorial_principal = CountingMachine(3, 3, False, True)
+    6
+    >>> print(combinatorial_principal) 
+    "factorial (permuations special case)"
+
+    Note: `CountingMachine` DOES NOT CURRENTLY SUPPORT `with_replacement=True, order_matters=FALSE`.
+    '''
+
+    pass
+```
+
+### !end-placeholder
+
+### !tests
+
+```python
+import main
+import unittest
+
+class TestPython1(unittest.TestCase):
+
+    def test_CountingMachine(self):
+      result = main.CountingMachine(3, 2, True, True)
+      correct = "multiplication rule"
+      self.assertEqual(result, correct)
+
+    def test_CountingMachine_2(self):
+      result = main.CountingMachine(3, 2, False, False)
+      correct = "combinations"
+      self.assertEqual(result, correct)
+
+    def test_CountingMachine_3(self):
+      result = main.CountingMachine(3, 2, False, True)
+      correct = "permutations"
+      self.assertEqual(result, correct)
+
+    def test_CountingMachine_4(self):
+      result = main.CountingMachine(3, 3, False, True)
+      correct = "factorial (permuations special case)"
+      self.assertEqual(result, correct)
+```
+
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+
+
+### !challenge
+
+* type: code-snippet
+* language: python2.7
+* id: comb10
+* title: Beer samplers
+
+### !question
+Question 10
+
+Suppose we have a list of beers, for example 
+
+
+```python
+>>> lefthand_beers = ["Milk Stout", "Good Juju", "Fade to Black", "Polestar Pilsner"]
+>>> lefthand_beers += ["Black Jack Porter", "Wake Up Dead Imperial Stout","Warrior IPA"]
+```
+
+and we want to know how many samplers of a certain size we can make. 
+For example, if we have flight plates that hold four beers, 
+how many different "sets of four" can be make from the above list of beers?
+
+Without using `itertools.combinations`, write a 
+a function that prints out all the possible combinations available, 
+and then returns the total number of those combinations.  
+
+### !end-question
+
+### !placeholder
+
+```python
+
+def BeerSamplers(beer_list, sampler_size):
+    '''
+    Print out each of the possible combinations of size `sampler_size`
+    that can be made out of the selection of beers available in `beer_list`
+    and return the total number of these possible combinations. 
+
+    >>> samplers = BeerSamplers(["cider", "porter", "lager"], 2)
+    ["cider", "porter"]
+    ["porter", "lager"]
+    ["cider", "lager"]
+    >>> print(samplers) 
+    3
+    '''
+
+    pass
+```
+
+### !end-placeholder
+
+### !tests
+
+```python
+import main
+import unittest
+
+class TestPython1(unittest.TestCase):
+
+    def test_BeerSamplers(self):
+      result = main.BeerSamplers(["cider", "porter", "lager"], 2)
+      correct = 3
+      self.assertEqual(result, correct)
+```
+
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+## Afterward
+
+If you absolutely could not figure out how to calculate the probabilities 
+for the very challenging poker hand problems, 
+but would really like to see how the calculations are done, 
+the answers to those problems are `.0211`, `.0755`, and `.0028`
+
+

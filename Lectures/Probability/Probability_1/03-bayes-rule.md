@@ -1,0 +1,565 @@
+# Use Bayes' rule to calculate conditional probabilities
+
+We often want to know the probability that an event will happen given a certain condition. 
+But we don't always have a way to measure things directly in that manner.
+Instead, it might be easier to measure things in kind of the opposite conditional direction.  
+And it turns out that we can use this type of "reverse" evidence to inform our beliefs
+about the original probability we're interested in.  
+
+For example, we might want to know how likely it is that a visitor to our website will convert 
+(a fancy word for making a purchase, or taking another pre-specified action) if we send them a certain coupon. 
+So we want to know \\(Pr(\text{"convert" | "coupon"})\\). 
+But instead of attempting to estimate this probability directly, we might use our purchase history to estimate
+\\(Pr(\text{"coupon" | "convert"})\\).  
+And then this can be used to get back on the original conditional
+probability \\(Pr(\text{"convert" | "coupon"})\\) as follows. 
+
+Recall that the chain rule states that under all conditions
+
+$$ Pr(E_1 \cap E_2) = Pr(E_2 | E_1)P(E_1) = Pr(E_1 | E_2)Pr(E_2) $$
+
+But notice that we can rearrange this statement in the following manner to isolate a condtional 
+probability and define it in terms of the "reverse" conditional probabilty:
+
+$$ Pr(E_1 | E_2) = \frac{Pr(E_2 | E_1)P(E_1)}{P(E_2)} $$
+
+This equality is called _Bayes' rule_, and for our case it statse that 
+
+$$ Pr(\text{"convert" | "coupon"}) = \frac{Pr(\text{"coupon" | "convert"})Pr(\text{"convert"})}{Pr(\text{"coupon"})} $$
+
+So if we know \\(Pr(\text{"convert"})\\) and \\(Pr(\text{"coupon"})\\), using Bayes' rule we can combine those with the information 
+\\(Pr(\text{"coupon" | "convert"})\\) in order to calcluate the probability we're after; namely, \\(Pr(\text{"convert" | "coupon"})\\).
+
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_bayes_1
+* title: Deriving Bayes' rule
+
+### !question
+Question 1
+
+How many applications of the chain rule does it take to transform the statement 
+\\(Pr(E_2 \cap E_1)\\) into Bayes' rule?
+
+### !end-question
+### !options
+
+* (a) 0
+* (b) 1
+* (c) 2
+* (d) 3
+* (e) what does this even mean?
+
+### !end-options
+### !answer
+(c) 2
+### !end-answer
+### !explanation
+
+$$
+\begin{align}
+Pr(E_2 \cap E_1) &= Pr(E_2 | E_1) Pr(E_1) \quad (1)\;\; \\\
+\Rightarrow Pr(E_2 | E_1) &= \frac{Pr(E_2 \cap E_1)}{Pr(E_1)} \\\
+&= \frac{Pr(E_1 | E_2)Pr(E_2)}{Pr(E_1)} \quad (2)
+\end{align}
+$$
+So two chain rule steps can be used to derive Bayes' rule. 
+
+Notice that Bayes' rule gives us a new way to calcualte conditional probabilities
+that's just a slight variation on \\(Pr(E_2 | E_1) = \frac{Pr(E_2 \cap E_1)}{Pr(E_1)}\\). 
+
+
+### !end-explanation
+### !end-challenge
+
+
+
+## The Base Rate Fallacy
+
+A typical example of Bayes' rule in practice (one that results in very interesting, often counterintuitive results) is that of medical and drug testing.
+
+Let's say a patient has come to you concerned that she has a rare new disease called Potato Pox. As an expert in your field, 
+you've worked with quite a few cases of Potato Pox and believe that it affects about 0.02% of the population. (So \\(Pr(\text{"Potato Pox"}) = 0.0002)\\)).
+
+You have developed a test for Potato Pox that will correctly detect presence of the disease 99.5% of the time -- that is, 
+if someone is infected, there is a 99.5% percent chance the test will come back positive.
+This is called the _true positive-rate_ of the test.  
+The test also has a 10% _false positive-rate_ -- if someone is Potato Pox-free, there is a 10% chance the test will return a positive result anyway.
+
+Our patient's test comes back positive. You ask them to come in for a followup to let them know. 
+What are you going to tell them? Do you think they have the disease? Here's where Bayes' rule comes in.
+
+For our situation, we are looking for
+
+$$ Pr(\text{"Pox" | "+"}) = \frac{Pr(\text{"+" | "Pox"})Pr(\text{"Pox"})}{Pr(\text{"+"})} $$
+
+where '+' means a positive test result (and '-' will mean a negative test result).
+
+We know that 
+$$ 
+\begin{align}
+Pr(\text{"Pox"}) &= 0.0002 \\\
+Pr(\text{"+" | "Not Pox"}) &\text{   <-- this is our false positive-rate, } 0.10 \\\
+Pr(\text{"+" | "Pox"}) &\text{   <-- this is our true positive-rate, } 0.995 \\\
+Pr(\text{"+"}) &\text{    <-- here, we need the law of total probability from the previous lesson:} \\\
+Pr(\text{"+"}) &= Pr(\text{"Pox"})Pr(\text{"+" | "Pox"}) + Pr(\text{"Not Pox"})Pr(\text{"+" | "Not Pox"}) \\\
+       &= 0.0002 \times 0.995 + 0.9998 \times 0.10 \\\
+       &= 0.000199 + 0.09998 \\\
+       &= 0.100179
+\end{align}
+$$
+
+so putting this all together using Bayes' rule we have that 
+$$Pr(\text{"Pox" | "+"}) = \frac{0.995 \times 0.0002} {0.100179} = 0.001986 \approx 0.002 $$
+
+
+Given a positive test result, there is still only 0.2% chance that the patient is infected! 
+Granted, this is a tenfold increase over the 0.02% pre-test belief, 
+but the probability the patient has Potato Pox is still quite small. 
+What's the point of running a test at all, then, if most of the people who test positive don't actually have the disease? 
+In this case, the most important thing is for us to flag as many people who do have the disease as possible.
+This allows us to follow up with them and retest them at which point we can really determine 
+if they are a positive case.  I.e., it still provides a useful screening and filtering tool.
+But of course, as you can see in this example, identifying cases in this manner often 
+often entails a less _precise_ test (i.e., low \\(Pr(\text{"Pox" | "+"})\\)) as a result 
+of the implied high false positive rate that is usually required to provided a high true positive rate.  
+
+<div class='bg-info' style='padding:8px;border-style:solid;border-width:2px;border-color:#00BFFF'>
+<strong>Aside:</strong><br>
+Settings such as the above condition/testing scenario are known as classification problems. 
+Classification makes up one of two general areas of predictive analysis so naturally it's a very
+important task in data science. Now in classification contexts it turns out that it's a general 
+rule that there is a positive association between false positive rate and true positive rate.
+That is, if you adjust your classification rules to increase your true positive rate you will 
+also end up increasing your false positive rate.  The trick then in classification contexts is 
+to find the sweet spot that best balances your true positive rate and your false positive rate.
+And this boils down to the kinds of mistakes that you're willing to make, i.e., the cost of false 
+positives versus false negatives. Classification models are built based on based on a careful 
+consideration of metrics that score the trade-off between false positive and false negative rates.
+Such tradeoffs are often represented using so-called ROC curves.
+And these metrics are often further augmented with specific decision/value propositions in order 
+to transform ROC curves into so-called profit curves which provide further insight into
+optimal decision making.  Profit curves of course require an in-depth and highly specialized 
+understanding of the potential consequences of decision making with respect to false positives 
+and false negatives. We will return profit curves as a method of optimizing for the best balance 
+in a given situation later.
+</div>
+
+
+
+#### !challenge
+
+* type: number
+* id: * id: scott_bayes_2
+* title: Applying Bayes' rule
+* decimal: 3
+
+#### !question
+Question 2
+
+You are trying to design a system that will determine whether someone has a PhD in music. You have the following information:
+
+ - The probability that a music PhD can correctly identify a composer from a 5-second audio clip is 85%
+ - The probability that anyone else can identify a composer from a 5-second audio clip is 2%
+ - Music PhDs make up 0.3% of the population
+
+You stop someone on the street and play them a 5-second segment of Claire de Lune. 
+They correctly identify the composer as Debussy. 
+Based on the information above, what is the probability that this person has a music PhD?
+#### !end-question
+
+### !placeholder
+give your answer as a decimal rounded to three places
+### !end-placeholder
+
+
+### !answer
+0.113
+### !end-answer
+### !explanation
+
+We're looking for:
+
+$$ Pr(\text{"PhD" | "identify"}) = Pr(\text{"identify" | "PhD"})Pr(\text{"PhD"}) / Pr(\text{"identify"}) $$
+
+We are given
+$$ Pr(\text{"Phd"}) = .003 $$
+$$ Pr(\text{"identify" | PhD"}) = .85 $$
+$$ Pr(\text{"identify" | NOT PhD"}) = .02 $$
+and can easily compute
+$$ Pr(\text{"NOT phD"}) = 1 - Pr(\text{"PhD"}) =  0.997 $$
+
+What about \\(Pr(\text{"identify"})\\), the probability that any given person can identify the composer?
+We will need to compute this with the law of total probability as
+$$ Pr(\text{"identify" | "PhD"})Pr(\text{"PhD"}) + Pr(\text{"identify" | "NOT PhD"})Pr(\text{"NOT PhD"}) $$
+which will account for all members of the population who can identify the composer.
+
+$$ 0.003 \times 0.85 + 0.997 \times .02 = 0.002249 $$
+
+Let's look at a conditional probability table:
+
+| * | PhD | Not PhD | Total |
+|:----| ----:| ----:|---:|
+| ID | \\(0.003 \times 0.85 = 0.00255\\) | \\(0.997 \times 0.02 = 0.01994\\)  |  0.02249 |
+|NOT ID | doesn't matter | doesn't matter |
+| Total | 0.003 | 0.997 |
+
+Of the 0.02249 proportion of people who can correctly identify the composer, 0.00255 have a music PhD, or 
+
+$$ \frac{Pr(\text{"identify" | "PhD"})Pr(\text{"PhD"})}{Pr(\text{"identify" | "PhD"})Pr(\text{"PhD"}) + Pr(\text{"identify" | "NOT PhD"})Pr(\text{"NOT PhD"})} = \frac{0.00255}{0.02249} = 0.113 $$
+
+
+### !end-explanation
+### !end-challenge
+
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_bayes_3
+* title: The relationship between the numerator and the denomenator in Bayes' rule
+
+### !question
+Question 3
+
+Looking at the solution to the previous question, what's the very interesting 
+thing to notice about the numerator and the denomenator of Bayes' rule?
+
+### !end-question
+### !options
+
+* (a) how simple the numerator is compared to how complicated the denomenator is
+* (b) that one sits on top of the other and they are separated by a line?
+* (c) the numerator appears in the sum in the denomentator
+* (d) I have no idea, to be completely honest about it...
+* (e) What's a numerator and what's a denomenator?
+
+### !end-options
+### !answer
+(c) the numerator appears in the sum in the denomentator
+### !end-answer
+### !explanation
+
+The correct answer is that the numerator appears in the sum in the denomentator.
+So once you've calculated all the parts of the sum of the denomentator,
+you can already calculate Bayes' rule for free!  And not only that, 
+you can calculated it for a variety conditional probability questions, 
+one for each term in the denomenator!
+
+### !end-explanation
+### !end-challenge
+
+
+## Probability trees for solving Bayes' rule problems
+
+It turns out there's a very simple and intutitive way to represent the key probabilities 
+necessary for the computations in a Bayes' rule problem called a _probability tree_.  
+To demonstrate the concept we'll just directly put it to use for the "Potatoe Pox" problem from earlier.
+A probability tree simply views problem from a very straight forward "directional manner", as shown in the following figure: 
+
+<table style="width:100%;">
+  <tr>
+    <td style="text-align: center;"><img src="./images/prob_tree.png" alt="Probability Tree" style="width: 50%;"/></td>
+  </tr>
+</table>
+
+What this figure shows is that we can use the chain rule to graphically list out all the possible outcomes that 
+could be observed in a given context.  Since we know the prevelence of "Potatoe Pox" in the population -- a marginal probability --
+it makes sense to use that as a starting place for the directionality our application of the chain rule. 
+And then since we happen to know the operating characteristics of the test -- the false positive-rate and the true positive-rate -- 
+we can readily fill in the rest of the probability tree.  And then we can use the structure and computations present in the 
+probability tree to directly identify the probability paths that are relevant for computing the soultion of the 
+Bayes' rule question.  As we can see here, for the "Potatoe Pox" problem that 
+\\(Pr(\text{"Pox" | "+"}) = \frac{0.995 \times 0.0002}{0.0002 \times 0.995 + 0.9998 \times 0.10} \\)
+
+<table style="width:100%;">
+  <tr>
+    <td style="text-align: center;"><img src="./images/prob_tree_b.png" alt="Experiment, Probability Tree for Bayes' rule solutions" style="width: 50%;"/></td>
+  </tr>
+</table>
+
+
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_bayes_4
+* title: Building a probability tree to solve Bayes' rule problems
+
+### !question
+Question 4
+
+When you start building a probability tree to solve Bayes' rule problems do you first 
+branch out based on a marginal or conditional probability? 
+
+### !end-question
+### !options
+
+* (a) I don't like using probability trees to solve Bayes' rule problems because they make the solution too simple 
+* (b) You always with a conditional probability because Bayes' rule problems deal with conditional probabilities 
+* (c) You always start from a marginal probability and then "sequentially" progress to subsequent conditional probabilities
+* (d) I literally just want to click this choice so I can feel what it's like to be recorded as getting this answer wrong 
+
+### !end-options
+### !answer
+(c) You always start from a marginal probability and then "sequentially" progress to subsequent conditional probabilities
+### !end-answer
+### !explanation
+
+The correct answer is that a probability tree just represents all the possible paths that the chain rule could take. 
+And the chain rule is most naturally read "the probability of event one happening, times the probability of event two happening
+given that event one happend..." and so on. So, in a temporally sequential manner (although of course with probabililty 
+statements about events we can view this sequential manner in a direction agnostic manner... i.e., in whatever way we want to). 
+Additionally, Bayes' rule contexts always start out with knowledge of one of the marginal probabilities, 
+and we end up using the law of total probability to calculate the other marginal probability, 
+so it's always very easy to remember to just start your tree using the marginal probability you're given
+and then add in the chain rule branches from there. 
+
+
+### !end-explanation
+### !end-challenge
+
+
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_bayes_5
+* title: Using a probability tree to solve Bayes' rule problems
+
+### !question
+Question 5
+
+You are given a bag of 100 quarters, with 99 fair coins 
+(i.e. \\(Pr(\text{"H"}) = P(\text{"T"}) = 0.5\\) 
+and 1 two-headed coin (i.e. \\(Pr(\text{"H"}) = 1; Pr(\text{"T"}) = 0)\\). 
+You pick a coin at random and flip it 10 times, getting heads every time. 
+What is the probability that you picked the unfair coin?
+
+### !end-question
+### !options
+
+* (a) 0.911843276936
+* (b) 0.919191919191
+* (c) 0.999033203125
+* (d) 0.989033203125
+
+### !end-options
+### !answer
+(a) 0.911843276936
+### !end-answer
+### !explanation
+
+$$ \frac{1/100}{1/100 + 0.99\times 0.5^{10}} \approx 0.911843276936 $$
+
+<table style="width:100%;">
+  <tr>
+    <td style="text-align: center;"><img src="./images/prob_tree_c.png" alt="Probability Tree" style="width: 100%;"/></td>
+    <td style="text-align: center;"><img src="./images/prob_tree_d.png" alt="Experiment, Probability Tree for Bayes' rule solutions" style="width: 100%;"/></td>
+  </tr>
+</table>
+
+
+### !end-explanation
+### !end-challenge
+
+
+
+
+### !challenge
+
+* type: code-snippet
+* language: python2.7
+* id: scott_bayes_6
+* title: Medical Test Results Calculator
+
+### !question
+Question 6
+
+Write a function that will take the percentage of the population affected by a disease, 
+along with the true positive and false positive rates of a test for that disease, and 
+return the probability that someone with a positive test result actually has the disease.
+
+### !end-question
+
+### !placeholder
+
+
+  ```python
+  def positive_test(TP, FP, perc_population):
+      '''
+      parameters
+      ----------
+      TP: true positive
+          percentage of tests that were positive
+          for the sample of subjects that had the disease
+      FP: false positive
+          percentage of tests that were positive
+          for the control population (disease-free subjects)
+
+      percent_population: percentage of the population that has the disease
+
+      returns
+      -------
+      probability of having the disease for a person with a positive test result
+      '''
+      pass
+  ```
+
+### !end-placeholder
+
+### !tests
+
+
+```python
+import main
+import unittest
+
+class TestPython1(unittest.TestCase):
+
+    def test_positive_test_1(self):
+      result = main.positive_test(.9, .01, .1)
+      correct = .909
+      self.assertEqual(round(result,3), correct)
+
+    def test_positive_test_2(self):
+      result = main.positive_test(.9, .01, .0001)
+      correct = .0089
+      self.assertEqual(round(result,4), correct)
+
+
+```
+
+### !end-tests
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+
+### !challenge
+
+* type: code-snippet
+* language: python2.7
+* id: scott_bayes_7
+* title: Bayes' rule
+
+### !question
+Question 7
+
+Previously you wrote a function to calculate the marginal probability of an event 
+based on it's conditional probabilities and the marginal probabilities associated with
+the conditions of those conditional probabilities.  
+And you just made some code to solve a little Bayes' rule problem above. 
+
+This time write a function that accepts a two dimensional numpy array of a
+set of conditional probabilities and the marginal probabilities from which 
+these sets of conditional probabilities are based. I.e., 
+
+   |   |   |   |
+---|---|---|---|
+\\(Pr(E_1=a_1\|E_2=b_1)\\) | \\(Pr(E_1=a_1\|E_2=b_2)\\) | \\(\cdots \\) | \\(Pr(E_1=a_1\|E_2=b_p)\\) |
+\\(Pr(E_1=a_2\|E_2=b_1)\\) | \\(Pr(E_1=a_2\|E_2=b_2)\\) | \\(\cdots \\) | \\(Pr(E_1=a_2\|E_2=b_p)\\) |
+\\(\vdots \\)            | \\(\vdots \\)            |               | \\(\vdots \\)                  |
+\\(Pr(E_1=a_m\|E_2=b_1)\\) | \\(Pr(E_1=a_m\|E_2=b_2)\\) | \\(\cdots \\) | \\(Pr(E_1=a_m\|E_2=b_p)\\) |
+
+and 
+
+   |   |   |   |
+---|---|---|---|
+\\(Pr(E_2=b_1)\\) | \\(Pr(E_2=b_2)\\) | \\(\cdots \\) | \\(Pr(E_2=b_p)\\) |
+
+So, the number of columns of the two dimensional numpy array representing the conditional 
+probabilities must match the length of the number array of marginal probabilities, and
+together these represent. For example, the probabilities of finishing this coding task
+
+- in less than 10 minutes
+- between 10 and 20 mintues 
+- in more than 20 minutes
+
+conditional on whether or not you're tackling this problem
+
+- first thing in the morning
+- after you've just eaten lunch
+
+and the marginal probabilites of these would be represented by
+numpy ndarrays with `.shape` attributes `(3, 2)` and `(2,)` (or perhaps `(1, 2)`)
+
+Ensure that the input dimensions are appropriate, and if not
+- return "Input dimensions are not appropriate"
+Also ensure that all the probabilities sum to 1 where appropriate, and if not
+- return "Probabilities do not represent partitions"
+
+If everything is in order, based on these conditional and marginal probabilities 
+use Bayes' rule (and the law of total probability) to cacluate (and return)
+the following conditional probabilities (in the same shape as the originally
+input numpy ndarray of the reverse conditional probabilities):
+
+   |   |   |   |
+---|---|---|---|
+\\(Pr(E_2=b_1\|E_1=a_1)\\) | \\(Pr(E_2=b_2\|E_1=a_1)\\) | \\(\cdots \\) | \\(Pr(E_2=b_p\|E_1=a_1)\\) |
+\\(Pr(E_2=b_1\|E_1=a_2)\\) | \\(Pr(E_2=b_2\|E_1=a_2)\\) | \\(\cdots \\) | \\(Pr(E_2=b_p\|E_1=a_2)\\) |
+\\(\vdots \\)            | \\(\vdots \\)            |               | \\(\vdots \\)            
+\\(Pr(E_2=b_1\|E_1=a_m)\\) | \\(Pr(E_2=b_2\|E_1=a_m)\\) | \\(\cdots \\) | \\(Pr(E_2=b_1\|E_1=a_m)\\) |
+
+### !end-question
+
+### !placeholder
+
+```python
+import numpy as np
+
+def AllBayesRule(conditional_probabilities, marginal_probabilities):
+    '''
+    >>> LawOfTotalProbability(np.array([[.1, .2, .3], [.2, .3, .4], [.7, .5, .3]]), 
+    			      np.array([.1,.3,.6]))
+    array([[ 0.04      ,  0.24      ,  0.72      ],
+           [ 0.05714286,  0.25714286,  0.68571429],
+           [ 0.175     ,  0.375     ,  0.45      ]])
+    '''
+
+    pass
+```
+
+### !end-placeholder
+
+### !tests
+
+```python
+import main
+import unittest
+import numpy as np
+
+class TestPython1(unittest.TestCase):
+
+    def test_AllBayesRule(self):
+      result = main.AllBayesRule(np.array([[.1, .2, .3], [.2, .3, .4], [.7, .5, .3]]), np.array([.1,.3,.6]))
+      correct = np.array([[ 0.04,0.24,0.72], [0.05714286,0.25714286,0.68571429],[0.175,0.375,0.45]])
+      self.assertEqual(result, correct)
+
+    def test_AllBayesRule_2(self):
+      result = main.AllBayesRule(np.array([[.1, .2]], np.array([.1, .2, .3])
+      correct = "Input dimensions are not appropriate"
+      self.assertEqual(result, correct)
+
+    def test_AllBayesRule_3(self):
+      result = main.AllBayesRule(np.array([[.1, .2, .3]], np.array([.1, .2, .3])
+      correct = "Probabilities do not represent partitions"
+      self.assertEqual(result, correct)
+```
+
+
+### !end-tests
+
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
+

@@ -1,0 +1,378 @@
+17-11-07
+('Katie', 'Lauren')
+('Jamie', 'Russell')
+('Randall', 'Jack')
+('Forest', 'Trevor')
+('Michael', 'Kevin')
+
+17-11-08
+('Trevor', 'Lauren')
+('Katie', 'Kevin')
+('Jack', 'Jamie')
+('Randall', 'Russell')
+('Michael', 'Forest')
+
+17-11-09
+('Russell', 'Jamie')
+('Lauren', 'Forest')
+('Kevin', 'Michael')
+('Katie', 'Trevor')
+('Randall', 'Jack')
+
+17-11-10
+('Randall', 'Jamie')
+('Katie', 'Lauren')
+('Kevin', 'Forest')
+('Trevor', 'Michael')
+('Russell', 'Jack')
+
+17-11-13
+('Lauren', 'Michael')
+('Russell', 'Kevin')
+('Randall', 'Katie')
+('Jack', 'Trevor')
+('Jamie', 'Forest')
+
+17-11-14
+('Jack', 'Lauren')
+('Russell', 'Katie')
+('Trevor', 'Forest')
+('Jamie', 'Michael')
+('Randall', 'Kevin')
+
+17-11-15
+('Jack', 'Michael')
+('Russell', 'Lauren')
+('Jamie', 'Kevin')
+('Katie', 'Forest')
+('Randall', 'Trevor')
+
+17-11-16
+('Russell', 'Michael')
+('Jamie', 'Katie')
+('Jack', 'Forest')
+('Kevin', 'Trevor')
+('Randall', 'Lauren')
+
+17-11-17
+('Kevin', 'Lauren')
+('Jack', 'Katie')
+('Jamie', 'Trevor')
+('Russell', 'Forest')
+('Randall', 'Michael')
+
+17-11-20
+('Russell', 'Trevor')
+('Jack', 'Kevin')
+('Randall', 'Forest')
+('Katie', 'Michael')
+('Jamie', 'Lauren')
+
+17-11-21
+('Trevor', 'Lauren')
+('Katie', 'Kevin')
+('Jack', 'Jamie')
+('Randall', 'Russell')
+('Michael', 'Forest')
+
+17-11-22
+('Russell', 'Jamie')
+('Lauren', 'Forest')
+('Kevin', 'Michael')
+('Katie', 'Trevor')
+('Randall', 'Jack')
+
+17-11-23
+('Randall', 'Jamie')
+('Katie', 'Lauren')
+('Kevin', 'Forest')
+('Trevor', 'Michael')
+('Russell', 'Jack')
+
+17-11-24
+('Lauren', 'Michael')
+('Russell', 'Kevin')
+('Randall', 'Katie')
+('Jack', 'Trevor')
+('Jamie', 'Forest')
+
+17-11-27
+('Jack', 'Lauren')
+('Russell', 'Katie')
+('Trevor', 'Forest')
+('Jamie', 'Michael')
+('Randall', 'Kevin')
+
+17-11-28
+('Jack', 'Michael')
+('Russell', 'Lauren')
+('Jamie', 'Kevin')
+('Katie', 'Forest')
+('Randall', 'Trevor')
+
+17-11-29
+('Russell', 'Michael')
+('Jamie', 'Katie')
+('Jack', 'Forest')
+('Kevin', 'Trevor')
+('Randall', 'Lauren')
+
+17-11-30
+('Kevin', 'Lauren')
+('Jack', 'Katie')
+('Jamie', 'Trevor')
+('Russell', 'Forest')
+('Randall', 'Michael')
+
+17-12-01
+('Russell', 'Trevor')
+('Jack', 'Kevin')
+('Randall', 'Forest')
+('Katie', 'Michael')
+('Jamie', 'Lauren')
+
+17-12-04
+('Trevor', 'Lauren')
+('Katie', 'Kevin')
+('Jack', 'Jamie')
+('Randall', 'Russell')
+('Michael', 'Forest')
+
+17-12-05
+('Russell', 'Jamie')
+('Lauren', 'Forest')
+('Kevin', 'Michael')
+('Katie', 'Trevor')
+('Randall', 'Jack')
+
+17-12-06
+('Randall', 'Jamie')
+('Katie', 'Lauren')
+('Kevin', 'Forest')
+('Trevor', 'Michael')
+('Russell', 'Jack')
+
+17-12-07
+('Lauren', 'Michael')
+('Russell', 'Kevin')
+('Randall', 'Katie')
+('Jack', 'Trevor')
+('Jamie', 'Forest')
+
+17-12-08
+('Jack', 'Lauren')
+('Russell', 'Katie')
+('Trevor', 'Forest')
+('Jamie', 'Michael')
+('Randall', 'Kevin')
+
+17-12-11
+('Jack', 'Michael')
+('Russell', 'Lauren')
+('Jamie', 'Kevin')
+('Katie', 'Forest')
+('Randall', 'Trevor')
+
+17-12-12
+('Russell', 'Michael')
+('Jamie', 'Katie')
+('Jack', 'Forest')
+('Kevin', 'Trevor')
+('Randall', 'Lauren')
+
+17-12-13
+('Kevin', 'Lauren')
+('Jack', 'Katie')
+('Jamie', 'Trevor')
+('Russell', 'Forest')
+('Randall', 'Michael')
+
+17-12-14
+('Russell', 'Trevor')
+('Jack', 'Kevin')
+('Randall', 'Forest')
+('Katie', 'Michael')
+('Jamie', 'Lauren')
+
+17-12-15
+('Trevor', 'Lauren')
+('Katie', 'Kevin')
+('Jack', 'Jamie')
+('Randall', 'Russell')
+('Michael', 'Forest')
+
+17-12-18
+('Russell', 'Jamie')
+('Lauren', 'Forest')
+('Kevin', 'Michael')
+('Katie', 'Trevor')
+('Randall', 'Jack')
+
+17-12-19
+('Randall', 'Jamie')
+('Katie', 'Lauren')
+('Kevin', 'Forest')
+('Trevor', 'Michael')
+('Russell', 'Jack')
+
+17-12-20
+('Lauren', 'Michael')
+('Russell', 'Kevin')
+('Randall', 'Katie')
+('Jack', 'Trevor')
+('Jamie', 'Forest')
+
+17-12-21
+('Jack', 'Lauren')
+('Russell', 'Katie')
+('Trevor', 'Forest')
+('Jamie', 'Michael')
+('Randall', 'Kevin')
+
+17-12-22
+('Jack', 'Michael')
+('Russell', 'Lauren')
+('Jamie', 'Kevin')
+('Katie', 'Forest')
+('Randall', 'Trevor')
+
+17-12-25
+('Russell', 'Michael')
+('Jamie', 'Katie')
+('Jack', 'Forest')
+('Kevin', 'Trevor')
+('Randall', 'Lauren')
+
+17-12-26
+('Kevin', 'Lauren')
+('Jack', 'Katie')
+('Jamie', 'Trevor')
+('Russell', 'Forest')
+('Randall', 'Michael')
+
+17-12-27
+('Russell', 'Trevor')
+('Jack', 'Kevin')
+('Randall', 'Forest')
+('Katie', 'Michael')
+('Jamie', 'Lauren')
+
+17-12-28
+('Trevor', 'Lauren')
+('Katie', 'Kevin')
+('Jack', 'Jamie')
+('Randall', 'Russell')
+('Michael', 'Forest')
+
+17-12-29
+('Russell', 'Jamie')
+('Lauren', 'Forest')
+('Kevin', 'Michael')
+('Katie', 'Trevor')
+('Randall', 'Jack')
+
+18-01-01
+('Randall', 'Jamie')
+('Katie', 'Lauren')
+('Kevin', 'Forest')
+('Trevor', 'Michael')
+('Russell', 'Jack')
+
+18-01-02
+('Lauren', 'Michael')
+('Russell', 'Kevin')
+('Randall', 'Katie')
+('Jack', 'Trevor')
+('Jamie', 'Forest')
+
+18-01-03
+('Jack', 'Lauren')
+('Russell', 'Katie')
+('Trevor', 'Forest')
+('Jamie', 'Michael')
+('Randall', 'Kevin')
+
+18-01-04
+('Jack', 'Michael')
+('Russell', 'Lauren')
+('Jamie', 'Kevin')
+('Katie', 'Forest')
+('Randall', 'Trevor')
+
+18-01-05
+('Russell', 'Michael')
+('Jamie', 'Katie')
+('Jack', 'Forest')
+('Kevin', 'Trevor')
+('Randall', 'Lauren')
+
+18-01-08
+('Kevin', 'Lauren')
+('Jack', 'Katie')
+('Jamie', 'Trevor')
+('Russell', 'Forest')
+('Randall', 'Michael')
+
+18-01-09
+('Russell', 'Trevor')
+('Jack', 'Kevin')
+('Randall', 'Forest')
+('Katie', 'Michael')
+('Jamie', 'Lauren')
+
+18-01-10
+('Trevor', 'Lauren')
+('Katie', 'Kevin')
+('Jack', 'Jamie')
+('Randall', 'Russell')
+('Michael', 'Forest')
+
+18-01-11
+('Russell', 'Jamie')
+('Lauren', 'Forest')
+('Kevin', 'Michael')
+('Katie', 'Trevor')
+('Randall', 'Jack')
+
+18-01-12
+('Randall', 'Jamie')
+('Katie', 'Lauren')
+('Kevin', 'Forest')
+('Trevor', 'Michael')
+('Russell', 'Jack')
+
+18-01-15
+('Lauren', 'Michael')
+('Russell', 'Kevin')
+('Randall', 'Katie')
+('Jack', 'Trevor')
+('Jamie', 'Forest')
+
+18-01-16
+('Jack', 'Lauren')
+('Russell', 'Katie')
+('Trevor', 'Forest')
+('Jamie', 'Michael')
+('Randall', 'Kevin')
+
+18-01-17
+('Jack', 'Michael')
+('Russell', 'Lauren')
+('Jamie', 'Kevin')
+('Katie', 'Forest')
+('Randall', 'Trevor')
+
+18-01-18
+('Russell', 'Michael')
+('Jamie', 'Katie')
+('Jack', 'Forest')
+('Kevin', 'Trevor')
+('Randall', 'Lauren')
+
+18-01-19
+('Kevin', 'Lauren')
+('Jack', 'Katie')
+('Jamie', 'Trevor')
+('Russell', 'Forest')
+('Randall', 'Michael')
+

@@ -1,0 +1,286 @@
+
+# Define and work with random variables
+
+A random variable is a mapping from a set of possible outcomes to a set of numerical values. There are two types of random variables: discrete and continuous.
+Discrete random variables can only take on integer values, such as the value of a playing card or number of children in a family.
+Continuous random variables can take on *any* value within a specified range--meaning there are infinitely many values it could take on. A common example is height--in reality, people don't jump from being 5'6" to 5'7", or even from 5'6" to 5'6 1/4", but can instead have heights anywhere within a range (even if it's not precisely measurable by human instruments).
+
+
+#### !challenge
+
+* type: paragraph
+* id: 9eaaba1d-ab6f-4ea5-b13b-39852e534dab
+* title: Random variable intuition
+
+#### !question
+Question 11
+
+When we think about selecting something at random, we might instinctively feel that all outcomes are equally likely. When rolling a die, each face value is equally likely to come up. When selecting a card, each card is equally likely. What are some situations where the outcome of selecting a random variable is not distributed in this way--where instead one outcome is more likely than another?
+
+
+#### !end-question
+#### !explanation
+Be ready to share your response during breakout.
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+## PMF and PDF
+
+The two types of random variables lead us to two different but related types of probability functions: the probability mass function (PMF) for discrete variables, and the probability density function (PDF) for continuous variables.
+
+The simplest probability distribution is the uniform distribution, where each possible outcome between a specified minimum and maximum is equally likely. Both continuous and discrete variables can have a uniform distribution.
+
+The distribution of outcomes of rolling a die or flipping a coin is uniform (assuming, of course the object is not 'loaded' or unfair). When rolling a standard, 6-sided die, each value, 1 through 6, has a 1/6 chance of appearing.
+
+>![uniform discrete](./images/uniform_discrete.png)
+
+Time can be a unit with a continuous distribution. For example, if a bus arrives every 15 minutes, and you arrive at a bus stop with no knowledge of the schedule, the amount of time you'll need to wait for the bus is uniformly distributed. You might need to wait 2 minutes and 12.3627 seconds. You might need to wait 13 minutes and 53.1837 seconds. Rationally, we would probably think of these as discrete measurements rounded to the nearest minute: 2 minutes, 14 minutes, but technically they exist on a continuum.
+
+>![uniform continuous](./images/uniform_cont.png)
+
+What's important to note is that, with a probability mass function, one can measure the probability of a distinct, specific outcome. I can tell you the  probability of rolling exactly a 5: P(X = 5) = 1/6. In contrast, I cannot tell you the probability of waiting exactly 5 minutes for the bus, because the concept of 'exactly 5 minutes' is not measurable. Instead, we need to look at a range of possible values, such as "less than 5 minutes" or "between 5 and 6 minutes." To find one of these probabilities, we would need to find the integral of the PDF over this range.
+
+This brings us to the cumulative distribution function (CDF). As a function of x, the CDF shows the *cumulative* probability of observing an outcome less than or equal to x.
+
+If you roll a 6-sided die once, what is the probability the face value will be 6 or smaller? What is the probability the face value will be 3 or smaller? What is the probability the face value will be 1 or smaller? Instinctively, you were probably able to answer: 6/6 or 1, 3/6 or 0.5, and 1/6 or ~.167. We are summing the 1/6 probability for numbers up to and including the upper bound.
+
+![uniform discrete cdf](./images/cdf_whole.png)
+
+Similarly, the CDF for a continuous probability distribution is computed by taking the integral from the lower bound of the PDF to x as a function of x.
+
+![continuous discrete cdf](./images/cont_cdf.png)
+
+_________________________________________________
+
+Use the following information to answer the next four questions in this lesson.
+
+You have the following 10 cards in your hand:
+
+$$ H = [AH, 2H, 2C, 2S, 4D, 4S, 5C, 6H, 7D, 9S] $$
+
+
+
+#### !challenge
+
+* type: number
+* id: ce74e409-4948-448c-9401-32e554cdcc20
+* title: Compute a probability 1
+* decimal: 1
+
+#### !question
+
+What is the probability of randomly selecting a card of value 4?
+
+#### !end-question
+
+### !placeholder
+enter your answer as a decimal here
+### !end-placeholder
+
+### !answer
+0.2
+### !end-answer
+
+#### !explanation
+There are ten cards in our hand, of which 2 have face value 4. P(4) = 2/10 = 0.2
+#### !end-explanation
+
+#### !end-challenge
+
+
+
+#### !challenge
+
+* type: number
+* id: 9a5823a6-851c-47b1-b49b-890b505de936
+* title: Compute a probability 2
+* decimal: 1
+
+#### !question
+
+What is the probability of randomly selecting a card of value 3 or less?
+Consider an Ace to have value 1.
+
+#### !end-question
+
+### !placeholder
+enter your answer as a decimal here
+### !end-placeholder
+
+### !answer
+0.4
+### !end-answer
+
+#### !explanation
+P(x<=3) = P(x=3) + P(x=2) + P(x=1) = 0/10 + 3/10 + 1/10
+#### !end-explanation
+
+#### !end-challenge
+
+
+## Expectation
+
+The expectation, or expected value, of a random variable, can be thought of as the average--specifically, the mean--of all possible outcomes, weighted by their respective probabilities. If we think of a coin flip, and assign 0 to heads and 1 to tails, we can expect over the long run to have an average flip value of 0.5. The expected value of a six-sided die roll is 3.5; if we add up the values 1 through 6 and divide by 6, we get 21/6 = 3.5.
+
+What about a four-sided die where one face is a 3 and the other three faces are 5s? Intuitively we can sense that the average roll won't be the average of these two numbers, but that it will instead be closer to 5 than to 3. How much closer? We could add up all the faces: 3 + 5 + 5 + 5 = 18 and divide by 4 to get 4.5. We can also say that P(3) = 1/4 = 0.25 and P(5) = 3/4 = 0.75, and take the sum of the product of each value and its probability:
+
+$$ 3\times 0.25 + 5 \times 0.75 = 0.75 + 3.75 = 4.5 $$
+
+Mathematically, these are equivalent, and the second method is exactly how we define expected value of a discrete random variable:
+
+$$\operatorname{E}[X] = \sum_{i} x_ip(x_i) $$
+
+where {x<sub>i</sub>} is the set of all possible outcomes.
+
+This extends to continuous random variables by replacing the sum with an integral and the probability mass function p(x) with the probability density function f(x)
+
+$$ \operatorname{E}[X] = \int_{-\infty}^\infty x f(x)\, \mathrm{d}x $$
+
+Keep in mind that a random variable is a *mapping* of the sample space *onto* numerical values. For example, we could use a die to do our random sampling for a game where we win 5 points 1/3 of the time, and lose two points 2/3 of the time. We could map our outcomes to the die as (for example):
+
+1 &rarr; +5<br>
+2 &rarr; +5<br>
+3 &rarr; -2<br>
+4 &rarr; -2<br>
+5 &rarr; -2<br>
+6 &rarr; -2<br>
+
+Now our expected number of points for one roll is
+$$ 5 \times \frac{1}{3} + (-2) \times \frac{2}{3} = \frac{1}{3} $$
+
+
+#### !challenge
+
+* type: number
+* id: 5cdbd351-918a-4705-a7bf-8cd181086f85
+* title: Compute an expectation
+* decimal: 1
+
+#### !question
+
+What is the expected value of randomly selecting one card from the set above?
+Consider an Ace to have value 1.
+
+#### !end-question
+
+### !placeholder
+enter your answer as a decimal here
+### !end-placeholder
+
+### !answer
+4.2
+### !end-answer
+
+#### !explanation
+In this case, E(X) is simply the mean of the possible values. sum/number = 42/10 = 4.2
+#### !end-explanation
+
+#### !end-challenge
+
+
+#### !challenge
+
+* type: paragraph
+* id: 8de059e6-6cc4-4c2e-bdf0-b95b1862adc9
+* title: Compute a probability 3
+
+#### !question
+
+Describe the steps you would need to take to answer the following:
+What is the probability that the sum of two randomly selected cards is 11?
+
+#### !end-question
+#### !explanation
+Be ready to share your response during breakout!
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+## Covariance and Variance
+
+Covariance is a measure of how much two variables change together. For example, the covariance is positive when high values of X co-occur frequently with high values of Y. The covariance is negative when high values of X co-occur frequently with low values of Y. The covariance is zero when the values of X co-occur randomly with values of Y.
+
+Shoe size and height are positively co-variant--an increase in one is likely to be accompanied by an increase in the other. A person with a size 10 foot will probably be taller than a person with a size 7 foot. However, this isn't a perfect relationship. Not *every* person with a size 10 foot is taller than *every* person with a size 7 foot, and knowing someone's height doesn't give us enough information to know their exact shoe size.
+
+We measure covariance as $$ \operatorname{cov} (X,Y)=\frac{1}{n}\sum_{i=1}^n (x_i-E(X))(y_i-E(Y)) $$
+
+For each data point, we find the distance from the mean for each of the two features, X and Y. We then take the product of those distances, and sum this value across all data points. Finally, we divide by the total number of data points. This gives us the average co-variance over the whole data set, and tells us how much, and in what direction, y tends to change when x also changes.
+
+What would it it mean to take the covariance of X and X? We can plug it in to the formula easily enough:
+
+$$ \operatorname{cov} (X,X)=\frac{1}{n}\sum_{i=1}^n (x_i-E(X))(x_i-E(X)) $$
+or
+$$ \operatorname{cov} (X,X)=\frac{1}{n}\sum_{i=1}^n (x_i-E(X)^2) $$
+
+This asks whether a large change in x is accompanied by a large change in x. Of course it would be! So what we're measuring here is--how large of a change do we tend to get? If most of our x's cluster around the mean, we have a small amount of variance. If they're more spread out, that means we have more variance.
+
+The covariance of X and X is simple called 'variance.' It is a measure of how much we expect a random variable to vary from its mean/expected value.
+
+## Correlation
+
+ Here is a hypothetical covariance matrix for height (in inches), weight (in pounds), and shoe size (in US units):
+
+       | height | weight| shoe
+       ---|---|---|---
+height  |  15.7  | 107.5  | 6.2
+weight  | 107.5 | 1250.0 | 45.0
+shoe     |  6.2  |  45.0  | 3.2
+
+Considering the formulas for variance and covariance, what units are these a measure of? Awkwardly, the covariance of height and weight would be measured in units of inch-pounds. The variance of height would be measured in inches squared. Neither of these are particularly intuitive units of measure.
+
+Standard deviation is the square root of variance. It brings the statistic back down the first degree, which is easier to interpret. Here, the standard deviation for height would be 3.96 inches, meaning, roughly, that a random person is expected to have a height within about 4 inches higher or lower than the mean height of the entire group.
+
+Taking the square root of the other covariances would not be meaningful. But what if we wanted to know whether height or weight was a better predictor of shoe size? Here we can see that the covariance of height and shoe size is 6.2, while the covariance of weight and shoe size is 45. Can we conclude the covariant relationship between weight and shoe size is seven times stronger than between height and shoe size? No--because the units are not the same, so the values can't be compared meaningfully.
+
+We need to normalize this matrix before we can compare the relationships. The normalized form of covariance is called correlation. This a correlation matrix for the same data:
+
+       |  height |   weight   |   shoe
+      ---|---|---|---        
+height  | 1.000000 | 0.767368 |  0.874716
+weight | 0.767368 |  1.000000 | 0.711512
+shoe  |  0.874716 | 0.711512  | 1.000000
+
+Here we can see that the correlation between height and shoe size (0.874716) is greater than the correlation between weight and shoe size (0.711512). It appears that height is a better predictor of shoe size than weight is.
+
+We compute correlation by dividing the covariance of two features by the product of the standard deviations of those features.
+
+$$ corr_{xy} =\frac{\sum\limits_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})} {\sqrt{\sum\limits_{i=1}^n (x_i-\bar{x})^2 \sum\limits_{i=1}^n (y_i-\bar{y})^2}} $$
+
+where for notational convenience we have rewritten the expectations as:
+
+$$ E(Z) = \bar{z} $$
+
+
+### !challenge
+
+* type: multiple-choice
+* id: b3a7425c-c447-4b33-8c15-1de1bf4f8268
+* title: comparison of correlation and covariance
+
+### !question
+
+What of the following does NOT accurately describe the relationship between correlation and covariance?
+
+### !end-question
+### !options
+
+* correlation is the normalized form of covariance
+* both correlation and covariance are affected by changes in scale
+* correlation measures the strength of a linear relationship while covariance measure how much two variables change together  
+* covariance can range from -inf to inf, while correlation is bounded by -1 and 1
+
+### !end-options
+### !answer
+both correlation and covariance are affected by changes in scale
+### !end-answer
+
+### !explanation
+Changes in unit scale will change measures of covariance. The number of minutes you study compared to your test score will have a different covariance than the number of hours you study compared to your test score. Moreover, correlation allows us to compare the strength of relationships in a way that covariance does not. What if you wanted to find out which had a stronger relationship to your test score: number of hours studied or number of YouTube videos watched? In order for the comparison to be meaningful, you would first need to normalize your data. This is one reason correlation is generally more useful than covariance.
+
+### !end-explanation
+### !end-challenge

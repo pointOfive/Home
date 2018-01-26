@@ -1,0 +1,97 @@
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
+
+x = np.arange(0,1.01,.01)
+y = stats.uniform.pdf(x)
+y = stats.beta.pdf(x,a=1,b=1)
+
+def plot_with_fill(x, y, label):
+    lines = plt.plot(x, y, label=label, lw=2)
+    plt.fill_between(x, 0, y, alpha=0.2, color=lines[0].get_c())
+
+data = np.loadtxt('data/siteA.txt')
+datb = np.loadtxt('data/siteB.txt')
+
+x = np.arange(0,1.001,.001)
+y = stats.beta.pdf(x,a=1,b=1)
+plot_with_fill(x, y, "unipri")
+for t in 100*2**np.arange(-1,4):
+    y = stats.beta.pdf(x,a=1+sum(data[:t]),b=1+sum(1-data[:t]))
+    plot_with_fill(x, y, "update after "+str(t))
+
+plt.legend()
+plt.show()
+
+
+y = stats.beta.pdf(x,a=1+sum(data[:800]),b=1+sum(1-data[:800]))
+plot_with_fill(x, y, "A update after "+str(t))
+y = stats.beta.pdf(x,a=1+sum(datb[:800]),b=1+sum(1-datb[:800]))
+plot_with_fill(x, y, "B update after "+str(t))
+plt.xlim([0,.2])
+plt.legend()
+plt.show()
+
+betaA = stats.beta(a=1+sum(data[:800]),b=1+sum(1-data[:800]))
+betaB = stats.beta(a=1+sum(datb[:800]),b=1+sum(1-datb[:800]))
+n = 10000
+x = np.arange(-1,1.001,.001)
+y = betaB.rvs(size=n)-betaA.rvs(size=n)
+
+# no plots of this? credible intervals of this?
+#np.percentile(y,[.025, .975])
+
+print betaA.ppf([0.025,0.975]), betaB.ppf([0.025,0.975])
+print len(y[y>.02])/float(len(y))
+
+plt.hist(y,bins=100)
+plt.show()
+
+
+betaB = stats.beta(a=1+sum(datb[:1]),b=1+sum(1-datb[:1]))
+
+plt.subplot(121)
+x = np.arange(0,1.01,.01)
+y = betaB.pdf(x)
+plot_with_fill(x, y, "B just one update")
+y = betaA.pdf(x)
+plot_with_fill(x, y, "A all 800 updates")
+
+plt.subplot(122)
+y = betaB.rvs(size=n)-betaA.rvs(size=n)
+plt.hist(y,bins=100)
+plt.show()
+
+
+# not a problem -- just not a lot of data
+
+print stats.ttest_ind(datb, data, equal_var=False)
+# somehow need to emphasize the fact that we can do anything
+# once we've got the distribution
+
+# decide what should be said about frequentist statistics
+# alpha versus p
+# nice demo to go along with power/type I errors and such
+
+
+
+# last
+
+# this is a nice way to get at the functional question, too!
+betaA = stats.beta(a=1+sum(data[:800]),b=1+sum(1-data[:800]))
+betaB = stats.beta(a=1+sum(datb[:800]),b=1+sum(1-datb[:800]))
+n = 10000
+visits = 100
+x = np.arange(-1,1.001,.001)
+
+y = []
+for i in range(n):
+    y+= [np.sum(1.05*stats.bernoulli.rvs(betaB.rvs(size=visits)) -
+                 stats.bernoulli.rvs(betaA.rvs(size=visits)))]
+    
+plt.hist(y,bins=30)
+plt.show()
+
+# so with 100 users we'd make 5 bucks on average
+
+

@@ -1,0 +1,159 @@
+https://aws.amazon.com
+"My Account" -> "Security Credentials" -> "Access Keys"
+(These are different than "pem" files)
+
+# aborted when I found the directions below the commented out stuff
+# https://aws.amazon.com
+# "My Account" -> "AWS management console" -> "EC2" -> "Launch Instance"
+# "Ubuntu Server 16.04 LTS (HVM), SSD Volume Type" (or similar)
+
+# extra
+https://aws.amazon.com
+"Compute" -> "EC2" -> "Instance Types"
+"EMR"
+
+# actual cluster spinning
+
+4. http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+pip install --upgrade --user awscli
+check it with: 
+aws --version
+# .local/bin/aws --version # if it's not on the path
+
+aws configure
+to set region, e.g., aws region name "US East (N. Virgina)" is "us-east-1"
+
+bash dsi-spark-aws/scripts/launch_cluster.sh scottschwartzs3bucket mysecondkey 6
+
+
+
+3. When the green status changes from "Starting" to "Waiting"
+Copy the "Master public DNS", something like: ec2-35-162-28-133.us-west-2.compute.amazonaws.com
+and put it (just like this) (in ~/.ssh/config):
+
+# First Spark Cluster
+#ec2-54-196-72-214.compute-1.amazonaws.com
+Host spark
+HostName ec2-52-91-103-254.compute-1.amazonaws.com
+User hadoop
+IdentityFile /Users/schwarls37/.ssh/mysecondkey.pem
+
+scroll down and click on "Security groups for Master:********** (ElasticMapReduce-master)"
+(on this new page) control-click on the master row and select "Edit inbound rules"
+(on this new page) make sure there's an "SHH (port 22) Source: Anywhere" rule and click "Save"
+
+run: ssh spark
+then run: pyspark
+
+then run: <didn't work>
+yelp_business_url = 's3a://galvanize-ds/yelp_academic_dataset_business.json.gz'
+yelp_business_url = 's3a://galvanize-ds-bak/yelp_academic_dataset_business.json.gz'
+yelp_business_df = spark.read.json(yelp_business_url)
+yelp_business_df.printSchema()
+<need to figure out s3 buckets...>
+
+ssh -NfL 18080:localhost:18080 spark
+(nothing should happen when you do this one)
+(but then type this and it will work)
+open http://localhost:18080/ -- it let's you monitor the spark cluster...
+# if it's already open then you can use: 
+# ps -x | grep ssh
+# kill pid
+
+
+and then terminate the cluster
+
+
+
+2. spark cluster (manual)
+https://console.aws.amazon.com/console/home
+"EMR"
+"Create Cluster"
+Name your cluster
+Choose the latest release under "Software configuration)
+Choose your EC2 Key pair you just created
+"Create Cluster"
+
+1. EC2 Key Pair
+https://console.aws.amazon.com/
+"EC2"
+"key Pairs" or "Key Pairs" under "NETWORK & SECURITY"
+"Create Key Pair" (this automatically downloads the .pem file)
+move this and set the permissions:
+     mv ~/Downloads/spark.pem ~/.ssh/
+     chmod 400 ~/.ssh/spark.pem
+
+0. You can set your region at https://console.aws.amazon.com/
+
+
+
+
+
+
+what is a pem file?
+
+
+
+# extra: S3 on AWS
+You can create it graphically: 
+aws.amazon.com -> console (orange box) -> s3 -> create
+Add permissions for the bucket (that gets you to the access to the bucket)
+Then add a bucket policy for the the files with these things (that gets you access to the files)
++ Select Type of Policy: "S3 Bucket Policy"
++ Principal: *
++ Actions: GetObject
+"Error: Action does not apply to any resources..." fix with the "/*" right below
++ Amazon Resource Name (ARN): arn:aws:s3:::myownfirsttrybucketss/*
+
+upload: 
+dsi-high-performance-python/data/cancer.csv
+
+then try it out:
+
+ipython
+import pandas as pd
+tmp = pd.read_csv("https://s3.amazonaws.com/myownfirsttrybucketss/cancer.csv", chunksize=301)
+# returns of "TextFileReader" type
+tmp = tmp.read()
+
+import matplotlib.pyplot as plt
+plt.hist(tmp.cancer/tmp.population.apply(float))
+plt.savefig("test.png")
+plt.show()
+
+import boto
+access_key, access_secret_key = 'AKIAJGXK5YK45QPNDCZA', '9jg3AfuR1MqnmJ220usKp8wsY3otklYFv+YsRsd7'
+conn = boto.connect_s3(access_key, access_secret_key)
+
+all_buckets = [b.name for b in conn.get_all_buckets()]
+print all_buckets
+
+b = conn.get_bucket('myownfirsttrybucketss')
+file_object = b.new_key('test.png')
+with open('test.png') as f:
+     file_object.set_contents_from_file(f, policy='public-read')
+
+EMR (elastic map reduce) gets a cluster up that you can load spark on
+EC2 is a single machine -> Launch Instance -> choose AMI if you want an image
+(can choose more but it's not set up for spark or anything) 
+-> I just chose defaults for all of this
+-> then "upper left corner box" -> then "EC2" -> then "Running Instances"
+get the address:
+
+# if needed:
+# chmod 400 ~/.ssh/mysecondkey.pem
+
+ssh -i ~/.ssh/mysecondkey.pem ec2-user@ec2-34-202-161-62.compute-1.amazonaws.com
+# other users: root, ubunto, etc.  Instructions here:
+# http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+
+# maybe needed
+sudo yum groupinstall "Development Tools"
+sudo apt install python-pip
+sudo apt install python-tk
+
+scp -i ~/.ssh/mysecondkey.pem ~/anaconda/gSchool/sprints/dsi-spark-aws/scripts/test.png \
+ec2-user@ec2-34-202-161-62.compute-1.amazonaws.com:~/
+
+? How do I see my hours?
+"Scott Schwartz" pull down -> "My Account" -> "Credits" (I have a copule it seems...)

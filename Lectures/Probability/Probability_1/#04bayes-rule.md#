@@ -1,0 +1,117 @@
+
+# Use Bayes' Rule to calculate conditional probabilities
+
+Recall that
+$$ P(A \cap B) = P(A | B)P(B) = P(B | A)P(A) $$
+(we said it would come back...)
+
+Often, we want to know the probability that an event will happen, given a certain condition. But we don't always have a way to measure that directly. For example, we might want to know how likely it is that a visitor to our website will convert (a fancy word for making a purchase, or taking another pre-specified action) if we send her a certain coupon. We can't tell the future, but we can use evidence from the past to inform our beliefs.
+
+In this case, we want to know P(convert | coupon). We can rearrange the statement above to isolate this term:
+
+$$ P(A | B) = \frac{P(B | A)P(A)}{P(B)} $$
+
+or
+
+$$ P(\text{convert | coupon}) = \frac{P(\text{coupon | convert})P(\text{convert})}{P(\text{coupon})} $$
+
+We can't measure the left-hand term, but (assuming we've sent out this coupon before and have been tracking our campaigns), we should have information about what proportion of our visitors convert, what proportion received a coupon, and how many visitors who received the coupon in the past ultimately converted.
+
+## The Base Rate Fallacy
+
+A typical example of Bayes' Rule in practice (one that results in very interesting, often counterintuitive results) is that of medical and drug testing.
+
+Let's say a patient has come to you concerned that she has a rare new disease called Potato Pox. As an expert in your field, you've worked with quite a few cases of Potato Pox and believe that it affects about 0.02% of the population. (So P(Potato Pox) = 0.0002).
+
+You have developed a test for Potato Pox that will correctly detect presence of the disease 99.5% of the time--that is, if someone is infected, there is a 99.5% percent chance the test will come back positive. The test also has a 10% false positive rate--if someone is Potato Pox-free, there is a 10% chance the test will return a positive result anyway.
+
+Our patient's test comes back positive. You ask her to come in for a followup to let her know. What are you going to tell her? Do you think she has the disease? Here's where Bayes' Theorem comes in.
+
+
+For our situation, we are looking for
+
+$$ P(\text{Pox | +}) = \frac{P(\text{+ | Pox})P(\text{Pox})}{P(\text{+})} $$
+
+where '+' means a positive test result.
+
+Let's collect the information we have
+$$ P(\text{Pox}) = 0.0002 $$
+$$ P(\text{+ | Pox}) \text{   <-- this is our true positive rate, } 0.995 $$
+$$ P(\text{+}) \text{    <--   here, we need the law of total probability from the previous lesson:} $$
+$$ P(+) = P(\text{Pox})P(\text{+ | Pox}) + P(\text{Not Pox})P(\text{+ | Not Pox}) $$
+  $$  = 0.002 \times 0.995 + 0.998 \times 0.10 $$
+  $$  = 0.00199 + 0.0998 $$
+  $$  = 0.10179 $$
+
+Pulling it all together
+$$P(\text{Pox | +}) = \frac{0.995 \times 0.002} {0.10179} $$
+        $$  = 0.01955 \approx 0.020 $$
+
+Given a positive test result, there is still only 2% chance your patient is infected. Granted, this is a tenfold increase over the 0.2% pre-test belief, but the probability that she has Potato Pox is still quite small. What's the point of running a test at all, then, if most of the people who test positive don't actually have the disease? In this case, the most important thing is for us to catch as many people who *do* have the disease as possible. But in order to catch them, we might have to a less precise test, thus increasing our false positive rate.
+
+Designing experiments and choosing the metrics you will use to evaluate the results will always involve a trade-off between false positive and false negative rates. It's crucial to have an understanding of the potential consequences of each in order to make these decisions. Later in the course, we will look to profit curves as a method of optimizing for the best balance in a given situation.
+
+
+#### !challenge
+
+* type: number
+* id: 21436f6d-0bcb-4b40-9140-25f5dd9c38c0
+* title: Applying Bayes' Rule
+* decimal: 3
+
+#### !question
+
+You are trying to design a system that will determine whether someone has a PhD in music. You have the following information:
+
+ - The probability that a music PhD can correctly identify a composer from a 5-second audio clip is 85%.
+ - The probability that anyone else can identify a composer from a 5-second audio clip is 2%.
+ - Music PhDs make up 0.3% of the population.
+
+You stop someone on the street and play them a 5-second segment of Claire de Lune. They correctly identify the composer as Debussy. Based on the information above, what is the probability that this person has a music PhD?
+#### !end-question
+
+### !placeholder
+give your answer as a decimal rounded to three places
+### !end-placeholder
+
+
+### !answer
+0.113
+### !end-answer
+### !explanation
+
+we're looking for:
+
+$$ P(PhD|identify) = P(identify|PhD)P(PhD) / P(identify) $$
+
+We are given
+$$ P(Phd) = .003 $$
+$$ P(identify | PhD) = .85 $$
+$$ P(identify | NOT PhD) = .02 $$
+and can easily compute
+$$ P (NOT phD) = 1 - P(PhD) =  0.997 $$
+What about
+
+P(identify), the probability that any given person can identify the composer?
+We will need to compute this as
+$$ P(identify | PhD) * P(PhD) + P(identify | NOT PhD) * P(NOT PhD) $$
+which will account for all members of the population who can identify the composer.
+
+$$ 0.003 \times 0.85 + 0.997 \times .02 = 0.002249 $$
+
+Let's look at a conditional probability table:
+
+| * | PhD | Not PhD | Total |
+|:----| ----:| ----:|---:|
+| ID | 0.003 * 0.85 = 0.00255 | 0.997 * 0.02 = 0.01994  |  0.02249 |
+|NOT ID | doesn't matter | doesn't matter |
+| Total | 0.003 | 0.997 |
+
+of the 0.02249 proportion of people who can correctly identify the composer, 0.00255 have a music PhD.
+
+$$ 0.00255 / 0.02249 = 0.113 $$
+
+
+### !end-explanation
+### !end-challenge
+

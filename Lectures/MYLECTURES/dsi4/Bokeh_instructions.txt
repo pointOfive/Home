@@ -1,0 +1,20 @@
+RESOURCES
+http://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/tutorial/00%20-%20intro.ipynb
+http://bokeh.pydata.org/en/latest/docs/user_guide.html
+https://github.com/bokeh
+https://demo.bokehplots.com/
+http://bokeh.pydata.org/en/latest/docs/gallery.html
+
+INSTALLING BOKEH
+conda install bokeh
+
+
+RUN SERVER LOCALLY
+bokeh serve --show FILENAME.py
+
+
+RUN SERVER REMOTELY
+bokeh serve --show FILENAME.py --allow-websocket-origin=REMOTE_IP:5006
+
+You'll need to have port 5006 open, and then simply direct your browser to
+http://REMOTE_IP:5006

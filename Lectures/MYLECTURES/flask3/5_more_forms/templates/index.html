@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Flask - Forms (again) </title>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="first" placeholder="Your FIRST Name" />
+      <input type="text" name="last" placeholder="Your LAST Name" />
+      <input type="submit" value="Submit" />
+    </form>
+    {% if first or last %}
+
+    <h1>Hello, {{ first }} {{ last }}  </h1>
+    <p>{{ first }}, welcome to Flask :)</p>
+
+    {% else %}
+      <h1>Hello!</h1>
+      <p>Welcome to Flask :)</p>
+    {% endif %}
+
+
+  </body>
+</html>

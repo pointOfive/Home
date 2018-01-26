@@ -1,0 +1,15 @@
+\frametitle{Structured Query Language (SQL)}
+SQL is used to interact with RDBMS, allowing one to
+\begin{itemize}
+\item create tables \textcolor{gray}{(we saw this previously)}
+\item alter tables
+\item insert records
+\item update records
+\item delete records
+\item \textbf{query records within and across tables}
+\item[]
+\end{itemize}
+
+\begin{verbatim}
+SELECT.FROM.JOIN.ON.WHERE.GROUP BY.HAVING.ORDER BY.LIMIT
+\end{verbatim}

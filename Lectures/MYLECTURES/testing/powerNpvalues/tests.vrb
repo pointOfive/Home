@@ -1,0 +1,15 @@
+\frametitle{Single Sample Test Class}
+
+\begin{verbatim}
+from scipy import stats
+
+print xbar, mu_0, se, n
+# 1, 0, 0.5, 30
+
+2*(1-stats.t.cdf(loc = (xbar - mu_0)/se, df = n-1))
+
+
+\end{verbatim}
+
+Let's make this into a class!
+

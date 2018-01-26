@@ -1,0 +1,33 @@
+\frametitle{The \emph{permutation test}}
+
+\small
+\begin{itemize}
+\item Students enrolling for a popular class get ids $i = 1, \cdots n$.
+As the class quickly fills, another section of the class is opened and students for that class are given ids $i = n+1, \cdots 2n$.
+\tiny
+\begin{verbatim}
+id = np.array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+               18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+               35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51,
+               52, 53, 54, 55, 56, 57, 58, 59, 60])
+\end{verbatim}
+\small
+\item<2-> The classes have the same tests...\\How could we test which class is doing better?
+
+\tiny
+\begin{verbatim}
+score = np.array([59, 92, 93, 83, 92, 61, 84, 92, 70, 93, 76, 70, 84, 61, 75, 91, 73,
+                  67, 65, 64, 75, 80, 66, 56, 62, 53, 82, 69, 85, 94, 80, 86, 97, 99,
+                  77, 84, 94, 70, 80, 87, 77, 85, 95, 80, 88, 90, 85, 84, 92, 75, 83,
+                  89, 76, 95, 91, 97, 80, 70, 71, 94])
+\end{verbatim}
+\item<3-> If the classes are doing equally well, the index doesn't matter \\\onslide<4->{\textcolor{red}{$\iff$} We could \emph{permute} the index \textcolor{gray}{and see if it matters}}
+\end{itemize}
+\scriptsize
+\begin{enumerate}
+\color{gray}
+\item<5->  Repeatedly permute the index and recalculating the test statistic each time
+\item \onslide<6->{These samples approximate the test statistic distribution under the null }
+\item \onslide<7->{Compare the test statistic to this null distribution \\ to suggest how ``strange'' the actual observed test statistic is if the null is true}
+\end{enumerate}
+

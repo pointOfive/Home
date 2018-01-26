@@ -1,0 +1,58 @@
+---
+- ContainerType: Unit
+  Title: Introduction to Python
+  Description: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/unit.md
+  Contents:
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/01-numeric-types.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/02-logic-and-control-flow.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/03-looping.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/04-more-control-flow.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/05-strings.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/06-string-iteration.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/07-string-formatting.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/08-lists.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/09-mutability.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/10-tuples.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/11-dictionaries.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/12-more-dictionaries.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/13-sets.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/14-functions-motivation.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/15-functions-1.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/16-functions-2.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/17-params-args-scope.md
+
+  - Type: Lesson
+    URL: https://github.com/gSchool/dsi-modularization/blob/DSI-PC1-PYTHON-DEV/PC1/Python/18-comprehensions.md

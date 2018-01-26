@@ -1,0 +1,296 @@
+
+## 1. Conditional probability
+
+Okay, with those general theoretical notions and principles (from the previous section) reviewed, 
+let's now turn our attention
+to actually using these concepts in real, applied, practical ways. I.e., let's work through some 
+conditional probability problems, with particular attention to some applications of Bayes' formula.
+
+
+### Problem 1 
+
+A simplified model for the movement of the price of a stock supposes that on each day the stock's price either moves up 1 unit with probability \\(p\\) or moves down 1 unit with probability \\(1 - p\\). The changes on different days are assumed to be independent.
+
+
+#### !challenge
+
+* type: multiple-choice
+* id: cond_prob_1
+* title: Stock Market 1
+
+##### !question
+
+What is the probability that after 2 days the stock will be at its original price?
+
+##### !end-question
+
+##### !options
+
+
+* $$ 2p(1-p) $$
+* $$ p^2(1-p)^2 $$
+* $$ \frac{p + (1-p)}{2} $$
+
+
+##### !end-options
+
+##### !answer
+
+$$ 2p(1-p) $$
+
+##### !end-answer
+
+##### !explanation
+
+##### !end-explanation
+
+#### !end-challenge
+
+#### !challenge
+
+* type: number
+* id: cond_prob_2
+* title: Stock Market question 2
+* decimal: 3
+
+#### !question
+
+If p = 0.4, what is the probability that after three days, the stock's price will be up one unit?
+
+
+#### !end-question
+
+#### !placeholder
+
+enter your answer as a decimal
+### !end-placeholder
+
+#### !answer
+0.288
+#### !end-answer
+
+#### !explanation
+
+#### !end-explanation
+
+#### !end-challenge
+
+#### !challenge
+
+* type: multiple-choice
+* id: cond_prob_3
+* title: Stock Market question 3
+
+##### !question
+
+#### Question
+
+Given that after 3 days the stock's price has increased by 1 unit, what is the probability that it went up on the first day?
+
+##### !end-question
+
+##### !options
+
+* $$ \frac{1}{2} $$
+* $$ \frac{2}{3} $$
+* $$ \frac{1}{3} $$
+* There is not enough information to solve this problem
+
+
+
+##### !end-options
+
+##### !answer
+
+$$ \frac{2}{3} $$
+
+##### !end-answer
+
+##### !explanation
+
+
+##### !end-explanation
+
+#### !end-challenge
+
+### Problem 2
+
+A worker has asked her supervisor for a letter of recommendation for a new job. She estimates that there is an 80 percent chance that she will get the job if she receives a strong recommendation, a 40 percent chance if she receives a moderately good recommendation, and a 10 percent chance if she receives a weak recommendation. She further estimates that the probabilities that the recommendation will be strong, moderate, and weak are .7, .2, and .1, respectively.
+
+#### !challenge
+
+* type: number
+* id: cond_prob_4
+* title: Recommendation Letter Question 1
+* decimal: 2
+
+#### !question
+How certain is she that she will receive the new job offer?
+
+#### !end-question
+
+#### !placeholder
+give your answer as a decimal rounded to two decimal places
+#### !end-placeholder
+
+#### !answer
+0.65
+#### !end-answer
+
+#### !explanation
+
+#### !end-explanation
+
+#### !end-challenge
+
+#### !challenge
+
+* type: number
+* id: cond_prob_5
+* title: Recommendation Letter Question 2
+* decimal: 3
+
+#### !question
+
+Given that she does receives the offer, how likely would it be that she received a strong recommendation?
+
+#### !end-question
+
+#### !placeholder
+enter your answer as a decimal rounded to three decimal points
+#### !end-placeholder
+
+#### !answer
+0.862
+#### !end-answer
+
+#### !explanation
+
+#### !end-explanation
+
+#### !end-challenge
+
+#### !challenge
+
+* type: number
+* id: cond_prob_6
+* title: Recommendation Letter Question 3
+* decimal: 3
+
+##### !question
+
+Given that she does receives the offer, how likely would it be that she received a weak recommendation?
+
+##### !end-question
+
+##### !placeholder
+Enter your answer as a decimal rounded to three decimal places
+
+##### !end-placeholder
+
+##### !answer
+0.015
+##### !end-answer
+
+##### !explanation
+
+##### !end-explanation
+
+#### !end-challenge
+
+
+#### !challenge
+
+* type: number
+* id: cond_prob_7
+* title: Recommendation Letter Question 4
+* decimal: 3
+
+##### !question
+
+Given that she does NOT receive the job offer, how likely would it be that she received a weak letter?
+
+##### !end-question
+
+##### !placeholder
+
+Give your answer as a decimal rounded to 3 decimal places
+
+##### !end-placeholder
+
+##### !answer
+0.257
+##### !end-answer
+
+##### !explanation
+
+
+##### !end-explanation
+
+#### !end-challenge
+
+### Problem 3
+
+A medical study is looking at a test to detect a certain disease. The data collected has shown that
+- when a patient has the disease, the test is positive in 90% of the cases
+- when a patient does not have the disease, the test is positive in 1% of the cases.
+
+#### !challenge
+
+* type: number
+* id: cond_prob_8
+* title: Medical Test Question 1
+* decimal: 3
+
+##### !question
+
+Assume the disease is very common and affects 1 in 10 people.
+Given a positive test result, what is the probability a patient has the disease?
+
+##### !end-question
+
+##### !placeholder
+
+Enter your answer as a decimal rounded to three decimal places
+
+##### !end-placeholder
+
+##### !answer
+0.909
+##### !end-answer
+
+##### !explanation
+
+##### !end-explanation
+
+#### !end-challenge
+
+
+#### !challenge
+
+* type: number
+* id: cond_prob_9
+* title: Medical Test Question 2
+* decimal: 4
+
+##### !question
+
+Now assume the disease is rare and affects 1 in 10,000 people.
+Given a positive test result, what is the probability a patient has the disease?
+
+##### !end-question
+
+##### !placeholder
+
+Enter your answer as a decimal rounded to four decimal places
+
+##### !end-placeholder
+
+##### !answer
+0.0089
+##### !end-answer
+
+##### !explanation
+##### !end-explanation
+
+#### !end-challenge

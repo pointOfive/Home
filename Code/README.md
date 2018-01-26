@@ -11,10 +11,19 @@ I am more than comfortable using R if the necessary functionality is not yet ava
 For example, please see the [R subdirectory](https://github.com/pointOfive/Examples/Code/SQL) for an analysis
 of job salaries using [Model Based Tree Partitioning](http://party.r-forge.r-project.org), a very interesting
 methodology for subgroup analysis that has recently received attention in the context of
+<<<<<<< HEAD
+[causal inference](http://www.pnas.org/content/113/27/7353.full).
+
+## Python
+
+## Spark
+
+=======
 (causal inference)[http://www.pnas.org/content/113/27/7353.full].
 
 ## Python
 
+>>>>>>> d9e04c9747f3258bdb87e9720ea0ab2dbfcc9fed
 ## SQL
 
 I have experience using SQL in `postgreSQL`, `psycopg2`, and `sparkSQL` contexts.

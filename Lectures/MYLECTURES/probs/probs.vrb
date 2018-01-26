@@ -1,0 +1,73 @@
+\frametitle{Problem 3:}
+
+\begin{columns}
+\begin{column}{.55\textwidth}
+
+\vspace{-1.5em}
+
+\begin{itemize}
+\item[]
+\footnotesize
+\begin{align*}
+\Pr(Hillary_{Awesome}) = {} & 0.20\\
+Pr(Hillary_{Wins} | Hillary_{Awesome}) = {} & 0.98\\
+Pr(Hillary_{Wins} | Hillary_{\cancel{Awesome}}) = {} & 0.90\\{}\\
+Pr( Hillary_{Awesome} | Hillary_{Wins} ) = {} & ?
+\end{align*}
+
+\item[]<3->
+\vspace{-1em}
+\footnotesize
+\begin{align*}
+\Pr(Hillary_{Wins} \& Hillary_{Awesome}) = {} & 0.20 \cdot 0.98\\
+\Pr(Hillary_{\cancel{Wins}} \& Hillary_{Awesome}) = {} & 0.20 \cdot 0.02\\
+\Pr(Hillary_{Wins} \& Hillary_{\cancel{Awesome}}) = {} & 0.80 \cdot 0.90\\
+\Pr(Hillary_{\cancel{Wins}} \& Hillary_{\cancel{Awesome}}) = {} & 0.80 \cdot 0.10\\
+\end{align*}
+
+\item[]<4->
+\vspace{-1em}
+\begin{tabular}{m{1.1cm}|m{1.5cm}m{1.5cm}|m{1.5cm}}  %{c|cc|c}
+                           & $\underset{Hillary}{Awesome}$ & $\underset{Hillary}{\cancel{Awesome}}$ & $\underset{Probability}{\text{Marginal}}$\\ \hline
+$\quad\;\;\underset{Hillary}{Wins}$ &  $\;\;\;$\textcolor{red}{0.196} & $\;\;\;$\textcolor{red}{0.720} & $\;\;\;$\textcolor{red}{0.916} \\
+$\quad\;\;\underset{Hillary}{\cancel{Wins}}$ & $\;\;\;$0.004 & $\;\;\;$0.080 & $\;\;\;$0.084 \\\hline
+ $\underset{Probability}{\text{Marginal}}$& $\;\;\;$0.200 & $\;\;\;$0.800 & $\;\;\;$1.000
+\end{tabular}
+
+\end{itemize}
+\end{column}
+\begin{column}{.45\textwidth}
+
+\begin{itemize}
+\item[]<2->
+\vspace{-2em}
+\tiny
+\xymatrix{
+&& 0.196 \\
+& \text{Election} \ar[ur]^{\Pr(Wins|Awesome)}_{0.98} \ar[dr]^{0.02}_{\Pr(\cancel{Wins}|Awesome)} &\\
+& &  0.004 \\
+\text{Hillary} \ar[ddr]_{\Pr(\cancel{Awesome})}^{0.8} \ar[uur]^{\Pr(Awesome)}_{0.2}&\\
+ & & 0.72 \\
+& \text{Election} \ar[ur]^{\Pr(Wins|\cancel{Awesome})}_{0.9}  \ar[dr]^{0.1}_{\Pr(\cancel{Wins}|\cancel{Awesome})}&\\
+&& 0.08 \\
+}
+\item[]<5->
+\large
+\vspace{-1em}
+$$\color{red}{\frac{0.196}{0.916}}$$
+
+\end{itemize}
+\end{column}
+\end{columns}
+
+\begin{itemize}
+\item[]<4->
+$$\Pr( Hillary_{Awesome} | Hillary_{Wins} ) = \frac{\Pr( Hillary_{Awesome} \& Hillary_{Wins}) }{\Pr(Hillary_{Wins})}$$
+\end{itemize}
+
+%U \ar@/_/[ddr]_y \ar@/^/[drr]^x
+ %  \ar@{.>}[dr]|-{(x,y)}            \\
+ % & X \times_Z Y \ar[d]^q \ar[r]_p
+ %                & X \ar[d]_f       \\
+ % & Y \ar[r]^g   & Z
+

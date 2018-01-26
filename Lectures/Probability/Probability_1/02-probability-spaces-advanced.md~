@@ -1,0 +1,842 @@
+# Utilize venn diagrms to describe the relatedness of two events
+
+## Advanced Concepts for Multiple Events
+
+We have already seen that two events \\(E_1\\) and \\(E_2\\) are characterized as _mutually exclusive_ 
+when \\(E_1 \cap E_2 = \emptyset\\).  As you might imagine, this is not the only kind of relationship
+that might exists between two events. 
+
+### Dependence (and Independence)
+
+While a single experiment \\(X\\) generates only a single outcome \\(x\\),
+this single outcome can induce the occurance of multiple events. For example, a roll of two dice 
+both showing their 5 side simultaneously induces the events
+
+- an above average roll total,
+- a double,
+- and a roll totalling 10.
+
+
+It's not surprising that these distinct events are related since they all tie back to the same single outcome \\(x\\).
+And clearly they're not mutually exclusive since their occurance does not predclude that of the others. 
+But to formally characterize the relatedness of different events such as these we require the notion of _dependence_. 
+We say two events \\(E_1\\) and \\(E_2\\) are _dependent_ if 
+
+$$ Pr(E_2|E_1) \not = Pr(E_2), $$
+
+where "\\(|\\)" is the notation used to specify _conditional probability_ and is read "given that" or "conditional on"
+and the event to the left of "\\(|\\)" is the event who's probability we are interested in
+and the event to the right of "\\(|\\)" is something which is known to have occured and be true 
+(and which may thus influence the probability of event we're interested in).
+Thus, the above statement on the left of the inequality is a statement of conditional probability and is read as 
+"the probability of event \\(E_2\\) given that \\(E_1\\) has occurred". 
+The full inequality statement indicates that the probability of \\(E_1\\) has changed as a result of having the information that \\(E_2\\) has occured. 
+
+Now on the other hand, if knowing that \\(E_1\\) has occurred does not influence the probability of \\(E_2\\) occuring, we say that
+events \\(E_1\\) and \\(E_2\\) are _independent_, and we have that 
+
+$$ Pr(E_2|E_1) = Pr(E_2) $$
+
+so that the conditional information after the "\\(|\\)" is irrelevant.
+In this case you're welcome to write \\(Pr(E_2|E_1)\\), but you don't have to -- you can also just write \\(Pr(E_2)\\)
+(since they're both equal to the same probability). 
+
+Now, from within the context of a formal prability framework, if \\(Pr(E_2|E_1) = Pr(E_2)\\) so that the 
+two events \\(E_1\\) and \\(E_2\\) are independent, then the reverse statement 
+
+$$ Pr(E_1|E_2) = Pr(E_1) $$
+
+will also be true.  Within a formal prability context it cannot be that event \\(E_2\\) is independent of event \\(E_1\\), but
+\\(E_1\\) is NOT independent of event \\(E_2\\). Saying that two events are independent 
+is a statement saying that BOTH events are independent of each other. 
+Notice that this of course implies that if \\(Pr(E_2|E_1) \not = Pr(E_2)\\) then \\(Pr(E_1|E_2) \not = Pr(E_1)\\). 
+
+
+<div class='bg-info' style='padding:8px;border-style:solid;border-width:2px;border-color:#00BFFF'>
+<strong>Aside:</strong><br>
+This communitative property of independence may at first seem strange
+because there are situations in life where only one entity exerts 
+influence upon another entity (for example, temporally dependent events) or 
+the strength of influence is unbalanced (for example, the creation and enforcement of laws
+of the US government) and intuition therefore suggests that this should also be possible in 
+the context of probability.  Well don't worry: probability can still model these sorts of relationships,
+but it doesn't have to think temporally or in an imbalanced manner to do so!  
+How strange... but it's true: probability actually models everything in a temporally agnostic manner.  
+If you're curious, the reason for this goes back to the definitions of outcomes and experiements.  They are 
+"one time" instanteneous occurances.  Thus they do not need to be modeled with any notion of time or directional dependence.  
+(But again, don't worry -- probability can model things in a temporal or imbalanced and dependent manner
+by using it in clever ways if we want to).  So what does this say about the true nature of time??
+Well, we'll leave that to the philosophers.  For now we'll just recognize that probability is a 
+very useful model of the real world that in and of itself is time agnostic and yet is still a very effective 
+tool even desite the fact that it treats everything in a symmetric and communitative manner.   
+</div>
+
+To help solidify these notions, let's work through some examples with a standard full (52-card) playing card deck.
+
+First, do you think "drawing a heart" and "drawing a six" are independent? Well let's see:
+drawing a "six" given that you know that you drew a "heart" has probability \\(Pr(\text{"six" | "heart"}) = 1/13\\) 
+while just drawing a "six" without any further information has probability \\(Pr(\text{"six"}) = 4/52 = 1/13\\).
+So, yes, "drawing a heart" and "drawing a six" are independent!
+And since independence works both ways, we can also say that
+knowing a card has a certain value does not make it any more or less likely that it will be of a particular suit.
+
+On the other hand, color and suit are not independent. 
+Without any additional information, the probability that a randomly selected card will be a diamond is 1/4. 
+However, if we know the card is red, the probability that it is also a diamond is 1/2.
+And if we know the card is black, the probability that it is also a diamond is 0.
+I.e., \\(Pr(\text{"diamond" | "red"}) \not = (Pr(\text{"diamond"})\\).
+
+
+Now it's all well and good to say two events are independent or not (i.e., dependent), 
+but is there a formal way to calculate these conditional probabiliites? 
+The answer is of course, yes!  But let's see if you can reason it out for yourself
+using our very useful Venn diagram representation.
+
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_1
+* title: Definition of conditional probability
+
+### !question
+
+Which of the following always defines \\(Pr(E_2|E_1)\\) 
+(regardless of whether or not \\(E_2\\) and \\(E_1\\) are dependent or not)?
+
+>![uniform continuous](./images/v16.tiff)
+
+### !end-question
+### !options
+
+* (a) \\(Pr(E_2)\\)  
+* (b) \\(Pr(E_2 \cap E_1)\\) 
+* (c) \\(Pr(E_1 \cap E_2)\\) 
+* (d) \\(Pr(E_1 \cap E_2)/Pr(E_2)\\) 
+* (e) \\(Pr(E_1 \cap E_2)/Pr(E_1)\\)
+
+### !end-options
+### !answer
+(e) \\(Pr(E_1 \cap E_2)/Pr(E_1)\\)
+### !end-answer
+### !explanation
+
+Answer (a) \\(Pr(E_2|E_1) = Pr(E_2)\\) is true when \\(E_2\\) and \\(E_1\\)
+are independent, but is not a true statement in general. 
+Answers (b) and (c) are of course the same thing, but they are the probability 
+that both \\(E_1\\) and \\(E_2\\) occur, which is different
+than the probability that \\(E_2\\) occurs given that we know \\(E_1\\), i.e., \\(Pr(E_2|E_1)\\).
+This of course makes sense if you carefully consider the correct answer to this problem, answer (e).
+And similarly, an understanding of the correct answer to this problem also clarifies that 
+answer (d) is \\(Pr(E_1|E_2)\\), which is not the correct answer of \\(Pr(E_2|E_1)\\).
+
+The reason (e) is the correct answer is that the statement "given that \\(E_1\\) occurred" 
+resets the possible sample space under which we evaluate the event \\(E_2\\).
+Essentially the new sample space "given that \\(E_1\\) occurred" is just the event \\(E_1\\) itself.
+And we we are interested in the probability of the event \\(E_2\\) in this space, which of course
+is the same thing as \\(E_2 \cap E_1\\).  The statement \\(Pr(E_1 \cap E_2)/Pr(E_1)\\)
+can be seen as a "renormalizing" of the probability space under consideration so that 
+we are only considering the outcomes that are present in the event \\(E_1\\).
+Thus, \\(Pr(E_2|E_1) = Pr(E_1 \cap E_2)/Pr(E_1)\\).  And this must always be true, 
+regardless of if \\(E_1\\) and \\(E_2\\) are independent or not (i.e., dependent).
+
+The interesting case when \\(E_1\\) and \\(E_2\\) are in fact independent is that
+
+$$ Pr(E_1 \cap E_2)/Pr(E_1) = Pr(E_2|E_1) = Pr(E_2) = Pr(E_2 | S_X) = Pr(E_2 \cap S_X)/Pr(S_X) = Pr(E_2 \cap S_X) = Pr(E_2) $$
+
+Which of course shows the proportional chance of event \\(E_2 \cap E_1 \\) relative to \\(E_1\\)
+is the same as the proportional chance of event \\(E_2)\\ relative to \\(S_X\\).  
+I.e., "changing reference" to \\(E_1\\) as the sample space rather than \\(S_X\\)
+does not change the proportional chance of event \\(E_2)\\ occuring.  Strange... but that's exactly what independence means!
+
+So now we know that 
+
+$$ (Pr(E_2|E_1) = Pr(E_1 \cap E_2)/Pr(E_1) $$
+
+is the definition of conditional probability and gives us a formal way to calculate contitional probabilities. 
+
+### !end-explanation
+### !end-challenge
+
+
+
+_______________________________________
+
+Thinking of the integers from 1 to 30, inclusive, jot down the answers to these questions.
+
+If you randomly select one integer:<br>
+
+- What is the probability that it will be even?<br>
+- What is the probability that it will be divisible by five?<br>
+- What is the probability that it will be divisible by six?<br>
+- What is the probability that it will be both even and divisible by 5?<br>
+- What is the probability that it will be both even and divisible by 6?<br>
+
+Given the above calculations:
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_2
+* title: Conditional probabilities and independence 1
+
+### !question
+
+Is the event that a number is divisible by 5 independent of the event that a number is even?
+
+### !end-question
+### !options
+
+* yes
+* no
+
+### !end-options
+### !answer
+yes
+### !end-answer
+### !explanation
+
+Knowing that a number is even gives us no additional information about whether or not it is divisible by 5 since
+$$ Pr(\text{"divisible by 5" | "even"}) = Pr(\text{"divisible by 5"} \cap \text{"even"})/Pr(\text{"even"}) = (3/30)/(15/30) = 3/15 = 6/30 = Pr(\text{"divisible by 5"}) $$ 
+
+### !end-explanation
+### !end-challenge
+
+
+### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_3
+* title: Conditional probabilities and independence 2
+
+### !question
+
+Is the event that a number is divisible by 6 independent of the event that a number is even?
+
+### !end-question
+### !options
+
+* yes
+* no
+
+### !end-options
+### !answer
+no
+### !end-answer
+### !explanation
+
+Knowing that the number is even affects the probability that it is also divisible by 6 since
+
+$$ Pr(\text{"divisible by 6"}) = 5/30 \not = 5/15 = (5/30)/(15/30) = Pr(\text{"divisible by 6"} \cap \text{"even"})/Pr(\text{"even"}) = Pr(\text{"divisible by 6" | "even"}) $$
+
+### !end-explanation
+### !end-challenge
+
+
+### The Chain Rule (and Independence)
+
+Given that we know that under all circumstances it is true statement that 
+
+$$ Pr(E_2|E_1) = Pr(E_1 \cap E_2)/Pr(E_1) $$
+
+we can derive a very important rule known as the _chain rule_, which states that
+it is always the case that 
+
+$$ Pr(E_1 \cap E_2) = Pr(E_2|E_1)Pr(E_1) $$
+
+But of course, we could have also instead started with the "reversed" conditional probability \\(Pr(E_1|E_2)\\),
+which shows that 
+
+$$ Pr(E_1 \cap E_2) = Pr(E_1|E_2)Pr(E_2) $$
+
+and hence 
+
+$$ Pr(E_2|E_1)Pr(E_1) = Pr(E_1|E_2)Pr(E_2) $$
+
+This again highlights the temporally agnostic and order indifferent nature of formal probability we noted above with 
+respcet to the notion of independence. 
+Formal probability does not view events as ordered and does not care if you view a problem in one sequence or another. 
+The probability of event \\(E_1\\) and \\(E_1\\) happening
+can be stated as the probability of event \\(E_1\\) happening times the probability of \\(E_2\\) happening.
+given that we know \\(E_1\\) happened, which can equivalently be stated as 
+the probability of event \\(E_2\\) happening times the probability of \\(E_1\\)
+happening given that we know \\(E_2\\) happened.
+The order of the statement does not matter and it is a symmetric, or communitative statement as far as 
+formal probability is concerned. 
+
+Now the interesting (although perhaps not unexpected) feature of the chain rule is that 
+it generalizes very naturally to more than two events, as the following example demonstrates.
+Suppose we want to know the probability that a card is odd, not a square number, and greater than 4
+(and we'll assume aces are valued at 1 and all face cards are valued at 10).
+Considering these conditions sequentially we have
+
+|  | probability |
+|----|----|
+| cards with value 1, 3, 5, 7, and 9 are all odd<br>so there are 20 odd cards in each deck (5 cards x 4 suits) | $$ Pr(\text{"odd"}) = \frac{20}{52} $$ |
+| of these 5 values, 4 are not square numbers,<br> so there are 16 non-square odd cards | $$ Pr(\text{"not a square number" | "odd"}) = \frac{16}{20} $$ |
+| of these 4 non-square odd values, 2 are greater than 4,<br> so there are 8 non-square, odd, greater-than-4 cards. | $$ Pr(\text{">4" | "not a square number"} \cap \text{"odd"}) = \frac{8}{16} $$  |
+
+Thus, 
+
+$$ 
+\begin{eqnarray*}
+&& Pr(\text{"odd"} \cap \text{"not a square number"} \cap \text{">4"} )\\\ 
+&=& Pr(\text{">4" | "not a square number"} \cap \text{"odd"}) Pr(\text{"not a square number" | "odd"})  Pr(\text{"odd"})\\\ 
+&=& \frac{20}{52} \frac{16}{20} \frac{8}{16} = \frac{8}{52}
+\end{eqnarray*}
+$$
+
+And indeed, in a deck of 52 cards, there are 8 cards which are "odd, not a square number, and greater than 4".
+
+So, in fact, the general chain rule states that 
+
+$$ Pr(E_1 \cap E_2 \cap E_3....E_n) = Pr(E_1)Pr(E_2 | E_1)Pr(E_3 | E_2 \cap E_1)...Pr(E_n | E_{n-1}...E_3 \cap E_2 \cap E_1) $$
+
+#### !challenge
+
+* type: number
+* id: scott_prob2_4
+* title: Chain rule
+* decimal: 3
+
+#### !question
+
+You are playing a game in which you shuffle a standard 52-card deck, then place it face down and reveal
+the card at the top of the deck. You continue drawing cards from the top until you see a face card.
+
+What is the probability that you will reveal exactly four cards before you reveal a face card?
+
+#### !end-question
+
+### !placeholder
+give your answer as a decimal rounded to three places
+### !end-placeholder
+
+### !answer
+.084
+### !end-answer
+
+#### !explanation
+
+We're looking for:
+$$ Pr(\text{"first four cards number cards"} \cap \text{"fifth care a face card"}) $$
+
+$$ 
+\begin{eqnarray*}
+& & Pr(\text{"first card a number card"})\\\ 
+&\times& Pr(\text{"second card a number card" | "first was"})\\\ 
+&\times& Pr(\text{"third card a number card" | "first two were"})\\\ 
+&\times& Pr(\text{"fourth card a number card" | "first three were"})\\\ 
+&\times& Pr(\text{"fith card a face card" | "first four cards were number cards"})\\\ 
+\end{eqnarray*}
+$$
+
+There are 12 face cards and 40 number cards. Each time we draw a card, we must reduce the count of cards in the deck (the denominator) by one. 
+We must also reduce the count of number cards in the second, third, and fourth term, since the card removed from the deck was a number card.
+$$ \frac{40}{52} \times \frac{39}{51} \times \frac{38}{50} \times \frac{37}{49 } \times \frac{12}{48} \approx 0.084 $$
+
+
+#### !end-explanation
+### !end-challenge
+
+
+Now, it turns out the chain rule
+
+$$ Pr(E_1 \cap E_2) = Pr(E_2|E_1)Pr(E_1) $$
+
+leads to a very important way in which we can define the intependence of two events; namely
+\\(E_1\\) and \\(E_1\\) are _independent_ if 
+
+$$ Pr(E_1 \cap E_2) = Pr(E_1)Pr(E_2) $$
+
+And this is of course true since if \\(E_1\\) and \\(E_1\\) are independent then
+
+$$ Pr(E_2|E_1)=Pr(E_2) \text{ and } Pr(E_1|E_2)=Pr(E_1) $$
+
+which is the simplification we apply to the chain rule to get the statement 
+that "if two events are independent then the probability of both happening
+is just the multiplication of the probabilities of the individual events happening" 
+that the above independence formula specifies. 
+
+So actually, returning to the problems above 
+
+- Is the event that a number is divisible by 5 independent of the event that a number is even? 
+- Is the event that a number is divisible by 6 independent of the event that a number is even?
+
+we could actually make these answers on the basis of the above rule for independence, i.e., 
+if \\(E_1\\) and \\(E_1\\) are independent then \\(Pr(E_1 \cap E_2) = Pr(E_1)Pr(E_2)\\).
+
+So, from the previous calculations we know that
+
+- \\(Pr(\text{"divisible by 5"}) = 1/5 \\)
+- \\(Pr(\text{"divisible by 6"}) = 1/6 \\)
+- \\(Pr(\text{"even"}) = 1/2 \\)
+- \\(Pr(\text{"divisible by 5"} \cap \text{"even"}) = 1/10 \\)
+- \\(Pr(\text{"divisible by 6"} \cap \text{"even"}) = 1/6 \\)
+
+from which we can easily see that the answer to the first statement is yes (i.e., "divisible by 5" and "even" are independent events), since 
+\\(Pr(\text{"divisible by 5"})\\(Pr(\text{"even"}) = \\(Pr(\text{"divisible by 5"} \cap \text{"even"}) \\), 
+while the second statement is no (i.e., "divisible by 6" and "even" are dependent, not independent, events), since 
+\\(Pr(\text{"divisible by 6"})\\(Pr(\text{"even"}) \not = \\(Pr(\text{"divisible by 6"} \cap \text{"even"}) \\).
+And of course this agrees with our previous answers, and makes sense because 
+knowing that we have an "even" number makes it (twice) more likely that we'll also be "divisible by 6" since all the "odds"
+(which are not "divisible by 6") have been removed from consideration. 
+
+
+
+#### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_5
+* title: More independence and chain rule questions
+
+#### !question
+
+Does knowing a card has value 3 change the probability that this card is a club?
+Does knowing that a card is red change the probability that this card is a diamond? 
+
+#### !end-question
+
+### !options
+
+* Yes; No
+* No; Yes
+* Yes; Yes
+* No; No
+
+### !end-options
+
+### !answer
+No; Yes
+### !end-answer
+
+#### !explanation
+
+There are 4 cards with value 3 in a 52-card deck, and there are 13 cards in the club suit,
+and there is exactly one 3 of clubs, thus
+
+- \\( Pr(\text{"3"}) = \frac{4}{52} = \frac{1}{13} \\)
+- \\( Pr(\text{"clubs"}) = \frac{13}{52} = \frac{1}{4} \\)
+- \\( Pr(\text{"3"} \cap \text{"clubs"}) = \frac{1}{52} \\)
+
+and since 
+
+$$ Pr(\text{"3"} \cap \text{"clubs"}) = Pr(\text{"3"}) Pr(\text{"clubs"}) $$
+
+the events "3" and "Clubs" are independent. 
+
+On the other hand there are 26 red cards, 13 diamonds, and 13 red diamonds, thus
+
+
+- Pr(\text{"red"}) = \frac{26}{52} = \frac{1}{2} 
+- Pr(\text{"diamond"}) = \frac{13}{52} = \frac{1}{4} 
+- Pr(\text{"red"} \cap \text{"diamond"}) = \frac{13}{52} = \frac{1}{4} 
+
+but 
+
+$$ Pr(\text{"red"} \cap \text{"diamond"}) \not = Pr(\text{"red"}) Pr(\text{"diamond"}) $$
+
+To correctly calculate \\( Pr(\text{"red"} \cap \text{"diamond"}) \\) (besides just doing it directly as we did it above)
+we need to caclulate 
+
+$$ Pr(\text{"red"} \cap \text{"diamond"}) = \\( Pr(\text{"diamond" | "red"}) \\( Pr(\text{"red"}) = \frac{1}{2} \times {\frac{1}{2}} = \frac{1}{4} $$
+
+Think about how we reasoned through figuring out the probability that a card was a diamond given that it was red: 
+when we learned it was red, we automatically shifted our understanding of the sample space we were working with. 
+We weren't concerned about the whole deck anymore, but just the 26/52 = 1/2 cards that are red. 
+Under condition red, the probability of having a diamond given a red card is 1/2.
+
+And this of course works the other way, too! The intersection of sets is commutative, so
+
+$$ Pr(\text{"red"} \cap \text{"diamond"}) = \\( Pr(\text{"red" | "diamond"}) \\( Pr(\text{"diamond"}) = 1 \times {\frac{1}{4}} = \frac{1}{4} $$
+
+And of course notice as well that the chain rule works even if two events are independent:
+
+$$ Pr(\text{"3"} \cap \text{"clubs"}) = Pr(\text{"3" | "clubs" }) Pr(\text{"clubs"}) = \frac{1}{13}\times \frac{1}{4}  = \frac{1}{52}$$
+
+#### !end-explanation
+### !end-challenge
+
+
+#### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_6
+* title: Another independence question
+
+#### !question
+
+Are the events on which the probability 
+
+$$Pr(\text{"first four cards number cards"} \cap \text{"fifth care a face card"})$$
+
+is being calculated independent?  I.e., does
+
+$$Pr("first four cards number card" \cap "fifth care a face card") = 
+Pr("first card is a number card")
+Pr("second card is a number card")
+Pr("third card is a number card")
+Pr("fourth card is a number card")
+Pr("fifth card is a face card")$$?
+
+
+#### !end-question
+
+### !options
+
+* Yes
+* No
+* I need to take a break
+
+### !end-options
+
+### !answer
+No
+### !end-answer
+
+#### !explanation
+
+In a previous question above we showed how this probability 
+was calculated using the chain rule, and it was not equal to 
+
+$$Pr("first card is a number card")
+Pr("second card is a number card")
+Pr("third card is a number card")
+Pr("fourth card is a number card")
+Pr("fifth card is a face card") = \frac{40}{52}^4 \times \frac{12}{52}$$
+
+The reason the probability of getting a number card on any draw is \\(\frac{40}{52}\\)
+and the probability of getting a face card on any draw is \\(\frac{12}{52}\\) when you
+are given no other information is because in any random ordering of 52 cards, these 
+are the probabilities of these events at any position.  It's only when when you have information
+about which specific cards have been previously drawn that that the subsequent probabilities reflect this
+and are adjusted to take this known information into account. 
+
+#### !end-explanation
+### !end-challenge
+
+
+#### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_7
+* title: Independent versus mutually exclusive
+
+#### !question
+
+Is it fair to say that mutually exclusive events are independent? 
+
+#### !end-question
+
+### !options
+
+* Yes, it's fair
+* No, it's not
+
+### !end-options
+
+### !answer
+No, it's not
+### !end-answer
+
+#### !explanation
+
+Two events \\(E_1\\) and \\(E_2\\) are mutually exclusive if 
+
+$$ Pr(E_1 \cut E_2) = Pr(E_1) + Pr(E_2)
+
+while they are independent if 
+
+$$Pr(E_1 \cap E_2) = Pr(E_1)Pr(E_2)$$
+
+So to start off with, independence and mutually exclusivity are completely different things, 
+which should tip you off to the fact that 
+mutually exclusive events are not the same thing as independent events.
+However, it could be that for two events to be mutually exclusive events implies 
+that they must also be independent events.  
+
+
+**Fun Fact:** Having non zero _correlation_ between two events implies that the events are dependent;
+however, having dependence between two events does not necessarily imply that the events will have non zero correlation.
+This is because correlation measures a specific type of depdendence -- linear dependence -- but there
+are more general notions of dependence. So if two events have a non zero correlation then they have some linear dependence.  
+But two events can also have some dependence that is not a linear dependence and so they can have a 
+correlation that is zero despite the fact that they still have some dependence.  Independence is a more general  
+notion than correlation: independence implies zero correlation, but zero correlation does not imply independence. 
+
+
+It turns out, however, that being mutually exclusive does not in fact actually imply independence; rather, quite the opposite
+is true.  If two events are mutually exclusive then the are definitively dependent. 
+If two events \\(E_1\\) and \\(E_2\\) are mutually exclusive then \\(Pr(E_1 \cap E_2) = Pr(\emptyset) = 0\\); thus,
+\\(Pr(E_1 | E_2) = Pr(E_1 \cap E_2)/Pr(E_2) = 0\\) which not equal to \\(Pr(E_1)\\) in general, and vice-versa 
+\\(Pr(E_2 | E_1) = Pr(E_1 \cap E_2)/Pr(E_1) = 0\\)  which not equal to \\(Pr(E_2)\\) in general.
+So in fact, mutual exclusivity implies dependence (rather than independence). 
+But this makes sense if you just think about the two ideas accurately and carefully. 
+
+#### !end-explanation
+### !end-challenge
+
+
+### The Law of Total Probability
+
+While we now know that a statement such as \\(Pr(E_1 | E_2)\\)
+is called conditional probability, it turns out that a couple of our other 
+familiar probabilities have special names as well; namely, 
+\\(Pr(E_1 \cap E_2)\\) is called a _joint probability_ and 
+\\(Pr(E_1)\\) is called a _marginal probability_.
+This nomenclature was chosen for the former term because it  
+implies the "joining" of multiple events, and for the latter term
+because it implies the "marginalizing" of things down to just a single event. 
+
+This use of the term "marginalizing" may be unfamiliar to you.  
+Actually, it comes from the very simple context of the "margins" 
+of a table.  To demonstrate this, here's a classic little data set 
+that tabulates the correspondance between (the famous tennis player) 
+[John McEnroe's](https://www.youtube.com/watch?v=t0hK1wyrrAU) serve quality and whether or not he grunts when he serves:
+
+            |Ace|Fault| Return || Vocalization Margin
+         ---|---|----|---||---
+Silent      |35 | 8  | 53|| 96
+Grunts      |61 | 32 |144||237
+         ---|---|----|---||---
+Serve Margin|96 | 40 |197||
+
+As you can see, the margins of the table show the distribution of either "Serves" or "Vocalizations" 
+without consideration of the other event. 
+The margins do this by aggregating across the levels of the opposite event -- a process called _marginalizing_ -- 
+in order to reduce a "joint" concept down into a "marginal" (or single) concept. 
+It turns out this process is in some sense the opposite of the chain rule. 
+This is because while the chain rule tells us how to build up probabilities from marginal and conditional probabilities -- 
+quantiaties that are in the end really focused on assess the probabilities of a single event -- the process
+of marginalization allows us to go in the opposite direction by reducing joint probabilities down to marginal probabiliies. 
+This process of marginalization actually has a very important sounding name; namely, _the law of total probability_. 
+
+It's very easy to understand the process of marginalization that the law of total probability entails by looking at 
+examples of its use in tables such as the above; however, it can also be understood graphically as well by 
+using our trusty old tool the Venn diagram: 
+
+>![uniform continuous](./images/v17.tiff)
+
+From this figure we see that the law of total probability simply calculates the 
+probability of event \\(E_1\\) based on the composite probabilities of a bunch of other events 
+\\(F_1, F_2, F_3, \cdots, F_p)\\ that make up event \\(E_1\\). With this understanding, it's pretty easy to see why
+this is called the law of total probability.  
+Now, the trick here that makes the law of total	probability work is that 
+the set of events \\(F_1, F_2, F_3, \cdots, F_p)\\ must be mutually exclusive (i.e., \\(F_i \cap F_j = \emptyset\\) for all 
+\\(i \not = j \text{ and } i \text{ and } j \text{ between } 1 \text{ and } p\\)) 
+and when unioned together perfectly recapitulate event \\(E_1\\) 
+(i.e, \\(F_1 \cup F_2 \cup F_3 \cup \cdots \cup F_p = E_1\\)). 
+You may recall from the previous section that such a set of \\(F\\)'s is known as a _partition_. 
+
+Actually, it turns out the law of total probability works for for any partition of the entire sample space \\(S_X\\),
+so long as that partition gets intersected with the event in question.  
+So, the general form of the law of total probability is, for any partition of the sample space \\(S_X\\),
+\\(F_1, F_2, F_3, \cdots, F_p)\\
+
+$$ Pr(E_1) = Pr(E_1 \cap F_1) + Pr(E_1 \cap F_2) + Pr(E_1 \cap F_3) + \cdots + Pr(E_1 \cap F_p) $$
+
+What is happening in this formula is that (a) by intersecting the partition of \\(S_X\\) with \\(E_1\\)
+we end up with a partition of \\(E_1\\), and (b) we can view each \\(F_i\\) as one of the possible "types"
+a certain templated event \\(F\\) can take on.  For example, in the above table if event \\(F\\)
+represents the "Serve Result" then \\(F_1\\) indicates "Ace", \\(F_2\\) indicates "Fault", and \\(F_3\\) indicates "Return".
+Note also that \\(E_1\\) also represents a certain "type" of a certain templated event \\(E\\).
+So for example, in the above table if event \\(E\\) represents "Vocalization Type", then 
+\\(E_1\\) might represent either the event "Silent" or the event "Grunts". 
+This emphesizes the point that the law of probability is a rule for marginalizing down to a specific 
+probability, here \\(Pr(E_1)\\), but it does so by aggregating across all the probabilities of all the levels of another event, here the \\(F_i\\)'s. 
+
+Now actually, 
+rather than being used on the basis of its joint probability representation,
+the law of total probability is actually more frequently used in its complete chain rule form
+
+$$ Pr(E_1) = Pr(E_1|F_1)Pr(F_1) + Pr(E_1|F_2)Pr(F_2) + Pr(E_1|F_3)Pr(F_3) + \cdots + Pr(E_1|F_p)Pr(F_p) $$
+
+This is because we often have marginal and conditional probabilties rather than joint probabilities. 
+
+So now, with all these explanations of what the law of total probability is in place,
+let's get concrete and start working with some numbers and doing some calculations!
+Suppose that a school will be closed 90% of the time when it snows, and 5% of the time when it rains, and 1% of the time when it neither snows nor rains.
+And suppose we are interested in calculating the probability that the school will be closed on any given day.
+We can use the law of total probability to calculate that 
+
+$$ Pr(\text{"closed"}) = Pr(\text{"snow"})P(\text{"closed" | "snow"}) $$
+$$                     + Pr(\text{"rain"})P(\text{"closed" | "rain"}) $$
+$$                     + Pr(\text{"not rain or snow")}P(\text{"closed" | "not rain or snow"}) $$
+
+But of course this doesn't get us all the way there -- 
+we also need to know the probability that it will rain or snow on any given day. 
+So let's say that
+
+$$ Pr(\text{"snow"}) = 0.02 $$
+$$ Pr(\text{"rain"}) = 0.15 $$
+$$ Pr(\text{"not rain or snow"}) = 0.83 $$
+
+Notice here that the sum \\(Pr(\text{"snow"})+Pr(\text{"rain"})+Pr(\text{"not rain or snow"})\\) is equal to one. 
+This must be the case because snow, rain, and not rain or snow must be a partition of the sample space (and hence sum to one). 
+Now, with this information we can compute our desired probability 
+
+$$ P(\text{"closed"}) = 0.02 \times 0.90 + 0.15 \times 0.05 + 0.83 \times 0.01 $$
+$$                    =  0.018 + 0.0075 + 0.0083 = 0.0338 $$
+
+#### !challenge
+
+* type: multiple-choice
+* id: scott_prob2_8
+* title: the law of total probability, part 1
+
+#### !question
+
+Consider the following question:
+If the probability that an adult who is at least 6'6" played basketball high school is 40%, 
+and the probability that an adult who is less than 6'6" played basketball in high school is 3%, 
+what is the probability that a randomly selected adult was on the basketball team in high school?
+
+Do you have enough information to answer this question? If so, compute the answer. If not, what else would you need to know?
+
+#### !end-question
+
+### !options
+
+* Yes
+* No
+
+### !end-options
+
+### !answer
+No
+### !end-answer
+
+
+#### !explanation
+
+We are given 
+
+- \\(Pr(\text{"Played HS BBall"} | \text{">=6\'6\""}) \\) = 0.4
+- \\(Pr(\text{"Played HS BBall"} | \text{"not >=6\'6\""}) \\) = 0.03
+
+and we are asked to cacluate 
+
+- \\(Pr(\text{"Played HS BBall"})\\)
+
+To be able to solve this problem we will need to know 
+
+- \\(Pr(\text{">=6\'6\""})\))
+
+For the next problem, suppose \\(Pr(\text{">=6\'6\""}) = 0.02 \))
+
+#### !end-explanation
+
+#### !end-challenge
+
+
+
+#### !challenge
+
+* type: number
+* id: scott_prob2_9
+* title: the law of total probability, part 2
+* decimal: 4
+
+#### !question
+
+Based on your work on the last problem, calculate \\(Pr(\text{"Played HS BBall"})\\).
+
+#### !end-question
+
+### !placeholder
+give the answer with four decimal places
+### !end-placeholder
+
+### !answer
+0.0374
+### !end-answer
+
+#### !explanation
+
+$$ Pr(\text{"Played HS BBall"}) = Pr(\text{">=6\'6\""}) Pr(\text{"Played HS BBall"} | \text{">=6\'6\""}) $$
+$$                              + Pr(\text{"not >=6\'6\""}) \\(Pr(\text{"Played HS BBall"} | \text{"not >=6\'6\""}) \\) $$
+$$                              = .02 \times 0.4 + .98 \times 0.03 = 0.0374
+
+#### !end-explanation
+### !end-challenge
+
+
+
+
+
+
+
+### !challenge
+
+* type: code-snippet
+* language: python2.7
+* id: scott_prob2_10
+* title: De Morgan's laws
+
+### !question
+Question 10
+
+Write a function that accepts two events and their sample space
+(in that order), returning "Improper Specification" if three sets 
+are not supplied or if the two events are not subsets of the sample 
+space, and then calculates and prints all four statements associated 
+with De Morgan's laws and returns `True` if the laws are satisfied 
+or `False` if they fail for the two events.
+
+### !end-question
+
+### !placeholder
+
+```python
+
+def DeMorgans(A, B, S):
+    '''
+    print out each of the four formulas associated with each of De Morgan's laws
+    and the result of their application on the sets A and B.
+
+    Returns True/False based on the truthfulness of De Morgan's laws for sets A and B.
+    Returns "Improper Specification" if three sets are not supplied 
+    or if the events A and B are not subsets of the sample space S.
+
+    >>> DeMorgans(set([1,2,3]), set([2,3,4]), set([0,1,2,3,4,5]))
+    Law 1, left side (???): [0,5]
+    Law 1, right side (???): [0,5]
+    Law 1, left side (???): [0,2,4,5]
+    Law 1, right side (???): [0,2,4,5]
+    True
+    '''
+
+    pass
+```
+
+### !end-placeholder
+
+### !tests
+
+```python
+import main
+import unittest
+
+class TestPython1(unittest.TestCase):
+
+    def test_DeMorgans(self):
+      result = main.DeMorgans(set([1,2,3]), set([2,3,4]), set([0,1,2,3,4,5]))
+      correct = True
+      self.assertEqual(result, correct)
+
+    def test_DeMorgans_2(self):
+      result = main.DeMorgans(set([1,2,3]), set([2,3,4]), set([0,1,2,3,4,5]))
+      correct = "Improper Specification"
+      self.assertEqual(result, correct)
+```
+
+
+### !end-tests
+
+
+### !explanation
+
+### !end-explanation
+
+### !end-challenge
+
