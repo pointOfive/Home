@@ -14,7 +14,8 @@ the [AMNH](https://www.google.com/maps/place/American+Museum+of+Natural+History/
 [Riverside Park](https://www.google.com/maps/@40.8027274,-73.9705007,14z)).
 Aside from Central Park (which is obviously the best thing a city ever did for itself), I am
 unendingly impressed with the efficieny of the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City)
-(which clearly clearly distinguish me as a non-native), and I am very appreciative of the opportunity I've had to live in, explore, and enjoy this unique city.
+(which clearly distinguishes me as a non-native).
+I am extremely appreciative of the opportunity I've had to live in, explore, and enjoy this unique city.
 
 
 ## ATX
@@ -26,7 +27,8 @@ Despite having a [PhD in Statistics](https://stat.duke.edu/people/scott-l-schwar
 [data analysis](https://github.com/pointOfive/Examples/tree/master/Papers#publications),
 much of the modern data analysis toolset
 (e.g., Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP, etc.)
-was new(ish) to me.  But picking up these tools never felt "hard" or "foreign" -- they're very comfortable and seemless extensions of my skill set.
+was new(ish) to me.  But picking up these tools never felt "hard" or "foreign" -- predictive methodology and supporting tools therein
+are very comfortable for me and are a seemless and natural extension of my previous training. 
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Examples/tree/master/Code),
 [organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#aws-ec2emrs3) and
 [modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just felt like returning to my roots -- it was comfortable, exciting, and
@@ -57,14 +59,16 @@ Prior to moving to Austin, I spent several very enjoyable years in
 [College Station, Texas](https://www.google.com/maps/place/College+Station,+TX/@30.5907759,-100.7740924,6z/data=!4m5!3m4!1s0x8646848619463ca3:0xc969c74db6bf6ac9!8m2!3d30.627977!4d-96.3344068), home of the
 [Aggies](https://medium.com/@ln_ib/reload-collected-texas-a-m-aggie-jokes-4f74c2d86f34) of
 [Texas A&M University](https://borlaug.tamu.edu).  If you're from Texas you know what Texas A&M is, but it was only
-about the time of my arrival to Texas A&M that the rest of the country also found out (and that probably had something to do with
+about the time of my arrival there that the rest of the country also found out (and that probably had something to do with
 [Johnny Football](https://www.youtube.com/watch?v=7kVxxdFOcQQ), as opposed to my arrival alone).
 While at TAMU I worked for the [AgriLife Bioinformatics Services Core](http://www.txgen.tamu.edu)
-helping support adoption of nextgen genomic sequencing technology.
+helping support the adoption of nextgen genomic sequencing technology
+across the academic and industry research community associated with Texas A&M.
 This involved providing consultation, contracting, and educational services
-for the TAMU academic and industry research community.
+regarding Illumina sequencing platforms and subsequent downstream data processing and analysis
+(all of which I learned on the job).
 While at A&M I interfaced with a very diverse set of research and application areas,
-but consistently interacted with the agricultural community.
+but I consistently interacted with the agricultural community.
 And in addition to providing a very pleasant opportunity to experience a dimension of Texas
 that was new to me, this is what eventually led to my interest in moving to Austin
 to join the crop development program at UT. 
