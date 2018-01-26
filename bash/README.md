@@ -5,9 +5,9 @@ using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Examples/), 
 Additionally, I have experience with
 
 - **Cloud Computing** ([AWS EC2/EMR/S3](https://aws.amazon.com))
-- **High Performance Computing** (Batch Submission)
-- **Open Source Software Pipelines** (Bioinformatics)
-- **Bash Environments** (Mac/Linux)
+- **High Performance Computing** ([Batch Submission](#hpc))
+- **Open Source Software Pipelines** ([Bioinformatics](#open-source-tools))
+- **Bash Environments** ([Mac/Linux](#bash))
 
 
 ## AWS EC2/EMR/S3
