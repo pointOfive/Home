@@ -69,16 +69,27 @@ regarding Illumina sequencing platforms and subsequent downstream data processin
 (all of which I learned on the job).
 While at A&M I interfaced with a very diverse set of research and application areas,
 but I consistently interacted with the agricultural community.
-And in addition to providing a very pleasant opportunity to experience a dimension of Texas
-that was new to me, this is what eventually led to my interest in moving to Austin
-to join the crop development program at UT. 
+This was a very pleasant experience and positive experience, showing me a
+dimension of Texas that I had never experienced, but also leading to my 
+my interest in moving to Austin to join the crop development program at UT.
 
 
 ## Postdoc
 
-The reason I ended up working in genetic technologies in the first place was because 
-
+The reason I ended up working in genetic sequencing technologies in the first place was because
+I found genetic data extremely compelling.
+I have always been very "applied" in my orientation and preferred to work on "real world" problems
+-- for example, it was the power of small sample sizes in polling that first drew me to data analysis -- 
+and what could be more exciting and promising than working on the data that programs life?
+So, without even a single college biology class behind my name I joined the 
 [Training Program in Biostatistics, Bioinformatics, Nutrition and Cancer](https://www.stat.tamu.edu/train/index.html)
+at Texas A&M University.  While there I was embeded in a cancer nutrition wet lab supporting
+biology postdoc and graduate students analyze their data while learning about their
+experimental procedures and the biology and genetics that they were researching.  
+
+
+
+
 
 ## Duke 
 
