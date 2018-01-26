@@ -1,7 +1,7 @@
 # Computing
 
 I've worked in scientific computing contexts for over 15 years 
-using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Examples/), and Matplot. 
+using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Examples/), and Matlab. 
 Additionally, I have experience with
 
 - **Cloud Computing** ([AWS EC2/EMR/S3](https://aws.amazon.com))
@@ -62,6 +62,6 @@ Specific Bash environment tools I'm familiar with include
 | pipe        | \|, >>, >               |
 | search      | grep, find              |
 | display     | wc, cat, head           |
-| compression | tar, gz, bzip           |
-| navigate    | ls, pwd, cd, mkdir      |
+| compress    | tar, gz, bzip           |
+| navigate    | ls, pwd, cd, mkdir, rm  |
 | monitor     | top, kill, md5, du, df  |
