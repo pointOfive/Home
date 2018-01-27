@@ -132,17 +132,17 @@ recieving NCAA Academic All-American honors in 2005.
 
 ## San Antonio
 
-Attending Trinity was actually a bit of a fairy-tale story in and of itself.
+Attending Trinity was actually a bit of a fairy tale story in and of itself.
 Having grown up playing soccer in San Antonio I had visted Trinity's gorgeous campus
 and amazing soccer facilities on a number of occasions, but never imagined that I would be
-able to attend a school like Trinity. My plan for college was to complete two years at 
-San Antonio community college (SACC) and then transfer to the University of Texas at
-San Antonio. I left high school early and spent what would have been my senior year
-at SACC where I played soccer. And as it turned out the coach at
-SACC recommended me to the coach at Trinity and as a result I ended up at Trinity
-rather than UTSA.
-
-
+able to attend a school like Trinity. My plan for college was to complete two years at
+the local community college, 
+San Antonio Community College (SACC), and then transfer to the University of Texas at
+San Antonio. I left high school early and spent what would have been my
+high school senior year at SACC. While at SACC I played on the soccer team and it turned out that the coach at 
+SACC new the coach at Trinity and recommended me to him.  And after a short conversation about
+my grades at SACC and SAT scores I ended up at Trinity rather than UTSA... living a dream I
+never knew I had. 
 
 
 ## Growing Up
