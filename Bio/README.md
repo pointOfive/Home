@@ -79,27 +79,33 @@ my interest in moving to Austin to join the crop development program at UT.
 The reason I ended up working in genetic sequencing technologies in the first place was because
 I found genetic data extremely compelling.
 I have always been very "applied" in my orientation and preferred to work on "real world" problems
--- for example, it was the power of small sample sizes in polling that first drew me to data analysis -- 
-and what could be more exciting and promising than working on the data that programs life?
-So, without even a single college biology class behind my name I joined the 
+-- for example, it was the power of small sample sizes in polling that first drew me to data analysis.
+And what could be more exciting and promising than working on the data that programs life?
+So, without even a single college biology class to my name I joined the 
 [Training Program in Biostatistics, Bioinformatics, Nutrition and Cancer](https://www.stat.tamu.edu/train/index.html)
 at Texas A&M University.  While there I was embeded in a cancer nutrition wet lab supporting
-biology postdoc and graduate students analyze their data while learning about their
-experimental procedures and the biology and genetics that they were researching.  
-
-
-
-
+biology postdoc and graduate students analyze their data while learning about the
+biology, genetics, and experimental tools that produced it.
+From simple ANOVA experimental design, I moved onto "large p small n" settings (i.e., transcriptomics),
+and then metagenomics which provided my introduction and eventual transition to nextgen sequencing.
 
 ## Duke 
 
+Graduate School
+
 [Department of Statistical Science at Duke](https://stat.duke.edu)
+[PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications)
+
 
 ## Trinity
 
+College 
 [Trinity University](https://new.trinity.edu)
 [National Championship](http://www.trinitytigers.com/history/nationalchampions/index)
 [Soccer](http://www.trinitytigers.com/sports/msoc/index)
+B.S. in [Computer Science](https://new.trinity.edu/academics/departments/computer-science)
+B.A. in [Mathematics](https://new.trinity.edu/academics/departments/mathematics)
+
 
 ## Growing Up
 
@@ -109,7 +115,7 @@ and the sense of excitement these
 things have brought to my own adventure here.
 
 
-[PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications)
+
 
 
 I grew up homeschool
