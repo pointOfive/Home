@@ -115,19 +115,20 @@ have greatly democratize Bayesian Analysis and facilitated its accessibility use
 ## Trinity
 
 The reason I was able to get into such a prestigious graduate program 
-was because I came well equipped for the task at hand.
-I graduated *Summa Cum Laude* 
+was a because I developed a skill set that was a very good match to the program.
+I graduated *Summa Cum Laude* from [Trinity University](http://www.trinitytigers.com/sports/msoc/index)
 with a BS in [Computer Science](https://new.trinity.edu/academics/departments/computer-science)
 (recieving Class of 2005 Outstanding Computer Science Student honors)
 and a BA in [Mathematics](https://new.trinity.edu/academics/departments/mathematics)
-(having been twice selected to represent the mathematics department at an annual undergraduate mathematics conference hosted
-by the Technical University of Munich in Germany).
-This combination was the perfect intersection of skills for a computationally (i.e., Bayesian) oriented statistics program.  
-In addition to my academic puruits, I was a member of Trinity's 
-2003 [National Championship](http://www.trinitytigers.com/history/nationalchampions/index) soccer team,
+(having been twice selected to represent the mathematics department at an annual undergraduate mathematics conference
+in Germany hosted by the Technical University of Munich).
+This combination was the perfect intersection of skills for a computationally (i.e., Bayesian) oriented statistics program.
+I think it also helped that I had been incredibly fortunate to have had my hard work at Trinity 
+recognized by two NSF CSEMS scholorships and a Barry M. Goldwater schalorship.
+In addition to my academic puruits in College, I was also a member of Trinity's Mens Soccer program,
+winning a [National Championship](http://www.trinitytigers.com/history/nationalchampions/index) in 2003 and 
 recieving NCAA Academic All-American honors in 2005.
-And I was incredibly fortunate to have my hard work at [Trinity](http://www.trinitytigers.com/sports/msoc/index) was further recognized with
-two NSF CSEMS scholorships and a Barry M. Goldwater schalorship.
+
 
 
 
