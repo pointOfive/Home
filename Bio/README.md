@@ -121,13 +121,26 @@ with a BS in [Computer Science](https://new.trinity.edu/academics/departments/co
 (recieving Class of 2005 Outstanding Computer Science Student honors)
 and a BA in [Mathematics](https://new.trinity.edu/academics/departments/mathematics)
 (having been twice selected to represent the mathematics department at an annual undergraduate mathematics conference
-in Germany hosted by the Technical University of Munich).
+hosted by the Technical University of Munich in Germany).
 This combination was the perfect intersection of skills for a computationally (i.e., Bayesian) oriented statistics program.
 I think it also helped that I had been incredibly fortunate to have had my hard work at Trinity 
 recognized by two NSF CSEMS scholorships and a Barry M. Goldwater schalorship.
 In addition to my academic puruits in College, I was also a member of Trinity's Mens Soccer program,
 winning a [National Championship](http://www.trinitytigers.com/history/nationalchampions/index) in 2003 and 
 recieving NCAA Academic All-American honors in 2005.
+
+
+## San Antonio
+
+Attending Trinity was actually a bit of a fairy-tale story in and of itself.
+Having grown up playing soccer in San Antonio I had visted Trinity's gorgeous campus
+and amazing soccer facilities on a number of occasions, but never imagined that I would be
+able to attend a school like Trinity. My plan for college was to complete two years at 
+San Antonio community college (SACC) and then transfer to the University of Texas at
+San Antonio. I left high school early and spent what would have been my senior year
+at SACC where I played soccer. And as it turned out the coach at
+SACC recommended me to the coach at Trinity and as a result I ended up at Trinity
+rather than UTSA.
 
 
 
