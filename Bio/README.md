@@ -9,13 +9,13 @@ in cities increadibly motivating and enriching.
 On the other hand, there's a great sense of peace and accomplishment to be found
 in nature, and as such I've really enjoyed living close to [Central Park](https://www.google.com/maps/place/Central+Park/@40.7438632,-74.0175455,12z/data=!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551) on a quiet(er)
 [Upper West Side](https://www.google.com/maps/@40.7851626,-73.9739507,14z) street (near
-[Zabars](https://www.google.com/maps/place/Zabar's/@40.7848188,-73.984094,16z/data=!4m5!3m4!1s0x89c258862e7ae59b:0x161b26b78af02870!8m2!3d40.7848148!4d-73.9797113),
+[Zabar's](https://www.google.com/maps/place/Zabar's/@40.7848188,-73.984094,16z/data=!4m5!3m4!1s0x89c258862e7ae59b:0x161b26b78af02870!8m2!3d40.7848148!4d-73.9797113),
 the [AMNH](https://www.google.com/maps/place/American+Museum+of+Natural+History/@40.7802558,-73.9829629,15z/data=!4m5!3m4!1s0x89c258f4b00f7a09:0xa27d8172624c5db1!8m2!3d40.7813241!4d-73.9739882), and
 [Riverside Park](https://www.google.com/maps/@40.8027274,-73.9705007,14z)).
 Aside from Central Park (which is obviously the best thing a city ever did for itself), I am
 unendingly impressed with the efficieny of the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City)
 (which clearly distinguishes me as a non-native).
-And I am extremely appreciative of the opportunity I've had to live in, explore, and enjoy this unique city. 
+And I have loved having the chance to live in, explore, and enjoy this unique city. 
 
 
 ## ATX
@@ -25,15 +25,15 @@ expanding from my [Bioinformatics](https://github.com/pointOfive/Examples/tree/m
 into the world of [Data Science](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material). 
 Despite having a [PhD in Statistics](https://stat.duke.edu/people/scott-l-schwartz) and working in
 [data analysis](https://github.com/pointOfive/Examples/tree/master/Papers#publications),
-much of the modern data analysis toolset
+I had never explored much of the modern data analysis toolset
 (e.g.,
 [Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material),
-etc.) was new(ish) to me.  But picking up these tools never felt "hard" or "foreign" -- predictive methodology and supporting tools therein
-are very comfortable for me and are a seemless and natural extension of my previous training. 
+etc.).  But picking up these tools never felt "hard" or "foreign" -- predictive methodology and supporting tools therein
+are a very comfortable, seemless and natural extension of my educational and professional background.  
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Examples/tree/master/Code),
 [organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#aws-ec2emrs3) and
-[modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just felt like returning to my roots -- it was comfortable, exciting, and
-nice to be home where I belonged.
+[modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just feels like returning to my roots -- it's comfortable, exciting, and
+nice to be home -- it feels right.
 
 ## UT
 
