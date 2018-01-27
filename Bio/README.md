@@ -138,22 +138,31 @@ and amazing soccer facilities on a number of occasions, but never imagined that 
 able to attend a school like Trinity. My plan for college was to complete two years at
 the local community college, 
 San Antonio Community College (SACC), and then transfer to the University of Texas at
-San Antonio. I left high school early and spent what would have been my
+San Antonio (UTSA). I left high school early and spent what would have been my
 high school senior year at SACC. While at SACC I played on the soccer team and it turned out that the coach at 
-SACC new the coach at Trinity and recommended me to him.  And after a short conversation about
-my grades at SACC and SAT scores I ended up at Trinity rather than UTSA... living a dream I
-never knew I had. 
+SACC knew the coach at Trinity and recommended me to him.  And after a short conversation about
+my SAT scores and grades at SACC I ended up at Trinity rather than UTSA living an amazing fantasy life dream I
+had never actually had.  I had put a lot of effort into soccer growing up and it ended up paying off
+in a completely unexpected way... Life is weird like that. 
 
 
 ## Growing Up
 
-at the end of a trail run in the woods
+In addition to pursing active and healthy lifesyles, 
+learning was always a very important focus of the family.
+Because of this I grew up viewing learning as a priviledge to be taken seriously and treated with the utmost diligence.
+I think this is why I viewed Trinity as such an amazing opportunity (as it indeed proved to be),
+why the opportunity to attend Trinity materialized in the first place, 
+and why I was ready and able to excel and thrive in a student-athlete role.
+Actually, because of my families views on learning I had been homeschooled until 8th grade, which
+has proven to be the singly most advantageous event in my life. 
+And it also meant that I grew up in a household with a very wide, open and accepting worldview
+My parents had been missionaries in Mexico City and Costa Rica before I was born
+(and my mother herself grew up as a missionary kid overseas in Beiruit, Lebenon and Kuala Lumpur, Malaysia)
+but this never led to dogmatic or black and white thinking; rather, all aspects of the world and
+all walks of life were to be valued and respected.  And it has been a privelidge to
+carry this outlook with me as I've progressed through life. 
 
-and the sense of excitement these
-things have brought to my own adventure here.
 
 
 
-
-
-I grew up homeschool
