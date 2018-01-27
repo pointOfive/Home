@@ -55,21 +55,21 @@ when planting and sample collection season came around.
 
 ## TAMU
 
-Prior to moving to Austin, I spent several very enjoyable years in
+Prior to moving to Austin I spent several very enjoyable years in
 [College Station, Texas](https://www.google.com/maps/place/College+Station,+TX/@30.5907759,-100.7740924,6z/data=!4m5!3m4!1s0x8646848619463ca3:0xc969c74db6bf6ac9!8m2!3d30.627977!4d-96.3344068), home of the
 [Aggies](https://medium.com/@ln_ib/reload-collected-texas-a-m-aggie-jokes-4f74c2d86f34) of
 [Texas A&M University](https://borlaug.tamu.edu).  If you're from Texas you know what Texas A&M is, but it was only
-about the time of my arrival there that the rest of the country also found out (and that probably had something to do with
+about the time of my arrival that the rest of the country also found out (and that probably had something to do with
 [Johnny Football](https://www.youtube.com/watch?v=7kVxxdFOcQQ), as opposed to my arrival alone).
 While at TAMU I worked for the [AgriLife Bioinformatics Services Core](http://www.txgen.tamu.edu)
-helping support the adoption of nextgen genomic sequencing technology
+driving and supporting the adoption of next generation genomic sequencing technology ("nextgen sequencing")
 across the academic and industry research community associated with Texas A&M.
 This involved providing consultation, contracting, and educational services
-regarding Illumina sequencing platforms and subsequent downstream data processing and analysis
+regarding Illumina nextgen sequencing platforms and subsequent downstream data processing and analysis
 (all of which I learned on the job).
 While at A&M I interfaced with a very diverse set of research and application areas,
 but I consistently interacted with the agricultural community.
-This was a very pleasant experience and positive experience, showing me a
+This was a very pleasant and positive experience, showing me a
 dimension of Texas that I had never experienced, but also leading to my 
 my interest in moving to Austin to join the crop development program at UT.
 
@@ -80,21 +80,36 @@ The reason I ended up working in genetic sequencing technologies in the first pl
 I found genetic data extremely compelling.
 I have always been very "applied" in my orientation and preferred to work on "real world" problems
 -- for example, it was the power of small sample sizes in polling that first drew me to data analysis.
-And what could be more exciting and promising than working on the data that programs life?
+But what could be more exciting and promising than working on the data that programs life?
 So, without even a single college biology class to my name I joined the 
 [Training Program in Biostatistics, Bioinformatics, Nutrition and Cancer](https://www.stat.tamu.edu/train/index.html)
-at Texas A&M University.  While there I was embeded in a cancer nutrition wet lab supporting
-biology postdoc and graduate students analyze their data while learning about the
+at Texas A&M University.  While there I was embeded in a cancer nutrition wet lab helping
+biology postdocs and graduate students analyze their data while learning about the
 biology, genetics, and experimental tools that produced it.
 From simple ANOVA experimental design, I moved onto "large p small n" settings (i.e., transcriptomics),
 and then metagenomics which provided my introduction and eventual transition to nextgen sequencing.
+The basis and foundation of my ability to work in and contribute to
+[scientific research](https://github.com/pointOfive/Examples/tree/master/Papers#publications)
+was formed though my outstanding postodoral experience.
+
 
 ## Duke 
 
-Graduate School
-
-[Department of Statistical Science at Duke](https://stat.duke.edu)
-[PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications)
+Graduate School was an amazing opportunity for me.
+Through my steady commitment in college I managed to make a path into
+one of the most prestigious statistical departments in the country at [Duke University](http://gardens.duke.edu)
+were I complete a [PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications).
+[Duke's](https://stat.duke.edu) program focussed on Bayesian Analysis, which made for a distinctly different educational experience
+than a "Classical Statistics" program. Bayesian Inference provides the capability to model complex
+data generation mechansims, and so the focus of the program was specialty and customized hierarchical modeling
+of uncertainty as opposed to a general survey of statistical methods and techniques. 
+Bayesian Inference relies on sampling from posterior distribution which has historically been
+somewhat of a barrier to its general adoption, but recent developments in
+[probabilitistic programming tools](http://pymcmc.readthedocs.io/en/latest/tutorial.html)
+and general posterior sampling agorithms such as the 
+[No U-Turn Sampler](http://www.stat.columbia.edu/~gelman/research/published/nuts.pdf)
+have served to greatly democratize Bayesian Analysis and facilitate its accessibility
+use outside of specialized academic communities. 
 
 
 ## Trinity
