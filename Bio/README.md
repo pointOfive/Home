@@ -98,28 +98,37 @@ was formed though my outstanding postodoral experience.
 Graduate School was an amazing opportunity for me.
 Through my steady commitment in college I managed to make a path into
 one of the most prestigious statistical departments in the country at [Duke University](http://gardens.duke.edu)
-were I complete a [PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications).
-[Duke's](https://stat.duke.edu) program focussed on Bayesian Analysis, which made for a distinctly different educational experience
+were I completed a [PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications).
+The best thing about this -- and something I will always remain appreciative of -- was that it gave me the opportunity 
+to meet and work with the best students that the world had to offer.  
+[Duke's program](https://stat.duke.edu) focussed on Bayesian Analysis, which made for a distinctly different educational experience
 than a "Classical Statistics" program. Bayesian Inference provides the capability to model complex
-data generation mechansims, and so the focus of the program was specialty and customized hierarchical modeling
+data generation mechansims, and so the focus of the program was customized hierarchical modeling
 of uncertainty as opposed to a general survey of statistical methods and techniques. 
-Bayesian Inference relies on sampling from posterior distribution which has historically been
+Bayesian Inference relies on sampling from posterior distributions which has historically been
 somewhat of a barrier to its general adoption, but recent developments in
 [probabilitistic programming tools](http://pymcmc.readthedocs.io/en/latest/tutorial.html)
-and general posterior sampling agorithms such as the 
-[No U-Turn Sampler](http://www.stat.columbia.edu/~gelman/research/published/nuts.pdf)
-have served to greatly democratize Bayesian Analysis and facilitate its accessibility
-use outside of specialized academic communities. 
+and [general posterior sampling agorithms](http://www.stat.columbia.edu/~gelman/research/published/nuts.pdf)
+have greatly democratize Bayesian Analysis and facilitated its accessibility use outside of specialized academic communities. 
 
 
 ## Trinity
 
-College 
-[Trinity University](https://new.trinity.edu)
-[National Championship](http://www.trinitytigers.com/history/nationalchampions/index)
-[Soccer](http://www.trinitytigers.com/sports/msoc/index)
-B.S. in [Computer Science](https://new.trinity.edu/academics/departments/computer-science)
-B.A. in [Mathematics](https://new.trinity.edu/academics/departments/mathematics)
+The reason I was able to get into such a prestigious graduate program 
+was because I came well equipped for the task at hand.
+I graduated *Summa Cum Laude* 
+with a BS in [Computer Science](https://new.trinity.edu/academics/departments/computer-science)
+(recieving Class of 2005 Outstanding Computer Science Student honors)
+and a BA in [Mathematics](https://new.trinity.edu/academics/departments/mathematics)
+(having been twice selected to represent the mathematics department at an annual undergraduate mathematics conference hosted
+by the Technical University of Munich in Germany).
+This combination was the perfect intersection of skills for a computationally (i.e., Bayesian) oriented statistics program.  
+In addition to my academic puruits, I was a member of Trinity's 
+2003 [National Championship](http://www.trinitytigers.com/history/nationalchampions/index) soccer team,
+recieving NCAA Academic All-American honors in 2005.
+And I was incredibly fortunate to have my hard work at [Trinity](http://www.trinitytigers.com/sports/msoc/index) was further recognized with
+two NSF CSEMS scholorships and a Barry M. Goldwater schalorship.
+
 
 
 ## Growing Up
