@@ -2,10 +2,10 @@
 
 ## NYC
 
-Last year I embarked on an exciting adventure/career opportunity, and moved to NYC.
-The energy and diversity (read, people) in this city are amazing,
-and my experience here has confirmed for me that the sense of pacing and vibrancy 
-that cities provide are increadibly motivating for me. 
+Last year I embarked on an exciting adventure and career opportunity by moving to NYC.
+The energy and diversity (read, people) in this city have been amazing,
+and my experience here has confirmed for me that I find the sense of pacing and vibrancy 
+in cities increadibly motivating and enriching. 
 On the other hand, there's a great sense of peace and accomplishment to be found
 in nature, and as such I've really enjoyed living close to [Central Park](https://www.google.com/maps/place/Central+Park/@40.7438632,-74.0175455,12z/data=!4m5!3m4!1s0x89c2589a018531e3:0xb9df1f7387a94119!8m2!3d40.7828647!4d-73.9653551) on a quiet(er)
 [Upper West Side](https://www.google.com/maps/@40.7851626,-73.9739507,14z) street (near
