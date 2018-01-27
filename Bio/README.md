@@ -27,7 +27,7 @@ Despite having a [PhD in Statistics](https://stat.duke.edu/people/scott-l-schwar
 [data analysis](https://github.com/pointOfive/Examples/tree/master/Papers#publications),
 much of the modern data analysis toolset
 (e.g.,
-[Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP](https://github.com/pointOfive/Examples/tree/master/Examples/Lectures#lectures),
+[Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material),
 etc.) was new(ish) to me.  But picking up these tools never felt "hard" or "foreign" -- predictive methodology and supporting tools therein
 are very comfortable for me and are a seemless and natural extension of my previous training. 
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Examples/tree/master/Code),
