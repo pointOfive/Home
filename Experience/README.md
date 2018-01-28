@@ -1,10 +1,9 @@
 # Work Experience
 
 
-
+## Data Science Training and Mentoring (NYC, 2017-)
 <details>
 <summary>
-## Data Science Training and Mentoring (NYC, 2017-)
 </summary>
 
 ### Responsibilities
