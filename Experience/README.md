@@ -1,7 +1,11 @@
 # Work Experience
 
-## Data Science Training and Mentoring (NYC, 2017-)
 
+
+<details>
+  <summary>
+## Data Science Training and Mentoring (NYC, 2017-)
+  </summary>
 ### Responsibilities
 - Provide Data Science Apprenticeship (40 hrs/wk)
 - Curriculum Specification and Development
@@ -13,6 +17,9 @@
 - Executed 5 month program completely from scratch
 - 35 methodologies discussed and deeply explored
 - 50% unsolicited rate increase after first month
+</details>
+
+
 
 
 ## Instructor/Sr. Data Scientist, Galvanize, (NYC, ATX, 2016-2017)
