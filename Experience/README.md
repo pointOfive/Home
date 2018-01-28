@@ -1,9 +1,11 @@
 # Work Experience
 
 
-## Data Science Training and Mentoring (NYC, 2017-)
+## Data Science Training and Mentoring
 <details>
+
 <summary>
+NYC, 2017--
 </summary>
 
 ### Responsibilities
@@ -22,7 +24,11 @@
 
 
 
-## Instructor/Sr. Data Scientist, Galvanize, (NYC, ATX, 2016-2017)
+## Instructor/Sr. Data Scientist
+
+<summary>
+Galvanize, NYC, ATX, 2016-2017
+</summary>
 
 ### Responsibilities 
 - Lecture Preparation and Delivery
@@ -42,8 +48,13 @@
 - Created Probability and Statistics workshop developed
   - ~30 sections, ~200 questions and answers, ~40 content hours 
 
+</details>
 
-## Research Associate, Integrative Biology, University of Texas (ATX, 2014-2016)
+## Research Associate
+
+<summary>
+Department of Integrative Biology, University of Texas, 2014-2016
+</summary>
 
 ### Responsibilities
 - Nextgen Sequencing Data Management
@@ -60,8 +71,13 @@
 - Flowering Time Bulk Segregation Collaboration
 - Developed Bayesian Analysis of Drought Methylation Response
 
+</details>
 
-## Bioinformatic Analyst, Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife (2011-2014)
+## Bioinformatic Analyst
+
+<summary>
+Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife, 2011-2014
+</summary>
 
 ### Responsibilities
 - Consultation, Education and Outreach
@@ -79,7 +95,13 @@
 - Transcription Start Site Collaboration
 - TAMU Wheat/Bayer CropScience Collaboration
 
-## Research Associate, Postdoctoral Fellowship, Texas A&M University (2010-2011)
+</details>
+
+## Research Associate
+
+<summary>
+Postdoctoral Fellowship, Texas A&M University, 2010-2011
+</summary>
 
 ### Responsibilities
 - Statistical Analysis and Data Processing Support
@@ -92,7 +114,13 @@
 - Integrative Nutrition and Complex Diseases in the Department of Nutrition
 - Helped secure large research grant for lab through high profile publication
 
-## Graduate Student, Department of Statistical Science, Duke University (2005-2010)
+</details>
+
+## Graduate Student
+
+<summary>
+Department of Statistical Science, Duke University, 2005-2010
+</summary>
 
 ### Highlights
 - Summer Instructor
@@ -103,3 +131,5 @@
   - Experimental Design and Analysis
 - Research Assistant, Children’s Environmental Health Initiative 
   - Collaborated with medical practitioners, epidemiologists, sociologists, geographers & statisticians in an applied and translational research setting to develop birth outcome analysis methodology.
+
+</details>
