@@ -3,9 +3,12 @@
 
 
 <details>
-  <summary>
+<summary>
+
 ## Data Science Training and Mentoring (NYC, 2017-)
-  </summary>
+
+</summary>
+
 ### Responsibilities
 - Provide Data Science Apprenticeship (40 hrs/wk)
 - Curriculum Specification and Development
