@@ -13,9 +13,8 @@ in nature, and as such I've really enjoyed living close to [Central Park](https:
 the [AMNH](https://www.google.com/maps/place/American+Museum+of+Natural+History/@40.7802558,-73.9829629,15z/data=!4m5!3m4!1s0x89c258f4b00f7a09:0xa27d8172624c5db1!8m2!3d40.7813241!4d-73.9739882), and
 [Riverside Park](https://www.google.com/maps/@40.8027274,-73.9705007,14z)).
 Aside from Central Park (which is obviously the best thing a city ever did for itself), I am
-unendingly impressed with the efficieny of the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City)
-(which clearly distinguishes me as a non-native).
-And I have loved having the chance to live in, explore, and enjoy this unique city. 
+unendingly impressed with the efficieny of the [Subway System](http://web.mta.info/maps/submap.html) in [Manhattan](https://en.wikipedia.org/wiki/Boroughs_of_New_York_City),
+which clearly distinguishes me as a non-native... but I suppose that's exactly why I have loved having the chance to live in, explore, and enjoy this unique city. 
 
 
 ## ATX
@@ -33,7 +32,7 @@ are a very comfortable, seemless and natural extension of my educational and pro
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Examples/tree/master/Code),
 [organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#aws-ec2emrs3) and
 [modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just feels like returning to my roots -- it's comfortable, exciting, and
-nice to be home -- it feels right.
+nice to be home. 
 
 ## UT
 
@@ -48,10 +47,13 @@ molecular biology, ecology, botony, plant physiology, and field managers to myse
 [Bioinformatic](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools) and
 [Statistical](https://github.com/pointOfive/Examples/tree/master/Papers#publications) support to the lab).
 The combined expertise in the lab comprised a molecular marker based crop development program
-with tens of field sites ranging from Mexico to Illinois and 
-explored the GxE interactions of plant ecotypes versus environmental conditions.
-And the job included the very interesting perk of needing to be an actual plant farmer every now and again
+with tens of field sites ranging from Mexico to Illinois
+targeting understanding of plant ecotype/environment (GxE) interactions
+and crop adaption genetics via panel and mapping population experiments. 
+And the job included the very interesting perk of requiring everyone to be a real life farmer every now and again
 when planting and sample collection season came around.  
+
+
 
 
 ## TAMU
@@ -66,12 +68,12 @@ While at TAMU I worked for the [AgriLife Bioinformatics Services Core](http://ww
 driving and supporting the adoption of next generation genomic sequencing technology ("nextgen sequencing")
 across the academic and industry research community associated with Texas A&M.
 This involved providing consultation, contracting, and educational services
-regarding Illumina nextgen sequencing platforms and subsequent downstream data processing and analysis
-(all of which I learned on the job).
+regarding Illumina nextgen sequencing platforms and subsequent downstream data processing and analysis, 
+all of which I learned on the job. 
 While at A&M I interfaced with a very diverse set of research and application areas,
 but I consistently interacted with the agricultural community.
-This was a very pleasant and positive experience, showing me a
-dimension of Texas that I had never experienced, but also leading to my 
+This was a very pleasant and positive experience in which I saw a side 
+of Texas that was new to me, and eventually lead to my 
 my interest in moving to Austin to join the crop development program at UT.
 
 
@@ -91,7 +93,7 @@ From simple ANOVA experimental design, I moved onto "large p small n" settings (
 and then metagenomics which provided my introduction and eventual transition to nextgen sequencing.
 The basis and foundation of my ability to work in and contribute to
 [scientific research](https://github.com/pointOfive/Examples/tree/master/Papers#publications)
-was formed though my outstanding postodoral experience.
+was formed though this outstanding postodoral experience.
 
 
 ## Duke 
@@ -101,7 +103,7 @@ Through my steady commitment in college I managed to make a path into
 one of the most prestigious statistical departments in the country at [Duke University](http://gardens.duke.edu)
 were I completed a [PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications).
 The best thing about this -- and something I will always remain appreciative of -- was that it gave me the opportunity 
-to meet and work with the best students that the world had to offer.  
+to meet and work with the best students that the world had to offer. 
 [Duke's program](https://stat.duke.edu) focussed on Bayesian Analysis, which made for a distinctly different educational experience
 than a "Classical Statistics" program. Bayesian Inference provides the capability to model complex
 data generation mechansims, and so the focus of the program was customized hierarchical modeling
@@ -144,12 +146,12 @@ high school senior year at SACC. While at SACC I played on the soccer team and i
 SACC knew the coach at Trinity and recommended me to him.  And after a short conversation about
 my SAT scores and grades at SACC I ended up at Trinity rather than UTSA living an amazing fantasy life dream I
 had never actually had.  I had put a lot of effort into soccer growing up and it ended up paying off
-in a completely unexpected way... Life is weird like that. 
+in a completely unexpected way... life seems to be weird like that. 
 
 
 ## Growing Up
 
-In addition to pursing active and healthy lifesyles, 
+In addition to pursing an active and healthy lifesyle, 
 learning was always a very important focus of the family.
 Because of this I grew up viewing learning as a priviledge to be taken seriously and treated with the utmost diligence.
 I think this is why I viewed Trinity as such an amazing opportunity (as it indeed proved to be),
@@ -157,11 +159,11 @@ why the opportunity to attend Trinity materialized in the first place,
 and why I was ready and able to excel and thrive in a student-athlete role.
 Actually, because of my families views on learning I had been homeschooled until 8th grade, which
 has proven to be the singly most advantageous event in my life. 
-And it also meant that I grew up in a household with a very wide, open and accepting worldview
+It also meant that I grew up in a household with a very wide, open and accepting worldview. 
 My parents had been missionaries in Mexico City and Costa Rica before I was born
 (and my mother herself grew up as a missionary kid overseas in Beiruit, Lebenon and Kuala Lumpur, Malaysia)
 but this never led to dogmatic or black and white thinking; rather, all aspects of the world and
-all walks of life were to be valued and respected.  And it has been a privelidge to
+all walks of life were to be valued and respected.  It has been a privelidge to
 carry this outlook with me as I've progressed through life. 
 
 
