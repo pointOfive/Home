@@ -1,11 +1,11 @@
 # Work Experience
 
 
-## Data Science Training and Mentoring
+## Data Science Mentor, NYC, 2017--
 <details>
 
 <summary>
-NYC, 2017--
+Data Science Training and Mentoring
 </summary>
 
 ### Responsibilities
@@ -24,10 +24,11 @@ NYC, 2017--
 
 
 
-## Instructor/Sr. Data Scientist
+## Galvanize, NYC, ATX, 2016-2017
+<details>
 
 <summary>
-Galvanize, NYC, ATX, 2016-2017
+Instructor/Sr. Data Scientist
 </summary>
 
 ### Responsibilities 
@@ -50,10 +51,11 @@ Galvanize, NYC, ATX, 2016-2017
 
 </details>
 
-## Research Associate
+## Department of Integrative Biology, University of Texas, 2014-2016
+<details>
 
 <summary>
-Department of Integrative Biology, University of Texas, 2014-2016
+Research Associate
 </summary>
 
 ### Responsibilities
@@ -73,10 +75,11 @@ Department of Integrative Biology, University of Texas, 2014-2016
 
 </details>
 
-## Bioinformatic Analyst
+## Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife, 2011-2014
+<details>
 
 <summary>
-Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife, 2011-2014
+Bioinformatic Analyst
 </summary>
 
 ### Responsibilities
@@ -97,10 +100,12 @@ Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife,
 
 </details>
 
-## Research Associate
+## Postdoctoral Fellowship, Texas A&M University, 2010-2011
+
+<details>
 
 <summary>
-Postdoctoral Fellowship, Texas A&M University, 2010-2011
+Research Associate
 </summary>
 
 ### Responsibilities
@@ -116,10 +121,12 @@ Postdoctoral Fellowship, Texas A&M University, 2010-2011
 
 </details>
 
-## Graduate Student
+## Department of Statistical Science, Duke University, 2005-2010
 
+<details>
+Graduate Student, Reserach Assistant
 <summary>
-Department of Statistical Science, Duke University, 2005-2010
+
 </summary>
 
 ### Highlights
