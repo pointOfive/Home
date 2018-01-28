@@ -50,8 +50,8 @@ The combined expertise in the lab comprised a molecular marker based crop develo
 with tens of field sites ranging from Mexico to Illinois
 targeting understanding of plant ecotype/environment (GxE) interactions
 and crop adaption genetics via panel and mapping population experiments. 
-And the job included the very interesting perk of requiring everyone to be a real life farmer every now and again
-when planting and sample collection season came around.  
+And when planting and sample collection season came around I got go outside
+and pretend to be a farmer, which was a perk of the position that I always enjoyed. 
 
 
 
