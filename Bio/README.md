@@ -1,6 +1,6 @@
 # About
 
-<img src="images/nyc.jpg", width=100%>
+<img src="images/nyc.jpg" width=100%>
 ## [NYC](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 Last year I embarked on an exciting adventure and career opportunity by moving to NYC.
@@ -19,7 +19,7 @@ which clearly distinguishes me as a non-native... but I suppose that's exactly w
 
 
 
-<img src="images/nyc.jpg", width=100%>
+<img src="images/nyc.jpg" width=100%>
 ## [ATX](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 The opportunity to come to NYC materialized because I had spent the previous year or so

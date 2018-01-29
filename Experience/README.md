@@ -1,7 +1,7 @@
 ## Experience
 
 
-### 2017-Present: Data Science Mentor, New York City
+### [2017-Present: Data Science Mentor, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
 <details>
 
 <summary>
@@ -38,7 +38,7 @@ Data Science Training and Mentoring
 
 
 
-### 2016-2017: Galvanize, New York City and Austin, Texas
+### [2016-2017: Galvanize, New York City and Austin, Texas](https://github.com/pointOfive/Examples/tree/master/Bio#atx)
 <details>
 
 <summary>
@@ -75,7 +75,7 @@ Instructor/Sr. Data Scientist
 
 </details>
 
-### 2014-2016: Department of Integrative Biology, University of Texas
+### [2014-2016: Department of Integrative Biology, University of Texas](https://github.com/pointOfive/Examples/tree/master/Bio#ut)
 <details>
 
 <summary>
@@ -110,7 +110,7 @@ Research Associate
 
 </details>
 
-### 2011-2014: Sequencing and Bioinformatics Services Core, Texas A&M AgriLife
+### [2011-2014: Sequencing and Bioinformatics Services Core, Texas A&M AgriLife](https://github.com/pointOfive/Examples/tree/master/Bio#tamu)
 <details>
 
 <summary>
@@ -146,7 +146,7 @@ Bioinformatic Analyst
 
 </details>
 
-### 2010-2011: Postdoctoral Fellowship, Texas A&M University
+### [2010-2011: Postdoctoral Fellowship, Texas A&M University](https://github.com/pointOfive/Examples/tree/master/Bio#postdoc)
 
 <details>
 
@@ -178,7 +178,7 @@ Research Associate
 
 </details>
 
-### 2005-2010: Department of Statistical Science, Duke University
+### [2005-2010: Department of Statistical Science, Duke University](https://github.com/pointOfive/Examples/tree/master/Bio#duke)
 
 <details>
 
