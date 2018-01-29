@@ -25,7 +25,7 @@ which clearly distinguishes me as a non-native... but I suppose that's exactly w
 
 ## [ATX](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
-<img src="images/atx.jpg" width=100%>
+[<img src="images/atx.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 The opportunity to come to NYC materialized because I had spent the previous year or so
 expanding from my [Bioinformatics](https://github.com/pointOfive/Examples/tree/master/Compute#hpc) skill set
