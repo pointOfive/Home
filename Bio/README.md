@@ -167,9 +167,9 @@ had never actually had.  I had put a lot of effort into soccer growing up and it
 in a completely unexpected way... life seems to be weird like that. 
 
 
-## Growing Up
+## [Growing Up](https://github.com/pointOfive/Examples)
 
-<img src="images/home.jpg" width=100%>
+[<img src="images/home.jpg" width=100%>](https://github.com/pointOfive/Examples)
 
 In addition to pursing an active and healthy lifesyle, 
 learning was always a very important focus of the family.
