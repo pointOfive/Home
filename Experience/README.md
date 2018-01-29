@@ -75,7 +75,7 @@ Research Associate
 
 </details>
 
-### 2011-2014: Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife
+### 2011-2014: Sequencing and Bioinformatics Services Core, Texas A&M AgriLife
 <details>
 
 <summary>
@@ -100,7 +100,7 @@ Bioinformatic Analyst
 
 </details>
 
-## 2010-2011: Postdoctoral Fellowship, Texas A&M University
+### 2010-2011: Postdoctoral Fellowship, Texas A&M University
 
 <details>
 
@@ -121,7 +121,7 @@ Research Associate
 
 </details>
 
-## 2005-2010: Department of Statistical Science, Duke University
+### 2005-2010: Department of Statistical Science, Duke University
 
 <details>
 
