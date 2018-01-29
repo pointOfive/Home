@@ -1,12 +1,11 @@
 # Work Experience
 
 
-## 2017-____: Data Science Mentor, New York City
+## 2017-<p style="color:White;">2018</p>: Data Science Mentor, New York City
 <details>
 
 <summary>
-
-*Data Science Training and Mentoring*
+ *Data Science Training and Mentoring*
 </summary>
 
 ### Responsibilities
