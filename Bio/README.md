@@ -1,7 +1,10 @@
 # About
 
-<img src="images/nyc.jpg" width=100%>
+
+
 ## [NYC](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+
+<img src="images/nyc.jpg" width=100%>
 
 Last year I embarked on an exciting adventure and career opportunity by moving to NYC.
 The energy and diversity (read, people) in this city have been amazing,
@@ -19,8 +22,10 @@ which clearly distinguishes me as a non-native... but I suppose that's exactly w
 
 
 
-<img src="images/nyc.jpg" width=100%>
+
 ## [ATX](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+
+<img src="images/atx.jpg" width=100%>
 
 The opportunity to come to NYC materialized because I had spent the previous year or so
 expanding from my [Bioinformatics](https://github.com/pointOfive/Examples/tree/master/Compute#hpc) skill set
@@ -38,6 +43,8 @@ Actually, coming back to [scripting and coding](https://github.com/pointOfive/Ex
 nice to be home. 
 
 ## [UT](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+
+<img src="images/ut.jpg" width=100%>
 
 Living in Austin was good -- 
 nice neighborhoods, good [running](http://www.mountainbiketx.com/downloads/texas/maps/Shoal_Creek.pdf), and 
@@ -58,6 +65,8 @@ and pretend to be a farmer, which was a perk of the position that I always enjoy
 
 
 ## [TAMU](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+
+<img src="images/tamu.jpg" width=100%>
 
 Prior to moving to Austin I spent several very enjoyable years in
 [College Station, Texas](https://www.google.com/maps/place/College+Station,+TX/@30.5907759,-100.7740924,6z/data=!4m5!3m4!1s0x8646848619463ca3:0xc969c74db6bf6ac9!8m2!3d30.627977!4d-96.3344068), home of the
@@ -80,6 +89,8 @@ my interest in moving to Austin to join the crop development program at UT.
 
 ## [Postdoc](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
+<img src="images/postdoc.jpg" width=100%>
+
 The reason I ended up working in genetic sequencing technologies in the first place was because
 I found genetic data extremely compelling.
 I have always been very "applied" in my orientation and preferred to work on "real world" problems
@@ -98,6 +109,8 @@ was formed though this outstanding postodoral experience.
 
 
 ## [Duke](https://github.com/pointOfive/Examples/tree/master/Experience#experience) 
+
+<img src="images/duke.jpg" width=100%>
 
 Graduate School was an amazing opportunity for me.
 Through my steady commitment in college I managed to make a path into
@@ -118,6 +131,8 @@ have greatly democratize Bayesian Analysis and facilitated its accessibility use
 
 ## Trinity
 
+<img src="images/trinity.jpg" width=100%>
+
 The reason I was able to get into such a prestigious graduate program 
 was a because I developed a skill set that was a very good match to the program.
 I graduated *Summa Cum Laude* from [Trinity University](http://www.trinitytigers.com/sports/msoc/index)
@@ -136,6 +151,8 @@ recieving NCAA Academic All-American honors in 2005.
 
 ## San Antonio
 
+<img src="images/soccer.jpg" width=100%>
+
 Attending Trinity was actually a bit of a fairy tale story in and of itself.
 Having grown up playing soccer in San Antonio I had visted Trinity's gorgeous campus
 and amazing soccer facilities on a number of occasions, but never imagined that I would be
@@ -151,6 +168,8 @@ in a completely unexpected way... life seems to be weird like that.
 
 
 ## Growing Up
+
+<img src="images/home.jpg" width=100%>
 
 In addition to pursing an active and healthy lifesyle, 
 learning was always a very important focus of the family.
