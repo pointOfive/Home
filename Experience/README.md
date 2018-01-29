@@ -1,7 +1,7 @@
 # Work Experience
 
 
-## 2017-<p style="color:White;">2018</p>: Data Science Mentor, New York City
+## 2017-$\quad$: Data Science Mentor, New York City
 <details>
 
 <summary>
