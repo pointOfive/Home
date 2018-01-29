@@ -33,6 +33,8 @@ Data Science Training and Mentoring
   </tr>
 </table>
 
+<img src="images/nyc.jpg">
+
 </details>
 
 
@@ -72,6 +74,8 @@ Instructor/Sr. Data Scientist
     </td>
   </tr>
 </table>
+
+<img src="images/atx.jpg">
 
 </details>
 
