@@ -11,7 +11,9 @@ Data Science Training and Mentoring
 <table style="width:100%">
   <tr>
     <td>
+
 #### Responsibilities
+
 - Provide Data Science Apprenticeship (40 hrs/wk)
 - Curriculum Specification and Development
 - Fully Interactive Content Delivery and Guidance
@@ -19,7 +21,9 @@ Data Science Training and Mentoring
 - Job Search and Career Growth Mentoring    
     </td>
     <td>
+
 #### Highlights
+
 - Executed 5 month program completely from scratch
 - 35 methodologies discussed and deeply explored
 - 50% unsolicited rate increase after first month
