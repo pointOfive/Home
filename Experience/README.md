@@ -1,21 +1,21 @@
-# Work Experience
+## Work Experience
 
 
-## 2017-Present: Data Science Mentor, New York City
+### 2017-Present: Data Science Mentor, New York City
 <details>
 
 <summary>
- *Data Science Training and Mentoring*
+Data Science Training and Mentoring
 </summary>
 
-### Responsibilities
+#### Responsibilities
 - Provide Data Science Apprenticeship (40 hrs/wk)
 - Curriculum Specification and Development
 - Fully Interactive Content Delivery and Guidance
 - Practice Exercise Creation and Evaluation
 - Job Search and Career Growth Mentoring
 
-### Highlights
+#### Highlights
 - Executed 5 month program completely from scratch
 - 35 methodologies discussed and deeply explored
 - 50% unsolicited rate increase after first month
@@ -24,14 +24,14 @@
 
 
 
-## 2016-2017: Galvanize, New York City and Austin, Texas
+### 2016-2017: Galvanize, New York City and Austin, Texas
 <details>
 
 <summary>
-*Instructor/Sr. Data Scientist*
+Instructor/Sr. Data Scientist
 </summary>
 
-### Responsibilities 
+#### Responsibilities 
 - Lecture Preparation and Delivery
 - Exercise Montitoring and Support
 - Student Mentorship and Guidance
@@ -39,7 +39,7 @@
 - Networking and 
 
 
-### Highlights
+#### Highlights
 - 6 cohorts taught, 49 students trained
 - 22 lecture days; 4 special topic lectures created
 - Promoted to NYC campus, lead position
@@ -51,14 +51,14 @@
 
 </details>
 
-## 2014-2016: Department of Integrative Biology, University of Texas
+### 2014-2016: Department of Integrative Biology, University of Texas
 <details>
 
 <summary>
-*Research Associate*
+Research Associate
 </summary>
 
-### Responsibilities
+#### Responsibilities
 - Nextgen Sequencing Data Management
   - RNA/TAG-Seq, WGS/RAD-Seq, and Bisulfite-Seq
 - Bioinformatics Pipeline Creation, Maintenance, and Execution
@@ -66,7 +66,7 @@
 - Data Analysis and Visualization Support
 - Bioinformatics and Statistics Mentoring
 
-### Highlights
+#### Highlights
 - 10% salary increase rewarded after first year
 - Supported publication of 3 papers
 - Photoperiodic Response Collaboration
@@ -75,14 +75,14 @@
 
 </details>
 
-## 2011-2014: Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife
+### 2011-2014: Next Generation Sequencing and Bioinformatics Services Core, Texas A&M AgriLife
 <details>
 
 <summary>
-*Bioinformatic Analyst*
+Bioinformatic Analyst
 </summary>
 
-### Responsibilities
+#### Responsibilities
 - Consultation, Education and Outreach
   - Nextgen Sequencing, Bioinformatics, and Statistics
 - Bioinformatic Analysis Contracting 
@@ -90,7 +90,7 @@
 - Nextgen Sequencing Data Management
 - Sample Demultiplexing, Quality Control, and Delivery
 
-### Highlights
+#### Highlights
 - 10% salary increase rewarded after first year
 - 15% salary increase offered after second year
 - Provided analysis services for ~10 TAMU labs
@@ -105,15 +105,15 @@
 <details>
 
 <summary>
-*Research Associate*
+Research Associate
 </summary>
 
-### Responsibilities
+#### Responsibilities
 - Statistical Analysis and Data Processing Support
 - Learn Cancer-Nutrition Genetics and Physiology
 - Learn Transcriptomic and Metagenomic Analysis
 
-### Highlights
+#### Highlights
 - Prestigeous Postdoctoral Program in Leading Statistics Department
 - Training Program in Biostatistics, Bioinformatics, Nutrition and Cancer
 - Integrative Nutrition and Complex Diseases in the Department of Nutrition
@@ -126,10 +126,10 @@
 <details>
 
 <summary>
-*Graduate Student, Reserach Assistant*
+Graduate Student, Reserach Assistant
 </summary>
 
-### Highlights
+#### Highlights
 - Summer Instructor
   - Statistics 101/102 and Regression Analysis
 - Teaching Assistant
