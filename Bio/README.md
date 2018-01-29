@@ -4,7 +4,7 @@
 
 ## [NYC](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
-<img src="images/nyc.jpg" width=100%>
+[<img src="images/nyc.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 Last year I embarked on an exciting adventure and career opportunity by moving to NYC.
 The energy and diversity (read, people) in this city have been amazing,
@@ -44,7 +44,7 @@ nice to be home.
 
 ## [UT](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
-<img src="images/ut.jpg" width=100%>
+[<img src="images/ut.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 Living in Austin was good -- 
 nice neighborhoods, good [running](http://www.mountainbiketx.com/downloads/texas/maps/Shoal_Creek.pdf), and 
@@ -66,7 +66,7 @@ and pretend to be a farmer, which was a perk of the position that I always enjoy
 
 ## [TAMU](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
-<img src="images/tamu.jpg" width=100%>
+[<img src="images/tamu.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 Prior to moving to Austin I spent several very enjoyable years in
 [College Station, Texas](https://www.google.com/maps/place/College+Station,+TX/@30.5907759,-100.7740924,6z/data=!4m5!3m4!1s0x8646848619463ca3:0xc969c74db6bf6ac9!8m2!3d30.627977!4d-96.3344068), home of the
@@ -89,7 +89,7 @@ my interest in moving to Austin to join the crop development program at UT.
 
 ## [Postdoc](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
-<img src="images/postdoc.jpg" width=100%>
+[<img src="images/postdoc.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 The reason I ended up working in genetic sequencing technologies in the first place was because
 I found genetic data extremely compelling.
@@ -110,7 +110,7 @@ was formed though this outstanding postodoral experience.
 
 ## [Duke](https://github.com/pointOfive/Examples/tree/master/Experience#experience) 
 
-<img src="images/duke.jpg" width=100%>
+[<img src="images/duke.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
 
 Graduate School was an amazing opportunity for me.
 Through my steady commitment in college I managed to make a path into
@@ -129,9 +129,9 @@ and [general posterior sampling agorithms](http://www.stat.columbia.edu/~gelman/
 have greatly democratize Bayesian Analysis and facilitated its accessibility use outside of specialized academic communities. 
 
 
-## Trinity
+## [Trinity](https://en.wikipedia.org/wiki/NCAA_Division_III_Men%27s_Soccer_Championship)
 
-<img src="images/trinity.jpg" width=100%>
+[<img src="images/trinity.jpg" width=100%>](https://en.wikipedia.org/wiki/NCAA_Division_III_Men%27s_Soccer_Championship)
 
 The reason I was able to get into such a prestigious graduate program 
 was a because I developed a skill set that was a very good match to the program.
@@ -149,9 +149,9 @@ winning a [National Championship](http://www.trinitytigers.com/history/nationalc
 recieving NCAA Academic All-American honors in 2005.
 
 
-## San Antonio
+## [San Antonio](https://www.washingtonpost.com/news/fancy-stats/wp/2014/06/16/with-five-nba-titles-in-15-years-the-spurs-are-a-dynasty/)
 
-<img src="images/soccer.jpg" width=100%>
+[<img src="images/soccer.jpg" width=100%>](https://www.washingtonpost.com/news/fancy-stats/wp/2014/06/16/with-five-nba-titles-in-15-years-the-spurs-are-a-dynasty/)
 
 Attending Trinity was actually a bit of a fairy tale story in and of itself.
 Having grown up playing soccer in San Antonio I had visted Trinity's gorgeous campus
