@@ -217,6 +217,7 @@ Graduate Student, Reserach Assistant
 
 ## Education
 
-- 2005-2010: *PhD Statistics, Duke University*
-- 2000-2005: *BS Computer Science, Trinity University*
-- 2000-2005: *BA Mathematics, Trinity University*
+- *PhD Statistics, Duke University, 2010*
+- *BS Computer Science, Trinity University, 2005*
+- *BA Mathematics, Trinity University, 2005*
+
