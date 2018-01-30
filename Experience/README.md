@@ -158,10 +158,10 @@ Research Associate
     <td>
 
 #### Responsibilities
-- Statistical Analysis and Data Processing Support
-- Learn Cancer-Nutrition Genetics and Physiology
-- Learn Transcriptomic and Metagenomic Analysis
-- [Support lab projecrts and publication efforts](https://github.com/pointOfive/Examples/tree/master/Publications)
+- Statistical analysis and data processing 
+- Learn cancer-nutrition physiology
+- Learn transcriptomics and metagenomics
+- [Support lab publication projects](https://github.com/pointOfive/Examples/tree/master/Publications)
 
     </td>
     <td>
@@ -169,7 +169,7 @@ Research Associate
 #### Highlights
 - Postdoctoral Program in Leading Statistics Department
 - Program in Biostatistics, Bioinformatics, Nutrition and Cancer
-- Integrative Nutrition and Complex Diseases,  Nutrition Department
+- Program in Integrative Nutrition and Complex Diseases,  Nutrition Department
 - [Secured lab research grant through high profile publication](https://github.com/pointOfive/Examples/tree/master/Publications)
 
     </td>
