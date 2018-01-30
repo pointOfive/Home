@@ -9,7 +9,7 @@ and [computational framework notes](https://github.com/pointOfive/Examples/tree/
 
 In addition, you will also find my 
 - [data science lecture material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
-- [work history](https://github.com/pointOfive/Examples/tree/master/Experience#experience) and [narrative](https://github.com/pointOfive/Examples/tree/master/Bio#about)
+- [informal](https://github.com/pointOfive/Examples/tree/master/Bio#about) and [formal](https://github.com/pointOfive/Examples/tree/master/Experience#experience) work history
 - and [publication record](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
 Finally, my formal resume is available [here](SchwartzCV.pdf). 
