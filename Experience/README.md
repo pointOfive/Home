@@ -96,7 +96,7 @@ Research Associate
     <td>
     
 #### Highlights
-- [3 manuscript publications supported](https://github.com/pointOfive/Examples/tree/master/Publications)
+- [3 manuscript publications supported](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 - 4 additional large scale projects supported
   - Photoperiodic response and flowering time
   - Bayesian analysis of drought methylation 
