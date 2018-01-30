@@ -4,11 +4,11 @@ While teaching and mentoring students in data science methodology I prepared the
 
 | Applied Topics                                              | Machine Learning                                            | Unsupervised Learning                                                                   |
 |:------------------------------------------------------------|:------------------------------------------------------------|:----------------------------------------------------------------------------------------|
-[Bokeh Interactive Plotting](http://www.google.com)           | [KNN and Decision Trees](http://www.google.com)   | [Clustering](MYLECTURES/kMeansNhierclust/kmeansNhierclust.pdf)                                    |
-[Webscrapping/APIs](http://www.google.com)                    | [Bagging/Random Forests](MYLECTURES/baggingANDrfs/bNrf.pdf) | [PCA/SVD](MYLECTURES/PCA/pca.pdf)                                                       |
-[Cost/Benefit Matrix](http://www.google.com)                  | [Gradient Boosting](MYLECTURES/boosting/boosting.pdf)       | [NMF](MYLECTURES/NMF/nmf.pdf)                                                           |
+[Bokeh Interactive Plotting](http://www.google.com)           | [KNN and Decision Trees](http://www.google.com)   | [Clustering and Mixture Models](MYLECTURES/kMeansNhierclust/kmeansNhierclust.pdf)                                    |
+[Webscrapping/APIs](http://www.google.com)                    | [Bagging/Random Forests](MYLECTURES/baggingANDrfs/bNrf.pdf) | [PCA and SVD](MYLECTURES/PCA/pca.pdf)                                                       |
+[The Cost/Benefit Matrix](http://www.google.com)                  | [Gradient Boosting](MYLECTURES/boosting/boosting.pdf)       | [Non-negative Matrix Factorization](MYLECTURES/NMF/nmf.pdf)                                                           |
 [Amazon Web Services](http://www.google.com)                  | [Support Vector Machines](MYLECTURES/svm/SVM2.pdf)          | [Dimensionality Reduction](MYLECTURES/one_hour_lectures/dimensionality_reduction.ipynb) |
-[NLP](http://www.google.com)                                  | [Neural Networks](MYLECTURES/NN/nn.pdf)                     | [Recommender Systems](MYLECTURES/recsys/rs.pdf)                                         |
+[Natural Language Processing](http://www.google.com)                                  | [Neural Networks](MYLECTURES/NN/nn.pdf)                     | [Recommender Systems](MYLECTURES/recsys/rs.pdf)                                         |
 [SparkSQL and SparkML](http://www.google.com)                 | [SparkSQL and SparkML](http://www.google.com)               | [Graphs](MYLECTURES/graphs/networks.pdf)                                                |
 ||||
 | **Predictive Methodology**       	      		 		     | **Statistics**        	     	      	      	           | **Programming**  	     	      	      	                           |
