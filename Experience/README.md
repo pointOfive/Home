@@ -1,11 +1,10 @@
-## Experience
+## Education
 
 #### PhD Statistics, Duke University, 2010
-
 #### BS Computer Science, Trinity University, 2005
-
 #### BA Mathematics, Trinity University, 2005
 
+## Experience
 
 ### [2017-Present: Data Science Mentor, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
 <details>
