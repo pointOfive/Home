@@ -7,11 +7,10 @@ On this site you will find some [example projects](https://github.com/pointOfive
 [coding challenges](https://github.com/pointOfive/Examples/tree/master/Code#coding),
 and [computational framework notes](https://github.com/pointOfive/Examples/tree/master/Compute#computing).
 
-In addition, my 
+In addition, you will also find my 
 - [Data Science Lecture Material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
 - [Work History](https://github.com/pointOfive/Examples/tree/master/Experience#experience) and [Narative](https://github.com/pointOfive/Examples/tree/master/Bio#about)
 - and [Publication Record](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
-are also provided here.  
 
 Finally, a formal resume is available [here](SchwartzCV.pdf). 
 
