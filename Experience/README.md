@@ -169,7 +169,7 @@ Research Associate
 #### Highlights
 - Postdoctoral Program in Leading Statistics Department
 - Program in Biostatistics, Bioinformatics, Nutrition and Cancer
-- Program in Integrative Nutrition and Complex Diseases,  Nutrition Department
+- Program in Integrative Nutrition and Complex Diseases 
 - [Secured lab research grant through high profile publication](https://github.com/pointOfive/Examples/tree/master/Publications)
 
     </td>
