@@ -63,8 +63,8 @@ Instructor/Sr. Data Scientist
 - 6 cohorts and 49 students taught and mentored
 - [44 lectures and 4 special topics created campus](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
 - 40% salary increase with promotion to NYC
-- [40 content hours (~30 sections, 200 questions and answers) probstat onboarding](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)   
-- [10 content hours (~10 sections, 50 questions and answers) probstat workshop](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
+- [40 hours (30 sections, 200 Q&A's) onboarding material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)   
+- [10 hours (10 sections, 50 Q&A's) workshop material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
 
     </td>
   </tr>
