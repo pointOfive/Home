@@ -125,7 +125,7 @@ Bioinformatic Analyst
   - Nextgen sequencing, bioinformatics, and statistics
 - Contracting 
   - Differential expression and genotyping 
-- [Nextgen sequencing data management](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
+- [Nextgen sequencing data management](https://github.com/pointOfive/Examples/tree/master/Compute#hpc)
 - [Sample demultiplexing, quality control, and delivery](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
 
     </td>
@@ -137,7 +137,7 @@ Bioinformatic Analyst
 - Provided analysis services for ~10 TAMU labs
 - Provided analysis services 3 industry teams
 - Transcription Start Site Collaboration
-- TAMU Wheat and Bayer CropScience Project
+- TAMU Wheat and Bayer CropScience
 
     </td>
   </tr>
@@ -161,15 +161,16 @@ Research Associate
 - Statistical Analysis and Data Processing Support
 - Learn Cancer-Nutrition Genetics and Physiology
 - Learn Transcriptomic and Metagenomic Analysis
+- [Support lab projecrts and publication efforts](https://github.com/pointOfive/Examples/tree/master/Publications)
 
     </td>
     <td>
     
 #### Highlights
-- Prestigeous Postdoctoral Program in Leading Statistics Department
-- Training Program in Biostatistics, Bioinformatics, Nutrition and Cancer
-- Integrative Nutrition and Complex Diseases in the Department of Nutrition
-- Helped secure large research grant for lab through high profile publication
+- Postdoctoral Program in Leading Statistics Department
+- Program in Biostatistics, Bioinformatics, Nutrition and Cancer
+- Integrative Nutrition and Complex Diseases,  Nutrition Department
+- [Secured lab research grant through high profile publication](https://github.com/pointOfive/Examples/tree/master/Publications)
 
     </td>
   </tr>
