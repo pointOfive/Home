@@ -199,13 +199,15 @@ Graduate Student, Reserach Assistant
 - Consultant
 - Research Assistant
 
+    </td>
+    <td>
+    
 #### Highlights
 
 - Statistics 101/102 and regression
 - Math stats, Econ Stats, and GLMs
 - Experimental Design and Analysis
 - Children’s Environmental Health Initiative 
-
 
     </td>
   </tr>
@@ -215,6 +217,6 @@ Graduate Student, Reserach Assistant
 
 ## Education
 
-- *PhD Statistics, Duke University, 2010*
-- *BS Computer Science, Trinity University, 2005*
-- *BA Mathematics, Trinity University, 2005*
+- 2005-2010: *PhD Statistics, Duke University
+- 2000-2005: *BS Computer Science, Trinity University
+- 2000-2005: *BA Mathematics, Trinity University
