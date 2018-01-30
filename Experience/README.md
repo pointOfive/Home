@@ -134,10 +134,10 @@ Bioinformatic Analyst
 #### Highlights
 - 10% salary increase rewarded after first year
 - 15% salary increase offered after second year
-- Provided analysis services for ~10 TAMU labs
-- Provided analysis services 3 industry teams
-- Transcription Start Site Collaboration
-- TAMU Wheat and Bayer CropScience
+- 10 TAMU labs analysis service repeat customers
+- 3 companies analysis service repeat customers 
+- 1 year transcription start site collaboration
+- $35M TAMU Wheat/Bayer CropScience project
 
     </td>
   </tr>
@@ -161,7 +161,7 @@ Research Associate
 - Statistical analysis and data processing 
 - Learn cancer-nutrition physiology
 - Learn transcriptomics and metagenomics
-- [Support lab publication projects](https://github.com/pointOfive/Examples/tree/master/Publications)
+- [Support lab publication projects](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
     </td>
     <td>
@@ -170,7 +170,7 @@ Research Associate
 - Postdoctoral Program in Leading Statistics Department
 - Program in Biostatistics, Bioinformatics, Nutrition and Cancer
 - Program in Integrative Nutrition and Complex Diseases 
-- [Secured lab research grant through high profile publication](https://github.com/pointOfive/Examples/tree/master/Publications)
+- [Secured lab research grant through high profile publication](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
     </td>
   </tr>
