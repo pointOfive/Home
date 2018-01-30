@@ -14,10 +14,10 @@ Data Science Training and Mentoring
 
 #### Responsibilities
 
-- [Curriculum Specification and Development](https://github.com/pointOfive/Examples/tree/master/Lectures)
-- [Fully Interactive Content Delivery and Guidance](https://github.com/pointOfive/Examples/tree/master/Projects)
-- [Practice Exercise Creation and Evaluation](https://github.com/pointOfive/Examples/tree/master/Code)
-- Job Search and Career Growth Mentoring    
+- [Curriculum specification and development](https://github.com/pointOfive/Examples/tree/master/Lectures)
+- [Fully interactive content delivery and guidance](https://github.com/pointOfive/Examples/tree/master/Projects)
+- [Practice exercise creation and evaluation](https://github.com/pointOfive/Examples/tree/master/Code)
+- Job search and career growth mentoring    
 
     </td>
     <td>
@@ -50,11 +50,11 @@ Instructor/Sr. Data Scientist
     <td>
 
 #### Responsibilities 
-- Lecture Preparation and Delivery
-- Exercise Montitoring and Support
-- Student Mentorship and Guidance
-- Prospective Student Recruitment
-- Networking, Promotions, and Hiring
+- Lecture preparation and delivery
+- Exercise montitoring and support
+- Student mentorship and guidance
+- Prospective student recruitment
+- Networking, promotions, and hiring
 
     </td>
     <td>
@@ -84,12 +84,12 @@ Research Associate
     <td>
 
 #### Responsibilities
-- [Nextgen Sequencing Data Management](https://github.com/pointOfive/Examples/tree/master/Compute#hpc)
-  - RNA/TAG-Seq, WGS/RAD-Seq, and Bisulfite-Seq
-- [Bioinformatics Pipeline Creation, Maintenance, and Execution](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
-  - Genotyping/Expression ((e)QTL/GWAS) and Bulk Segregation 
-- [Data Analysis and Visualization Support](https://github.com/pointOfive/Examples/tree/master/Publications)
-- Bioinformatics and Statistics Mentoring
+- [Nextgen sequencing data management](https://github.com/pointOfive/Examples/tree/master/Compute#hpc)
+  - RNA, TAG, WGSl, RAD, and Bisulfite-seq
+- [Pipeline creation, maintenance, and use](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
+  - (e)QTL/GWAS and bulk segregation
+- [Data analysis and visualization support](https://github.com/pointOfive/Examples/tree/master/Publications)
+- Bioinformatics and statistics mentoring
 
     </td>
     <td>
@@ -98,9 +98,9 @@ Research Associate
 - 10% salary increase rewarded after first year
 - [3 manuscript publications supported](https://github.com/pointOfive/Examples/tree/master/Publications)
 - 3 additional large scale projects supported
-  - Photoperiodic Response and Flowering Time
-  - Bayesian Analysis of Drought Methylation Response
-  - Gene Correlation Network Analysis
+  - Photoperiodic response and flowering time
+  - Bayesian analysis of drought methylation 
+  - Gene correlation network analysis
   
     </td>
   </tr>
