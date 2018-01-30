@@ -25,8 +25,8 @@ Data Science Training and Mentoring
 #### Highlights
 
 - 5 month program completely from scratch
-- 40 hrs/wk apprenticeship style program
 - 35 methodologies deeply explored
+- 40 hrs/wk apprenticeship style program
 - 50% unsolicited rate increase after 1 month
 
     </td>
@@ -62,9 +62,9 @@ Instructor, Sr. Data Scientist
 #### Highlights
 - 6 cohorts and 49 students taught and mentored
 - [44 lectures and 4 special topics created campus](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
-- 40% salary increase with promotion to NYC
 - [40 hours (30 sections, 200 Q&A's) onboarding material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)   
 - [10 hours (10 sections, 50 Q&A's) workshop material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
+- 40% salary increase with promotion to NYC
 
     </td>
   </tr>
@@ -95,14 +95,14 @@ Research Associate
     <td>
     
 #### Highlights
-- 10% salary increase rewarded after first year
 - [3 manuscript publications supported](https://github.com/pointOfive/Examples/tree/master/Publications)
 - 4 additional large scale projects supported
   - Photoperiodic response and flowering time
   - Bayesian analysis of drought methylation 
   - Gene correlation network analysis
   - Chromosomal knob detection
-  
+- 10% salary increase rewarded after first year
+
     </td>
   </tr>
 </table>
@@ -121,7 +121,7 @@ Bioinformatic Analyst
     <td>
 
 #### Responsibilities
-- Consultating
+- Consulting
   - Nextgen sequencing, bioinformatics, and statistics
 - Contracting 
   - Differential expression and genotyping 
@@ -132,12 +132,13 @@ Bioinformatic Analyst
     <td>
     
 #### Highlights
-- 10% salary increase rewarded after first year
-- 15% salary increase offered after second year
 - 10 TAMU labs analysis service repeat customers
 - 3 companies analysis service repeat customers 
 - 1 year transcription start site collaboration
 - $35M TAMU Wheat/Bayer CropScience project
+- 10% salary increase rewarded after first year
+- 15% salary increase offered after second year
+
 
     </td>
   </tr>
@@ -190,15 +191,20 @@ Graduate Student, Reserach Assistant
   <tr>
     <td>
 
-#### Highlights
+
+#### Responsibilities
 - Summer Instructor
-  - Statistics 101/102 and Regression Analysis
 - Teaching Assistant
-  - Mathematical Statistics, Statistics for Economics, and Generalized Linear Models
 - Consultant
-  - Experimental Design and Analysis
-- Research Assistant, Children’s Environmental Health Initiative 
-  - Collaborated with medical practitioners, epidemiologists, sociologists, geographers & statisticians in an applied and translational research setting to develop birth outcome analysis methodology.
+- Research Assistant
+
+#### Highlights
+
+- Statistics 101/102 and regression
+- Math stats, Econ Stats, and GLMs
+- Experimental Design and Analysis
+- Children’s Environmental Health Initiative 
+
 
     </td>
   </tr>
