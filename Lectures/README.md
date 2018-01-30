@@ -10,7 +10,6 @@ While teaching and mentoring students in data science methodology I prepared the
 [AWS, SparkSQL and SparkML](http://www.google.com)            | [Support Vector Machines](MYLECTURES/svm/SVM2.pdf)          | [Dimensionality Reduction](MYLECTURES/one_hour_lectures/dimensionality_reduction.ipynb) |
 [NLP](http://www.google.com)                                  | [Neural Networks](MYLECTURES/NN/nn.pdf)                     | [Recommender Systems](MYLECTURES/recsys/rs.pdf)                                         |
 [Graphs](MYLECTURES/graphs/networks.pdf)                      | [Naive Bayes](MYLECTURES/NLP_NB/nb.pdf)                     | [Linear Algebra](week_3_linmod/linmodreview.pdf)                                        |
-
 | Programming  	             		 		      | Statistics        	     	      	      	            | Predictive Methodology  	     	      	      	                           |
 |:------------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------------------|
 | [CLI/Linux/git](http://www.google.com)                      | [Probability](MYLECTURES/probs/probs.pdf)                   | [Linear Regression](MYLECTURES/reg/reg.pdf )                                 |
