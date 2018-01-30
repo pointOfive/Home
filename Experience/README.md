@@ -14,10 +14,9 @@ Data Science Training and Mentoring
 
 #### Responsibilities
 
-- Provide Data Science Apprenticeship (40 hrs/wk)
-- Curriculum Specification and Development
-- Fully Interactive Content Delivery and Guidance
-- Practice Exercise Creation and Evaluation
+- [Curriculum Specification and Development](https://github.com/pointOfive/Examples/tree/master/Lectures)
+- [Fully Interactive Content Delivery and Guidance](https://github.com/pointOfive/Examples/tree/master/Projects)
+- [Practice Exercise Creation and Evaluation](https://github.com/pointOfive/Examples/tree/master/Code)
 - Job Search and Career Growth Mentoring    
 
     </td>
@@ -25,9 +24,10 @@ Data Science Training and Mentoring
 
 #### Highlights
 
-- Executed 5 month program completely from scratch
-- 35 methodologies discussed and deeply explored
-- 50% unsolicited rate increase after first month
+- 5 month program completely from scratch
+- 40 hrs/wk apprenticeship style program
+- 35 methodologies deeply explored
+- 50% unsolicited rate increase after 1 month
 
     </td>
   </tr>
@@ -54,20 +54,17 @@ Instructor/Sr. Data Scientist
 - Exercise Montitoring and Support
 - Student Mentorship and Guidance
 - Prospective Student Recruitment
-- Networking and 
+- Networking, Promotions, and Hiring
 
     </td>
     <td>
 
 #### Highlights
-- 6 cohorts taught, 49 students trained
-- 22 lecture days; 4 special topic lectures created
-- Promoted to NYC campus, lead position
-  - 40% salary increase
-- Developed Probability and Statistics Workshop
-  - ~10 sections, ~8 content hours 
-- Created Probability and Statistics workshop developed
-  - ~30 sections, ~200 questions and answers, ~40 content hours 
+- 6 cohorts and 49 students taught and mentored
+- [44 lectures and 4 special topics created campus](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
+- 40% salary increase with promotion to NYC
+- [40 content hours (~30 sections, 200 questions and answers) probstat onboarding](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)   
+- [10 content hours (~10 sections, 50 questions and answers) probstat workshop](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
 
     </td>
   </tr>
@@ -87,11 +84,11 @@ Research Associate
     <td>
 
 #### Responsibilities
-- Nextgen Sequencing Data Management
+- [Nextgen Sequencing Data Management](https://github.com/pointOfive/Examples/tree/master/Compute#hpc)
   - RNA/TAG-Seq, WGS/RAD-Seq, and Bisulfite-Seq
-- Bioinformatics Pipeline Creation, Maintenance, and Execution
+- [Bioinformatics Pipeline Creation, Maintenance, and Execution](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
   - Genotyping/Expression ((e)QTL/GWAS) and Bulk Segregation 
-- Data Analysis and Visualization Support
+- [Data Analysis and Visualization Support](https://github.com/pointOfive/Examples/tree/master/Publications)
 - Bioinformatics and Statistics Mentoring
 
     </td>
@@ -99,11 +96,12 @@ Research Associate
     
 #### Highlights
 - 10% salary increase rewarded after first year
-- Supported publication of 3 papers
-- Photoperiodic Response Collaboration
-- Flowering Time Bulk Segregation Collaboration
-- Developed Bayesian Analysis of Drought Methylation Response
-
+- [3 manuscript publications supported](https://github.com/pointOfive/Examples/tree/master/Publications)
+- 3 additional large scale projects supported
+  - Photoperiodic Response and Flowering Time
+  - Bayesian Analysis of Drought Methylation Response
+  - Gene Correlation Network Analysis
+  
     </td>
   </tr>
 </table>
