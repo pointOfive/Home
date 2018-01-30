@@ -1,8 +1,4 @@
-## Education
 
-- *PhD Statistics, Duke University, 2010*
-- *BS Computer Science, Trinity University, 2005*
-- *BA Mathematics, Trinity University, 2005*
 
 ## Experience
 
@@ -216,3 +212,9 @@ Graduate Student, Reserach Assistant
 </table>
 
 </details>
+
+## Education
+
+- *PhD Statistics, Duke University, 2010*
+- *BS Computer Science, Trinity University, 2005*
+- *BA Mathematics, Trinity University, 2005*
