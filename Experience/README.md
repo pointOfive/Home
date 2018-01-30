@@ -42,7 +42,7 @@ Data Science Training and Mentoring
 <details>
 
 <summary>
-Instructor/Sr. Data Scientist
+Instructor, Sr. Data Scientist
 </summary>
 
 <table style="width:100%">
@@ -97,10 +97,11 @@ Research Associate
 #### Highlights
 - 10% salary increase rewarded after first year
 - [3 manuscript publications supported](https://github.com/pointOfive/Examples/tree/master/Publications)
-- 3 additional large scale projects supported
+- 4 additional large scale projects supported
   - Photoperiodic response and flowering time
   - Bayesian analysis of drought methylation 
   - Gene correlation network analysis
+  - Chromosomal knob detection
   
     </td>
   </tr>
@@ -120,12 +121,12 @@ Bioinformatic Analyst
     <td>
 
 #### Responsibilities
-- Consultation, Education and Outreach
-  - Nextgen Sequencing, Bioinformatics, and Statistics
-- Bioinformatic Analysis Contracting 
-  - Differential Expression, Genotyping (RAD-Seq/Bulk Seg.)
-- Nextgen Sequencing Data Management
-- Sample Demultiplexing, Quality Control, and Delivery
+- Consultating
+  - Nextgen sequencing, bioinformatics, and statistics
+- Contracting 
+  - Differential expression and genotyping 
+- [Nextgen sequencing data management](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
+- [Sample demultiplexing, quality control, and delivery](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
 
     </td>
     <td>
@@ -136,7 +137,7 @@ Bioinformatic Analyst
 - Provided analysis services for ~10 TAMU labs
 - Provided analysis services 3 industry teams
 - Transcription Start Site Collaboration
-- TAMU Wheat/Bayer CropScience Collaboration
+- TAMU Wheat and Bayer CropScience Project
 
     </td>
   </tr>
