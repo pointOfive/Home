@@ -12,7 +12,7 @@ Additionally, I have experience with
 
 ## AWS EC2/EMR/S3
 
-I'm familiar with [creating](https://aws.amazon.com/ec2/instance-types/), [managing](https://aws.amazon.com/ec2/pricing/on-demand/), and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/)[computation infrastructurs](https://aws.amazon.com/). 
+I'm familiar with [creating](https://aws.amazon.com/ec2/instance-types/), [managing](https://aws.amazon.com/ec2/pricing/on-demand/), and [using](https://aws.amazon.com/) AWS cloud computation infrastructurs. 
 
 
 ### Permissions and S3
