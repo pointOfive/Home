@@ -213,8 +213,10 @@ Click [here](https://www.google.com) to see the sparkML NLP pipeline `nlp_pipeli
 </details>
 
 
+### Spark Practice 
 
 To practice on a local spark installation (in a mac environment)
+
 ```
 brew install hadoop
 brew cask install java8
@@ -229,30 +231,7 @@ export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
 export HADOOP_HOME=`brew info hadoop | grep /usr | head -n 1 | cut -f 1 -d " "`/libexec
 export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native/:$LD_LIBRARY_PATH
 source ~/.bash_profile
-
 ```
-
-
-
-- 
-- 
-- 
-
-
-
-
-```
-~/.local/bin/aws ec2 run-instances \
-                 --image-id ami-aa2ea6d0 \
-                 --count 1 \
-    --instance-type t2.xlarge \
-    --key-name=try3 \
-    --user-data file://bootstrap_ec2_master.sh
-    
-```
-
-
-
 
 
 
