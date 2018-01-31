@@ -27,17 +27,18 @@ In addition, you will also find my
 - [work history](https://github.com/pointOfive/Examples/tree/master/Experience#experience) and [narrative](https://github.com/pointOfive/Examples/tree/master/Bio#about)
 - and [publication record](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
-Finally, my formal resume is available [here](SchwartzCV.pdf). 
+Finally, my formal resume/CV is available [here](SchwartzCV.pdf). 
 
 ##  
 
 
 <details>
 <summary>
-Note: If I have an arrow in front of me like this, I'm clickable
+Note: If I have an arrow in front of me like this, I'm clickable.
 </summary>
 
-And clicking me will expand to reveal further information
+
+#### And clicking me will expand to reveal further information.
 </details>
 
 
