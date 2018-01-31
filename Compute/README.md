@@ -73,7 +73,7 @@ database server that manages web scraping machines.
 <details>
 <summary>
 bootstrap_ec2_master.sh
-<summary>
+</summary>
 ```
 # INSTALL POSTGRESS SERVER
 sudo apt-get update
