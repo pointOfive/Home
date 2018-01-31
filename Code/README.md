@@ -25,3 +25,27 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 ## C++
 
 
+## git
+
+<details>
+<summary>
+All materials here managed via git
+</summary>
+
+```
+git pull https://github.com/pointOfive/Home.git
+git checkout -b clone_to_edit
+rm README.md
+# <oops!>
+git checkout -- README.md
+# <Edit README.md>
+git status
+git add README.md
+git commit -m 'updating a file'
+git branch
+git checkout master
+git merge clone_to_edit
+git branch -d clone_to_edit
+git push
+```
+</details>
