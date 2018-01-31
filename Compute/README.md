@@ -215,7 +215,10 @@ Click [here](https://www.google.com) to see the sparkML NLP pipeline `nlp_pipeli
 
 ### Spark Practice 
 
+<details>
+<summary>
 To practice on a local spark installation (in a mac environment)
+</summary>
 
 ```
 brew install hadoop
@@ -232,7 +235,7 @@ export HADOOP_HOME=`brew info hadoop | grep /usr | head -n 1 | cut -f 1 -d " "`/
 export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native/:$LD_LIBRARY_PATH
 source ~/.bash_profile
 ```
-
+</details>
 
 
 ## HPC
