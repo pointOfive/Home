@@ -12,12 +12,54 @@ Additionally, I have experience with
 
 ## AWS EC2/EMR/S3
 
-I've played around with creating, managing, and using 
-AWS cloud computation infrastructurs 
+I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/) [computation infrastructurs](https://aws.amazon.com/ec2/pricing/on-demand/) 
 
-- Web scrapping
-- SparkML
+After installing the folllwing prerequesites
 
+```
+pip install py4j
+```
+
+
+To practice on a local spark installation (in a mac environment)
+```
+brew install hadoop
+brew cask install java8
+brew install apache-spark
+pip install py4j
+import pyspark
+```
+with the following
+
+```
+export SPARK_HOME=`brew info apache-spark | grep /usr | tail -n 1 | cut -f 1 -d " "`/libexec
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+export HADOOP_HOME=`brew info hadoop | grep /usr | head -n 1 | cut -f 1 -d " "`/libexec
+export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native/:$LD_LIBRARY_PATH
+source ~/.bash_profile
+
+```
+
+
+
+- 
+- 
+- 
+
+
+#### Web scrapping
+
+#### SparkML
+
+```
+~/.local/bin/aws ec2 run-instances \
+                 --image-id ami-aa2ea6d0 \
+                 --count 1 \
+    --instance-type t2.xlarge \
+    --key-name=try3 \
+    --user-data file://bootstrap_ec2_master.sh
+    
+```
 
 ## HPC
 
@@ -43,7 +85,8 @@ Bioinformatics data pipelining tasks included
 | Multi-Barcode Demultiplexing        | Illumina/fastX         | .csv      |
 | Read Adapter/Quality Trimming       | fastX/cutadapt         | .fastq    |
 | Quality Assessment and Delivery     | fastQC/ftp             | .tar      |
-| Genome Alignments                   | bwa/bowtie/IGV         | .genome   |
+| Genome Alignments                   | bwa/bowtie/IGV         | .sam      |
+| Genome Visualizations               | IGV                    | .genome   |
 | SNP Calling (GWAS, MapPop, BulkSeg) | SAMtools/GATK          | .vcf      |
 | Counting (RAD, TAG, RNA, TSS, ASE)  | HTseq/TopHat           | .gff      |
 
