@@ -114,7 +114,7 @@ ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/n
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
 ```
 </details>
-See [`psql_server.py`](https://www.google.com) to examine the functionality of the database server.
+See ["psql_server.py"](https://www.google.com) to examine the functionality of the database server.
 
 
 #### Webscraper Worker
@@ -153,7 +153,7 @@ pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
 </details>
-See [`psql_worker.py`](https://www.google.com) to examine the functionality of the webscraper worker.
+See ["psql_worker.py"](https://www.google.com) to examine the functionality of the webscraper worker.
 
 
 #### SparkML on EMR
