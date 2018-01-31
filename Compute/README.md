@@ -113,8 +113,9 @@ ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/n
 			 nltk.download('maxent_treebank_pos_tagger', download_dir='/home/ubuntu/nltk_data')"
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
 ```
+
+The [functionality of the postgres server](https://www.google.com) is given in `psql_server.py`
 </details>
-See [psql_server.py](https://www.google.com) to examine the functionality of the database server.
 
 
 #### Webscraper Worker
@@ -152,8 +153,10 @@ pip install psycopg2
 pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
+
+The [functionality of the webscraper worker](https://www.google.com) is given in `psql_worker.py`
 </details>
-See [psql_worker.py](https://www.google.com) to examine the functionality of the webscraper worker.
+
 
 
 #### SparkML on EMR
