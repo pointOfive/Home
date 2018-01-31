@@ -12,13 +12,131 @@ Additionally, I have experience with
 
 ## AWS EC2/EMR/S3
 
-I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/) [computation infrastructurs](https://aws.amazon.com/ec2/pricing/on-demand/) 
+I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/) [computation infrastructurs](https://aws.amazon.com/ec2/pricing/on-demand/). 
 
-After installing the folllwing prerequesites
+
+#### AWS Permissions and S3
+
+AWS resources can be accessed via a command line interface.
+```
+pip install --upgrade --user awscli
+.local/bin/aws configure
+# https://aws.amazon.com
+# "My Account" -> "Security Credentials" -> "Access Keys"
+AWS Access Key ID [None]: 
+AWS Secret Access Key [None]: 
+Default region name [None]: us-east-1
+Default output format [None]: json
+```
+
+AWS instances require authentication keys.
 
 ```
-pip install py4j
+# https://aws.amazon.com
+"EC2" -> "key Pairs" or "NETWORK & SECURITY" -> "Key Pairs"
+mv ~/Downloads/given_pem_name.pem ~/.ssh/
+chmod 400 ~/.ssh/given_pem_name.pem
+```    
+
+S3 buckets provide cloud storage for data.
+
+- https://aws.amazon.com
+- "Console (orange box)" -> "S3" -> "Create"
+- "Type of Policy" -> "S3 Bucket Policy"
+  - Principal: *
+  - Actions: GetObject
+  - Amazon Resource Name (ARN): arn:aws:s3:::given_bucket_name/*
+
+
+#### Managed Server/Worker(s) 
+
+Here's how you can set up a Server/Worker(s) environment.
+[Here](https://www.google.com) I used it to employ a 
+database server that manages web scraping machines.
+
+
 ```
+~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
+     --instance-type t2.xlarge --count 1 --user-data file://bootstrap_ec2_master.sh
+```
+
+bootstrap_ec2_master.sh
+
+```
+# INSTALL POSTGRESS SERVER
+sudo apt-get update
+sudo apt-get -y install postgresql-9.5 postgresql-contrib-9.5
+sudo sed -e 's/127.0.0.1\/32/0.0.0.0\/0/' /etc/postgresql/9.5/main/pg_hba.conf > tmpy.txt
+sudo mv tmpy.txt /etc/postgresql/9.5/main/pg_hba.conf
+sudo chown postgres:postgres /etc/postgresql/9.5/main/pg_hba.conf
+sudo sed "s/\#listen_addresses = 'localhost'/listen_addresses = '\*'/" /etc/postgresql/9.5/main/postgresql.conf > tmpy.txt
+sudo mv tmpy.txt /etc/postgresql/9.5/main/postgresql.conf
+sudo chown postgres:postgres /etc/postgresql/9.5/main/postgresql.conf
+sudo service postgresql restart
+echo "ALTER USER postgres WITH PASSWORD 'postgres';" | sudo -u postgres psql
+echo "CREATE DATABASE database_name;" | sudo -u postgres psql
+
+# LOAD STORED DATABASE
+wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/dbexport.pgsql.gz -O /home/ubuntu/dbexport.pgsql.gz
+gunzip -c /home/ubuntu/dbexport.pgsql.gz | sudo -u postgres psql database_name 
+
+# INSTALL ANACONDA
+wget -S -T 500 -t 50 https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh -O /home/ubuntu/anaconda.sh
+sudo bash /home/ubuntu/anaconda.sh -b -p /mnt/anaconda
+sudo chown -R ubuntu:ubuntu /mnt
+export PATH=/mnt/anaconda/bin:$PATH
+echo -e "\n\n# Anaconda2" >> /home/ubuntu/.bashrc
+echo "export PATH=/mnt/anaconda/bin:$PATH" >> /home/ubuntu/.bashrc
+rm /home/ubuntu/anaconda.sh
+
+# INSTALL RUN TOOLS
+pip install psycopg2
+ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/nltk_data'); 
+	   	   	 nltk.download('punkt', download_dir='/home/ubuntu/nltk_data'); 
+			 nltk.download('averaged_perceptron_tagger', download_dir='/home/ubuntu/nltk_data'); 
+			 nltk.download('maxent_treebank_pos_tagger', download_dir='/home/ubuntu/nltk_data')"
+wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
+```
+
+
+
+
+```
+~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
+     --instance-type t2.small --count 1 --user-data file://bootstrap_ec2_worker.sh
+```
+
+
+bootstrap_ec2_worker.sh
+
+```
+sudo apt-get update
+
+# INSTALL HEADLESS BROWSER
+sudo apt-get install build-essential chrpath libssl-dev libxft-dev libfreetype6-dev libfreetype6 libfontconfig1-dev libfontconfig1 -y
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+sudo tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
+sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
+
+# INSTALL ANACONDA
+wget -S -T 500 -t 50 https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh -O /home/ubuntu/anaconda.sh
+sudo bash /home/ubuntu/anaconda.sh -b -p /mnt/anaconda
+#$HOME/anaconda
+sudo chown -R ubuntu:ubuntu /mnt
+export PATH=/mnt/anaconda/bin:$PATH
+echo -e "\n\n# Anaconda2" >> /home/ubuntu/.bashrc
+echo "export PATH=/mnt/anaconda/bin:$PATH" >> /home/ubuntu/.bashrc
+rm /home/ubuntu/anaconda.sh
+
+# INSTALL RUN TOOLS
+pip install psycopg2
+pip install selenium
+wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
+```
+
+
+
+
 
 
 To practice on a local spark installation (in a mac environment)
@@ -29,8 +147,7 @@ brew install apache-spark
 pip install py4j
 import pyspark
 ```
-with the following
-
+with the following system variable
 ```
 export SPARK_HOME=`brew info apache-spark | grep /usr | tail -n 1 | cut -f 1 -d " "`/libexec
 export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
@@ -47,9 +164,7 @@ source ~/.bash_profile
 - 
 
 
-#### Web scrapping
 
-#### SparkML
 
 ```
 ~/.local/bin/aws ec2 run-instances \
@@ -60,6 +175,11 @@ source ~/.bash_profile
     --user-data file://bootstrap_ec2_master.sh
     
 ```
+
+#### SparkML on EMR
+
+
+
 
 ## HPC
 
