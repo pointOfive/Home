@@ -259,13 +259,13 @@ Bioinformatics data pipelining tasks included
 
 | Task                                | Tool                   | Key Data  |
 |:------------------------------------|-----------------------:|:----------|
-| Multi-Barcode Demultiplexing        | Illumina/fastX         | .csv      |
-| Read Adapter/Quality Trimming       | fastX/cutadapt         | .fastq    |
-| Quality Assessment and Delivery     | fastQC/ftp             | .tar      |
-| Genome Alignments                   | bwa/bowtie/IGV         | .sam      |
-| Genome Visualizations               | IGV                    | .genome   |
-| SNP Calling (GWAS, MapPop, BulkSeg) | SAMtools/GATK          | .vcf      |
-| Counting (RAD, TAG, RNA, TSS, ASE)  | HTseq/TopHat           | .gff      |
+| Multi-Barcode Demultiplexing        | [Illumina](https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq_letterbooklet_15038058brpmi.pdf)/[fastX](http://hannonlab.cshl.edu/fastx_toolkit/) | .csv      |
+| Read Adapter/Quality Trimming       | [fastX](http://hannonlab.cshl.edu/fastx_toolkit/)/[cutadapt](https://cutadapt.readthedocs.io/en/stable/)         | .fastq    |
+| Quality Assessment and Delivery     | [fastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)/[ftp](http://cs.baylor.edu/~donahoo/classes/tutorials/ftp/ftp.html)             | .tar      |
+| Genome Alignments                   | [bwa](http://bio-bwa.sourceforge.net/)/[bowtie](http://bowtie-bio.sourceforge.net/index.shtml)      | .sam      |
+| Genome Visualizations               | [IGV](http://software.broadinstitute.org/software/igv/)                    | .genome   |
+| SNP Calling (GWAS, MapPop, BulkSeg) | [SAMtools](http://www.htslib.org/)/[GATK](https://software.broadinstitute.org/gatk/)          | .vcf      |
+| Counting (RAD, TAG, RNA, TSS, ASE)  | [HTseq](https://htseq.readthedocs.io/en/release_0.9.1/)/[TopHat](https://ccb.jhu.edu/software/tophat/index.shtml)           | .gff      |
 
 
 ## Bash
