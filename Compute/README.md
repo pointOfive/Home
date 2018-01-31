@@ -4,7 +4,7 @@ I've worked in scientific computing contexts for over 15 years
 using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Examples/), and Matlab. 
 Additionally, I have experience with
 
-- **Cloud Computing** ([AWS EC2/EMR/S3](https://aws.amazon.com))
+- **Cloud Computing** ([AWS EC2/EMR/S3](#aws-ec2emrs3))
 - **High Performance Computing** ([Batch Submission](#hpc))
 - **Open Source Software Pipelines** ([Bioinformatics](#open-source-tools))
 - **Bash Environments** ([Mac/Linux](#bash))
@@ -12,7 +12,7 @@ Additionally, I have experience with
 
 ## AWS EC2/EMR/S3
 
-I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/) [computation infrastructurs](https://aws.amazon.com/ec2/pricing/on-demand/). 
+I'm familiar with [creating](https://aws.amazon.com/ec2/instance-types/), [managing](https://aws.amazon.com/ec2/pricing/on-demand/), and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/)[computation infrastructurs](https://aws.amazon.com/). 
 
 
 ### Permissions and S3
