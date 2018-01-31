@@ -15,7 +15,7 @@ Additionally, I have experience with
 I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/) [computation infrastructurs](https://aws.amazon.com/ec2/pricing/on-demand/). 
 
 
-### AWS Permissions and S3
+### Permissions and S3
 
 <details>
 <summary>
@@ -49,7 +49,7 @@ chmod 400 ~/.ssh/given_pem_name.pem
 
 <details>
 <summary>
-S3 buckets provide cloud storage for data.
+AWS S3 buckets provide cloud storage for data.
 </summary>
 
 - https://aws.amazon.com
@@ -64,7 +64,7 @@ S3 buckets provide cloud storage for data.
 ### Managed Server/Worker(s) 
 
 The example below demonstrates deploying  
-[web scraper workers and a database server that manages them](https://www.google.com).
+[web scraper workers and a managing database server](https://www.google.com).
 
 
 #### Postgres Server
@@ -114,6 +114,7 @@ ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/n
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
 ```
 </details>
+See [`psql_server.py`](https://www.google.com) to examine the functionality of the database server.
 
 
 #### Webscraper Worker
@@ -152,7 +153,7 @@ pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
 </details>
-
+See [`psql_worker.py`](https://www.google.com) to examine the functionality of the webscraper worker.
 
 
 #### SparkML on EMR
