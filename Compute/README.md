@@ -183,7 +183,6 @@ launch_cluster.sh
       InstanceGroupType=CORE, InstanceCount=$3, InstanceType=m3.xlarge \
     --bootstrap-actions Path=s3://$1/scripts/bootstrap.sh
 ```
-</details>
 
 <details>
 <summary>
@@ -211,8 +210,7 @@ ipython -c "import nltk; nltk.download('stopwords'); nltk.download('punkt');
 
 Click [here](https://www.google.com) to see the sparkML NLP pipeline `nlp_pipeline.py`
 </details>
-
-
+</details>
 
 
 
