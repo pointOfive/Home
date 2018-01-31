@@ -21,6 +21,7 @@ I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.c
 <summary>
 AWS resources can be accessed via a command line interface.
 </summary>
+
 ```
 pip install --upgrade --user awscli
 .local/bin/aws configure
@@ -37,6 +38,7 @@ Default output format [None]: json
 <summary>
 AWS instances require authentication keys.
 </summary>
+
 ```
 # https://aws.amazon.com
 "EC2" -> "key Pairs" or "NETWORK & SECURITY" -> "Key Pairs"
@@ -49,6 +51,7 @@ chmod 400 ~/.ssh/given_pem_name.pem
 <summary>
 S3 buckets provide cloud storage for data.
 </summary>
+
 - https://aws.amazon.com
 - "Console (orange box)" -> "S3" -> "Create"
 - "Type of Policy" -> "S3 Bucket Policy"
@@ -74,6 +77,7 @@ database server that manages web scraping machines.
 <summary>
 bootstrap_ec2_master.sh
 </summary>
+
 ```
 # INSTALL POSTGRESS SERVER
 sudo apt-get update
@@ -122,6 +126,7 @@ wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -
 <summary>
 bootstrap_ec2_worker.sh
 </summary>
+
 ```
 sudo apt-get update
 
