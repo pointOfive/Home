@@ -221,11 +221,11 @@ To practice on a local spark installation (in a mac environment)
 </summary>
 
 ```
-brew install hadoop
 brew cask install java8
+brew install hadoop
 brew install apache-spark
 pip install py4j
-import pyspark
+#import pyspark
 ```
 with the following system variable
 ```
