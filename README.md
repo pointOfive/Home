@@ -1,6 +1,5 @@
 
 Tasks
-- Include AWS scripting (link to it)
 - Include git scripting (link to it)
 - Add SQL examples
 - Add C++ Code
@@ -30,11 +29,14 @@ In addition, you will also find my
 
 Finally, my formal resume is available [here](SchwartzCV.pdf). 
 
+##  
+
 
 <details>
 <summary>
-Note: If I look like this, I'm clickable!
+Note: If I have an arrow in front of me like this, I'm clickable
 </summary>
+
 And clicking me will expand to reveal further information
 </details>
 
