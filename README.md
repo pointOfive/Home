@@ -1,3 +1,19 @@
+
+Tasks
+- Include AWS scripting (link to it)
+- Include git scripting (link to it)
+- Add SQL examples
+- Add C++ Code
+- Add Python Code
+- Add Indeed data analysis page
+- Clean up lectures
+- Add Effect plots Bokeh - RideShare
+- Add Cost Matrix Bokeh - RideShare
+- Add PCA Regression - Auction
+- Add API crypto project
+- Add Coffee project diagnostics
+
+
 # Welcome
 
 I am a formally trained Bayesian statistician,
@@ -15,6 +31,11 @@ In addition, you will also find my
 Finally, my formal resume is available [here](SchwartzCV.pdf). 
 
 
-
+<details>
+<summary>
+Note: If I look like this, I'm clickable!
+</summary>
+And clicking me will expand to reveal further information
+</details>
 
 

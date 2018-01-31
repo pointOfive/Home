@@ -15,7 +15,7 @@ Additionally, I have experience with
 I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.com/ec2/instance-types/) [computation infrastructurs](https://aws.amazon.com/ec2/pricing/on-demand/). 
 
 
-#### AWS Permissions and S3
+### AWS Permissions and S3
 
 <details>
 <summary>
@@ -61,13 +61,13 @@ S3 buckets provide cloud storage for data.
 </details>
 
 
-#### Managed Server/Worker(s) 
+### Managed Server/Worker(s) 
 
-Here's how you can set up a Server/Worker(s) environment.
-[Here](https://www.google.com) I used it to employ a 
-database server that manages web scraping machines.
+The example below demonstrates deploying  
+[web scraper workers and a database server that manages them](https://www.google.com).
 
 
+#### Postgres Server
 ```
 ~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
      --instance-type t2.xlarge --count 1 --user-data file://bootstrap_ec2_master.sh
@@ -116,6 +116,7 @@ wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -
 </details>
 
 
+#### Webscraper Worker
 
 ```
 ~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
@@ -128,9 +129,8 @@ bootstrap_ec2_worker.sh
 </summary>
 
 ```
-sudo apt-get update
-
 # INSTALL HEADLESS BROWSER
+sudo apt-get update
 sudo apt-get install build-essential chrpath libssl-dev libxft-dev libfreetype6-dev libfreetype6 libfontconfig1-dev libfontconfig1 -y
 sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
 sudo tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
@@ -153,6 +153,9 @@ wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -
 ```
 </details>
 
+
+
+#### SparkML on EMR
 
 
 
@@ -194,7 +197,7 @@ source ~/.bash_profile
     
 ```
 
-#### SparkML on EMR
+
 
 
 
