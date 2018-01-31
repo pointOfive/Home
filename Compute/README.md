@@ -63,8 +63,7 @@ AWS S3 buckets provide cloud storage for data.
 
 ### Managed Server/Worker(s) 
 
-The example below demonstrates deploying  
-[web scraper workers and a managing database server](https://www.google.com).
+The example below demonstrates deploying [web scraper workers and a managing database server](https://www.google.com).
 
 
 #### Postgres Server
