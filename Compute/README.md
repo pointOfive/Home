@@ -17,7 +17,10 @@ I'm familiar with creating, managing, and using [AWS cloud](https://aws.amazon.c
 
 #### AWS Permissions and S3
 
+<details>
+<summary>
 AWS resources can be accessed via a command line interface.
+</summary>
 ```
 pip install --upgrade --user awscli
 .local/bin/aws configure
@@ -28,24 +31,31 @@ AWS Secret Access Key [None]:
 Default region name [None]: us-east-1
 Default output format [None]: json
 ```
+</details>
 
+<details>
+<summary>
 AWS instances require authentication keys.
-
+</summary>
 ```
 # https://aws.amazon.com
 "EC2" -> "key Pairs" or "NETWORK & SECURITY" -> "Key Pairs"
 mv ~/Downloads/given_pem_name.pem ~/.ssh/
 chmod 400 ~/.ssh/given_pem_name.pem
 ```    
+</details>
 
+<details>
+<summary>
 S3 buckets provide cloud storage for data.
-
+</summary>
 - https://aws.amazon.com
 - "Console (orange box)" -> "S3" -> "Create"
 - "Type of Policy" -> "S3 Bucket Policy"
   - Principal: *
   - Actions: GetObject
   - Amazon Resource Name (ARN): arn:aws:s3:::given_bucket_name/*
+</details>
 
 
 #### Managed Server/Worker(s) 
@@ -60,8 +70,10 @@ database server that manages web scraping machines.
      --instance-type t2.xlarge --count 1 --user-data file://bootstrap_ec2_master.sh
 ```
 
+<details>
+<summary>
 bootstrap_ec2_master.sh
-
+<summary>
 ```
 # INSTALL POSTGRESS SERVER
 sudo apt-get update
@@ -97,7 +109,7 @@ ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/n
 			 nltk.download('maxent_treebank_pos_tagger', download_dir='/home/ubuntu/nltk_data')"
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
 ```
-
+</details>
 
 
 
@@ -106,9 +118,10 @@ wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -
      --instance-type t2.small --count 1 --user-data file://bootstrap_ec2_worker.sh
 ```
 
-
+<details>
+<summary>
 bootstrap_ec2_worker.sh
-
+</summary>
 ```
 sudo apt-get update
 
@@ -133,7 +146,7 @@ pip install psycopg2
 pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
-
+</details>
 
 
 
