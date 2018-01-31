@@ -12,8 +12,10 @@ Additionally, I have experience with
 
 ## AWS EC2/EMR/S3
 
-I'm familiar with [creating](https://aws.amazon.com/ec2/instance-types/), [managing](https://aws.amazon.com/ec2/pricing/on-demand/), and [using](https://aws.amazon.com/) AWS cloud computation infrastructurs. 
+I'm familiar with creating, managing, and using AWS cloud computation infrastructurs. 
 
+- [EC2 Instances](https://aws.amazon.com/ec2/instance-types/)
+- [EC2 Pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
 
 ### Permissions and S3
 
@@ -61,7 +63,7 @@ AWS S3 buckets provide cloud storage for data.
 </details>
 
 
-### Managed Server/Worker(s) 
+### Server/Worker(s) Paradigm
 
 The example below demonstrates deploying [web scraper workers and a managing database server](https://www.google.com).
 
@@ -113,7 +115,7 @@ ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/n
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
 ```
 
-The [functionality of the postgres server](https://www.google.com) is given in `psql_server.py`
+Click [here](https://www.google.com) to see the functionality of the postgres server `psql_server.py`
 </details>
 
 
@@ -153,12 +155,63 @@ pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
 
-The [functionality of the webscraper worker](https://www.google.com) is given in `psql_worker.py`
+Click [here](https://www.google.com) to see the functionality of the webscraper worker `psql_worker.py`
 </details>
 
 
+### EMR Distributed Computing Paradigm
 
-#### SparkML on EMR
+The example below demonstrates a [sparkML+NLP data analysis pipeline](https://www.google.com).
+
+#### Spark
+
+
+```
+number_cores = 3
+bash launch_cluster.sh given_bucket_name given_pem_name $number_cores
+```
+
+<details>
+<summary>
+launch_cluster.sh
+</summary>
+
+```
+~/.local/bin/aws emr create-cluster --name PySparkCluster --release-label emr-5.11.0 \
+    --applications Name=Spark --ec2-attributes KeyName=$2 --use-default-roles --instance-groups \
+      InstanceGroupType=MASTER, InstanceCount=1, InstanceType=m3.xlarge \
+      InstanceGroupType=CORE, InstanceCount=$3, InstanceType=m3.xlarge \
+    --bootstrap-actions Path=s3://$1/scripts/bootstrap.sh
+```
+</details>
+
+<details>
+<summary>
+bootstrap.sh
+</summary>
+
+```
+# INSTALL ANACONDA
+sudo yum -y update
+sudo yum -y install tmux
+wget -S -T 10 -t 5 https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh -O $HOME/anaconda.sh
+sudo bash $HOME/anaconda.sh -b -p /mnt/anaconda
+sudo chown -R hadoop:hadoop /mnt
+export PATH=/mnt/anaconda/bin:$PATH
+echo -e "\n\n# Anaconda2" >> $HOME/.bashrc
+echo "export PATH=/mnt/anaconda/bin:$PATH" >> $HOME/.bashrc
+rm $HOME/anaconda.sh
+
+# INSTALL RUN TOOLS
+wget https://given_bucket_name.s3.amazonaws.com/scripts/nlp_pipeline.py -O $HOME/nlp_pipeline.py
+ipython -c "import nltk; nltk.download('stopwords'); nltk.download('punkt'); 
+	   	   nltk.download('averaged_perceptron_tagger'); nltk.download('maxent_treebank_pos_tagger')"
+
+```
+
+Click [here](https://www.google.com) to see the sparkML NLP pipeline `nlp_pipeline.py`
+</details>
+
 
 
 
