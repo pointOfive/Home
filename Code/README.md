@@ -38,14 +38,19 @@ git checkout -b clone_to_edit
 rm README.md
 # <oops!>
 git checkout -- README.md
-# <Edit README.md>
+# <edit README.md>
 git status
 git add README.md
 git commit -m 'updating a file'
+git push origin clone_to_edit
+git branch -d clone_to_edit
+git fetch origin clone_to_edit
+git commit -m 'pull'
 git branch
 git checkout master
 git merge clone_to_edit
-git branch -d clone_to_edit
-git push
+git branch -D clone_to_edit
+git push origin master
+git push origin --delete clone_to_edit
 ```
 </details>
