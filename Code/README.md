@@ -52,5 +52,6 @@ git merge clone_to_edit
 git branch -D clone_to_edit
 git push origin master
 git push origin --delete clone_to_edit
+git log
 ```
 </details>
