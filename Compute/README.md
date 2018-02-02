@@ -43,7 +43,7 @@ AWS instances require authentication keys.
 
 ```
 # https://aws.amazon.com
-"EC2" -> "key Pairs" or "NETWORK & SECURITY" -> "Key Pairs"
+"EC2" -> "Key Pairs" or "NETWORK & SECURITY" -> "Key Pairs"
 mv ~/Downloads/given_pem_name.pem ~/.ssh/
 chmod 400 ~/.ssh/given_pem_name.pem
 ```    
@@ -234,6 +234,9 @@ brew install hadoop
 brew install apache-spark
 pip install py4j
 #import pyspark
+pyspark --packages com.databricks:spark-csv_2.11:1.5.0
+	--packages com.amazonaws:aws-java-sdk-pom:1.10.34
+	--packages org.apache.hadoop:hadoop-aws:2.7.3
 ```
 with the following system variable
 ```
