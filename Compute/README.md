@@ -72,6 +72,7 @@ The example below demonstrates deploying [web scraper workers and a managing dat
 ```
 ~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
      --instance-type t2.xlarge --count 1 --user-data file://bootstrap_ec2_master.sh
+ssh -i ~/.ssh/given_pem_name.pem ubuntu@address.compute-1.amazonaws.com
 ```
 
 <details>

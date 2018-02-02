@@ -1,14 +1,13 @@
 
 Tasks
-- Include git scripting (link to it)
+- Add PCA Regression - Auction
 - Add SQL examples
+- Add R code
 - Add C++ Code
 - Add Python Code
-- Add Indeed data analysis page
 - Clean up lectures
 - Add Effect plots Bokeh - RideShare
 - Add Cost Matrix Bokeh - RideShare
-- Add PCA Regression - Auction
 - Add API crypto project
 - Add Coffee project diagnostics
 
