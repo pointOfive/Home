@@ -72,7 +72,6 @@ The example below demonstrates deploying [web scraper workers and a managing dat
 ```
 ~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
      --instance-type t2.xlarge --count 1 --user-data file://bootstrap_ec2_master.sh
-ssh -i ~/.ssh/given_pem_name.pem ubuntu@address.compute-1.amazonaws.com
 ```
 
 <details>
@@ -158,6 +157,14 @@ wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -
 
 Click [here](https://www.google.com) to see the functionality of the webscraper worker `psql_worker.py`
 </details>
+
+#### Jupyter Notebook Server
+```
+ssh -i ~/.ssh/given_pem_name.pem ubuntu@address.compute-1.amazonaws.com
+jupyter notebook
+exit
+ssh -NfL 8888:localhost:8888  -i ~/.ssh/given_pem_name.pem ubuntu@address.compute-1.amazonaws.com
+```
 
 
 ### EMR Distributed Computing Paradigm
