@@ -170,6 +170,7 @@ The example below demonstrates a [sparkML+NLP data analysis pipeline](https://ww
 ```
 number_cores = 3
 bash launch_cluster.sh given_bucket_name given_pem_name $number_cores
+scp -i ~/.ssh/given_bucket_name.pem file.py hadoop@address.compute-1.amazonaws.com:/home/hadoop
 ```
 
 <details>
