@@ -18,6 +18,11 @@ methodology for subgroup analysis that has recently received attention in the co
 
 ## Python
 
+- Matrix Parsing
+- Matrix Rotation
+- Connected
+
+
 ## Spark
 
 ## SQL
@@ -27,7 +32,7 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 
 ## Cpp
 
-To practice my coding ability I have begun working through the problems from 
+For a refresher and practice problems I have worked through the problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
 <details>
@@ -41,8 +46,10 @@ Arrays and Strings
 3. [in place string reversal](Cpp/reverseString.cpp) functionality
 
 Using this data structure I implemented the following capabilities
-0. h
-1. h
+
+1. Permutation Checking
+2. Find/Replace
+3. Compression
 </details>
 
 
