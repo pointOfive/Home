@@ -35,8 +35,10 @@ To practice my coding ability I have begun working through the problems from
 Arrays and Strings
 </summary>
 
-0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
-1. In place [string reversal](Cpp/reverseString.cpp) functionality
+0. [String buffer class](Cpp/stringBuffer.h), with
+1. [append](Cpp/stringBuffer.cpp)
+2. [character uniqueness checking](Cpp/uniqueChars.cpp)
+3. and in place [string reversal](Cpp/reverseString.cpp) functionality
 
 </details>
 
