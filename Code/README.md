@@ -1,13 +1,16 @@
 # Coding
 
+I work fluently in data analysis using either [R](#r) or [Python](#python),
+work comfortably in [SQL](#sql) and [bash](https://github.com/pointOfive/Home/tree/master/Compute#open-source-tools) environments,
+and am capable with core [C++](#c++) functionality.
+
 ## R
 
-I began using R in college,
-worked primarily in R during graduate school (except for a year during which I primarily used matlab),
-and worked primarily in R during my postdoctoral program and subsequent two work positions --
-approximately ten years in total.
+I have used R for approximately ten years, beginning in college, 
+continuing in graduate school (except for a year long period of matlab use)
+and during my postdoctoral program, and in my two subsequent work positions. 
 As of approximately two years ago I switched over to Python (primarily for access to the scikit-learn library); however,
-I am more than comfortable using R if the necessary functionality is not yet available in a Python context.
+I use R when the necessary functionality is not available in a Python context.
 For example, please see the [R subdirectory](https://github.com/pointOfive/Examples/Code/SQL) for an analysis
 of job salaries using [Model Based Tree Partitioning](http://party.r-forge.r-project.org), a very interesting
 methodology for subgroup analysis that has recently received attention in the context of
