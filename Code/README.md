@@ -30,12 +30,11 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 To practice my coding ability I have begun working through the problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
-### Strings and Lists
-
 <details>
 <summary>
-Click to expand
+Strings and Lists
 </summary>
+
 0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
 1. In place [string reversal](Cpp/reverseString.cpp) functionality
 </details>
