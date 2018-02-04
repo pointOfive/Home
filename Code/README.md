@@ -2,7 +2,7 @@
 
 I work fluently in data analysis using either [R](#r) or [Python](#python),
 work comfortably in [SQL](#sql) and [bash](https://github.com/pointOfive/Home/tree/master/Compute#open-source-tools) environments,
-and am capable with core [C++](#c++) functionality.
+and am capable with core [C++](#sql) functionality.
 
 ## R
 
@@ -11,7 +11,7 @@ continuing in graduate school (except for a year long period of matlab use)
 and during my postdoctoral program, and in my two subsequent work positions. 
 As of approximately two years ago I switched over to Python (primarily for access to the scikit-learn library); however,
 I use R when the necessary functionality is not available in a Python context.
-For example, please see the [R subdirectory](https://github.com/pointOfive/Examples/Code/SQL) for an analysis
+For example, please see the [R subdirectory](https://github.com/pointOfive/Home/tree/master/Code/R) for an analysis
 of job salaries using [Model Based Tree Partitioning](http://party.r-forge.r-project.org), a very interesting
 methodology for subgroup analysis that has recently received attention in the context of
 [causal inference](http://www.pnas.org/content/113/27/7353.full).
@@ -26,6 +26,9 @@ I have experience using SQL in `postgreSQL`, `psycopg2`, and `sparkSQL` contexts
 Some example queries are available in the [SQL subdirectory](https://github.com/pointOfive/Examples/Code/SQL).
 
 ## C++
+
+To practice my coding ability I have begun working through the problems from 
+[Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
 
 ## git
