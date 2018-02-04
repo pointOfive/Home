@@ -7,7 +7,6 @@
     char_array[end] = '\0';
   }
 
-
   char * string_buffer::get_char_array(void){
     return char_array;
   }
@@ -25,8 +24,14 @@
       append(str[i]);
     }
   }
-  
-  void string_buffer::append(char c){
+
+
+//int * int_pointer;
+//char * char_array = new char [5];
+//delete[] = int_pointer;
+//delete int_pointer
+
+void string_buffer::append(char c){
     if(end == (len-1)){
       char *tmp = new char [2*len];
       for(int i = 0; i<len; i++){

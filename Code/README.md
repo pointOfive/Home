@@ -59,17 +59,19 @@ Using this data structure I implemented the following capabilities
 Linked Lists
 </summary>
 
-0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp))
+0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
+1. [printing](Cpp/ll.cpp)
+2. [duplicating](Cpp/ll.cpp), and
+3. [reversing](Cpp/ll.cpp) functionality
 
-and the following capabilities
+Using this data structure I implemented the following capabilities
 
-1. [Dedup unsorted linked list]
-2. [find kth node from end]
-3. [Delete node from node]
-4. [Partion around node]
-5. [Store numbers as linked list]
-6. [Check if linked list is looped]
-7. [Check if linked list is a palindrome]
+4. [Dedup unsorted linked list](Cpp/dedup.cpp)
+5. [find kth node from end](Cpp/pali.cpp)
+7. [Partion around node](Cpp/part.cpp)
+8. [Store numbers as linked list](Cpp/add.cpp)
+9. [Check if linked list is looped](Cpp/circ.cpp)
+10. [Check if linked list is a palindrome](Cpp/pali.cpp)
 
 </details>
 

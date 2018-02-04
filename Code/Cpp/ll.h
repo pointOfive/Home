@@ -12,3 +12,9 @@ public:
   void point_to(ll_node * n);
 };
 
+
+void print(ll_node n);
+ll_node * dup(ll_node * n);
+bool eql(ll_node a, ll_node b);
+ll_node * rev(ll_node * &n);
+
