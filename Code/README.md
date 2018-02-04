@@ -45,9 +45,7 @@ Arrays and Strings
 1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
 2. [character uniqueness checking](Cpp/uniqueChars.cpp), and
 3. [in place string reversal](Cpp/reverseString.cpp) functionality
-<br>
 Using this data structure I implemented the following capabilities
-<br>
 4. [Permutation Checking](Cpp/perm.cpp)
 5. [Character Find/Replace](Cpp/replace.cpp)
 6. [Simple Compression](Cpp/compress.cpp)
