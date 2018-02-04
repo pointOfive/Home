@@ -36,10 +36,13 @@ Arrays and Strings
 </summary>
 
 0. [String buffer class](Cpp/stringBuffer.h), with
-1. [append](Cpp/stringBuffer.cpp)
-2. [character uniqueness checking](Cpp/uniqueChars.cpp)
-3. and in place [string reversal](Cpp/reverseString.cpp) functionality
+1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
+2. [character uniqueness checking](Cpp/uniqueChars.cpp), and
+3. [in place string reversal](Cpp/reverseString.cpp) functionality
 
+Using this data structure I implemented the following capabilities
+0. h
+1. h
 </details>
 
 
