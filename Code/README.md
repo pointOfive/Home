@@ -41,16 +41,16 @@ For a refresher and practice problems I have worked through the problems from
 Arrays and Strings
 </summary>
 
-0. [String Buffer class](Cpp/stringBuffer.h), with
+0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h)/[stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
 1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
 2. [character uniqueness checking](Cpp/uniqueChars.cpp), and
 3. [in place string reversal](Cpp/reverseString.cpp) functionality
-
+<br>
 Using this data structure I implemented the following capabilities
-
-1. [Permutation Checking](Cpp/perm.cpp)
-2. [Character Find/Replace](Cpp/replace.cpp)
-3. [Simple Compression](Cpp/compress.cpp)
+<br>
+4. [Permutation Checking](Cpp/perm.cpp)
+5. [Character Find/Replace](Cpp/replace.cpp)
+6. [Simple Compression](Cpp/compress.cpp)
 </details>
 
 
@@ -59,7 +59,7 @@ Using this data structure I implemented the following capabilities
 Linked Lists
 </summary>
 
-0. Linked List Node class [linkedListNode.h](Cpp/ll.h) and [linkedListNode.h](Cpp/ll.cpp)
+0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp))
 
 and the following capabilities
 
