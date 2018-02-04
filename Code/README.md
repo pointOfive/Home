@@ -47,9 +47,9 @@ Arrays and Strings
 
 Using this data structure I implemented the following capabilities
 
-1. Permutation Checking
-2. Find/Replace
-3. Compression
+1. [Permutation Checking](Cpp/perm.cpp)
+2. [Character Find/Replace](Cpp/replace.cpp)
+3. [Simple Compression](Cpp/compress.cpp)
 </details>
 
 
