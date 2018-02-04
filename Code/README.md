@@ -20,7 +20,8 @@ methodology for subgroup analysis that has recently received attention in the co
 
 - Matrix Parsing
 - Matrix Rotation
-- Connected
+- Connected matrix neighbors
+- amazon question
 
 
 ## Spark
@@ -40,7 +41,7 @@ For a refresher and practice problems I have worked through the problems from
 Arrays and Strings
 </summary>
 
-0. [String buffer class](Cpp/stringBuffer.h), with
+0. [String Buffer class](Cpp/stringBuffer.h), with
 1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
 2. [character uniqueness checking](Cpp/uniqueChars.cpp), and
 3. [in place string reversal](Cpp/reverseString.cpp) functionality
@@ -58,8 +59,17 @@ Using this data structure I implemented the following capabilities
 Linked Lists
 </summary>
 
-0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
-1. In place [string reversal](Cpp/reverseString.cpp) functionality
+0. Linked List Node class [linkedListNode.h](Cpp/ll.h) and [linkedListNode.h](Cpp/ll.cpp)
+
+and the following capabilities
+
+1. [Dedup unsorted linked list]
+2. [find kth node from end]
+3. [Delete node from node]
+4. [Partion around node]
+5. [Store numbers as linked list]
+6. [Check if linked list is looped]
+7. [Check if linked list is a palindrome]
 
 </details>
 
