@@ -47,6 +47,7 @@ Arrays and Strings
 3. [in place string reversal](Cpp/reverseString.cpp) functionality
 
 Using this data structure I implemented the following capabilities
+
 4. [Permutation Checking](Cpp/perm.cpp)
 5. [Character Find/Replace](Cpp/replace.cpp)
 6. [Simple Compression](Cpp/compress.cpp)
