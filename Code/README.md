@@ -2,7 +2,7 @@
 
 I work fluently in data analysis using either [R](#r) or [Python](#python),
 work comfortably in [SQL](#sql) and [bash](https://github.com/pointOfive/Home/tree/master/Compute#open-source-tools) environments,
-and am capable with core [C++](#sql) functionality.
+and am capable with core [C++](#cpp) functionality.
 
 ## R
 
@@ -25,15 +25,20 @@ methodology for subgroup analysis that has recently received attention in the co
 I have experience using SQL in `postgreSQL`, `psycopg2`, and `sparkSQL` contexts.
 Some example queries are available in the [SQL subdirectory](https://github.com/pointOfive/Examples/Code/SQL).
 
-## C++
+## Cpp
 
 To practice my coding ability I have begun working through the problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
 ### Strings and Lists
+
+<details>
+<summary>
+Click to expand
+</summary>
 0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
 1. In place [string reversal](Cpp/reverseString.cpp) functionality
-
+</details>
 
 
 
