@@ -30,13 +30,49 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 To practice my coding ability I have begun working through the problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
+### Arraus and Strings
 <details>
 <summary>
-Strings and Lists
+Click to expand
 </summary>
 
 0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
 1. In place [string reversal](Cpp/reverseString.cpp) functionality
+
+</details>
+
+###  Linked Lists
+<details>
+<summary>
+Click to expand
+</summary>
+
+0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
+1. In place [string reversal](Cpp/reverseString.cpp) functionality
+
+</details>
+
+### Stacks and Queues
+<details>
+<summary>
+Click to expand
+</summary>
+
+0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
+1. In place [string reversal](Cpp/reverseString.cpp) functionality
+
+</details>
+
+
+### Trees and Graphs
+<details>
+<summary>
+Click to expand
+</summary>
+
+0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
+1. In place [string reversal](Cpp/reverseString.cpp) functionality
+
 </details>
 
 
