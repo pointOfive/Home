@@ -123,7 +123,7 @@ For practice, and a general refresher I have worked through problems from
 #### Arrays and Strings
 <details>
 <summary>
-7 Exercises Completed
+7 Problem Challenges Completed
 </summary>
 
 <br>
@@ -143,7 +143,7 @@ Using this data structure I implemented the following capabilities
 #### Linked Lists
 <details>
 <summary>
-11 Exercises Completed
+11 Problem Challenges Completed
 </summary>
 
 <br>
@@ -168,7 +168,7 @@ Using this data structure I implemented the following capabilities
 #### Trees and Graphs
 <details>
 <summary>
-12 Excercises Completed
+12 Problem Challenges Completed
 </summary>
 
 <br>
