@@ -9,12 +9,20 @@ and am capable with core [C++](#c) functionality.
 I have used R for approximately ten years, beginning in college, 
 continuing in graduate school (except for a year long period of matlab use)
 and during my postdoctoral program, and in my two subsequent work positions. 
-As of approximately two years ago I switched over to Python (primarily for access to the scikit-learn library); however,
+Approximately two years ago I switched over to Python (primarily for access to the scikit-learn library); however,
 I use R when the necessary functionality is not available in a Python context.
-For example, please see the [R subdirectory](https://github.com/pointOfive/Home/tree/master/Code/R) for an analysis
-of job salaries using [Model Based Tree Partitioning](http://party.r-forge.r-project.org), a very interesting
+For example, [this analysis of job salaries](/R/mbrc.pdf) uses
+[Model Based Tree Partitioning](http://party.r-forge.r-project.org), a very interesting
 methodology for subgroup analysis that has recently received attention in the context of
-[causal inference](http://www.pnas.org/content/113/27/7353.full).
+[causal inference](http://www.pnas.org/content/113/27/7353.full) that is only currently available in R.
+The following are figures from the analysis. 
+
+![](/R/partition_all.jpg)
+![](/R/partition_middle.jpg)
+![](/R/salary.jpg)
+![](/R/prtition_left.jpg)
+![](/R/partition_right.jpg)
+![](/R/effects.pdf)
 
 ## Python
 
