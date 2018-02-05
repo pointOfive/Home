@@ -99,9 +99,7 @@ CREATE TABLE Employees (
 
 INSERT INTO employees (dept_id, employee_id, salary) VALUES ('develop',11,5200); 
 INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('develop',7,4200);
-.
-.
-.
+...
 
 SELECT e.dept_ID, e.Employee_ID, e.Salary, second.salary FROM Employees e JOIN
     (SELECT dept_id, AVG(salary) AS salary 
