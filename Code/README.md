@@ -92,7 +92,7 @@ Using this data structure I implemented the following capabilities
 4. [Check if tree is balanced](Cpp/balanced.cpp)
 5. [Check path between two nodes](Cpp/path.cpp)
 6. [Create balanced tree from sorted list](Cpp/tree.cpp)
-7. [Make linked lists of tree levels](tree2ll.cpp)
+7. [Make linked lists of tree levels](Cpp/tree2ll.cpp)
 8. [Check if tree is a BST](Cpp/balanced.cpp)
 9. [Find next node in BST](Cpp/next.cpp)
 10. [Find first common ancestors](Cpp/ancestors.cpp)
