@@ -89,9 +89,20 @@ SELECT Managers_Charges.Employee_ID FROM Managers_Charges JOIN Number_managed_GT
 
 ```SQL
 SELECT name, COUNT(name) AS times FROM contacts GROUP by name, phone HAVING COUNT(name)>1 ;
-```
 
-```SQL
+CREATE DATABASE windowing_practice;
+CREATE TABLE Employees (
+    Dept_ID VARCHAR(255),
+    Employee_ID INTEGER PRIMARY KEY,
+    Salary INTEGER
+);
+
+INSERT INTO employees (dept_id, employee_id, salary) VALUES ('develop',11,5200); 
+INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('develop',7,4200);
+.
+.
+.
+
 SELECT e.dept_ID, e.Employee_ID, e.Salary, second.salary FROM Employees e JOIN
     (SELECT dept_id, AVG(salary) AS salary 
         FROM (SELECT dept_ID, employee_ID, salary, rank() 
@@ -102,33 +113,6 @@ SELECT e.dept_ID, e.Employee_ID, e.Salary, second.salary FROM Employees e JOIN
      AS second ON (e.dept_ID = second.dept_ID)
      WHERE e.salary >= second.salary;
 ```
-
-<details>
-<summary>
-Table Creation 
-</summary>
-
-```SQL
-CREATE DATABASE windowing_practice;
-CREATE TABLE Employees (
-    Dept_ID VARCHAR(255),
-    Employee_ID INTEGER PRIMARY KEY,
-    Salary INTEGER
-);
-
-INSERT INTO employees (dept_id, employee_id, salary) VALUES ('develop',11,5200); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('develop',7,4200); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('develop',9,4500); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('develop',8,6000); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('develop',10,5200); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('personnel',5,3500); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('personnel',2,3900);
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('sales',3,4800); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('sales',1,5000); 
-INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('sales',4,4800); 
-```
-</details>
-
 									       
 
 
