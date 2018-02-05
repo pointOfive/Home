@@ -126,6 +126,7 @@ For practice, and a general refresher I have worked through problems from
 7 Exercises Completed
 </summary>
 
+
 0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h)/[stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
 1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
 2. [character uniqueness checking](uniqueChars.cpp), and
@@ -143,6 +144,7 @@ Using this data structure I implemented the following capabilities
 <summary>
 11 Exercises Completed
 </summary>
+
 
 0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
 1. [printing](Cpp/ll.cpp)
@@ -166,6 +168,7 @@ Using this data structure I implemented the following capabilities
 <summary>
 12 Excercises Completed
 </summary>
+
 
 0. Binary Tree class ([tree.h](Cpp/tree.h)/[tree.cpp](Cpp/tree.cpp)), with
 1. [adding](Cpp/tree.cpp)
