@@ -35,7 +35,7 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 
 ### Selecting largest, second largest, and kth largest `Salary` field value from the `Employee` table
 
-`SELECT MAX(Salary) FROM Employee;
+```SELECT MAX(Salary) FROM Employee ;
 
 SELECT MAX(Salary) FROM Employee WHERE Salary <> (SELECT MAX(Salary) FROM Employee) ;
 
@@ -43,7 +43,7 @@ CREATE TABLE Salary_Most2Least AS
     (SELECT Salary FROM Employee GROUP BY Salary ORDER BY Salary DESC) ;
 
 SELECT MAX(Salary) from Employee 
-    WHERE Salary < (SELECT Salary FROM Salary_Most2Least LIMIT 1 OFFSET n-1) ;`
+    WHERE Salary < (SELECT Salary FROM Salary_Most2Least LIMIT 1 OFFSET n-1) ;```
 
 
 
