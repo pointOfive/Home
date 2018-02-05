@@ -1,6 +1,6 @@
 # MBRP
 
-[View full analysis](mbrc.pdf)
+[View full analysis](mbrp.pdf)
 
 ![a](partition_left.jpg)
 ![a](partition_middle.jpg)
