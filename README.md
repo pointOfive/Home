@@ -1,8 +1,7 @@
 
 Tasks
-- Add SQL examples
-- Add R code
 - Add Python Code
+- Add R code
 - Add PCA Regression - Auction
 - Clean up lectures
 - Add Effect plots Bokeh - RideShare
