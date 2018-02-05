@@ -32,8 +32,7 @@ I have experience using SQL in `postgreSQL`, `psycopg2`, and `sparkSQL` contexts
 Some example queries are available in the [SQL subdirectory](https://github.com/pointOfive/Examples/Code/SQL).
 
 
-
-### Selecting largest, second largest, and kth largest `Salary` field value from the `Employee` table
+#### Selecting largest, second largest, and kth largest `Salary` field value from the `Employee` table
 
 ```SQL
 SELECT MAX(Salary) FROM Employee ;
@@ -47,6 +46,28 @@ SELECT MAX(Salary) from Employee
     WHERE Salary < (SELECT Salary FROM Salary_Most2Least LIMIT 1 OFFSET n-1) ;
 ```
 
+
+#### Select employees, managers managing more than `n` employees, and emplyees of specific managers
+
+```SQL
+SELECT Employee_ID FROM EMPLOYEES
+    WHERE Employee_ID NOT IN (SELECT DISTINCT Manager_ID FROM Employee) ;`
+
+SELECT e1.ID, e2.ID FROM Employee e1 JOIN Employee e2 ON (e1.ID = e2.Manager_ID)
+    WHERE e1.ID = xyz ;
+
+CREATE TABLE Number_managed_GTn AS
+    (SELECT Manager_ID, COUNT(*) FROM Employee 
+    GROUP BY Manager_ID 
+    HAVING COUNT(*) > n) ;
+
+CREATE TABLE Managers_Charges AS
+    (SELECT e1.ID AS Manager_ID, e2.ID AS Employee_ID 
+     FROM Employee e1 JOIN Employee e2 ON (e1.ID = e2.Manager_ID) ) ;    
+
+SELECT Managers_Charges.Employee_ID FROM Managers_Charges JOIN Number_managed_GTn 
+    ON (Managers_Charges.Manager_ID = Number_managed_GTn.Manager_ID) ;
+ ```
 
 
 
