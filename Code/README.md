@@ -47,11 +47,11 @@ SELECT MAX(Salary) from Employee
 ```
 
 
-#### Select employees, managers managing more than `n` employees, and emplyees of specific managers
+#### Select employees, emplyees of specific managers, and  managers managing more than `n` employees
 
 ```SQL
 SELECT Employee_ID FROM EMPLOYEES
-    WHERE Employee_ID NOT IN (SELECT DISTINCT Manager_ID FROM Employee) ;`
+    WHERE Employee_ID NOT IN (SELECT DISTINCT Manager_ID FROM Employee) ;
 
 SELECT e1.ID, e2.ID FROM Employee e1 JOIN Employee e2 ON (e1.ID = e2.Manager_ID)
     WHERE e1.ID = xyz ;
