@@ -31,6 +31,23 @@ methodology for subgroup analysis that has recently received attention in the co
 I have experience using SQL in `postgreSQL`, `psycopg2`, and `sparkSQL` contexts.
 Some example queries are available in the [SQL subdirectory](https://github.com/pointOfive/Examples/Code/SQL).
 
+
+
+### Selecting largest, second largest, and kth largest `Salary` field value from the `Employee` table
+
+`SELECT MAX(Salary) FROM Employee;
+
+SELECT MAX(Salary) FROM Employee WHERE Salary <> (SELECT MAX(Salary) FROM Employee) ;
+
+CREATE TABLE Salary_Most2Least AS 
+    (SELECT Salary FROM Employee GROUP BY Salary ORDER BY Salary DESC) ;
+
+SELECT MAX(Salary) from Employee 
+    WHERE Salary < (SELECT Salary FROM Salary_Most2Least LIMIT 1 OFFSET n-1) ;`
+
+
+
+
 ## Cpp
 
 For practice, and a general refresher I have worked through problems from 

@@ -1,10 +1,9 @@
 
 Tasks
-- Add PCA Regression - Auction
 - Add SQL examples
 - Add R code
-- Add C++ Code
 - Add Python Code
+- Add PCA Regression - Auction
 - Clean up lectures
 - Add Effect plots Bokeh - RideShare
 - Add Cost Matrix Bokeh - RideShare
