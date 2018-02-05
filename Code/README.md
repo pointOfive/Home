@@ -128,7 +128,7 @@ For practice, and a general refresher I have worked through problems from
 
 <br>
 
-0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h)/[stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
+0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h), [stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
 1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
 2. [character uniqueness checking](uniqueChars.cpp), and
 3. [in place string reversal](reverseString.cpp) functionality
@@ -148,7 +148,7 @@ Using this data structure I implemented the following capabilities
 
 <br>
 
-0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
+0. Linked List Node class ([linkedListNode.h](Cpp/ll.h), [linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
 1. [printing](Cpp/ll.cpp)
 2. [duplicating](Cpp/ll.cpp)
 3. [reversing](Cpp/ll.cpp), and
@@ -173,7 +173,7 @@ Using this data structure I implemented the following capabilities
 
 <br>
 
-0. Binary Tree class ([tree.h](Cpp/tree.h)/[tree.cpp](Cpp/tree.cpp)), with
+0. Binary Tree class ([tree.h](Cpp/tree.h), [tree.cpp](Cpp/tree.cpp)), with
 1. [adding](Cpp/tree.cpp)
 2. [display](Cpp/tree.cpp), and
 3. [depth calculation](Cpp/balanced.cpp) functionality
