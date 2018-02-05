@@ -33,7 +33,7 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 
 ## Cpp
 
-For a refresher and practice problems I have worked through the problems from 
+For practice, and a general refresher I have worked through problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
 <details>
@@ -42,11 +42,11 @@ Arrays and Strings
 </summary>
 
 0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h)/[stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
-1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
-2. [character uniqueness checking](Cpp/uniqueChars.cpp), and
-3. [in place string reversal](Cpp/reverseString.cpp) functionality
+1. dynamically expandable appending
+2. character uniqueness checking, and
+3. in place string reversal functionality
 
-Using this data structure I implemented the following capabilities
+Then using this data structure I implemented the following capabilities
 
 4. [Permutation Checking](Cpp/perm.cpp)
 5. [Character Find/Replace](Cpp/replace.cpp)
@@ -60,29 +60,18 @@ Linked Lists
 </summary>
 
 0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
-1. [printing](Cpp/ll.cpp)
-2. [duplicating](Cpp/ll.cpp), and
-3. [reversing](Cpp/ll.cpp) functionality
+1. printing
+2. duplicating, and
+3. reversing functionality
 
-Using this data structure I implemented the following capabilities
+Then using this data structure I implemented the following capabilities
 
 4. [Dedup unsorted linked list](Cpp/dedup.cpp)
-5. [find kth node from end](Cpp/pali.cpp)
+5. [Find kth node from end](Cpp/pali.cpp)
 7. [Partion around node](Cpp/part.cpp)
-8. [Store numbers as linked list](Cpp/add.cpp)
+8. [Add numbers stored as a linked list](Cpp/add.cpp)
 9. [Check if linked list is looped](Cpp/circ.cpp)
 10. [Check if linked list is a palindrome](Cpp/pali.cpp)
-
-</details>
-
-
-<details>
-<summary>
-Stacks and Queues
-</summary>
-
-0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
-1. In place [string reversal](Cpp/reverseString.cpp) functionality
 
 </details>
 
@@ -92,11 +81,21 @@ Stacks and Queues
 Trees and Graphs
 </summary>
 
-0. String buffer class [stringBuffer.h](Cpp/stringBuffer.h) and [stringBuffer.h](Cpp/stringBuffer.cpp)
-1. In place [string reversal](Cpp/reverseString.cpp) functionality
+0. Binary Tree class ([tree.h](Cpp/tree.h)/[tree.cpp](Cpp/tree.cpp)), with
+1. adding
+2. display, and
+3. depth Calcultions functionality
+
+Then using this data structure I implemented the following capabilities
+
+4. [Check if tree is balanced](Cpp/balanced.cpp)
+5. [Create balanced tree from sorted list](Cpp/createBalancedBST.cpp)
+6. [Check if tree is a BST](Cpp/checkBST.cpp)
+7. [Find next node in BST](Cpp/next.cpp)
+8. [Find first common ancestors](Cpp/ancestors.cpp)
+9. [Find paths summing to x](Cpp/paths.cpp)
 
 </details>
-
 
 
 
