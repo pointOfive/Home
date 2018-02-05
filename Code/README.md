@@ -85,7 +85,7 @@ Trees and Graphs
 0. Binary Tree class ([tree.h](Cpp/tree.h)/[tree.cpp](Cpp/tree.cpp)), with
 1. [adding](Cpp/tree.cpp)
 2. [display](Cpp/tree.cpp), and
-3. [depth calculation](Cpp/tree.cpp) functionality
+3. [depth calculation](Cpp/balanced.cpp) functionality
 
 Using this data structure I implemented the following capabilities
 
@@ -93,10 +93,10 @@ Using this data structure I implemented the following capabilities
 5. [Check path between two nodes](Cpp/path.cpp)
 6. [Create balanced tree from sorted list](Cpp/tree.cpp)
 7. [Make linked lists of tree levels](Cpp/tree2ll.cpp)
-8. [Check if tree is a BST](Cpp/balanced.cpp)
+8. [Check if tree is a BST](Cpp/isbst.cpp)
 9. [Find next node in BST](Cpp/next.cpp)
 10. [Find first common ancestors](Cpp/ancestors.cpp)
-11. [Find paths summing to x](Cpp/sum_path.cpp.cpp)
+11. [Find paths summing to x](Cpp/sum_path.cpp)
 
 </details>
 
