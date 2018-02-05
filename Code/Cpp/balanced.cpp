@@ -5,25 +5,6 @@
 
 using namespace std;
 
-int max_depth(bin_node *n){
-  if(n->left == 0 && n->right == 0){
-    return n->obj;
-  }
-  if(n->left == 0){
-    return max_depth(n->right);
-  }
-  if(n->right == 0){
-    return max_depth(n->left);
-  }
-  int maxL = max_depth(n->left);
-  int maxR = max_depth(n->right);
-  if(maxL > maxR){
-    return maxL;
-  }else{
-    return maxR;
-  }
-}
-
 bool bal(bin_node *n){
 
   if(n->left == 0 && n->right == 0){
