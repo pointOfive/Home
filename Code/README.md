@@ -32,6 +32,22 @@ I have experience using SQL in `postgreSQL`, `psycopg2`, and `sparkSQL` contexts
 Some example queries are available in the [SQL subdirectory](https://github.com/pointOfive/Examples/Code/SQL).
 
 
+#### Find items sold, not sold, and a subset of items sold within a specific month
+
+```SQL
+SELECT c.Name FROM Catelog c JOIN Sales s ON (c.Product_ID = s.Product_ID) 
+    GROUP BY c.Name ;
+
+SELECT c.Name FROM Catelog c LEFT JOIN Sales s ON (c.Product_ID = s.Product_ID)
+    WHERE s.Date IS NULL
+    GROUP c.Name ;
+
+SELECT c.Name, s.Date FROM Catelog c JOIN Sales s ON (c.Product_ID = s.Product_ID)
+    WHERE s.Date (BETWEEN to_date("01 11 2015", DD Mon YYYY) AND 
+                          to_date("01 11 2015", DD Mon YYYY))
+          AND c.Name LIKE "S%" ;
+```
+
 #### Selecting largest, second largest, and kth largest `Salary` field value from the `Employee` table
 
 ```SQL
@@ -45,7 +61,6 @@ CREATE TABLE Salary_Most2Least AS
 SELECT MAX(Salary) from Employee 
     WHERE Salary < (SELECT Salary FROM Salary_Most2Least LIMIT 1 OFFSET n-1) ;
 ```
-
 
 #### Select employees, emplyees of specific managers and managers managing more than `n` employees
 
@@ -69,21 +84,7 @@ SELECT Managers_Charges.Employee_ID FROM Managers_Charges JOIN Number_managed_GT
     ON (Managers_Charges.Manager_ID = Number_managed_GTn.Manager_ID) ;
  ```
 
-#### Find items sold, not sold, and a subset of items sold within a specific month
 
-```SQL
-SELECT c.Name FROM Catelog c JOIN Sales s ON (c.Product_ID = s.Product_ID) 
-    GROUP BY c.Name ;
-
-SELECT c.Name FROM Catelog c LEFT JOIN Sales s ON (c.Product_ID = s.Product_ID)
-    WHERE s.Date IS NULL
-    GROUP c.Name ;
-
-SELECT c.Name, s.Date FROM Catelog c JOIN Sales s ON (c.Product_ID = s.Product_ID)
-    WHERE s.Date (BETWEEN to_date("01 11 2015", DD Mon YYYY) AND 
-                          to_date("01 11 2015", DD Mon YYYY))
-          AND c.Name LIKE "S%" ;
-```
 
 
 
