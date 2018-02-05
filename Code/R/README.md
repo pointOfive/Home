@@ -1,3 +1,3 @@
-![a](R/partition_left.jpg)
-![a](R/partition_middle.jpg)
-![a](R/partition_right.jpg)
+![a](partition_left.jpg)
+![a](partition_middle.jpg)
+![a](partition_right.jpg)
