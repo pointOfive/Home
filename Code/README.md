@@ -91,6 +91,18 @@ SELECT Managers_Charges.Employee_ID FROM Managers_Charges JOIN Number_managed_GT
 SELECT name, COUNT(name) AS times FROM contacts GROUP by name, phone HAVING COUNT(name)>1 ;
 ```
 
+```SQL
+SELECT e.dept_ID, e.Employee_ID, e.Salary, second.salary FROM Employees e JOIN
+    (SELECT dept_id, AVG(salary) AS salary 
+        FROM (SELECT dept_ID, employee_ID, salary, rank() 
+                  OVER (PARTITION BY Dept_ID ORDER BY Salary DESC) FROM Employees) 
+             AS ranks
+             WHERE rank = 2
+             GROUP BY dept_id) 
+     AS second ON (e.dept_ID = second.dept_ID)
+     WHERE e.salary >= second.salary;
+```
+
 <details>
 <summary>
 Table Creation 
@@ -116,18 +128,6 @@ INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('sales',1,5000);
 INSERT INTO Employees (dept_id, employee_id, salary) VALUES ('sales',4,4800); 
 ```
 </details>
-
-```SQL
-SELECT e.dept_ID, e.Employee_ID, e.Salary, second.salary FROM Employees e JOIN
-    (SELECT dept_id, AVG(salary) AS salary 
-        FROM (SELECT dept_ID, employee_ID, salary, rank() 
-                  OVER (PARTITION BY Dept_ID ORDER BY Salary DESC) FROM Employees) 
-             AS ranks
-             WHERE rank = 2
-             GROUP BY dept_id) 
-     AS second ON (e.dept_ID = second.dept_ID)
-     WHERE e.salary >= second.salary;
-```
 
 									       
 
