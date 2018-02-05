@@ -17,15 +17,9 @@ methodology for subgroup analysis that has recently received attention in the co
 [causal inference](http://www.pnas.org/content/113/27/7353.full) that is only currently available in R.
 The following are figures from the analysis. 
 
-..![a](R/partition_all.jpg)
+[![a](R/partition_all.jpg)](R/README.md)
 ![a](R/salary.jpg)
-
 ![a](R/effects.jpg)
-
-![a](R/prtition_left.jpg)
-![a](R/partition_middle.jpg)
-![a](R/partition_right.jpg)
-
 
 
 ## Python
