@@ -47,7 +47,7 @@ SELECT MAX(Salary) from Employee
 ```
 
 
-#### Select employees, emplyees of specific managers, and  managers managing more than `n` employees
+#### Select employees, emplyees of specific managers and managers managing more than `n` employees
 
 ```SQL
 SELECT Employee_ID FROM EMPLOYEES
@@ -68,6 +68,23 @@ CREATE TABLE Managers_Charges AS
 SELECT Managers_Charges.Employee_ID FROM Managers_Charges JOIN Number_managed_GTn 
     ON (Managers_Charges.Manager_ID = Number_managed_GTn.Manager_ID) ;
  ```
+
+#### Find items sold, not sold, and a subset of items sold within a specific month
+
+```SQL
+SELECT c.Name FROM Catelog c JOIN Sales s ON (c.Product_ID = s.Product_ID) 
+    GROUP BY c.Name ;
+
+SELECT c.Name FROM Catelog c LEFT JOIN Sales s ON (c.Product_ID = s.Product_ID)
+    WHERE s.Date IS NULL
+    GROUP c.Name ;
+
+SELECT c.Name, s.Date FROM Catelog c JOIN Sales s ON (c.Product_ID = s.Product_ID)
+    WHERE s.Date (BETWEEN to_date("01 11 2015", DD Mon YYYY) AND 
+                          to_date("01 11 2015", DD Mon YYYY))
+          AND c.Name LIKE "S%" ;
+```
+
 
 
 
