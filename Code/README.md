@@ -42,11 +42,11 @@ Arrays and Strings
 </summary>
 
 0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h)/[stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
-1. dynamically expandable appending
-2. character uniqueness checking, and
-3. in place string reversal functionality
+1. [dynamically expandable appending](Cpp/stringBuffer.cpp)
+2. [character uniqueness checking](uniqueChars.cpp), and
+3. [in place string reversal](reverseString.cpp) functionality
 
-Then using this data structure I implemented the following capabilities
+Using this data structure I implemented the following capabilities
 
 4. [Permutation Checking](Cpp/perm.cpp)
 5. [Character Find/Replace](Cpp/replace.cpp)
@@ -60,14 +60,15 @@ Linked Lists
 </summary>
 
 0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
-1. printing
-2. duplicating, and
-3. reversing functionality
+1. [printing](Cpp/ll.cpp)
+2. [duplicating](Cpp/ll.cpp)
+3. [reversing](Cpp/ll.cpp), and
+4. [checking equality](Cpp/ll.cpp) functionality
 
-Then using this data structure I implemented the following capabilities
+Using this data structure I implemented the following capabilities
 
-4. [Dedup unsorted linked list](Cpp/dedup.cpp)
-5. [Find kth node from end](Cpp/pali.cpp)
+5. [Dedup unsorted linked list](Cpp/dedup.cpp)
+6. [Find kth node from end](Cpp/pali.cpp)
 7. [Partion around node](Cpp/part.cpp)
 8. [Add numbers stored as a linked list](Cpp/add.cpp)
 9. [Check if linked list is looped](Cpp/circ.cpp)
@@ -82,18 +83,20 @@ Trees and Graphs
 </summary>
 
 0. Binary Tree class ([tree.h](Cpp/tree.h)/[tree.cpp](Cpp/tree.cpp)), with
-1. adding
-2. display, and
-3. depth Calcultions functionality
+1. [adding](Cpp/tree.cpp)
+2. [display](Cpp/tree.cpp), and
+3. [depth calculation](Cpp/tree.cpp) functionality
 
-Then using this data structure I implemented the following capabilities
+Using this data structure I implemented the following capabilities
 
 4. [Check if tree is balanced](Cpp/balanced.cpp)
-5. [Create balanced tree from sorted list](Cpp/createBalancedBST.cpp)
-6. [Check if tree is a BST](Cpp/checkBST.cpp)
-7. [Find next node in BST](Cpp/next.cpp)
-8. [Find first common ancestors](Cpp/ancestors.cpp)
-9. [Find paths summing to x](Cpp/paths.cpp)
+5. [Check path between two nodes](Cpp/path.cpp)
+6. [Create balanced tree from sorted list](Cpp/tree.cpp)
+7. [Make linked lists of tree levels](tree2ll.cpp)
+8. [Check if tree is a BST](Cpp/balanced.cpp)
+9. [Find next node in BST](Cpp/next.cpp)
+10. [Find first common ancestors](Cpp/ancestors.cpp)
+11. [Find paths summing to x](Cpp/sum_path.cpp.cpp)
 
 </details>
 
