@@ -36,9 +36,10 @@ Some example queries are available in the [SQL subdirectory](https://github.com/
 For practice, and a general refresher I have worked through problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
+### Arrays and Strings
 <details>
 <summary>
-Arrays and Strings
+7 Exercises Completed
 </summary>
 
 0. String Buffer class ([stringBuffer.h](Cpp/stringBuffer.h)/[stringBuffer.cpp](Cpp/stringBuffer.cpp)), with
@@ -53,10 +54,10 @@ Using this data structure I implemented the following capabilities
 6. [Simple Compression](Cpp/compress.cpp)
 </details>
 
-
+### Linked Lists
 <details>
 <summary>
-Linked Lists
+11 Exercises Completed
 </summary>
 
 0. Linked List Node class ([linkedListNode.h](Cpp/ll.h)/[linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
@@ -76,10 +77,10 @@ Using this data structure I implemented the following capabilities
 
 </details>
 
-
+### Trees and Graphs
 <details>
 <summary>
-Trees and Graphs
+12 Excercises Completed
 </summary>
 
 0. Binary Tree class ([tree.h](Cpp/tree.h)/[tree.cpp](Cpp/tree.cpp)), with
