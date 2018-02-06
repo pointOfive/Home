@@ -33,9 +33,9 @@ and are meant to agument the [C++ coding practice below](#c).
 - Fix swapped BST nodes (amazon question)
 
 #### Matrix Manipulation
-- Matrix Parsing
-- Matrix Rotation
-- Connected matrix neighbors
+- [Matrix Parsing](zeroout.py)
+- [Matrix Rotation](rotate.py)
+- [Connected matrix neighbors](Python/graph.py)
 
 #### Stacks and Queues
 
