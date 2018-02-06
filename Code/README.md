@@ -50,7 +50,7 @@ These problems were drawn from
 - [Connected matrix neighbors](Python/graph.py)
 - [Matrix Parsing](zeroout.py)
 - [Find odd appearance items](odd.py)
-
+</details>
 
 #### Stacks and Queues
 <details>
