@@ -1,11 +1,11 @@
 
 Tasks
-- Add Python Code
+
+- Add Effect plots Bokeh - RideShare
+- Add Cost Matrix Bokeh - RideShare
 - Add PCA Regression - Auction
 - Clean up lectures
 - Add sparkML/nlp/clustering
-- Add Effect plots Bokeh - RideShare
-- Add Cost Matrix Bokeh - RideShare
 - Add API crypto project
 - Add Coffee project diagnostics
 - Add outlier detection data

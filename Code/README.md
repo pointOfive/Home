@@ -35,7 +35,7 @@ and are meant to agument the [C++ coding practice below](#c).  These problems we
 #### Programming Interview Questions
 <details>
 <summary>
-9 Problem Challenges Completed
+Click here for problems/solutions (9)
 </summary>
 
 <br>
@@ -54,7 +54,7 @@ and are meant to agument the [C++ coding practice below](#c).  These problems we
 #### Stacks and Queues
 <details>
 <summary>
-7 Problem Challenges Completed
+Click here for problems/solutions (7)
 </summary>
 
 <br>
@@ -175,7 +175,7 @@ I have worked through problems from
 #### Arrays and Strings
 <details>
 <summary>
-7 Problem Challenges Completed
+Click here for problems/solutions (7)
 </summary>
 
 <br>
@@ -195,7 +195,7 @@ Using this data structure I implemented the following capabilities
 #### Linked Lists
 <details>
 <summary>
-11 Problem Challenges Completed
+Click here for problems/solutions (11)
 </summary>
 
 <br>
@@ -220,7 +220,7 @@ Using this data structure I implemented the following capabilities
 #### Trees and Graphs
 <details>
 <summary>
-12 Problem Challenges Completed
+Click here for problems/solutions (12)
 </summary>
 
 <br>
