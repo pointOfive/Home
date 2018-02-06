@@ -11,15 +11,15 @@ continuing in graduate school (except for a year long period of matlab use)
 and during my postdoctoral program, and in my two subsequent work positions. 
 Approximately two years ago I switched over to Python (primarily for access to the scikit-learn library); however,
 I use R when the necessary functionality is not available in a Python context.
-For example, [this analysis of job salaries](/R/mbrc.pdf) uses
-[Model Based Tree Partitioning](http://party.r-forge.r-project.org), a very interesting
+For example, [this analysis of job salaries](/R/mbrp.pdf) uses
+[model based tree partitioning](http://party.r-forge.r-project.org) (MBTR)
+that is currently only available in R.
+MBTP is a very interesting
 methodology for subgroup analysis that has recently received attention in the context of
-[causal inference](http://www.pnas.org/content/113/27/7353.full) that is only currently available in R.
-The following are figures from the analysis. 
+[causal inference](http://www.pnas.org/content/113/27/7353.full).
 
 [![a](R/partition_all.png)](https://github.com/pointOfive/Home/tree/master/Code/R#mbrp)
-![a](R/salary.jpg)
-![a](R/effects.jpg)
+[![a](R/salary.jpg)](https://github.com/pointOfive/Home/tree/master/Code/R#mbrp)
 
 
 ## Python
