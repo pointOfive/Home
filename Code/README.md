@@ -24,20 +24,41 @@ methodology for subgroup analysis that has recently received attention in the co
 
 ## Python
 
-To see examples of data analysis using Python and supporting tools, please see the [data analysis page](www.google.com). 
+Examples of data analysis using Python and supporting tools are available on the [data analysis page](www.google.com). 
 
 The following are examples of algorithm prototyping and implementation (using Python),
-and are meant to agument the [C++ coding practice below](#c).
+and are meant to agument the [C++ coding practice below](#c).  
+These problems were drawn from 
+[here](https://careercup.com/page?pid=amazon-interview-questions&sort=votes), 
+[here](https://www.geeksforgeeks.org/amazons-asked-interview-questions/), and
+[here](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf). 
 
-#### BST problem
-- Fix swapped BST nodes (amazon question)
+#### Interview Questions
+<details>
+<summary>
+9 Problem Challenges Completed
+</summary>
 
-#### Matrix Manipulation
-- [Matrix Parsing](zeroout.py)
+<br>
+
+- [Fix swapped BST nodes](Python/swapped_bst_nodes.py)
+- [In place unsorted counter](Python/tally.py)
+- [Pyramid water buckets](Python/pyramid.py) 
+- [Maximum increase product](Python/product.py)
+- [Maximum unique substring](substring.py)
 - [Matrix Rotation](rotate.py)
 - [Connected matrix neighbors](Python/graph.py)
+- [Matrix Parsing](zeroout.py)
+- [Find odd appearance items](odd.py)
+
 
 #### Stacks and Queues
+<details>
+<summary>
+7 Problem Challenges Completed
+</summary>
+
+<br>
 
 - [Set of stacks](Python/stacksset.py)
 - [3 stack array](Python/threestack.py)
@@ -46,6 +67,7 @@ and are meant to agument the [C++ coding practice below](#c).
 - [Two stack queue class](Python/stackqueue.py)
 - [Sort stack with stack](Python/twostacksort.py)
 - [Animal shelter](Python/shelter.py)
+</details>
 
 ## Spark
 
