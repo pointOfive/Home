@@ -2,6 +2,8 @@
 
 ## Experience
 
+(Click to Expand)
+
 ### [2017-Present: Data Science Instructor, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
 <details>
 
