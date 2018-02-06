@@ -32,7 +32,7 @@ and are meant to agument the [C++ coding practice below](#c).  These problems we
 [here](https://www.geeksforgeeks.org/amazons-asked-interview-questions/), and
 [here](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf). 
 
-#### Interview Questions
+#### Programming Interview Questions
 <details>
 <summary>
 9 Problem Challenges Completed
@@ -45,9 +45,9 @@ and are meant to agument the [C++ coding practice below](#c).  These problems we
 - [Pyramid water buckets](Python/pyramid.py) 
 - [Maximum increasing product](Python/product.py)
 - [Maximum unique substring](Python/substring.py)
-- [Matrix Rotation](Python/rotate.py)
+- [Matrix rotation](Python/rotate.py)
 - [Connected matrix neighbors](Python/graph.py)
-- [Matrix Parsing](Python/zeroout.py)
+- [Matrix parsing](Python/zeroout.py)
 - [Find odd appearance items](Python/odd.py)
 </details>
 
