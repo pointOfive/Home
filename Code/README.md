@@ -26,9 +26,8 @@ methodology for subgroup analysis that has recently received attention in the co
 
 Examples of data analysis using Python and supporting tools are available on the [data analysis page](www.google.com). 
 
-The following are examples of algorithm prototyping and implementation (using Python),
-and are meant to agument the [C++ coding practice below](#c).  
-These problems were drawn from 
+The following are examples of algorithm prototyping and implementation with Python,
+and are meant to agument the [C++ coding practice below](#c).  These problems were drawn from 
 [here](https://careercup.com/page?pid=amazon-interview-questions&sort=votes), 
 [here](https://www.geeksforgeeks.org/amazons-asked-interview-questions/), and
 [here](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf). 
@@ -44,12 +43,12 @@ These problems were drawn from
 - [Fix swapped BST nodes](Python/swapped_bst_nodes.py)
 - [In place unsorted counter](Python/tally.py)
 - [Pyramid water buckets](Python/pyramid.py) 
-- [Maximum increase product](Python/product.py)
-- [Maximum unique substring](substring.py)
-- [Matrix Rotation](rotate.py)
+- [Maximum increasing product](Python/product.py)
+- [Maximum unique substring](Python/substring.py)
+- [Matrix Rotation](Python/rotate.py)
 - [Connected matrix neighbors](Python/graph.py)
-- [Matrix Parsing](zeroout.py)
-- [Find odd appearance items](odd.py)
+- [Matrix Parsing](Python/zeroout.py)
+- [Find odd appearance items](Python/odd.py)
 </details>
 
 #### Stacks and Queues
