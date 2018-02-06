@@ -31,11 +31,11 @@ Finally, my formal resume/CV is available [here](SchwartzCV.pdf).
 
 <details>
 <summary>
-Note: If I have an arrow in front of me like this, I'm clickable.
+Note: If I have an arrow in front of me like this, click me.
 </summary>
 
 
-#### And clicking me will expand to reveal further information.
+#### And I'll expand to reveal further information.
 </details>
 
 
