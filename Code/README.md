@@ -24,10 +24,10 @@ methodology for subgroup analysis that has recently received attention in the co
 
 ## Python
 
-To see examples of data analysis using Python and supporting tools, please visit the [Data Analysis](www.google.com) page.
+To see examples of data analysis using Python and supporting tools, please see the [data analysis page](www.google.com). 
 
-With respect to algorithm prototyping and implementation,
-I have agumented the [C++ coding practice below](#c) with the following. 
+The following are examples of algorithm prototyping and implementation (using Python),
+and are meant to agument the [C++ coding practice below](#c).
 
 #### BST problem
 - Fix swapped BST nodes (amazon question)
@@ -48,6 +48,12 @@ I have agumented the [C++ coding practice below](#c) with the following.
 - Animal shelter
 
 ## Spark
+
+Instructions for setting up
+spark on an AWS cluster or local machine
+are given on the [computing page](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm).
+A spark NLP and unsupervised learning pipeline is given on the [data analysis page](www.google.com).
+
 
 ## SQL
 
