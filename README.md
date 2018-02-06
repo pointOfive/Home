@@ -34,8 +34,9 @@ Finally, my formal resume/CV is available [here](SchwartzCV.pdf).
 Note: If I have an arrow in front of me like this, click me.
 </summary>
 
+<br>
 
-#### And I'll expand to reveal further information.
+I expand to reveal further information.
 </details>
 
 
