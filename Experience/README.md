@@ -2,13 +2,11 @@
 
 ## Experience
 
-(Click to Expand)
-
 ### [2017-Present: Data Science Instructor, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
 <details>
 
 <summary>
-Data Science Teacher and Mentor
+Data Science Teacher and Mentor (click to expand)
 </summary>
 
 <table style="width:100%">
@@ -45,7 +43,7 @@ Data Science Teacher and Mentor
 <details>
 
 <summary>
-Instructor, Sr. Data Scientist
+Instructor, Sr. Data Scientist (click to expand)
 </summary>
 
 <table style="width:100%">
