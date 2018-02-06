@@ -77,7 +77,7 @@ Instructor, Sr. Data Scientist (click to expand)
 <details>
 
 <summary>
-Research Associate
+Research Associate (click to expand)
 </summary>
 
 <table style="width:100%">
@@ -114,7 +114,7 @@ Research Associate
 <details>
 
 <summary>
-Bioinformatic Analyst
+Bioinformatic Analyst (click to expand)
 </summary>
 
 <table style="width:100%">
@@ -152,7 +152,7 @@ Bioinformatic Analyst
 <details>
 
 <summary>
-Research Associate
+Research Associate (click to expand)
 </summary>
 
 <table style="width:100%">
@@ -185,7 +185,7 @@ Research Associate
 <details>
 
 <summary>
-Graduate Student, Reserach Assistant
+Graduate Student, Reserach Assistant (click to expand)
 </summary>
 
 <table style="width:100%">
