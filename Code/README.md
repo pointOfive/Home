@@ -39,13 +39,13 @@ and are meant to agument the [C++ coding practice below](#c).
 
 #### Stacks and Queues
 
-- 3 stack array
-- O(1) min pop stack
-- Set of stacks
-- Towers of Hanoi
-- Two stack queue class
-- Sort stack with stack
-- Animal shelter
+- [Set of stacks](Python/stacksset.py)
+- [3 stack array](Python/threestack.py)
+- [O(1) min pop stack](Python/threestack.py)
+- [Towers of Hanoi](Python/tower.py)
+- [Two stack queue class](Python/stackqueue.py)
+- [Sort stack with stack](Python/twostacksort.py)
+- [Animal shelter](Python/shelter.py)
 
 ## Spark
 
