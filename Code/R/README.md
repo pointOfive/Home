@@ -1,6 +1,6 @@
 # MBRP
 
-![a](R/effects.jpg)
+![a](effects.jpg)
 
 [View full analysis](mbrp.pdf)
 
