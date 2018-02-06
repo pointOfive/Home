@@ -24,11 +24,28 @@ methodology for subgroup analysis that has recently received attention in the co
 
 ## Python
 
+To see examples of data analysis using Python and supporting tools, please visit the [Data Analysis](www.google.com) page.
+
+With respect to algorithm prototyping and implementation,
+I have agumented the [C++ coding practice below](#c) with the following. 
+
+#### BST problem
+- Fix swapped BST nodes (amazon question)
+
+#### Matrix Manipulation
 - Matrix Parsing
 - Matrix Rotation
 - Connected matrix neighbors
-- amazon question
 
+#### Stacks and Queues
+
+- 3 stack array
+- O(1) min pop stack
+- Set of stacks
+- Towers of Hanoi
+- Two stack queue class
+- Sort stack with stack
+- Animal shelter
 
 ## Spark
 
@@ -123,7 +140,9 @@ SELECT e.dept_ID, e.Employee_ID, e.Salary, second.salary FROM Employees e JOIN
 
 ## C++
 
-For practice, and a general refresher I have worked through problems from 
+
+For practice, and a general algorithm prototyping and implementation refresher, 
+I have worked through problems from 
 [Cracking the Coding Interview](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf).
 
 #### Arrays and Strings
