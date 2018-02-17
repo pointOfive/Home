@@ -91,8 +91,6 @@ full control of indicator variable creation
 </summary>
 
 <br>
-The following objects extend the `scikit-learn` `pipeline` functionality
-by providing complete fine scale data transformation specification and control.
 
 
 ```python
@@ -145,6 +143,7 @@ selective normalization capabilities
 
 <br>
 
+```python
 class standardize_continuous(BaseEstimator,TransformerMixin):
     """standardize -- wraps sklearn.StandardScaler"""
 
@@ -169,7 +168,8 @@ class standardize_continuous(BaseEstimator,TransformerMixin):
         X[:,:-Xd.shape[1]] = Xcc
         X[:,Xcc.shape[1]:] = Xd        
         return X
-	
+```
+
 </details>
 
 
