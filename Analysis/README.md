@@ -24,8 +24,9 @@ Customized Scikit-Learn Transformer Objects
 </summary>
 
 <br>
-The following objects extend the `SCIKIT-LEARN` `PIPELINE` FUNCTIONALITY
-BY PROVIDING COMPLETE FINE SCALE DATA TRANSFORMATION SPECIFICATION AND CONTROL.
+The following objects extend the `scikit-learn` `pipeline` functionality
+by providing complete fine scale data transformation specification and control.
+
 
 ```python
 from sklearn.base import BaseEstimator,TransformerMixin
