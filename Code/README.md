@@ -11,7 +11,7 @@ continuing in graduate school (except for a year long period of matlab use)
 and during my postdoctoral program, and in my two subsequent work positions. 
 Approximately two years ago I switched over to Python (primarily for access to the scikit-learn library); however,
 I use R when the necessary functionality is not available in a Python context.
-For example, [this analysis of job salaries](/R/mbrp.pdf) uses
+For example, [this analysis of job salaries](R/mbrp.pdf) uses
 [model based tree partitioning](http://party.r-forge.r-project.org) (MBTR)
 that is currently only available in R.
 MBTP is a very interesting

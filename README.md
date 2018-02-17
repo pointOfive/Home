@@ -2,13 +2,13 @@
 Tasks
 
 - Add Effect plots Bokeh - RideShare
-- Add Cost Matrix Bokeh - RideShare
 - Add PCA Regression - Auction
 - Clean up lectures
 - Add sparkML/nlp/clustering
 - Add API crypto project
 - Add Coffee project diagnostics
 - Add outlier detection data
+- interpreting p-values?
 
 # Welcome
 
