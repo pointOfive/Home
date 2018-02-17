@@ -10,7 +10,7 @@ This functionality simplifies and abstracts the
 data modeling process, but the capabilities available out of the box
 leave some things to be desired; namely, the built-in `Transforer` objects
 do not provide the full control that an analyst might require.
-I have therefore ammeded and wrapped these functionalities in my own
+I have therefore amended and wrapped these functionalities in my own
 `Transformer` class objects which provide 
 
 
@@ -138,7 +138,7 @@ class create_indicators(BaseEstimator,TransformerMixin):
 
 <details>
 <summary>
-selective normalization capabilities
+selective and partial normalization capabilities
 </summary>
 
 <br>
@@ -325,4 +325,66 @@ class pipelined_data(object):
 </details>
 
 
-## 
+Supervised learning techniques such as `Random Forests`,
+`Support Vector Machines` (via the `Kernel Trick`), and `Gradient Boosted Trees`
+identify extremely complex higher order interaction associations automatically, whereas
+any higher order interaction associations examined in the context of
+`Linear Models` require explicit *a priori* specification and construction.
+As a result, one cannot hope to realistically rival the complexity of
+modern predictive machine learning methodologies using
+`Linear Model` specifications; however, 
+the statistical analysis capabilities available
+within a `Linear Model` framework serve to ensure
+it's competetiveness as an analytical tool by
+providing uncertainty characterizations
+that can be brought to bear on questions of model building interpretation.
+
+The final two custom data pipelining functionalities referenced
+above ("higher order interaction construction" and wrapping `statsmodels` funcitonality to a `Scikit-Learn` friendly API)
+concern themselves with "classical" exercises specific to `Linear Model` operationalization, 
+but they allow us to carry desirable statistical analysis capabilities forward into
+the modern supervised learning framework.
+For example, the following demonstrates the synergistic integration of regularization and uncertainty quantification
+techniques available in the context of interpreting log odds impact (i.e., multiplicative associations)
+of features with a categorical outcome in the context of logistic regression.
+
+Please visit this [Bokeh Server](www.google.com) to interact with this plot.
+
+
+## Model Interpretability Analysis
+
+
+
+
+## Model Tuning Parameter Selection
+
+Modern predictive methodology avoids overfitting 
+by using cross validation techniques to identify appropriate regularization levels.
+The `Kfolds` and `GridSearchCV` functionalities in `Scikit-Learn` greatly
+facilitate and simplify this task.  
+
+
+Random Forests provide near cutting edge prediction out of the box
+with very little parameter tuning. This is because (to the extent possible)
+Random Forests grossly overfit to the training data, but conflate
+intrinsic error with model error, so that 
+
+<details>
+<summary>
+K-folds Cross Validation for Random Forests
+</summary>
+
+<br>
+
+
+</details>
+
+
+These capabilities are demonstrated below,
+as well as a custom grid search for XGboost that returns the optimal model
+based on postprocessing of out of sample scoring during the
+sequential ensemble f
+
+
+
+
