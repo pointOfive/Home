@@ -465,7 +465,12 @@ The following interactive dashboard shows the correlation of p-value and null hy
 by plotting the proportion of true null hypotheses rejected at a given p-value level.
 The relevant setting are:
 
-- proportion of null hypotheses that are false [user defined input]
-- the distribution of effect sizes under the alternative hypotheses (which is taken to be uniformly random)
+- proportion of null hypotheses that are false 
+- the distribution of effect sizes under the alternative hypotheses 
+
+We consider a quite universal normally distributed test statistics, and note
+that under standardization sample size and effect size are equivalent characteristics.
+
+
 
 
