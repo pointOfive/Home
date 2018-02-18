@@ -446,7 +446,7 @@ one must not stray from the relevant definition.
 
 2. p-values do not characterize "the probability the null hypothesis was incorrectly rejected"
 
-This is rather the significance level of the hypothesis test.  While the null hypothesis is not
+   This is rather the significance level of the hypothesis test.  While the null hypothesis is not
 conceptualized as a random variable, the decision to reject the null hypothesis
 (and the mechanism by which this is done, e.g., comparing the p-value to the significance level)
 is.  And further, the chance of error in decision is explicitly specified (under the assumptions of the test).
@@ -454,7 +454,7 @@ But this is the significance level, not the p-value, of the test.
 
 3. p-values are not asymptotic probabilities of randomly sampled null hypotheses truthfulness
 
-If we actually do imagine we are sampling and testing some proportion of true and false null hypotheses,
+   If we actually do imagine we are sampling and testing some proportion of true and false null hypotheses,
 it is still not true that the proportion of null hypotheses that are true at a given p-value level is
 the p-value; rather, as is quickly seen via some simulation experiements, the p-value does not
 have an direct correlation with the proportion of null hypotheses that are true at a given p-value level.
