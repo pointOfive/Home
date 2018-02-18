@@ -343,7 +343,7 @@ Methodoloigies such as `Random Forests`,
 automatically leverage extremely complex higher order interaction associations, but
 any higher order interaction associations to be considered in the context of
 `Linear Models` require explicit *a priori* specification and construction.
-As a result, one `Linear Model` specificaitons cannot realistically consistently compete with
+As a result, `Linear Model` specifications cannot realistically consistently compete with
 the modeling flexibility provided by modern predictive machine learning methodologies; however, 
 the statistical analysis capabilities available
 within a `Linear Model` framework serve to ensure
@@ -371,7 +371,7 @@ The following example demonstrates partial dependency plots and feature importan
 Please visit [this AWS server](www.google.com) to explore the live interactable version
 of this plot.
 
-### Machine Learning is no more "black box" than Linear Models
+### Experimental design (still) drives interpretability
 
 The real issue in interpreting feature-outcome associations comes down to experiemental design;
 specifically, it is feature correlation which limits association attribution and the ever present
@@ -426,5 +426,44 @@ based on postprocessing of out of sample scoring during the
 sequential ensemble f
 
 
+
+## Afterward: p-values
+
+*P-values* are a measure of evidence against a null hypothesis defind as
+
+*"the probability of seeing something as or more extreme than what you saw if the null hypothesis were true"*
+
+Operationally, p-values can be compared against the significance level of the test to determine the
+rejection status of the null hypothesis, but further interpretation of p-values requires caution:
+
+1. p-values do not characterize "the probability the null hypothesis is true"
+
+The mistake here is that in a technical sense this statement is nonsensical.
+The truthfulness of a null hypothesis is not a random variable with a probability distribution
+as the above sentiment implies; therefore, the association of the p-value as a meaningful quantification
+of the desired sentiment is necessarily aggregious. This pitfall clarifies that when interpreting p-values
+one must not stray from the relevant definition.
+
+2. p-values do not characterize "the probability the null hypothesis was incorrectly rejected"
+
+This is rather the significance level of the hypothesis test.  While the null hypothesis is not
+conceptualized as a random variable, the decision to reject the null hypothesis
+(and the mechanism by which this is done, e.g., comparing the p-value to the significance level)
+is.  And further, the chance of error in decision is explicitly specified (under the assumptions of the test).
+But this is the significance level, not the p-value, of the test.
+
+3. p-values are not asymptotic probabilities of randomly sampled null hypotheses truthfulness
+
+If we actually do imagine we are sampling and testing some proportion of true and false null hypotheses,
+it is still not true that the proportion of null hypotheses that are true at a given p-value level is
+the p-value; rather, as is quickly seen via some simulation experiements, the p-value does not
+have an direct correlation with the proportion of null hypotheses that are true at a given p-value level.
+
+The following interactive dashboard shows the correlation of p-value and null hypotheses truthfulness
+by plotting the proportion of true null hypotheses rejected at a given p-value level.
+The relevant setting are:
+
+- proportion of null hypotheses that are false (which is user defined input)
+- the distribution of effect sizes under the alternative hypotheses (which is taken to be uniformly random)
 
 
