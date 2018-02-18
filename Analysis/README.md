@@ -343,14 +343,13 @@ Methodoloigies such as `Random Forests`,
 automatically leverage extremely complex higher order interaction associations, but
 any higher order interaction associations to be considered in the context of
 `Linear Models` require explicit *a priori* specification and construction.
-As a result, one cannot hope to realistically rival the complexity of
-modern predictive machine learning methodologies using
-`Linear Model` specifications; however, 
+As a result, one `Linear Model` specificaitons cannot realistically consistently compete with
+the modeling flexibility provided by modern predictive machine learning methodologies; however, 
 the statistical analysis capabilities available
 within a `Linear Model` framework serve to ensure
 it's competetiveness as an analytical tool by
 providing uncertainty characterizations
-that can be brought to bear on questions of model building interpretation.
+that can be brought to bear on questions of model building and interpretation.
 
 
 ## Model Interpretability Analysis
