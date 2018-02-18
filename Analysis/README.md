@@ -431,14 +431,14 @@ sequential ensemble f
 
 *P-values* are a measure of evidence against a null hypothesis defind as
 
-*"the probability of seeing something as or more extreme than what you saw if the null hypothesis were true"*
+*"the probability of seeing something as or more extreme than what you saw if the null hypothesis were true."*
 
 Operationally, p-values can be compared against the significance level of the test to determine the
 rejection status of the null hypothesis, but further interpretation of p-values requires caution:
 
 1. p-values do not characterize "the probability the null hypothesis is true"
 
-The mistake here is that in a technical sense this statement is nonsensical.
+   The mistake here is that in a technical sense this statement is nonsensical.
 The truthfulness of a null hypothesis is not a random variable with a probability distribution
 as the above sentiment implies; therefore, the association of the p-value as a meaningful quantification
 of the desired sentiment is necessarily aggregious. This pitfall clarifies that when interpreting p-values
