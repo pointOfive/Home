@@ -325,7 +325,7 @@ class pipelined_data(object):
 </details>
 
 
-## Modernized Statistical Analysis
+## Statistical Analysis
 
 The final two custom data pipelining functionalities 
 concern themselves with "classical" exercises specific to `Linear Model` operationalization, 
@@ -352,14 +352,33 @@ providing uncertainty characterizations
 that can be brought to bear on questions of model building and interpretation.
 
 
-## Model Interpretability Analysis
+## Model Interpretation and Use
 
-A frequent charge leveled against modern machine learning predictive methodologies
-is that it provides black box tools lacking interpretation capabilities.  This is patently incorrect
-as *"hold all but one features constant and vary the remaining feature"* are possible
-in the form of synthetic partial dependency plots.  The real issue, rather, is feature correlation
-which limits association attribution and the ever present risk of actual confounding
-rendering associations non causitive.
+### Machine Learning is no more "black box" than a Linear Model
+
+As noted above, the benefit of `Linear Model` frameworks is
+the uncertainty characterizations they provide. 
+On the contrary, the frequent charge that a benefit of `Linear Model` frameworks over 
+modern machine learning predictive methodologies is that the latter
+only provides black box tools lacking interpretation capabilities is patently incorrect.
+
+- the commendable *"hold all but one feature constant"* standard `Linear Model` interpretaion
+is available in all contexts as a so-called *Partial Dependency Plot*
+- examinations of the presence of specific interactions requires their explicit construction,
+and can be carried out on the basis of *Feature Importance Diagnostics* -- not only via hypothesis testing
+
+The following example demonstrates partial dependency plots and feature importance diagnostics.
+Please visit [this AWS server](www.google.com) to explore the live interactable version
+of this plot.
+
+### Machine Learning is no more "black box" than Linear Models
+
+The real issue in interpreting feature-outcome associations comes down to experiemental design;
+specifically, it is feature correlation which limits association attribution and the ever present
+risk of actual confounding that renders associations non causitive.
+
+
+
 Interpretation of "feature effect" in all models therefore comes down to questions of
 experiemental design; namely, intentional sampling across features can produce uncorrelated
 features and hence unconfounded association interpretation.
@@ -369,6 +388,7 @@ When assessing intepretability, feature correlation, and
 An attractive approach to
 correlated features is [principal components regression, as demonstrated here](www.google.com).
 
+### Model Based Decision Making
 
 Model use execution... cost-benefit decision making
 
