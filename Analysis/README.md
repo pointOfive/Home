@@ -325,10 +325,23 @@ class pipelined_data(object):
 </details>
 
 
-Supervised learning techniques such as `Random Forests`,
+## Modernized Statistical Analysis
+
+The final two custom data pipelining functionalities 
+concern themselves with "classical" exercises specific to `Linear Model` operationalization, 
+but they allow us to carry desirable statistical analysis capabilities forward into
+the modern supervised learning framework. The following example demonstrates the
+synergistic integration of regularization and uncertainty quantification
+in the context of multiplicative association identificaiton in classification settings.
+Please visit [this AWS server](www.google.com) to explore the live interactable version
+of this plot. 
+
+[PUT A LINKABLE SCREENSHOT HERE]
+
+Methodoloigies such as `Random Forests`,
 `Support Vector Machines` (via the `Kernel Trick`), and `Gradient Boosted Trees`
-identify extremely complex higher order interaction associations automatically, whereas
-any higher order interaction associations examined in the context of
+automatically leverage extremely complex higher order interaction associations, but
+any higher order interaction associations to be considered in the context of
 `Linear Models` require explicit *a priori* specification and construction.
 As a result, one cannot hope to realistically rival the complexity of
 modern predictive machine learning methodologies using
@@ -339,20 +352,28 @@ it's competetiveness as an analytical tool by
 providing uncertainty characterizations
 that can be brought to bear on questions of model building interpretation.
 
-The final two custom data pipelining functionalities referenced
-above ("higher order interaction construction" and wrapping `statsmodels` funcitonality to a `Scikit-Learn` friendly API)
-concern themselves with "classical" exercises specific to `Linear Model` operationalization, 
-but they allow us to carry desirable statistical analysis capabilities forward into
-the modern supervised learning framework.
-For example, the following demonstrates the synergistic integration of regularization and uncertainty quantification
-techniques available in the context of interpreting log odds impact (i.e., multiplicative associations)
-of features with a categorical outcome in the context of logistic regression.
-
-Please visit this [Bokeh Server](www.google.com) to interact with this plot.
-
 
 ## Model Interpretability Analysis
 
+A frequent charge leveled against modern machine learning predictive methodologies
+is that it provides black box tools lacking interpretation capabilities.  This is patently incorrect
+as *"hold all but one features constant and vary the remaining feature"* are possible
+in the form of synthetic partial dependency plots.  The real issue, rather, is feature correlation
+which limits association attribution and the ever present risk of actual confounding
+rendering associations non causitive.
+Interpretation of "feature effect" in all models therefore comes down to questions of
+experiemental design; namely, intentional sampling across features can produce uncorrelated
+features and hence unconfounded association interpretation.
+
+When assessing intepretability, feature correlation, and
+
+An attractive approach to
+correlated features is [principal components regression, as demonstrated here](www.google.com).
+
+
+Model use execution... cost-benefit decision making
+
+Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 
 
 
