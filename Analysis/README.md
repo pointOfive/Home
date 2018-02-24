@@ -358,12 +358,19 @@ of this plot.
 </p>
 
 
+<p align="center">
+<img src="images/svc.jpeg"/>
+</p>
 
-![SVC Tuning](images/svc.jpg)
+<p align="center">
+<img src="images/gbtc.jpeg"/>
+</p>
 
-![GBTC Tuning](images/gbtc.jpg)
+<p align="center">
+<img src="images/pca.jpeg"/>
+</p>
 
-![Observed Confounding](images/pca.jpg)
+
 
 
 
