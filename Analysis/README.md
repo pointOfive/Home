@@ -596,6 +596,9 @@ The implications of this are that
 - increased error due to model variance is allowed while corresponding model bias and residual error reduction is beneficial
 - but increased model variance implies overfitting and thus a lack of generalization in model interpretation
 
+The following shows increasing gains in predictive power along with simultaneous increases in demonstratable overfitting, i.e.,
+a decreasing ability to generalize predictive gains. 
+
 <p align="center">
 <img src="images/gbtc.jpg"/>
 </p>
