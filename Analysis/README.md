@@ -324,9 +324,9 @@ class pipelined_data(object):
 
 </details>
 
+<br>
 
 Data processing pipelines must be initialized:
-
 <details>
 <summary>
 data process pipelining example initializtion
