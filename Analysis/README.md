@@ -336,7 +336,7 @@ in the context of multiplicative association identificaiton in classification se
 Please visit [this AWS server](http://ec2-54-90-249-36.compute-1.amazonaws.com/) to explore the live interactable version
 of this plot. 
 
-[![Regulized Confidence Intervals](/images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/)
+[![Regulized Confidence Intervals](images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/)
 
 
 costbenefit.jpeg	gbtc.jpg		pca.jpg			regularize.jpeg
