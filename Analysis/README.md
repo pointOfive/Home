@@ -604,19 +604,18 @@ a decreasing ability to generalize predictive gains.
 </p>
 
 
-
-*Bagging* can be applied here 
-One approach to this shortcoming would be to use *Bagging* stabilize model variance.
-Another approach is the alternative position that 
-
-
-
-Random Forests provide near cutting edge prediction out of the box
-with very little parameter tuning. This is because (to the extent possible)
-Random Forests grossly overfit to the training data, but conflate
-intrinsic error with model error, so that 
-
-
+Using *Bagging* to reduce localized spurous overfitting seems like a very promising technique to address this issue, and similarly,
+the application of *Bootsrapping* techniques to provide association attribution uncertainty quantification (i.e., "effects uncertainty estimation")
+seems like a likewise enticing endevour. 
+Regardless, the intention to equalize in and out of sample testing scores for the purposes of
+generalizability of interpretation remains an alternative objective to maximum predictive power.
+Again, the motivation behind such an objective is an interest in identifying reproducible
+associations, and in particular being willing to reduce the complexity of associtions under consideration when the
+available data does not sufficiently justify the inference. 
+The following example sorts in and out of sample scores by their difference,
+and allows the user to hover over the plots to facilitate identification of appropriate tuning parameter settings.
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning) to explore the live interactable version
+of the plot.
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
