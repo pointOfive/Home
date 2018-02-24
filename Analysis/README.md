@@ -452,7 +452,19 @@ The following example demonstrates the former *Partial Dependency Plots* for the
 `Logistic Regression`, `Random Forest`, and `Support Vector Machine` classifier pipelines above.
 In addition the `Gradient Boosted Tree` classifier from the `XGBoost` package is also provided
 for further comparison.
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactable version
+of the plot.
 
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
+</p>
+
+The actual predicted associations -- i.e., per-person individualized effects -- are given in the upper right plot,
+and a comparison between the predicted values of the methodologies is given in the lower right plot.
+The feature interpretation similarities between the different methodologies are notable, while the individual prediction discrepancies
+look well suited to exploitation via [model stacking](https://www.quora.com/What-is-stacking-in-machine-learning)
+(for the purpose of attempting to balance and tradeoff the strengths of each within a multi-layer model framework).
+Gradient boosted tree classifier capabilities can be provided follows: 
 ```python
 import xgboost as xgb
 progress=dict()
@@ -461,19 +473,7 @@ bst = xgb.train(param, dtrain, num_round, [(dtrain, 'train'), (dtest, 'eval')], 
 bst.predict(dtrain, ntree_limit=bst.best_ntree_limit)
 ```
 
-The actual predicted associations -- i.e., per-person individualized effects -- are given in the upper right plot,
-and a comparison between the predicted values of the methodologies is given in the lower right plot.
-The feature interpretation similarities between the different methodologies are notable, while the individual prediction discrepancies
-look well suited to exploitation via [model stacking](https://www.quora.com/What-is-stacking-in-machine-learning)
-(for the purpose of attempting to balance and tradeoff the strengths of each within a multi-layer model framework).
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactable version
-of the plot.
 
-
-
-<p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
-</p>
 
 
 
