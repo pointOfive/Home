@@ -1,12 +1,16 @@
-# Data Analysis
+# Example Data Analysis
 
 - [Data Pipelining Functionality](#data-pipelining-functionality)
-- [Regularized Confidence Intervals](#data-pipelining-functionality)
-- [Profit Curve Decision Making](#data-pipelining-functionality)
+- [Regularized Confidence Intervals](#classical-meets-modern)
+- [Decision Making with Profit Curves](#the-black-box-myth)
 - [Interpreting Black-Box Models](#data-pipelining-functionality)
-- [When Models have Interpretability](#data-pipelining-functionality)
-- [Tuning Parameter Grid Search](#data-pipelining-functionality)
-- [P-Values and Hypothesis probabilities](#data-pipelining-functionality)
+- [The Role of Experimental Design](#data-pipelining-functionality)
+- [Setting Model Tuning Parameters](#data-pipelining-functionality)
+- [Model-Based Recursive Partitioning](https://github.com/pointOfive/Home/tree/master/Code#r)
+- [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
+- [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
+- [Interpreting P-Values Correctly](#data-pipelining-functionality)
+
 
 ## Data Pipelining Functionality
 
@@ -408,31 +412,36 @@ the modern supervised learning framework. The following example demonstrates the
 synergistic integration of regularization and uncertainty quantification
 in the context of multiplicative association identificaiton in classification settings.
 Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals) to explore the live interactable version
-of this plot. 
+of the plot. 
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
 
-### The "Black-Box" Paradigm
+### The "Black-Box" Myth
 
+A frequent charge leveled against modern machine learning predictive methodologies is that
+they are not interpretable the way a `Linear Model` frameworks is.
+This is patently incorrect for the following two reasons:
 
-Machine Learning is no more "black box" than a Linear Model
-
-As noted above, the benefit of `Linear Model` frameworks is
-the uncertainty characterizations they provide. 
-On the contrary, the frequent charge that a benefit of `Linear Model` frameworks over 
-modern machine learning predictive methodologies is that the latter
-only provides black box tools lacking interpretation capabilities is patently incorrect.
-
-- the commendable *"hold all but one feature constant"* standard `Linear Model` interpretaion
+- the venerable *"hold all but one feature constant"* standard `Linear Model` interpretaion
 is available in all contexts as a so-called *Partial Dependency Plot*
 - examinations of the presence of specific interactions requires their explicit construction,
 and can be carried out on the basis of *Feature Importance Diagnostics* -- not only via hypothesis testing
 
+
 The following example demonstrates partial dependency plots and feature importance diagnostics.
 Please visit [this AWS server](www.google.com) to explore the live interactable version
 of this plot.
+
+
+In fact Machine Learning is no more "black box" than a `Linear Model`
+
+As noted above, the benefit of `Linear Model` frameworks is
+the uncertainty characterizations they provide. 
+
+
+
 
 
 ### Model Based Decision Making
