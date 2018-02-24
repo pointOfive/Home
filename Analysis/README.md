@@ -516,6 +516,8 @@ table,td,tr,th {border:none!important}
 <table > <tr> <td><img src="images/pca1.jpeg"/></td> <td><img src="images/pca2.jpeg"/></td> </tr> </table>
 </p>
 
+![](images/pca1.jpeg)![](images/pca2.jpeg)
+
 Pairwise correlations are also worth examining directly. For exmample,
 correlated features directly complete for association attribution in
 tree based ensembles.
