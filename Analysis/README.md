@@ -2,13 +2,13 @@
 
 To see data analysis work done using the R programming language
 please visit the [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r)
-on the [coding page](https://github.com/pointOfive/Home/tree/master/Code#coding). The following
-python-based data analysis examples are available here: 
+on the [coding page](https://github.com/pointOfive/Home/tree/master/Code#coding). This page
+provides the following python-based data analysis examples:
 
 - [Data Pipelining Functionality](#data-pipelining-functionality)
 - [Regularized Confidence Intervals](#classical-meets-modern)
-- [Decision Making with Profit Curves](#the-black-box-myth)
 - [Interpreting Black-Box Models](#data-pipelining-functionality)
+- [Decision Making with Profit Curves](#the-black-box-myth)
 - [The Role of Experimental Design](#data-pipelining-functionality)
 - [Setting Model Tuning Parameters](#data-pipelining-functionality)
 - [Webscrapping Database Server](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
@@ -423,7 +423,7 @@ of the plot.
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
 
-### The "Black-Box" Myth
+## The "Black-Box" Myth
 
 A frequent charge leveled against modern machine learning predictive methodologies is that
 they are not interpretable the way a `Linear Model` frameworks is.
@@ -434,8 +434,34 @@ is available in all contexts as a so-called *Partial Dependency Plot*
 - examinations of the presence of specific interactions requires their explicit construction,
 and can be carried out on the basis of *Feature Importance Diagnostics* -- not only via hypothesis testing
 
+The following example demonstrates the former *partial dependency plots* for the
+`Logistic Regression`, `Random Forest`, and `Support Vector Machine` classifier pipelines above.
+In addition the `Gradient Boosted Tree` classifier from the `XGBoost` package is also provided
+for further comparison.
 
-The following example demonstrates partial dependency plots and feature importance diagnostics.
+```python
+import xgboost as xgb
+progress=dict()
+param = {'max_depth':2, 'eta':.01, 'subsample': .001, 'silent':True, 'objective':'binary:logistic', 'eval_metric':['error','logloss']}
+bst = xgb.train(param, dtrain, num_round, [(dtrain, 'train'), (dtest, 'eval')], evals_result=progress, early_stopping_rounds=5/(sub_sample**.6*learning_rate**.25), verbose_eval=False)      
+bst.predict(dtrain, ntree_limit=bst.best_ntree_limit)
+```
+
+The actual predicted associations -- i.e., per-person individualized effects -- are given in the upper right plot,
+and a comparison between the predicted values of the methodologies is given in the lower right plot. 
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactable version
+of the plot.
+
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
+</p>
+
+
+
+
+
+
+
 Please visit [this AWS server](www.google.com) to explore the live interactable version
 of this plot.
 
@@ -464,9 +490,7 @@ Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
 </p>
 
-<p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
-</p>
+
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
