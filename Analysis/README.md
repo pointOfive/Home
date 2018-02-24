@@ -335,6 +335,11 @@ data process pipelining example initializtion
 <br>
 
 ```python
+from pipeline import *
+from sklearn.pipeline import Pipeline
+import pandas as pd
+import numpy as np
+
 Ydat = dat[[outcome]].copy()
 Xdat = dat[features].copy()
 
@@ -367,8 +372,29 @@ powers.fit(Xdat)
 Xdat = powers.transform(Xdat)
 ```
 
+</details>
+
+And then data processing pipeline can be set up as follows:
 
 
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import svm
+
+get_data = pipelined_data()
+data_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('get_data',get_data)])
+data_pipeline.fit(Xdat, Ydat.as_matrix()[:,0])
+Xdat = data_pipeline.named_steps['get_data'].X.astype(float)
+
+rf = RandomForestClassifier(min_weight_fraction_leaf = 0.05, max_features=.4, n_estimators=100)
+rf_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('rf',rf)])
+
+lr = SMLR(powers.endcolnames, features_2notInteract+remove, 0) 
+lr_full_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('synergize', synergize), ('powers', powers), ('lr',lr)])
+
+svc = svm.SVC(C=10, gamma=.005, probability=True)
+svc_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('svc',svc)])
+```
 
 
 ## Statistical Analysis
