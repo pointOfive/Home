@@ -509,7 +509,7 @@ features and hence unconfounded association interpretation.
 the attractive approach to address correlated features through *Principal Components Regression*).
 
 <p align="center">
-<img src="images/pca1.jpeg"/><img src="images/pca2.jpeg"/>
+<table> <tr> <td><img src="images/pca1.jpeg"/></td> <td><img src="images/pca2.jpeg"/></td> </tr> </table>
 </p>
 
 Pairwise correlations are also worth examining directly. For exmample,
