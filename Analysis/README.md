@@ -10,7 +10,7 @@ provides the following python-based data analysis examples:
 - [Interpreting Black-Box Models](#the-black-box-myth)
 - [Decision Making with Profit Curves](#the-black-box-myth)
 - [The Role of Experimental Design](#interpreting-feature-effects)
-- [Setting Model Tuning Parameters](#data-pi)
+- [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
 - [Webscrapping Database Server](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
 - [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
@@ -510,7 +510,7 @@ the attractive approach to address correlated features through *Principal Compon
 
 
 <p align="center">
-<table style="border:none!important"> <tr style="border:none!important"> <td style="border:none!important"><img src="images/pca1.jpeg"/></td> <td><img src="images/pca2.jpeg"/></td> </tr> </table>
+<table> <tr> <td><img src="images/pca1.jpeg"/></td> <td><img src="images/pca2.jpeg"/></td> </tr> </table>
 </p>
 
 
@@ -540,12 +540,62 @@ scree = np.cumsum(s**2/np.sum(s**2))
 
 
 
+## Selecting Model Tuning Parameters
+
+Modern predictive methodology avoids overfitting 
+by using cross validation techniques to identify appropriate regularization levels.
+The `Kfolds` and `GridSearchCV` functionalities in `Scikit-Learn` greatly
+facilitate and simplify this task.  
+
+<details>
+<summary>
+K-folds Cross Validation and Grid Search
+</summary>
+
+<br>
+
+```python
+from sklearn.model_selection import KFold, GridSearchCV
+
+pars={'rf__min_weight_fraction_leaf':np.linspace(.005,.05,10), 'rf__max_features':np.linspace(.1,1,10)}
+models = GridSearchCV(estimator=rf_pipeline, param_grid=pars, cv=2, scoring='accuracy', return_train_score=True)
+models.fit(Xdat, Ydat.Y.values)
+
+samp=np.random.choice(range(Xdat.shape[0]),5000,replace=False)
+Xdat = Xdat[samp,:]
+parameters = {'svc__gamma': np.logspace(start=-5,stop=0,base=10,num=num), 'svc__C': np.logspace(start=-1,stop=4,base=10,num=num)}
+models = GridSearchCV(estimator=svc_pipeline, param_grid=parameters, cv=2, scoring='accuracy')
+models.fit(Xdat, Ydat.as_matrix()[samp,0])
+
+kf = KFold(n_splits=5, random_state=0, shuffle=True)
+for learning_rate in [.01,.1]:
+    for sub_sample in [.001,.01,.1]:     
+        for train_index, test_index in kf.split(Xdat):
+            X_train, X_test = Xdat[train_index], Xdat[test_index]
+            y_train, y_test = Ydat.as_matrix()[train_index,0], Ydat.as_matrix()[test_index,0]
+            dtrain = xgb.DMatrix(X_train, label=y_train)
+            dtest = xgb.DMatrix(X_test, label=y_test)
+            param = {'max_depth':2, 'eta':learning_rate, 'subsample': sub_sample, 'silent':True, 'objective':'binary:logistic', 'eval_metric':['error','logloss']}
+            progress=dict()
+            bst = xgb.train(param, dtrain, num_round, [(dtrain, 'train'), (dtest, 'eval')], evals_result=progress, early_stopping_rounds=5/(sub_sample**.6*learning_rate**.25), verbose_eval=False)      
+```
+</details>
+
+
+
+Random Forests provide near cutting edge prediction out of the box
+with very little parameter tuning. This is because (to the extent possible)
+Random Forests grossly overfit to the training data, but conflate
+intrinsic error with model error, so that 
 
 
 
 
+These capabilities are demonstrated below,
+as well as a custom grid search for XGboost that returns the optimal model
+based on postprocessing of out of sample scoring during the
+sequential ensemble f
 
-## Parameter Tuning
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
@@ -559,46 +609,6 @@ scree = np.cumsum(s**2/np.sum(s**2))
 <img src="images/gbtc.jpg"/>
 </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Model Tuning Parameter Selection
-
-Modern predictive methodology avoids overfitting 
-by using cross validation techniques to identify appropriate regularization levels.
-The `Kfolds` and `GridSearchCV` functionalities in `Scikit-Learn` greatly
-facilitate and simplify this task.  
-
-
-Random Forests provide near cutting edge prediction out of the box
-with very little parameter tuning. This is because (to the extent possible)
-Random Forests grossly overfit to the training data, but conflate
-intrinsic error with model error, so that 
-
-<details>
-<summary>
-K-folds Cross Validation for Random Forests
-</summary>
-
-<br>
-
-
-</details>
-
-
-These capabilities are demonstrated below,
-as well as a custom grid search for XGboost that returns the optimal model
-based on postprocessing of out of sample scoring during the
-sequential ensemble f
 
 
 
