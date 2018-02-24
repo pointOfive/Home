@@ -452,9 +452,6 @@ and a comparison between the predicted values of the methodologies is given in t
 The feature interpretation similarities between the different methodologies are notable, while the individual prediction discrepancies
 look well suited to exploitation via [model stacking](https://www.quora.com/What-is-stacking-in-machine-learning)
 (for the purpose of attempting to balance and tradeoff the strengths of each within a multi-layer model framework).
-
-
-
 Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactable version
 of the plot.
 
