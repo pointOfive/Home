@@ -347,11 +347,11 @@ of this plot.
 [![P-Values](images/pvals.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values)
 
 
-!(SVC Tuning)[images/svc.jpg]
+![SVC Tuning](images/svc.jpg)
 
-!(GBTC Tuning)[images/gbtc.jpg]
+![GBTC Tuning](images/gbtc.jpg)
 
-~[Observed Confounding](images/pca.jpg)
+![Observed Confounding](images/pca.jpg)
 
 
 
