@@ -1,4 +1,4 @@
-# Data Analysis with Python
+A# Data Analysis with Python
 
 To see data analysis work done using the R programming language
 please visit the [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r)
@@ -7,10 +7,10 @@ provides the following python-based data analysis examples:
 
 - [Data Pipelining Functionality](#data-pipelining-functionality)
 - [Regularized Confidence Intervals](#classical-meets-modern)
-- [Interpreting Black-Box Models](#data-pipelining-functionality)
+- [Interpreting Black-Box Models](#the-black-box-myth)
 - [Decision Making with Profit Curves](#the-black-box-myth)
-- [The Role of Experimental Design](#data-pipelining-functionality)
-- [Setting Model Tuning Parameters](#data-pipelining-functionality)
+- [The Role of Experimental Design](#interpreting-feature-effects)
+- [Setting Model Tuning Parameters](#data-pi)
 - [Webscrapping Database Server](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
 - [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
@@ -510,6 +510,9 @@ be estimated in the presense of these associations. But this means that paramete
 Structure, particularly the kind affecting `Linear Models` can be examined through
 variance inflation factors and principal components analysis (and the latter provides
 the attractive approach to address correlated features through principal components regression).
+Pairwise correlations are also worth examining directly. For exmample,
+correlated features directly complete for association attribution in
+tree based ensembles.
 
 ```python
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -527,9 +530,7 @@ scree = np.cumsum(s**2/np.sum(s**2))
 <img src="images/pca.jpg"/>
 </p>
 
-Pairwise correlations are also worth examining directly. For exmample,
-correlated features directly complete for association attribution in
-tree based ensembles. 
+
 
 
 
