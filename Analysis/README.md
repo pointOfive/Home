@@ -338,7 +338,7 @@ of this plot.
 
 
 <p align="center">
-  <img src="http://www.fillmurray.com/460/300">
+  <img src="http://www.fillmurray.com/460/300", alt="bitch">
 </p>
 
 [![Regulized Confidence Intervals](images/regularize.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
