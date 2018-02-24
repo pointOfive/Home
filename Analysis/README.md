@@ -1,5 +1,7 @@
 # Data Analysis
 
+[Data Pipelining Functionality](data-pipelining-functionality)
+
 ## Data Pipelining Functionality
 
 The `Scikit-Learn` `Pipeline` package
@@ -326,7 +328,7 @@ class pipelined_data(object):
 
 <br>
 
-The data processing pipelines are initialized as follows: 
+With these tools data processing pipelines are initialized as follows: 
 
 ```python
 from pipeline import *
@@ -391,7 +393,7 @@ svc_pipeline.fit(Xdat[samp,:], Ydat.as_matrix()[samp,0])
 ```
 
 
-## Statistical Analysis
+## Classical meets Modern
 
 The final two custom data pipelining functionalities 
 concern themselves with "classical" exercises specific to `Linear Model` operationalization, 
@@ -399,13 +401,44 @@ but they allow us to carry desirable statistical analysis capabilities forward i
 the modern supervised learning framework. The following example demonstrates the
 synergistic integration of regularization and uncertainty quantification
 in the context of multiplicative association identificaiton in classification settings.
-Please visit [this AWS server](http://ec2-54-90-249-36.compute-1.amazonaws.com/) to explore the live interactable version
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals) to explore the live interactable version
 of this plot. 
-
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
+
+### The "Black-Box" Paradigm
+
+
+Machine Learning is no more "black box" than a Linear Model
+
+As noted above, the benefit of `Linear Model` frameworks is
+the uncertainty characterizations they provide. 
+On the contrary, the frequent charge that a benefit of `Linear Model` frameworks over 
+modern machine learning predictive methodologies is that the latter
+only provides black box tools lacking interpretation capabilities is patently incorrect.
+
+- the commendable *"hold all but one feature constant"* standard `Linear Model` interpretaion
+is available in all contexts as a so-called *Partial Dependency Plot*
+- examinations of the presence of specific interactions requires their explicit construction,
+and can be carried out on the basis of *Feature Importance Diagnostics* -- not only via hypothesis testing
+
+The following example demonstrates partial dependency plots and feature importance diagnostics.
+Please visit [this AWS server](www.google.com) to explore the live interactable version
+of this plot.
+
+
+### Model Based Decision Making
+
+Modern predictive methodology 
+
+Model use execution... cost-benefit decision making
+
+Please visit this [Bokeh Server](www.google.com) to interact with this plot.
+
+
+
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
@@ -457,22 +490,7 @@ that can be brought to bear on questions of model building and interpretation.
 
 ## Model Interpretation and Use
 
-### Machine Learning is no more "black box" than a Linear Model
 
-As noted above, the benefit of `Linear Model` frameworks is
-the uncertainty characterizations they provide. 
-On the contrary, the frequent charge that a benefit of `Linear Model` frameworks over 
-modern machine learning predictive methodologies is that the latter
-only provides black box tools lacking interpretation capabilities is patently incorrect.
-
-- the commendable *"hold all but one feature constant"* standard `Linear Model` interpretaion
-is available in all contexts as a so-called *Partial Dependency Plot*
-- examinations of the presence of specific interactions requires their explicit construction,
-and can be carried out on the basis of *Feature Importance Diagnostics* -- not only via hypothesis testing
-
-The following example demonstrates partial dependency plots and feature importance diagnostics.
-Please visit [this AWS server](www.google.com) to explore the live interactable version
-of this plot.
 
 ### Experimental design (still) drives interpretability
 
@@ -491,11 +509,7 @@ When assessing intepretability, feature correlation, and
 An attractive approach to
 correlated features is [principal components regression, as demonstrated here](www.google.com).
 
-### Model Based Decision Making
 
-Model use execution... cost-benefit decision making
-
-Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 
 
 
