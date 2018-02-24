@@ -501,7 +501,7 @@ specifically, it is feature correlation which limits association attribution and
 risk of actual confounding that renders associations non causitive.
 Of course if [interest lies in prediction alone this is immaterial](#model-based-decision-making).
 But if interest lies in ["interpretation of feature effect"](#the-black-box-myth) then
-in all models -- `Linear Models` just as much as flexible `Unsupervised Machine Learning Models` -- 
+for all models -- flexible `Unsupervised Machine Learning Models` just as much as `Linear Models` -- 
 one must be intentional with sampling across features in order to provide uncorrelated
 features and hence unconfounded association interpretation.
 *Multicollinearity Structure*, particularly the kind affecting `Linear Models` can be examined through
@@ -509,7 +509,7 @@ features and hence unconfounded association interpretation.
 the attractive approach to address correlated features through *Principal Components Regression*).
 
 <p align="center">
-<img src="images/pca.jpg"/>
+<img src="images/pca1.jpeg"/><img src="images/pca2.jpeg"/>
 </p>
 
 Pairwise correlations are also worth examining directly. For exmample,
