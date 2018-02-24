@@ -475,11 +475,11 @@ bst.predict(dtrain, ntree_limit=bst.best_ntree_limit)
 
 
 
-### Model Based Decision Making
+## Model-Based Decision Making
 
 Model interpretation does not factor into prediction-based decision making.
 When models are used for purely predictive purposes it does not matter
-if there is confounding (observed or otherwise) and if ([as discussed in the next section](interpreting-models))
+if there is confounding (observed or otherwise) and if ([as discussed in the next section](interpreting-feature-effects))
 this limits the ability to attribute and interpret associations to specific features
 within the context of the model: all that matters is raw predictive performance.
 The following example demonstrates *profit curves* based on *cost-benefit* and *confusion matricies*.
@@ -494,32 +494,53 @@ of the plot.
 
 
 
-### Interpreting Models
+## Interpreting "Feature Effects"
+
+The real issue in interpreting feature-outcome associations comes down to *experiemental design*;
+specifically, it is feature correlation which limits association attribution and the ever present
+risk of actual confounding that renders associations non causitive.
+Of course if [interest lies in prediction alone this is immaterial](#model-based-decision-making).
+But if interest lies in ["interpretation of feature effect"](#the-black-box-myth) then
+in all models -- `Linear Models` just as much as flexible `Unsupervised Machine Learning Models` -- 
+one must be intentional with sampling across features in order to provide uncorrelated
+features and hence unconfounded association interpretation.
+If associations are present between features, feature influence in fitted models will
+be estimated in the presense of these associations. But this means that parameters are not estimated on a
+*"hold all but one feature constant"* basis; thus, interpreting them as such is incongruous. 
+Structure, particularly the kind affecting `Linear Models` can be examined through
+variance inflation factors and principal components analysis (and the latter provides
+the attractive approach to address correlated features through principal components regression).
+
+```python
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+kp = [False if c in features_2notInteract else True for c in scale_conts.endcolnames]
+VIFs = [0]*sum(kp)
+for c in range(len(VIFs)):
+    VIFs[c] = variance_inflation_factor(Xdat[:,kp],c)
+
+U, s, V = np.linalg.svd(Xdat, full_matrices=False)
+scree = np.cumsum(s**2/np.sum(s**2))
+```
+
+<p align="center">
+<img src="images/pca.jpg"/>
+</p>
+
+Pairwise correlations are also worth examining directly. For exmample,
+correlated features directly complete for association attribution in
+tree based ensembles. 
 
 
-While 
-
-Modern predictive methodology 
-
-Model use execution... cost-benefit decision making
-
-Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 
 
 
 
-
-
-
+## Parameter Tuning
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
 </p>
-
-<p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
-</p>
-
 
 <p align="center">
 <img src="images/svc.jpg"/>
@@ -529,37 +550,16 @@ Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 <img src="images/gbtc.jpg"/>
 </p>
 
+
+
+
+
 <p align="center">
-<img src="images/pca.jpg"/>
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
 </p>
 
 
 
-
-
-
-
-
-## Model Interpretation and Use
-
-
-
-### Experimental design (still) drives interpretability
-
-The real issue in interpreting feature-outcome associations comes down to experiemental design;
-specifically, it is feature correlation which limits association attribution and the ever present
-risk of actual confounding that renders associations non causitive.
-
-
-
-Interpretation of "feature effect" in all models therefore comes down to questions of
-experiemental design; namely, intentional sampling across features can produce uncorrelated
-features and hence unconfounded association interpretation.
-
-When assessing intepretability, feature correlation, and
-
-An attractive approach to
-correlated features is [principal components regression, as demonstrated here](www.google.com).
 
 
 
