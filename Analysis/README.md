@@ -1,4 +1,4 @@
-A# Data Analysis with Python
+# Data Analysis with Python
 
 To see data analysis work done using the R programming language
 please visit the [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r)
