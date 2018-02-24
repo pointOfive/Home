@@ -338,13 +338,13 @@ of this plot.
 
 [![Regulized Confidence Intervals](images/regularize.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
 
-[![Profit Curves](images/costbenefit.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#costbenefit)
+[![Profit Curves](images/costbenefit.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit)
 
 [![Association Plots](images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots)
 
 [![Regularization Tuning](images/hover.jpg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning)
 
-[![P-Values](images/pvalues.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#pvalues)
+[![P-Values](images/pvals.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values)
 
 
 !(SVC Tuning)[images/svc.jpg]
