@@ -338,17 +338,25 @@ of this plot.
 
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg" width=400/></a>
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
 
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
+</p>
 
-[![Profit Curves](images/costbenefit.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit)
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
+</p>
 
-[![Association Plots](images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots)
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
+</p>
 
-[![Regularization Tuning](images/hover.jpg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning)
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
+</p>
 
-[![P-Values](images/pvals.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values)
 
 
 ![SVC Tuning](images/svc.jpg)
