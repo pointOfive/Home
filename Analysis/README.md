@@ -464,7 +464,7 @@ and a comparison between the predicted values of the methodologies is given in t
 The feature interpretation similarities between the different methodologies are notable, while the individual prediction discrepancies
 look well suited to exploitation via [model stacking](https://www.quora.com/What-is-stacking-in-machine-learning)
 (for the purpose of attempting to balance and tradeoff the strengths of each within a multi-layer model framework).
-Gradient boosted tree classifier capabilities can be provided follows: 
+Gradient boosted tree classifier capabilities are provided follows: 
 ```python
 import xgboost as xgb
 progress=dict()
@@ -475,17 +475,29 @@ bst.predict(dtrain, ntree_limit=bst.best_ntree_limit)
 
 
 
-
-
-
-
-
-
-
-
-
-
 ### Model Based Decision Making
+
+Model interpretation does not factor into prediction-based decision making.
+When models are used for purely predictive purposes it does not matter
+if there is confounding (observed or otherwise) and if ([as discussed in the next section](interpreting-models))
+this limits the ability to attribute and interpret associations to specific features
+within the context of the model: all that matters is raw predictive performance.
+The following example demonstrates *profit curves* based on *cost-benefit* and *confusion matricies*.
+Specification of the cost-benefit allows us to tune our *classification threshold* to optimize
+the interplay of the *confusion* and *cost-benefit matricies*.
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit) to explore the live interactable version
+of the plot.
+
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
+</p>
+
+
+
+### Interpreting Models
+
+
+While 
 
 Modern predictive methodology 
 
@@ -496,9 +508,7 @@ Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 
 
 
-<p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
-</p>
+
 
 
 
