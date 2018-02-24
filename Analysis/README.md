@@ -1,6 +1,12 @@
 # Data Analysis
 
-[Data Pipelining Functionality](#data-pipelining-functionality)
+- [Data Pipelining Functionality](#data-pipelining-functionality)
+- [Regularized Confidence Intervals](#data-pipelining-functionality)
+- [Profit Curve Decision Making](#data-pipelining-functionality)
+- [Interpreting Black-Box Models](#data-pipelining-functionality)
+- [When Models have Interpretability](#data-pipelining-functionality)
+- [Tuning Parameter Grid Search](#data-pipelining-functionality)
+- [P-Values and Hypothesis probabilities](#data-pipelining-functionality)
 
 ## Data Pipelining Functionality
 
