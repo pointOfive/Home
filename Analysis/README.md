@@ -504,15 +504,23 @@ But if interest lies in ["interpretation of feature effect"](#the-black-box-myth
 in all models -- `Linear Models` just as much as flexible `Unsupervised Machine Learning Models` -- 
 one must be intentional with sampling across features in order to provide uncorrelated
 features and hence unconfounded association interpretation.
-If associations are present between features, feature influence in fitted models will
-be estimated in the presense of these associations. But this means that parameters are not estimated on a
-*"hold all but one feature constant"* basis; thus, interpreting them as such is incongruous. 
-Structure, particularly the kind affecting `Linear Models` can be examined through
-variance inflation factors and principal components analysis (and the latter provides
-the attractive approach to address correlated features through principal components regression).
+*Multicollinearity Structure*, particularly the kind affecting `Linear Models` can be examined through
+*Variance Inflation Factors* and *Principal Components Analysis* (and the latter provides
+the attractive approach to address correlated features through *Principal Components Regression*).
+
+<p align="center">
+<img src="images/pca.jpg"/>
+</p>
+
 Pairwise correlations are also worth examining directly. For exmample,
 correlated features directly complete for association attribution in
 tree based ensembles.
+But any model fit in the presense of associations between features
+will estimate association attributions as "tradeoffs" between associated features;
+thus, associations are not estimated on a *"hold all but one feature constant"* basis
+and interpreting them as such is incongruous. 
+Principal components analysis and variance inflation factors
+are readily available as follows:
 
 ```python
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -526,9 +534,7 @@ U, s, V = np.linalg.svd(Xdat, full_matrices=False)
 scree = np.cumsum(s**2/np.sum(s**2))
 ```
 
-<p align="center">
-<img src="images/pca.jpg"/>
-</p>
+
 
 
 
@@ -555,9 +561,6 @@ scree = np.cumsum(s**2/np.sum(s**2))
 
 
 
-<p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
-</p>
 
 
 
@@ -644,3 +647,7 @@ that under standardization sample size and effect size are interchangable charac
 
 
 
+
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
+</p>
