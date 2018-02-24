@@ -553,7 +553,7 @@ facilitate and simplify this task.
 
 <details>
 <summary>
-Example K-folds Cross Validation and Grid Search Functionality (click to expand)
+Example K-folds Cross Validation and Grid Search Functionality is available to see here
 </summary>
 
 <br>
@@ -593,8 +593,8 @@ So while they improve in some parts of the feature space, they begin to overfit 
 This becomes a question of diminishing appropriate out of sample generalizations in the face of increasing in sample over generalization.
 One position on this issue is to increase out of sample prediction regardless.
 The implications of this are that 
-- error due to model variance increases so long as the corresponding model bias and residual error reduction is beneficial
-- increased model variance implies overfitting and thus a lack of generalization in model interpretation
+- increased error due to model variance is allowed while corresponding model bias and residual error reduction is beneficial
+- but increased model variance implies overfitting and thus a lack of generalization in model interpretation
 
 <p align="center">
 <img src="images/gbtc.jpg"/>
