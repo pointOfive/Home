@@ -660,21 +660,11 @@ it is still not true that the proportion of null hypotheses that are true at a g
 the p-value; rather, as is quickly seen via some simulation experiements, the p-value does not
 have an direct correlation with the proportion of null hypotheses that are true at a given p-value level.
 
-### Interactive simulation
 
-The following interactive dashboard shows the correlation of p-value and null hypotheses truthfulness
-by plotting the proportion of true null hypotheses rejected at a given p-value level.
-The relevant setting are:
-
-- proportion of null hypotheses that are true
-- the effect size of true alternative hypotheses 
-
-We consider the quite universal normally distributed test statistics, and note
-that under standardization sample size and effect size are interchangable characteristics.
-
-
-
-
+The following simulation dashboard shows the correlation of p-value and null hypotheses truthfulness
+by plotting the proportion of true null hypotheses rejected at a given p-value level under various settings. 
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values) to explore the live interactable version
+of the plot.
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
