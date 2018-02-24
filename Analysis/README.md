@@ -508,8 +508,12 @@ features and hence unconfounded association interpretation.
 *Variance Inflation Factors* and *Principal Components Analysis* (and the latter provides
 the attractive approach to address correlated features through *Principal Components Regression*).
 
+<style>
+table,td,tr,th {border:none!important}
+</style>
+
 <p align="center">
-<table > <tr style="border : 1px solid red"> <td><img src="images/pca1.jpeg"/></td> <td><img src="images/pca2.jpeg"/></td> </tr> </table>
+<table > <tr> <td><img src="images/pca1.jpeg"/></td> <td><img src="images/pca2.jpeg"/></td> </tr> </table>
 </p>
 
 Pairwise correlations are also worth examining directly. For exmample,
