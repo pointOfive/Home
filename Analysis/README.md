@@ -1,6 +1,9 @@
-# Example Data Analysis
+# Data Analysis with Python
 
-This page provides the following examples of Python-based data analysis work:
+To see data analysis work done using the R programming language
+please visit the [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r)
+on the [coding page](https://github.com/pointOfive/Home/tree/master/Code#coding). The following
+python-based data analysis examples are available here: 
 
 - [Data Pipelining Functionality](#data-pipelining-functionality)
 - [Regularized Confidence Intervals](#classical-meets-modern)
@@ -12,9 +15,7 @@ This page provides the following examples of Python-based data analysis work:
 - [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
 
-To see data analysis work done using the R programming language
-please visit the [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r)
-on the [coding page](https://github.com/pointOfive/Home/tree/master/Code#r). 
+
 
 ## Data Pipelining Functionality
 
