@@ -6,11 +6,12 @@
 - [Interpreting Black-Box Models](#data-pipelining-functionality)
 - [The Role of Experimental Design](#data-pipelining-functionality)
 - [Setting Model Tuning Parameters](#data-pipelining-functionality)
-- [Model-Based Recursive Partitioning](https://github.com/pointOfive/Home/tree/master/Code#r)
-- [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
+- [Webscrapping Database Server](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
 - [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
 
+In addition, please visit the [coding page](https://github.com/pointOfive/Home/tree/master/Code#r)
+to see a [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r).
 
 ## Data Pipelining Functionality
 
