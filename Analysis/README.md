@@ -336,13 +336,25 @@ in the context of multiplicative association identificaiton in classification se
 Please visit [this AWS server](http://ec2-54-90-249-36.compute-1.amazonaws.com/) to explore the live interactable version
 of this plot. 
 
-[![Regulized Confidence Intervals](images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/)
+[![Regulized Confidence Intervals](images/regularize.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
+
+[![Profit Curves](images/costbenefit.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#costbenefit)
+
+[![Association Plots](images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots)
+
+[![Regularization Tuning](images/hover.jpg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning)
+
+[![P-Values](images/pvalues.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#pvalues)
 
 
-costbenefit.jpeg	gbtc.jpg		pca.jpg			regularize.jpeg
-effects.jpeg		hover.jpg		pvals.jpeg		svc.jpg
+!(SVC Tuning)[svc.jpg]
 
-[PUT A LINKABLE SCREENSHOT HERE]
+!(GBTC Tuning)[gbtc.jpg]
+
+~[Observed Confounding](pca.jpg)
+
+
+
 
 Methodoloigies such as `Random Forests`,
 `Support Vector Machines` (via the `Kernel Trick`), and `Gradient Boosted Trees`
