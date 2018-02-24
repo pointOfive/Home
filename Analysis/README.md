@@ -326,13 +326,7 @@ class pipelined_data(object):
 
 <br>
 
-Data processing pipelines must be initialized:
-<details>
-<summary>
-data process pipelining example initializtion
-</summary>
-
-<br>
+The data processing pipelines are initialized as follows: 
 
 ```python
 from pipeline import *
@@ -372,10 +366,7 @@ powers.fit(Xdat)
 Xdat = powers.transform(Xdat)
 ```
 
-</details>
-
-And then data processing pipeline can be set up as follows:
-
+And then intantiated and used as follows:
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
@@ -388,12 +379,15 @@ Xdat = data_pipeline.named_steps['get_data'].X.astype(float)
 
 rf = RandomForestClassifier(min_weight_fraction_leaf = 0.05, max_features=.4, n_estimators=100)
 rf_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('rf',rf)])
+rf_pipeline.fit(Xdat, Ydat.Y.values)
 
 lr = SMLR(powers.endcolnames, features_2notInteract+remove, 0) 
 lr_full_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('synergize', synergize), ('powers', powers), ('lr',lr)])
+lr_full_pipeline.fit(Xdat, Ydat.Y.values)
 
 svc = svm.SVC(C=10, gamma=.005, probability=True)
 svc_pipeline = Pipeline([('fillWmedian',fillWmedian), ('scale_conts',scale_conts), ('svc',svc)])
+svc_pipeline.fit(Xdat[samp,:], Ydat.as_matrix()[samp,0])
 ```
 
 
