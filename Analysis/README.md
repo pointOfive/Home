@@ -333,8 +333,14 @@ but they allow us to carry desirable statistical analysis capabilities forward i
 the modern supervised learning framework. The following example demonstrates the
 synergistic integration of regularization and uncertainty quantification
 in the context of multiplicative association identificaiton in classification settings.
-Please visit [this AWS server](www.google.com) to explore the live interactable version
+Please visit [this AWS server](http://ec2-54-90-249-36.compute-1.amazonaws.com/) to explore the live interactable version
 of this plot. 
+
+[![Regulized Confidence Intervals](/images/effects.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/)
+
+
+costbenefit.jpeg	gbtc.jpg		pca.jpg			regularize.jpeg
+effects.jpeg		hover.jpg		pvals.jpeg		svc.jpg
 
 [PUT A LINKABLE SCREENSHOT HERE]
 
@@ -465,11 +471,11 @@ The following interactive dashboard shows the correlation of p-value and null hy
 by plotting the proportion of true null hypotheses rejected at a given p-value level.
 The relevant setting are:
 
-- proportion of null hypotheses that are false 
-- the distribution of effect sizes under the alternative hypotheses 
+- proportion of null hypotheses that are true
+- the effect size of true alternative hypotheses 
 
-We consider a quite universal normally distributed test statistics, and note
-that under standardization sample size and effect size are equivalent characteristics.
+We consider the quite universal normally distributed test statistics, and note
+that under standardization sample size and effect size are interchangable characteristics.
 
 
 
