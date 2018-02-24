@@ -553,7 +553,7 @@ facilitate and simplify this task.
 
 <details>
 <summary>
-K-folds Cross Validation and Grid Search
+Example K-folds Cross Validation and Grid Search Functionality (click to expand)
 </summary>
 
 <br>
@@ -587,6 +587,27 @@ for learning_rate in [.01,.1]:
 
 <br>
 
+As models become more flexible they can naturally find more complex generalizations; however,
+they also begin to pick up spurious idiosyncracies in the data.
+So while they improve in some parts of the feature space, they begin to overfit in others.
+This becomes a question of diminishing appropriate out of sample generalizations in the face of increasing in sample over generalization.
+One position on this issue is to increase out of sample prediction regardless.
+The implications of this are that 
+- error due to model variance increases so long as the corresponding model bias and residual error reduction is beneficial
+- increased model variance implies overfitting and thus a lack of generalization in model interpretation
+
+<p align="center">
+<img src="images/gbtc.jpg"/>
+</p>
+
+
+
+*Bagging* can be applied here 
+One approach to this shortcoming would be to use *Bagging* stabilize model variance.
+Another approach is the alternative position that 
+
+
+
 Random Forests provide near cutting edge prediction out of the box
 with very little parameter tuning. This is because (to the extent possible)
 Random Forests grossly overfit to the training data, but conflate
@@ -600,9 +621,7 @@ intrinsic error with model error, so that
 
 
 
-<p align="center">
-<img src="images/gbtc.jpg"/>
-</p>
+
 
 
 
