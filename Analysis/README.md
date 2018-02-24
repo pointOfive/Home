@@ -338,7 +338,7 @@ of this plot.
 
 
 <p align="center">
-[<img src="images/regularize.jpeg" width=400/>](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg" width=400/></a>
 </p>
 
 
