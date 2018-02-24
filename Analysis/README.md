@@ -338,10 +338,9 @@ of this plot.
 
 
 <p align="center">
-  <img src="http://www.fillmurray.com/460/300">
+[<img src="images/regularize.jpeg" width=400/>](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
 </p>
 
-[<img src="images/regularize.jpeg" width=40/>](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
 
 [![Profit Curves](images/costbenefit.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit)
 
