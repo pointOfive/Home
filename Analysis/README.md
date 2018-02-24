@@ -423,6 +423,20 @@ of the plot.
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
 
+Methodoloigies such as `Random Forests`,
+`Support Vector Machines` (via the `Kernel Trick`), and `Gradient Boosted Trees`
+automatically leverage extremely complex higher order interaction associations, but
+any higher order interaction associations to be considered in the context of
+`Linear Models` require explicit *a priori* specification and construction.
+As a result, `Linear Model` specifications cannot realistically consistently compete with
+the modeling flexibility provided by modern predictive machine learning methodologies; however, 
+the statistical analysis capabilities available
+within a `Linear Model` framework serve to ensure
+it's competetiveness as an analytical tool by
+providing uncertainty characterizations
+that can be brought to bear on questions of model building and interpretation.
+
+
 ## The "Black-Box" Myth
 
 A frequent charge leveled against modern machine learning predictive methodologies is that
@@ -466,15 +480,6 @@ of the plot.
 
 
 
-
-Please visit [this AWS server](www.google.com) to explore the live interactable version
-of this plot.
-
-
-In fact Machine Learning is no more "black box" than a `Linear Model`
-
-As noted above, the benefit of `Linear Model` frameworks is
-the uncertainty characterizations they provide. 
 
 
 
@@ -523,18 +528,6 @@ Please visit this [Bokeh Server](www.google.com) to interact with this plot.
 
 
 
-Methodoloigies such as `Random Forests`,
-`Support Vector Machines` (via the `Kernel Trick`), and `Gradient Boosted Trees`
-automatically leverage extremely complex higher order interaction associations, but
-any higher order interaction associations to be considered in the context of
-`Linear Models` require explicit *a priori* specification and construction.
-As a result, `Linear Model` specifications cannot realistically consistently compete with
-the modeling flexibility provided by modern predictive machine learning methodologies; however, 
-the statistical analysis capabilities available
-within a `Linear Model` framework serve to ensure
-it's competetiveness as an analytical tool by
-providing uncertainty characterizations
-that can be brought to bear on questions of model building and interpretation.
 
 
 ## Model Interpretation and Use
