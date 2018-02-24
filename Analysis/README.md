@@ -547,6 +547,10 @@ by using cross validation techniques to identify appropriate regularization leve
 The `Kfolds` and `GridSearchCV` functionalities in `Scikit-Learn` greatly
 facilitate and simplify this task.  
 
+<p align="center">
+<img src="images/svc.jpg"/>
+</p>
+
 <details>
 <summary>
 K-folds Cross Validation and Grid Search
@@ -581,7 +585,7 @@ for learning_rate in [.01,.1]:
 ```
 </details>
 
-
+<br>
 
 Random Forests provide near cutting edge prediction out of the box
 with very little parameter tuning. This is because (to the extent possible)
@@ -590,20 +594,11 @@ intrinsic error with model error, so that
 
 
 
-
-These capabilities are demonstrated below,
-as well as a custom grid search for XGboost that returns the optimal model
-based on postprocessing of out of sample scoring during the
-sequential ensemble f
-
-
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
 </p>
 
-<p align="center">
-<img src="images/svc.jpg"/>
-</p>
+
 
 <p align="center">
 <img src="images/gbtc.jpg"/>
