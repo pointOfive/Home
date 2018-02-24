@@ -1,6 +1,6 @@
 # Data Analysis
 
-[Data Pipelining Functionality](Analysis#data-pipelining-functionality)
+[Data Pipelining Functionality](#data-pipelining-functionality)
 
 ## Data Pipelining Functionality
 
