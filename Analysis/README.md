@@ -336,6 +336,11 @@ in the context of multiplicative association identificaiton in classification se
 Please visit [this AWS server](http://ec2-54-90-249-36.compute-1.amazonaws.com/) to explore the live interactable version
 of this plot. 
 
+
+<p align="center">
+  <img src="http://www.fillmurray.com/460/300">
+</p>
+
 [![Regulized Confidence Intervals](images/regularize.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals)
 
 [![Profit Curves](images/costbenefit.jpeg)](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit)
