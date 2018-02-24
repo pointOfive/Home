@@ -359,15 +359,15 @@ of this plot.
 
 
 <p align="center">
-<img src="images/svc.jpeg"/>
+<img src="images/svc.jpg"/>
 </p>
 
 <p align="center">
-<img src="images/gbtc.jpeg"/>
+<img src="images/gbtc.jpg"/>
 </p>
 
 <p align="center">
-<img src="images/pca.jpeg"/>
+<img src="images/pca.jpg"/>
 </p>
 
 
