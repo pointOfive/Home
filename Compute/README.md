@@ -115,7 +115,7 @@ ipython -c "import nltk; nltk.download('stopwords', download_dir='/home/ubuntu/n
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_server.py -O /home/ubuntu/psql_server.py
 ```
 
-Click [here](https://www.google.com) to see the functionality of the postgres server `psql_server.py`
+Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#web-scraping-database-server) to see the functionality of the postgres server `psql_server.py`
 </details>
 
 
