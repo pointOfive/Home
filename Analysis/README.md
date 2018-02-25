@@ -799,7 +799,7 @@ def text_cleaner(website):
 
 <details>
 <summary>
-query target webpages from and deliver scraped webpages to the database
+query targets and deliver scraped webpages to the database
 </summary>
 
 <br>
@@ -850,11 +850,11 @@ conn.close()
 ```
 </details>
 
-
+<br>
 
 
 The [server/worker setup](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
-is described on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute).
+is described on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute#computing).
 
 
 
