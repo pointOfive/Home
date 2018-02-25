@@ -860,7 +860,7 @@ is described on the [computational page](https://github.com/pointOfive/Home/tree
 
 [Notes on setting up a Spark cluster](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 are available on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute#computing).
-Using this cluster I made 
+With a spark cluster I made 
 
 
 <details>
@@ -934,7 +934,7 @@ DSJP_df.show(3)
 
 <details>
 <summary>
-a clustering analysis using SparkML
+an usupervised learniung pipeline using SparkML functionality
 </summary>
 
 <br>
