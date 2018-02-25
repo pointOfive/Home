@@ -14,10 +14,10 @@ While teaching and mentoring students in data science methodology I prepared the
 | **Predictive Methodology**       	      		 		     | **Statistics**        	     	      	      	           | **Programming**  	     	      	      	                           |
 | [Linear Regression](MYLECTURES/reg/reg.pdf )                               | [Probability](MYLECTURES/probs/probs.pdf)                   | [CLI/Linux/git](http://www.google.com)                                |
 | [Interpreting Models](MYLECTURES/one_hour_lectures/interpreting_lms.ipynb) | [Inference/Sampling](MYLECTURES/inference/inference.ipynb)  | [Python](http://www.google.com)                                       |
-| [CV/Regularization](MYLECTURES/shrink/regularize.pdf)                      | [Hypothesis Testing I](MYLECTURES/testing/testing.ipynb)    | [OOP](http://www.google.com)                                          |
-| [Logistic Regression](MYLECTURES/logistic/logistic.pdf)                    | [Hypothesis Testing II](MYLECTURES/testing/tests.pdf)       | [postgreSQL](MYLECTURES/my_sql/sql.pdf)                               |
-| [Gradient Descent](MYLECTURES/gradient_decent/gd.pdf)                      | [Power Analysis](MYLECTURES/power_bayes/power.ipynb)        | [psychopg2/numpy/pandas](MYLECTURES/pandas/pandas2.ipynb)             |                      
-| [Multi-armed Bandit](MYLECTURES/multi-armed-bandit/multi_armed_bandit.pdf) | [Bayesian Analysis](MYLECTURES/power_bayes/bayes.ipynb)     | [Linear Algebra](week_3_linmod/linmodreview.pdf)                      |
+| [CV/Regularization](MYLECTURES/shrink/regularize.pdf)                      | [Hypothesis Testing I](MYLECTURES/testing/powerNpvalues/testing.ipynb)    | [OOP](http://www.google.com)                                          |
+| [Logistic Regression](MYLECTURES/logistic/logistic.pdf)                    | [Hypothesis Testing II](MYLECTURES/testing/powerNpvalues/tests.pdf)       | [postgreSQL](MYLECTURES/my_sql/sql.pdf)                               |
+| [Gradient Descent](MYLECTURES/gradient_decent/gd.pdf)                      | [Power Analysis](MYLECTURES/power_bayes/power/power.ipynb)        | [psychopg2/numpy/pandas](MYLECTURES/pandas/pandas2.ipynb)             |                      
+| [Multi-armed Bandit](MYLECTURES/multi-armed-bandit/multi_armed_bandit.pdf) | [Bayesian Analysis](MYLECTURES/power_bayes/bayes/bayes.ipynb)     | [Linear Algebra](week_3_linmod/linmodreview.pdf)                      |
 
 
 
