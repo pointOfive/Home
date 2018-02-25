@@ -2,9 +2,9 @@
 
 
 
-## [NYC](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+## [NYC](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
-[<img src="images/nyc.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+[<img src="images/nyc.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 Last year I embarked on an exciting adventure and career opportunity by moving to NYC.
 The energy and diversity (read, people) in this city have been amazing,
@@ -23,28 +23,28 @@ which clearly distinguishes me as a non-native... but I suppose that's exactly w
 
 
 
-## [ATX](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+## [ATX](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
-[<img src="images/atx.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+[<img src="images/atx.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 The opportunity to come to NYC materialized because I had spent the previous year or so
 expanding from my [Bioinformatics](https://github.com/pointOfive/Examples/tree/master/Compute#hpc) skill set
 into the world of [Data Science](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material). 
 Despite having a [PhD in Statistics](https://stat.duke.edu/people/scott-l-schwartz) and working in
-[data analysis](https://github.com/pointOfive/Examples/tree/master/Papers#publications),
+[data analysis](https://github.com/pointOfive/Home/tree/master/Publications#publications)
 I had never explored much of the modern data analysis toolset
 (e.g.,
 [Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material),
 etc.).  But picking up these tools never felt "hard" or "foreign" -- predictive methodology and supporting tools therein
 are a very comfortable, seamless and natural extension of my educational and professional background.
-Actually, coming back to [scripting and coding](https://github.com/pointOfive/Examples/tree/master/Code),
+Actually, coming back to [scripting and coding](https://github.com/pointOfive/Home/tree/master/Code#coding), 
 [organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#aws-ec2emrs3) and
 [modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just feels like returning to my roots -- it's comfortable, exciting, and
 nice to be home. 
 
-## [UT](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+## [UT](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
-[<img src="images/ut.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+[<img src="images/ut.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 Living in Austin was good -- 
 nice neighborhoods, good [running](http://www.mountainbiketx.com/downloads/texas/maps/Shoal_Creek.pdf), and 
@@ -55,7 +55,7 @@ so I could be a part of, and contribute to a long term research program.
 At UT I was a part of an incredibly strong team of postdocs and graduate students with very diverse backgrounds ranging from 
 molecular biology, ecology, botany, plant physiology, and field managers to myself (who provided
 [Bioinformatic](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools) and
-[Statistical](https://github.com/pointOfive/Examples/tree/master/Papers#publications) support to the lab).
+[Statistical](https://github.com/pointOfive/Examples/tree/master/Publications#publications) support to the lab).
 The combined expertise in the lab comprised a molecular marker based crop development program
 with tens of field sites ranging from Mexico to Illinois
 targeting understanding of plant ecotype/environment (GxE) interactions
@@ -64,9 +64,9 @@ And when planting and sample collection season came around I got go outside
 and pretend to be a farmer, which was a perk of the position that I always enjoyed. 
 
 
-## [TAMU](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+## [TAMU](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
-[<img src="images/tamu.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+[<img src="images/tamu.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 Prior to moving to Austin I spent several very enjoyable years in
 [College Station, Texas](https://www.google.com/maps/place/College+Station,+TX/@30.5907759,-100.7740924,6z/data=!4m5!3m4!1s0x8646848619463ca3:0xc969c74db6bf6ac9!8m2!3d30.627977!4d-96.3344068), home of the
@@ -87,9 +87,9 @@ of Texas that was new to me, and eventually lead to my
 my interest in moving to Austin to join the crop development program at UT.
 
 
-## [Postdoc](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+## [Postdoc](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
-[<img src="images/postdoc.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+[<img src="images/postdoc.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 The reason I ended up working in genetic sequencing technologies in the first place was because
 I found genetic data extremely compelling.
@@ -104,13 +104,13 @@ biology, genetics, and experimental tools that produced it.
 From simple ANOVA experimental design, I moved onto "large p small n" settings (i.e., transcriptomics),
 and then metagenomics which provided my introduction and eventual transition to nextgen sequencing.
 The basis and foundation of my ability to work in and contribute to
-[scientific research](https://github.com/pointOfive/Examples/tree/master/Papers#publications)
+[scientific research](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 was formed though this outstanding postdoctoral experience.
 
 
-## [Duke](https://github.com/pointOfive/Examples/tree/master/Experience#experience) 
+## [Duke](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience) 
 
-[<img src="images/duke.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#experience)
+[<img src="images/duke.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 Graduate School was an amazing opportunity for me.
 Through my steady commitment in college I managed to make a path into
@@ -167,9 +167,9 @@ had never actually had.  I had put a lot of effort into soccer growing up and it
 in a completely unexpected way... life seems to be weird like that. 
 
 
-## [Growing Up](https://github.com/pointOfive/Examples)
+## [Growing Up](https://github.com/pointOfive/Home/#welcome)
 
-[<img src="images/home.jpg" width=100%>](https://github.com/pointOfive/Examples)
+[<img src="images/home.jpg" width=100%>](https://github.com/pointOfive/Home/#welcome)
 
 In addition to pursing an active and healthy lifestyle, 
 learning was always a very important focus of the family.
