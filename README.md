@@ -11,7 +11,7 @@ On this site you will find
 
 In addition, you will also find my 
 - [data science lecture material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
-- [work history](https://github.com/pointOfive/Examples/tree/master/Experience#experience) and [bio](https://github.com/pointOfive/Examples/tree/master/Bio#about)
+- [work history](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience) and [bio](https://github.com/pointOfive/Examples/tree/master/Bio#about)
 - [publication record](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
 Finally, my formal resume/CV is available [here](SchwartzCV.pdf). 
