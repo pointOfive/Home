@@ -155,7 +155,7 @@ pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
 
-Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#webscrapper-and-database-server) to see the functionality of the web scraper worker `psql_worker.py`
+Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#web-scraping-database-server) to see the functionality of the web scraper worker `psql_worker.py`
 </details>
 
 #### Jupyter Notebook Server
