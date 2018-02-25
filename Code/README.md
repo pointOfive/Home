@@ -24,7 +24,7 @@ methodology for subgroup analysis that has recently received attention in the co
 
 ## Python
 
-Examples of data analysis using Python and supporting tools are available on the [data analysis page](www.google.com). 
+Examples of data analysis using Python and supporting tools are available on the [data analysis page](https://github.com/pointOfive/Home/tree/master/Analysis#data-analysis-with-python).
 
 The following are examples of algorithm prototyping and implementation with Python,
 and are meant to augment the [C++ coding practice below](#c).  These problems were drawn from 
