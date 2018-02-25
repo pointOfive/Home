@@ -17,7 +17,7 @@ While teaching and mentoring students in data science methodology I prepared the
 | [CV/Regularization](MYLECTURES/shrink/regularize.pdf)                      | [Hypothesis Testing I](MYLECTURES/testing/powerNpvalues/testing.ipynb)    | [OOP](https://github.com/pointOfive/Home/tree/master/Analysis#data-pipelining-functionality)                                          |
 | [Logistic Regression](MYLECTURES/logistic/logistic.pdf)                    | [Hypothesis Testing II](MYLECTURES/testing/powerNpvalues/tests.pdf)       | [postgreSQL](MYLECTURES/my_sql/sql.pdf)                               |
 | [Gradient Descent](MYLECTURES/gradient_decent/gd.pdf)                      | [Power Analysis](MYLECTURES/power_bayes/power/power.ipynb)        | [psychopg2/numpy/pandas](MYLECTURES/pandas/pandas2.ipynb)             |                      
-| [Multi-armed Bandit](MYLECTURES/multi-armed-bandit/multi_armed_bandit.pdf) | [Bayesian Analysis](MYLECTURES/one_hour_lectures/bayes.ipynb)     | [Linear Algebra](week_3_linmod/linmodreview.pdf)                      |
+| [Multi-armed Bandit](MYLECTURES/multi-armed-bandit/multi_armed_bandit.pdf) | [Bayesian Analysis](MYLECTURES/one_hour_lectures/bayes.ipynb)     | [Linear Algebra](MYLECTURES/week_3_linmod/linmodreview.pdf)                      |
 
 
 
