@@ -883,7 +883,8 @@ sc = spark.sparkContext
 sc.setLogLevel("ERROR")
 min_word_lim=100
 DSJP = sc.textFile('s3n://bucket/path/file.txt').map(lambda x: unicodedata.normalize('NFKD', str(x))).filter(lambda x: len(x)>min_word_lim).cache()
-# remove duplicates                                                                                                                                                           DSJP = sc.parallelize(set(DSJP.collect()))
+# remove duplicates
+DSJP = sc.parallelize(set(DSJP.collect()))
 DSJP.count()
 
 DSJP = DSJP.repartition(20)
@@ -973,7 +974,8 @@ DSJP_df = model.transform(DSJP_df).cache()
 # ---------- cluster sizes ---------------
 Counter(DSJP_df.select("prediction").rdd.flatMap(lambda x: x).collect())
 
-# ------------- centroids ---------------                                                                                                                                     # super cool -- gives the dimensions with the highest weights... so what the clusters actually mean...
+# ------------- centroids ---------------
+# super cool -- gives the dimensions with the highest weights... so what the clusters actually mean...
 [[cv_model.vocabulary[i] for i in arr.argsort()[-10:][::-1]] for arr in model.clusterCenters()]
 
 # --------- cluster content --------------
