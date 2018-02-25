@@ -1,7 +1,7 @@
 # Computing
 
 I've worked in scientific computing contexts for over 15 years 
-using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Examples/), and Matlab. 
+using primarily [Python, R, SQL, C++](https://github.com/pointOfive/Home/tree/master/Code#coding), and Matlab. 
 Additionally, I have experience with
 
 - **Cloud Computing** ([AWS EC2/EMR/S3](#aws-ec2emrs3))
