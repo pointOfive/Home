@@ -12,7 +12,7 @@ Additionally, I have experience with
 
 ## AWS EC2/EMR/S3
 
-I'm familiar with creating, managing, and using AWS cloud computation infrastructurs. 
+I'm familiar with creating, managing, and using AWS cloud computation infrastructures. 
 
 - [EC2 Instances](https://aws.amazon.com/ec2/instance-types/)
 - [EC2 Pricing](https://aws.amazon.com/ec2/pricing/on-demand/)
@@ -119,7 +119,7 @@ Click [here](https://www.google.com) to see the functionality of the postgres se
 </details>
 
 
-#### Webscraper Worker
+#### Web Scraper Worker
 
 ```
 ~/.local/bin/aws ec2 run-instances --image-id ami-aa2ea6d0 --key-name=given_pem_name
@@ -155,7 +155,7 @@ pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
 
-Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#webscrapper-and-database-server) to see the functionality of the webscraper worker `psql_worker.py`
+Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#webscrapper-and-database-server) to see the functionality of the web scraper worker `psql_worker.py`
 </details>
 
 #### Jupyter Notebook Server

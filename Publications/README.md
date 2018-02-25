@@ -9,7 +9,7 @@ I have additionally contributed bioinformatic and statistical analysis support o
 | [Drought Response in Switchgrass](http://www.plantphysiol.org/content/172/2/734) | Plant Physiology | 2016 | [UT](https://github.com/pointOfive/Examples/tree/master/Bio#ut) |
 | [Allele Specific Expression in Switchgrass](http://genome.cshlp.org/content/early/2016/03/07/gr.198135.115) | Genome Research | 2016 | [UT](https://github.com/pointOfive/Examples/tree/master/Bio#ut) |
 | [Biotrophic interaction in Maize](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-2546-0) | BMC Genomics | 2016 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
-| [RNA-SEQC Accuracy/Reporducibility](https://www.nature.com/articles/nbt.2957) | Nature Biotechnology | 2014 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
+| [RNA-SEQC Accuracy/Reproducibility](https://www.nature.com/articles/nbt.2957) | Nature Biotechnology | 2014 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
 | [Phylogenic analysis of pandemic H1N1](http://onlinelibrary.wiley.com/doi/10.1111/zph.12006/abstract) | Zoonoses Public Health | 2013 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
 | [Breast Feeding and Infant Microbiota](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-4-r32) | Genome Biology | 2012 | [TAMU I](https://github.com/pointOfive/Examples/tree/master/Bio#postdoc) |
 | [Confounding in Principal Stratification](http://onlinelibrary.wiley.com/doi/10.1002/sim.4472/abstract) | Statistics in Medicine | 2012 | [Duke](https://github.com/pointOfive/Examples/tree/master/Bio#duke) |

@@ -11,7 +11,7 @@ provides the following python-based data analysis examples:
 - [Decision Making with Profit Curves](#the-black-box-myth)
 - [The Role of Experimental Design](#interpreting-feature-effects)
 - [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
-- [Webscrapping Database Server](#webscrapping-database-server)
+- [Web Scraping Database Server](#web-scraping-database-server)
 - [Spark NLP Clustering Pipeline](#nlp-and-clustering-with-spark)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
 
@@ -21,11 +21,11 @@ provides the following python-based data analysis examples:
 
 The `Scikit-Learn` `Pipeline` package
 facilitates data processing and transformation within a cross validation
-context by providing `pipeline` objects that envoke a series of `.transform`
+context by providing `pipeline` objects that invoke a series of `.transform`
 methods as part of `.fit` and `.predict` calls. 
 This functionality simplifies and abstracts the
 data modeling process, but the capabilities available out of the box
-leave some things to be desired; namely, the built-in `Transforer` objects
+leave some things to be desired; namely, the built-in `Transformer` objects
 do not provide the full control that an analyst might require.
 I have therefore amended and wrapped these functionalities in my own
 `Transformer` class objects which provide 
@@ -383,7 +383,7 @@ powers.fit(Xdat)
 Xdat = powers.transform(Xdat)
 ```
 
-And then intantiated and used as follows:
+And then and used as follows:
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
@@ -415,15 +415,15 @@ concern themselves with "classical" exercises specific to `Linear Model` operati
 but they allow us to carry desirable statistical analysis capabilities forward into
 the modern supervised learning framework. The following example demonstrates the
 synergistic integration of regularization and uncertainty quantification
-in the context of multiplicative association identificaiton in classification settings.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals) to explore the live interactable version
+in the context of multiplicative association identification in classification settings.
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals) to explore the live interactive version
 of the plot. 
 
 <p align="center">
 <a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
 
-Methodoloigies such as `Random Forests`,
+Methodologies such as `Random Forests`,
 `Support Vector Machines` (via the `Kernel Trick`), and `Gradient Boosted Trees`
 automatically leverage extremely complex higher order interaction associations, but
 any higher order interaction associations to be considered in the context of
@@ -432,7 +432,7 @@ As a result, `Linear Model` specifications cannot realistically consistently com
 the modeling flexibility provided by modern predictive machine learning methodologies; however, 
 the statistical analysis capabilities available
 within a `Linear Model` framework serve to ensure
-it's competetiveness as an analytical tool by
+it's competitiveness as an analytical tool by
 providing uncertainty characterizations
 that can be brought to bear on questions of model building and interpretation.
 
@@ -443,7 +443,7 @@ A frequent charge leveled against modern machine learning predictive methodologi
 they are not interpretable the way a `Linear Model` frameworks is.
 This is patently incorrect for the following two reasons:
 
-- the venerable *"hold all but one feature constant"* standard `Linear Model` interpretaion
+- the venerable *"hold all but one feature constant"* standard `Linear Model` interpretation
 is available in all contexts as a so-called *Partial Dependency Plot*
 - examinations of the presence of specific interactions requires their explicit construction,
 and can be carried out on the basis of *Feature Importance Diagnostics* -- not only via hypothesis testing
@@ -452,7 +452,7 @@ The following example demonstrates the former *Partial Dependency Plots* for the
 `Logistic Regression`, `Random Forest`, and `Support Vector Machine` classifier pipelines above.
 In addition the `Gradient Boosted Tree` classifier from the `XGBoost` package is also provided
 for further comparison.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactable version
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactive version
 of the plot.
 
 <p align="center">
@@ -482,10 +482,10 @@ When models are used for purely predictive purposes it does not matter
 if there is confounding (observed or otherwise) and if ([as discussed in the next section](interpreting-feature-effects))
 this limits the ability to attribute and interpret associations to specific features
 within the context of the model: all that matters is raw predictive performance.
-The following example demonstrates *profit curves* based on *cost-benefit* and *confusion matricies*.
+The following example demonstrates *profit curves* based on *cost-benefit* and *confusion matrices*.
 Specification of the cost-benefit allows us to tune our *classification threshold* to optimize
-the interplay of the *confusion* and *cost-benefit matricies*.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit) to explore the live interactable version
+the interplay of the *confusion* and *cost-benefit matrices*.
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit) to explore the live interactive version
 of the plot.
 
 <p align="center">
@@ -496,9 +496,9 @@ of the plot.
 
 ## Interpreting "Feature Effects"
 
-The real issue in interpreting feature-outcome associations comes down to *experiemental design*;
+The real issue in interpreting feature-outcome associations comes down to *experimental design*;
 specifically, it is feature correlation which limits association attribution and the ever present
-risk of actual confounding that renders associations non causitive.
+risk of actual confounding that renders associations non causative.
 Of course if [interest lies in prediction alone this is immaterial](#model-based-decision-making).
 But if interest lies in ["interpretation of feature effect"](#the-black-box-myth) then
 for all models -- flexible `Unsupervised Machine Learning Models` just as much as `Linear Models` -- 
@@ -514,10 +514,10 @@ the attractive approach to address correlated features through *Principal Compon
 </p>
 
 
-Pairwise correlations are also worth examining directly. For exmample,
+Pairwise correlations are also worth examining directly. For example,
 correlated features directly complete for association attribution in
 tree based ensembles.
-But any model fit in the presense of associations between features
+But any model fit in the presence of associations between features
 will estimate association attributions as "tradeoffs" between associated features;
 thus, associations are not estimated on a *"hold all but one feature constant"* basis
 and interpreting them as such is incongruous. 
@@ -588,7 +588,7 @@ for learning_rate in [.01,.1]:
 <br>
 
 As models become more flexible they can naturally find more complex generalizations; however,
-they also begin to pick up spurious idiosyncracies in the data.
+they also begin to pick up spurious idiosyncrasies in the data.
 So while they improve in some parts of the feature space, they begin to overfit in others.
 This becomes a question of diminishing appropriate out of sample generalizations in the face of increasing in sample over generalization.
 One position on this issue is to increase out of sample prediction regardless.
@@ -596,7 +596,7 @@ The implications of this are that
 - increased error due to model variance is allowed while corresponding model bias and residual error reduction is beneficial
 - but increased model variance implies overfitting and thus a lack of generalization in model interpretation
 
-The following shows increasing gains in predictive power along with simultaneous increases in demonstratable overfitting, i.e.,
+The following shows increasing gains in predictive power along with simultaneous increases in demonstrable overfitting, i.e.,
 a decreasing ability to generalize predictive gains. 
 
 <p align="center">
@@ -604,17 +604,17 @@ a decreasing ability to generalize predictive gains.
 </p>
 
 
-Using *Bagging* to reduce localized spurous overfitting seems like a very promising technique to address this issue, and similarly,
-the application of *Bootsrapping* techniques to provide association attribution uncertainty quantification (i.e., "effects uncertainty estimation")
-seems like a likewise enticing endevour. 
+Using *Bagging* to reduce localized spurious overfitting seems like a very promising technique to address this issue, and similarly,
+the application of *Bootstrapping* techniques to provide association attribution uncertainty quantification (i.e., "effects uncertainty estimation")
+seems like a likewise enticing endeavor. 
 Regardless, the intention to equalize in and out of sample testing scores for the purposes of
 generalizability of interpretation remains an alternative objective to maximum predictive power.
 Again, the motivation behind such an objective is an interest in identifying reproducible
-associations, and in particular being willing to reduce the complexity of associtions under consideration when the
+associations, and in particular being willing to reduce the complexity of associations under consideration when the
 available data does not sufficiently justify the inference. 
 The following example sorts in and out of sample scores by their difference,
 and allows the user to hover over the plots to facilitate identification of appropriate tuning parameter settings.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning) to explore the live interactable version
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning) to explore the live interactive version
 of the plot.
 
 <p align="center">
@@ -623,7 +623,7 @@ of the plot.
 
 
 
-## Webscrapping Database Server
+## Web Scraping Database Server
 
 I built a server to populate target webpages in a database using `selenium` and `psycopg2`. 
 The server executed the following two tasks:
@@ -756,7 +756,7 @@ conn.close()
 
 <br>
 
-I additionally built a webscrapper which could be run simultaneously from different worker nodes.
+I additionally built a web scraper which could be run simultaneously from different worker nodes.
 Worker nodes had two tasks: 
 
 <details>
@@ -1045,7 +1045,7 @@ for k in range(2, 50, 2):
 
 ## Afterward: p-values
 
-*P-values* are a measure of evidence against a null hypothesis defind as
+*P-values* are a measure of evidence against a null hypothesis defined as
 
 *"the probability of seeing something as or more extreme than what you saw if the null hypothesis were true."*
 
@@ -1057,7 +1057,7 @@ rejection status of the null hypothesis, but further interpretation of p-values 
    The mistake here is that in a technical sense this statement is nonsensical.
 The truthfulness of a null hypothesis is not a random variable with a probability distribution
 as the above sentiment implies; therefore, the association of the p-value as a meaningful quantification
-of the desired sentiment is necessarily aggregious. This pitfall clarifies that when interpreting p-values
+of the desired sentiment is necessarily egregious. This pitfall clarifies that when interpreting p-values
 one must not stray from the relevant definition.
 
 2. p-values do not characterize "the probability the null hypothesis was incorrectly rejected"
@@ -1072,13 +1072,13 @@ But this is the significance level, not the p-value, of the test.
 
    If we actually do imagine we are sampling and testing some proportion of true and false null hypotheses,
 it is still not true that the proportion of null hypotheses that are true at a given p-value level is
-the p-value; rather, as is quickly seen via some simulation experiements, the p-value does not
+the p-value; rather, as is quickly seen via some simulation experiments, the p-value does not
 have an direct correlation with the proportion of null hypotheses that are true at a given p-value level.
 
 
 The following simulation dashboard shows the correlation of p-value and null hypotheses truthfulness
 by plotting the proportion of true null hypotheses rejected at a given p-value level under various settings. 
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values) to explore the live interactable version
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values) to explore the live interactive version
 of the plot.
 
 <p align="center">

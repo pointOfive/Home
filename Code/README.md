@@ -27,7 +27,7 @@ methodology for subgroup analysis that has recently received attention in the co
 Examples of data analysis using Python and supporting tools are available on the [data analysis page](www.google.com). 
 
 The following are examples of algorithm prototyping and implementation with Python,
-and are meant to agument the [C++ coding practice below](#c).  These problems were drawn from 
+and are meant to augment the [C++ coding practice below](#c).  These problems were drawn from 
 [here](https://careercup.com/page?pid=amazon-interview-questions&sort=votes), 
 [here](https://www.geeksforgeeks.org/amazons-asked-interview-questions/), and
 [here](https://technicalyorker.files.wordpress.com/2016/02/cracking-the-coding-interview1.pdf). 
@@ -112,7 +112,7 @@ SELECT MAX(Salary) from Employee
     WHERE Salary < (SELECT Salary FROM Salary_Most2Least LIMIT 1 OFFSET n-1) ;
 ```
 
-#### Select employees, emplyees of specific managers and managers managing more than `n` employees
+#### Select employees, employees of specific managers and managers managing more than `n` employees
 
 ```SQL
 SELECT Employee_ID FROM EMPLOYEES
@@ -200,7 +200,7 @@ Click here for problems/solutions (11)
 
 <br>
 
-0. Linked List Node class ([linkedListNode.h](Cpp/ll.h), [linkedListNode.cpp](Cpp/ll.cpp)), with auxillary
+0. Linked List Node class ([linkedListNode.h](Cpp/ll.h), [linkedListNode.cpp](Cpp/ll.cpp)), with auxiliary
 1. [printing](Cpp/ll.cpp)
 2. [duplicating](Cpp/ll.cpp)
 3. [reversing](Cpp/ll.cpp), and
@@ -210,7 +210,7 @@ Using this data structure I implemented the following capabilities
 
 5. [Dedup unsorted linked list](Cpp/dedup.cpp)
 6. [Find kth node from end](Cpp/pali.cpp)
-7. [Partion around node](Cpp/part.cpp)
+7. [Partition around node](Cpp/part.cpp)
 8. [Add numbers stored as a linked list](Cpp/add.cpp)
 9. [Check if linked list is looped](Cpp/circ.cpp)
 10. [Check if linked list is a palindrome](Cpp/pali.cpp)
