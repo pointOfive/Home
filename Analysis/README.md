@@ -624,6 +624,140 @@ of the plot.
 
 
 
+## Webscrapper and Database Server
+
+I built a server to populate target webpages in a database,
+and manage a team of webscrappers to collect the webpages
+for storage into the database.
+The [server/worker setup](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
+is described on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute).
+The server had the following two roles:
+
+<details>
+<summary>
+Collect target webpages 
+</summary>
+
+<br>
+
+```python
+#!/usr/bin/python                                                                                                                                                             
+# chmod a+x indeed_psql_server.py                                                                                                                                             
+import psycopg2
+from bs4 import BeautifulSoup
+import re # Regular expressions                                                                                                                                               
+import time  # To prevent overwhelming the server between connections                                                                                                         
+from collections import Counter # Keep track of our term counts                                                                                                               
+from nltk.corpus import stopwords # Filter out stopwords, such as 'the', 'or', 'and'                                                                                          
+import pandas as pd # For converting results to a dataframe and bar chart plots                                                                                               
+from selenium import webdriver
+
+def skills_info(search, city, state):
+    '''Use "+".join for search/city/state; Let's just get 10 jobs from indeed'''
+    site = ''.join(['http://www.indeed.com/jobs?q=%22', search, '%22&l=%22', city,'%22%2C+%22', state,'%22'])
+    if city is "":
+        site = ''.join(['http://www.indeed.com/jobs?q=%22', search, '%22&l=%22', state,'%22'])
+    base_url = 'http://www.indeed.com'
+    driver = webdriver.PhantomJS()
+    driver.get(site)
+    num_jobs_area = driver.find_element_by_id('searchCount').text
+    job_numbers = re.findall('\d+', num_jobs_area)#.decode('utf-8')) # Extract the total jobs found from the search result                                                     
+    if len(job_numbers) > 2: # Have a total number of jobs greater than 1000                                                                                                   
+        total_num_jobs = (int(job_numbers[1])*1000) + int(job_numbers[2])
+    else:
+        total_num_jobs = int(job_numbers[1])
+    num_pages = int(total_num_jobs/10) # This will be how we know the number of times we need to iterate over each new                                                         
+    print(num_pages)
+    job_URLS, cities, states = [], [], []
+    job_link_area = driver.find_elements_by_xpath('//div[@class="  row  result"]')
+    time.sleep(1)
+    job_link_area = job_link_area + driver.find_elements_by_xpath('//div[@class="lastRow  row  result"]')
+    time.sleep(1)
+    job_URLS = job_URLS + [link.find_element_by_tag_name('a').get_attribute("href") for link in job_link_area]
+    cities = cities + [(loc.find_element_by_xpath('.//span[@class="location"]').text+",").split(",")[0] for loc in job_link_area]
+    states = states + [(loc.find_element_by_xpath('.//span[@class="location"]').text+",").split(",")[1] for loc in job_link_area]
+    driver.find_element_by_xpath('//div[@class="pagination"]').find_elements_by_tag_name('a')[-1].click()
+    cont = True
+    while cont:
+        job_link_area = driver.find_elements_by_xpath('//div[@class="  row  result"]')
+        job_link_area = job_link_area + driver.find_elements_by_xpath('//div[@class="lastRow  row  result"]')
+        job_URLS = job_URLS + [link.find_element_by_tag_name('a').get_attribute("href") for link in job_link_area]
+        cities = cities + [(loc.find_element_by_xpath('.//span[@class="location"]').text+",").split(",")[-1] for loc in job_link_area]
+        states = states + [(loc.find_element_by_xpath('.//span[@class="location"]').text+",").split(",")[1] for loc in job_link_area]
+        print(len(set(job_URLS)), len(job_URLS), len(states), len(cities))
+        if len(driver.find_elements_by_xpath('//span[@class="np"]')) < 2:
+            break
+        try:
+            driver.find_element_by_xpath('//div[@class="pagination"]').find_elements_by_tag_name('a')[-1].click()
+        except:
+            cont = False
+    return job_URLS, cities, states
+
+```
+</details>
+
+<details>
+<summary>
+Host and manage database 
+</summary>
+
+<br>
+
+```python
+
+conn = psycopg2.connect(dbname='indeed',port=5432, password="postgres", user='postgres',host='localhost')
+cur = conn.cursor()
+
+try:
+    query = '''CREATE TABLE addresses (path CHARACTER VARYING PRIMARY KEY, search CHARACTER VARYING, city CHARACTER VARYING, state CHARACTER VARYING);'''
+    cur.execute(query)
+    conn.commit()
+except:
+    conn.rollback()
+
+try:
+    query = '''CREATE TABLE posts (path CHARACTER VARYING PRIMARY KEY, search CHARACTER VARYING, city CHARACTER VARYING, state CHARACTER VARYING, post CHARACTER VARYING, acqu\
+ired TIMESTAMP DEFAULT current_timestamp);'''
+    cur.execute(query)
+except:
+    conn.commit()
+
+query = "DELETE FROM posts WHERE post IS NULL;"
+cur.execute(query)
+conn.commit()
+query = "DELETE FROM posts WHERE post = '';"
+cur.execute(query)
+conn.commit()
+
+query = "SELECT path FROM posts;"
+cur.execute(query)
+previous = set([r[0] for r in cur])
+
+phrase = "data+science"
+loc_city = ("New+York+City", "San+Francisco", "Seattle",    "Washington", "",              "Los+Angeles", "San+Diego",  "Portland", "",      "",         "",         "",      \
+  "",                "",         "",            "")
+loc_state = ("New+York",     "California",    "Washington", "DC",         "Massachusetts", "California",  "California", "Oregon",   "Texas", "Illinois", "Colorado", "Georgia"\
+, "North+Carolina", "Tennessee", "Connecticut", "Pennsylvania")
+
+
+for j in range(len(loc_city)):
+#if 1==1:                                                                                                                                                                     
+    print(loc_city[j], loc_state[j])
+    pp, c, s = skills_info(phrase, loc_city[j], loc_state[j])
+    for i,p in enumerate(pp):
+        if p not in previous:
+            query = "INSERT INTO addresses (path, search, city, state) VALUES ('" + p + "','" + phrase + "','" + c[i] + "','" + s[i] + "');"
+            try:
+                cur.execute(query)
+                conn.commit()
+            except:
+                print(query)
+                conn.rollback()
+
+cur.close()
+conn.close()
+```
+
 
 
 
