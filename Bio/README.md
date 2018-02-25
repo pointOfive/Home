@@ -38,7 +38,7 @@ I had never explored much of the modern data analysis toolset
 are a very comfortable, seamless and natural extension of my educational and professional background.
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Home/tree/master/Code#coding), 
 [organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#computing) and
-[modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just feels like returning to my roots -- it's comfortable, exciting, and
+[modeling and analyzing data](http://ec2-54-90-249-36.compute-1.amazonaws.com/) just feels like returning to my roots -- it's comfortable, exciting, and
 nice to be home. 
 
 ## [UT](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
