@@ -970,13 +970,17 @@ model = kmeans.fit(DSJP_df) # automatically uses the "features" column
 len(model.clusterCenters())
 DSJP_df = model.transform(DSJP_df).cache()
 
-# ---------- cluster sizes ---------------                                                                                                                                    Counter(DSJP_df.select("prediction").rdd.flatMap(lambda x: x).collect())
+# ---------- cluster sizes ---------------
+Counter(DSJP_df.select("prediction").rdd.flatMap(lambda x: x).collect())
 
-# ------------- centroids ---------------                                                                                                                                     # super cool -- gives the dimensions with the highest weights... so what the clusters actually mean...                                                                        [[cv_model.vocabulary[i] for i in arr.argsort()[-10:][::-1]] for arr in model.clusterCenters()]
+# ------------- centroids ---------------                                                                                                                                     # super cool -- gives the dimensions with the highest weights... so what the clusters actually mean...
+[[cv_model.vocabulary[i] for i in arr.argsort()[-10:][::-1]] for arr in model.clusterCenters()]
 
-# --------- cluster content --------------                                                                                                                                    DSJP_df.where("prediction = 0").select("text").rdd.flatMap(lambda x: x).collect()
+# --------- cluster content --------------
+DSJP_df.where("prediction = 0").select("text").rdd.flatMap(lambda x: x).collect()
 
-# -------- doc length in cluster ---------                                                                                                                                    DSJP_df.where("prediction = 0").select("text","woSW_wc").show()
+# -------- doc length in cluster ---------
+DSJP_df.where("prediction = 0").select("text","woSW_wc").show()
 DSJP_df.where("prediction = 1").select("text","woSW_wc").show()
 
 # -------------choosing k------------------                                                                                                                                   
