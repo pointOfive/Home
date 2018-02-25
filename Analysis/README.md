@@ -860,12 +860,12 @@ is described on the [computational page](https://github.com/pointOfive/Home/tree
 
 [Notes on setting up a Spark cluster](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 are available on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute#computing).
-Using this set up I set up the following:
+Using this cluster I made 
 
 
 <details>
 <summary>
-An NLP processing pipeline using Spark functionality
+an NLP processing pipeline using Spark functionality
 </summary>
 
 <br>
@@ -934,7 +934,7 @@ DSJP_df.show(3)
 
 <details>
 <summary>
-A clustering analysis using SparkML
+a clustering analysis using SparkML
 </summary>
 
 <br>
