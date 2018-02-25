@@ -114,7 +114,7 @@ was formed though this outstanding postdoctoral experience.
 Graduate School was an amazing opportunity for me.
 Through my steady commitment in college I managed to make a path into
 one of the most prestigious statistical departments in the country at [Duke University](http://gardens.duke.edu)
-were I completed a [PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Papers#publications).
+were I completed a [PhD in Statistics](https://github.com/pointOfive/Examples/tree/master/Publications#publications).
 The best thing about this -- and something I will always remain appreciative of -- was that it gave me the opportunity 
 to meet and work with the best students that the world had to offer. 
 [Duke's program](https://stat.duke.edu) focussed on Bayesian Analysis, which made for a distinctly different educational experience
