@@ -65,7 +65,7 @@ AWS S3 buckets provide cloud storage for data.
 
 ### Server/Worker(s) Paradigm
 
-The example below demonstrates deploying [web scraper workers and a managing database server](https://www.google.com).
+The example below demonstrates deploying [web scraper workers and a managing database server](https://github.com/pointOfive/Home/tree/master/Analysis#webscrapper-and-database-server).
 
 
 #### Postgres Server
@@ -155,7 +155,7 @@ pip install selenium
 wget -S -T 500 -t 50 https://given_bucket_name.s3.amazonaws.com/psql_worker.py -O /home/ubuntu/psql_worker.py
 ```
 
-Click [here](https://www.google.com) to see the functionality of the webscraper worker `psql_worker.py`
+Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#webscrapper-and-database-server) to see the functionality of the webscraper worker `psql_worker.py`
 </details>
 
 #### Jupyter Notebook Server
@@ -169,10 +169,10 @@ ssh -NfL 8888:localhost:8888  -i ~/.ssh/given_pem_name.pem ubuntu@address.comput
 
 ### EMR Distributed Computing Paradigm
 
-The example below demonstrates a [sparkML+NLP data analysis pipeline](https://www.google.com).
+The example below demonstrates setting up a Spark cluster for
+a [sparkML+NLP data analysis pipeline](https://github.com/pointOfive/Home/tree/master/Analysis#nlp-and-clustering-with-spark).
 
 #### Spark
-
 
 ```
 number_cores = 3
@@ -216,7 +216,7 @@ ipython -c "import nltk; nltk.download('stopwords'); nltk.download('punkt');
 
 ```
 
-Click [here](https://www.google.com) to see the sparkML NLP pipeline `nlp_pipeline.py`
+Click [here](https://github.com/pointOfive/Home/tree/master/Analysis#nlp-and-clustering-with-spark) to see the sparkML NLP pipeline `nlp_pipeline.py`
 </details>
 </details>
 

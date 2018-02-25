@@ -15,7 +15,7 @@ Tasks
 I am a formally trained Bayesian statistician,
 have worked extensively in bioinformatics pipelines,
 and am fully fluent in the modern data science toolkit.
-On this site you will find [data analysis examples](https://github.com/pointOfive/Home/tree/master/Analysis#data-analysis),
+On this site you will find [data analysis examples](https://github.com/pointOfive/Home/tree/master/Analysis#data-analysis-with-python),
 [programming challenges](https://github.com/pointOfive/Examples/tree/master/Code#coding),
 and [computational framework notes](https://github.com/pointOfive/Examples/tree/master/Compute#computing).
 

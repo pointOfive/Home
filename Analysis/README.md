@@ -11,8 +11,8 @@ provides the following python-based data analysis examples:
 - [Decision Making with Profit Curves](#the-black-box-myth)
 - [The Role of Experimental Design](#interpreting-feature-effects)
 - [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
-- [Webscrapping Database Server](#webscrapper-and-database-server)
-- [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
+- [Webscrapping Database Server](#webscrapping-database-server)
+- [Spark NLP Clustering Pipeline](#nlp-and-clustering-with-spark)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
 
 
@@ -623,8 +623,7 @@ of the plot.
 
 
 
-
-## Webscrapper and Database Server
+## Webscrapping Database Server
 
 I built a server to populate target webpages in a database using `selenium` and `psycopg2`. 
 The server executed the following two tasks:
@@ -855,6 +854,20 @@ conn.close()
 
 The [server/worker setup](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
 is described on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute#computing).
+
+
+## NLP and Clustering with Spark
+
+[Notes on setting up a Spark cluster](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
+are available on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute#computing).
+Using this set up I set up the following:
+
+- A Spark data processing pipeline
+- An NLP processing pipeline using Spark functionality
+- A clustering analysis using SparkML
+
+
+
 
 
 
