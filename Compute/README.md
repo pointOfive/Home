@@ -65,7 +65,7 @@ AWS S3 buckets provide cloud storage for data.
 
 ### Server/Worker(s) Paradigm
 
-The example below demonstrates deploying [web scraper workers and a managing database server](https://github.com/pointOfive/Home/tree/master/Analysis#webscrapper-and-database-server).
+The example below demonstrates deploying [web scraper workers and a managing database server](https://github.com/pointOfive/Home/tree/master/Analysis#web-scraping-database-server).
 
 
 #### Postgres Server
