@@ -37,7 +37,7 @@ I had never explored much of the modern data analysis toolset
 [Python, SQL, Machine Learning, Classification, Big Data, Recommender Systems, Dimensionality Reduction, NLP](https://github.com/pointOfive/Home/tree/master/Analysis#data-analysis-with-python), etc.).  But picking up these tools never felt "hard" or "foreign" -- predictive methodology and supporting tools therein
 are a very comfortable, seamless and natural extension of my educational and professional background.
 Actually, coming back to [scripting and coding](https://github.com/pointOfive/Home/tree/master/Code#coding), 
-[organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#aws-ec2emrs3) and
+[organizing data processing environments](https://github.com/pointOfive/Examples/tree/master/Compute#computing) and
 [modeling and analyzing data](https://github.com/pointOfive/Examples/tree/master/Examples) just feels like returning to my roots -- it's comfortable, exciting, and
 nice to be home. 
 
