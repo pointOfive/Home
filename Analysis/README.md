@@ -869,6 +869,7 @@ An NLP processing pipeline using Spark functionality
 </summary>
 
 <br>
+
 ```python
 from pyspark.sql import Row
 from pyspark.sql.functions import udf, col
@@ -936,6 +937,7 @@ A clustering analysis using SparkML
 </summary>
 
 <br>
+
 ```python
 from pyspark.ml.clustering import KMeans
 
