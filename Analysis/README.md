@@ -627,11 +627,11 @@ of the plot.
 ## Webscrapper and Database Server
 
 I built a server to populate target webpages in a database using `selenium` and `psycopg2`. 
-The server had the following two roles:
+The server executed the following two tasks:
 
 <details>
 <summary>
-Collect target webpages 
+crawl a website to collect target webpages 
 </summary>
 
 <br>
@@ -694,7 +694,7 @@ def skills_info(search, city, state):
 
 <details>
 <summary>
-Host and manage database 
+host and populate a database of target webpages
 </summary>
 
 <br>
@@ -755,12 +755,14 @@ conn.close()
 ```
 </details>
 
+<br>
+
 I additionally built a webscrapper which could be run simultaneously from different worker nodes.
-Work nodes had two tasks: 
+Worker nodes had two tasks: 
 
 <details>
 <summary>
-scrape data from a webpage
+quietly and politely scrape data from a webpage
 </summary>
 
 <br>
@@ -797,7 +799,7 @@ def text_cleaner(website):
 
 <details>
 <summary>
-query target webpages and deliver results to the database
+query target webpages from and deliver scraped webpages to the database
 </summary>
 
 <br>
