@@ -63,8 +63,8 @@ Instructor, Sr. Data Scientist (click to expand)
 #### Highlights
 - 6 cohorts and 49 students taught and mentored
 - [44 lectures and 4 special topics created campus](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
-- [40 hours (30 sections, 200 Q&A's) on-boarding material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)   
-- [10 hours (10 sections, 50 Q&A's) workshop material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
+- [40 hours (30 sections, 200 Q&A's) on-boarding material](https://github.com/pointOfive/Home/tree/master/Lectures#introductory-materials)   
+- [10 hours (10 sections, 50 Q&A's) workshop material](https://github.com/pointOfive/Home/tree/master/Lectures#introductory-materials)
 - 40% salary increase with promotion to NYC
 
     </td>
