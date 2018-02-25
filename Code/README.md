@@ -73,7 +73,7 @@ Click here for problems/solutions (7)
 Instructions for setting up
 spark on an AWS cluster or local machine
 are given on the [computing page](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm).
-A spark NLP and unsupervised learning pipeline is given on the [data analysis page](www.google.com).
+A spark NLP and unsupervised learning pipeline is given on the [data analysis page](https://github.com/pointOfive/Home/tree/master/Analysis#nlp-and-clustering-with-spark).
 
 
 ## SQL
