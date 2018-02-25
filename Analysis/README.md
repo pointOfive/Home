@@ -13,7 +13,7 @@ provides the following python-based data analysis examples:
 - [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
 - [Web Scraping Database Server](#web-scraping-database-server)
 - [Spark NLP Clustering Pipeline](#nlp-and-clustering-with-spark)
-- [Interpreting P-Values Correctly](#data-pipelining-functionality)
+- [Interpreting P-Values Correctly](#afterward-p-values)
 
 
 
