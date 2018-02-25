@@ -15,9 +15,9 @@ Data Science Teacher and Mentor (click to expand)
 
 #### Responsibilities
 
-- [Curriculum specification and development](https://github.com/pointOfive/Examples/tree/master/Lectures)
-- [Fully interactive content delivery and guidance](https://github.com/pointOfive/Examples/tree/master/Projects)
-- [Practice exercise creation and evaluation](https://github.com/pointOfive/Examples/tree/master/Code)
+- [Curriculum specification and development](https://github.com/pointOfive/Home/tree/master/Lectures#lecture-material)
+- [Fully interactive content delivery and guidance](http://ec2-54-90-249-36.compute-1.amazonaws.com/)
+- [Practice exercise creation and evaluation](https://github.com/pointOfive/Home/tree/master/Code#coding)
 - Job search and career growth mentoring    
 
     </td>
