@@ -11,7 +11,7 @@ provides the following python-based data analysis examples:
 - [Decision Making with Profit Curves](#the-black-box-myth)
 - [The Role of Experimental Design](#interpreting-feature-effects)
 - [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
-- [Webscrapping Database Server](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
+- [Webscrapping Database Server](#webscrapper-and-database-server)
 - [Spark NLP Clustering Pipeline](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)
 - [Interpreting P-Values Correctly](#data-pipelining-functionality)
 
@@ -626,11 +626,7 @@ of the plot.
 
 ## Webscrapper and Database Server
 
-I built a server to populate target webpages in a database,
-and manage a team of webscrappers to collect the webpages
-for storage into the database.
-The [server/worker setup](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
-is described on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute).
+I built a server to populate target webpages in a database using `selenium` and `psycopg2`. 
 The server had the following two roles:
 
 <details>
@@ -757,8 +753,106 @@ for j in range(len(loc_city)):
 cur.close()
 conn.close()
 ```
+</details>
+
+I additionally built a webscrapper which could be run simultaneously from different worker nodes.
+Work nodes had two tasks: 
+
+<details>
+<summary>
+scrape data from a webpage
+</summary>
+
+<br>
+
+```python
+#!/usr/bin/python
+import psycopg2
+from bs4 import BeautifulSoup
+import re # Regular expressions                                                                                                                                               from time import sleep # To prevent overwhelming the server between connections                                                                                               from collections import Counter # Keep track of our term counts                                                                                                               from nltk.corpus import stopwords # Filter out stopwords, such as 'the', 'or', 'and'                                                                                          import pandas as pd # For converting results to a dataframe and bar chart plots                                                                                               from selenium import webdriver
+import os
+import time
+
+def text_cleaner(website):
+    '''                                                                                                                                                                           This function just cleans up the raw html so that I can look at it.                                                                                                       
+    Inputs: a URL to investigate                                                                                                                                                  Outputs: Cleaned text only                                                                                                                                                    '''
+    try:
+        driver.get(website) #urlopen(website).read() # Connect to the job posting                                                                                                     time.sleep(10)
+    except:
+        return   # Need this in case the website isn't there anymore or some other weird connection problem                                                                   
+    try:
+        text = driver.find_element_by_tag_name("body").text
+    except:
+        return
+    lines = (line.strip() for line in text.splitlines()) # break into lines                                                                                                       chunks = (phrase.strip() for line in lines for phrase in line.split("  ")) # break multi-headlines into a line each
+    def chunk_space(chunk):
+        chunk_out = chunk + ' ' # Need to fix spacing issue                                                                                                                           return chunk_out
+    text = ''.join(chunk_space(chunk) for chunk in chunks if chunk).encode('utf-8') # Get rid of all blank lines and ends of line                                                 # Now clean out all of the unicode junk (this line works great!!!)                                                                                                            try:
+        text = text.decode('unicode_escape').encode('ascii', 'ignore') # Need this as some websites aren't formatted                                                              except:                                                            # in a way that this works, can occasionally throw                                                             return                                                         # an exception                                                                                             text = text.decode('utf-8')
+    return text
+    stop_words = set(stopwords.words("english")) # Filter out any stop words                                                                                                      text = [w for w in text if not w in stop_words]
+    text = list(set(text)) # Last, just get the set of these. Ignore counts (we are just looking at whether a term existed                                                                                # or not on the website)                                                                                                                           												    
+```
+</details>
+
+<details>
+<summary>
+query target webpages and deliver results to the database
+</summary>
+
+<br>
+
+```python
+conn = psycopg2.connect(dbname='indeed',port=5432, password="postgres", user='postgres',host='ec2-54-210-15-26.compute-1.amazonaws.com')
+cur = conn.cursor()
+driver = webdriver.PhantomJS()
+query = "select COUNT(*) from addresses;"
+cur.execute(query)
+n = list(cur)[0][0]
+
+while n > 0:
+    print(n)
+    query = "SELECT * FROM addresses ORDER BY random() LIMIT 10;"
+    cur.execute(query)
+    posts = list(cur)
+    tmp = posts
+    for p in tmp:
+        try:
+            query = "DELETE FROM addresses WHERE path='" + p[0] + "';"
+            cur.execute(query)
+            conn.commit()
+        except:
+            conn.rollback()
+            print(p)
+            posts.remove(p)
+    for p in posts:
+        path, phrase, city, state = p
+        text = text_cleaner(path)
+        try:
+            tmp = "INSERT INTO posts (path, search, city, state, post) VALUES ('" + path + "','" + phrase + "','" + city + "','" + state + "',%s)"
+            cur.execute(tmp, [text])
+            conn.commit()
+            print("added " + path)
+        except:
+            print(path)
+            conn.rollback()
+            print("failed to add " + path)
+    query = "select COUNT(*) from addresses;"
+    cur.execute(query)
+    n = list(cur)[0][0]
+    driver.close()
+    driver = webdriver.PhantomJS()
+
+cur.close()
+conn.close()
+```
+</details>
 
 
+
+
+The [server/worker setup](https://github.com/pointOfive/Home/tree/master/Compute#serverworkers-paradigm)
+is described on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute).
 
 
 
