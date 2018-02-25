@@ -12,12 +12,12 @@ While teaching and mentoring students in data science methodology I prepared the
 [SparkSQL and SparkML](https://github.com/pointOfive/Home/tree/master/Compute#emr-distributed-computing-paradigm)                 | [KNN and Decision Trees](http://www.google.com)               | [Graphs](MYLECTURES/graphs/networks.pdf)                                                |
 ||||
 | **Predictive Methodology**       	      		 		     | **Statistics**        	     	      	      	           | **Programming**  	     	      	      	                           |
-| [Linear Regression](MYLECTURES/reg/reg.pdf )                               | [Probability](MYLECTURES/probs/probs.pdf)                   | [CLI/Linux/git](http://www.google.com)                                |
-| [Interpreting Models](MYLECTURES/one_hour_lectures/interpreting_lms.ipynb) | [Inference/Sampling](MYLECTURES/inference/inference.ipynb)  | [Python](http://www.google.com)                                       |
-| [CV/Regularization](MYLECTURES/shrink/regularize.pdf)                      | [Hypothesis Testing I](MYLECTURES/testing/powerNpvalues/testing.ipynb)    | [OOP](http://www.google.com)                                          |
+| [Linear Regression](MYLECTURES/reg/reg.pdf )                               | [Probability](MYLECTURES/probs/probs.pdf)                   | [CLI/Linux/git](https://github.com/pointOfive/Home/tree/master/Compute#bash)                                |
+| [Interpreting Models](MYLECTURES/one_hour_lectures/interpreting_lms.ipynb) | [Inference/Sampling](MYLECTURES/inference/inference.ipynb)  | [Python](https://github.com/pointOfive/Home/tree/master/Code#coding)                                       |
+| [CV/Regularization](MYLECTURES/shrink/regularize.pdf)                      | [Hypothesis Testing I](MYLECTURES/testing/powerNpvalues/testing.ipynb)    | [OOP](https://github.com/pointOfive/Home/tree/master/Analysis#data-pipelining-functionality)                                          |
 | [Logistic Regression](MYLECTURES/logistic/logistic.pdf)                    | [Hypothesis Testing II](MYLECTURES/testing/powerNpvalues/tests.pdf)       | [postgreSQL](MYLECTURES/my_sql/sql.pdf)                               |
 | [Gradient Descent](MYLECTURES/gradient_decent/gd.pdf)                      | [Power Analysis](MYLECTURES/power_bayes/power/power.ipynb)        | [psychopg2/numpy/pandas](MYLECTURES/pandas/pandas2.ipynb)             |                      
-| [Multi-armed Bandit](MYLECTURES/multi-armed-bandit/multi_armed_bandit.pdf) | [Bayesian Analysis](MYLECTURES/power_bayes/bayes/bayes.ipynb)     | [Linear Algebra](week_3_linmod/linmodreview.pdf)                      |
+| [Multi-armed Bandit](MYLECTURES/multi-armed-bandit/multi_armed_bandit.pdf) | [Bayesian Analysis](MYLECTURES/one_hour_lectures/bayes.ipynb)     | [Linear Algebra](week_3_linmod/linmodreview.pdf)                      |
 
 
 
