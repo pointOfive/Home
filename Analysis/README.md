@@ -862,12 +862,176 @@ is described on the [computational page](https://github.com/pointOfive/Home/tree
 are available on the [computational page](https://github.com/pointOfive/Home/tree/master/Compute#computing).
 Using this set up I set up the following:
 
-- A Spark data processing pipeline
-- An NLP processing pipeline using Spark functionality
-- A clustering analysis using SparkML
+
+<details>
+<summary>
+An NLP processing pipeline using Spark functionality
+</summary>
+
+<br>
+```python
+from pyspark.sql import Row
+from pyspark.sql.functions import udf, col
+from pyspark.sql.types import IntegerType, ArrayType, StringType
+from pyspark.ml.feature import RegexTokenizer, StopWordsRemover, CountVectorizer, IDF, Normalizer
+
+import unicodedata
+from nltk.stem.porter import PorterStemmer
+
+sc = spark.sparkContext
+sc.setLogLevel("ERROR")
+min_word_lim=100
+DSJP = sc.textFile('s3n://bucket/path/file.txt').map(lambda x: unicodedata.normalize('NFKD', str(x))).filter(lambda x: len(x)>min_word_lim).cache()
+# remove duplicates                                                                                                                                                           DSJP = sc.parallelize(set(DSJP.collect()))
+DSJP.count()
+
+DSJP = DSJP.repartition(20)
+DSJP.getNumPartitions()
+
+DSJP_df=spark.createDataFrame(DSJP.map(Row)).toDF('text')
+DSJP_df=DSJP_df.filter(~DSJP_df.text.startswith('#REDIRECT')).cache()
+DSJP_df.show(3)
+
+countTokens = udf(lambda words: len(words), IntegerType())
+regexTokenizer = RegexTokenizer(inputCol="text", outputCol="words", pattern="\\W")
+DSJP_df = regexTokenizer.transform(DSJP_df)
+DSJP_df = DSJP_df.withColumn("words_wc", countTokens(col("words"))).cache()
+DSJP_df.show(3)
+
+sw_remover = StopWordsRemover(inputCol="words", outputCol="woSW")
+DSJP_df = sw_remover.transform(DSJP_df)
+DSJP_df = DSJP_df.withColumn("woSW_wc", countTokens(col("woSW"))).cache()
+DSJP_df.show(3)
+
+def stemmer(word_list):
+    stemmer = PorterStemmer()
+    return [stemmer.stem(word) for word in word_list]
+
+stemit = udf(stemmer, ArrayType(StringType()))
+DSJP_df = DSJP_df.withColumn("stem",stemit(col("woSW"))).cache()
+DSJP_df.show(3)
+
+cv = CountVectorizer(inputCol="stem", outputCol="vector_tf", vocabSize=5000, minDF=10)
+cv_model = cv.fit(DSJP_df)
+len(cv_model.vocabulary)
+DSJP_df = cv_model.transform(DSJP_df).cache()
+DSJP_df.show(3)
+
+idf = IDF(inputCol="vector_tf", outputCol="vector_tf_idf")
+idfModel = idf.fit(DSJP_df)
+DSJP_df = idfModel.transform(DSJP_df).cache()
+DSJP_df.show(3)
+
+normalizer = Normalizer(inputCol="vector_tf_idf", outputCol="vector_tf_idf_L2", p=2.0)
+DSJP_df = normalizer.transform(DSJP_df).select("text", "words", "stem", "vector_tf_idf_L2", "woSW_wc").cache()
+DSJP_df.show(3)
+```
+</details>
 
 
 
+<details>
+<summary>
+A clustering analysis using SparkML
+</summary>
+
+<br>
+```python
+from pyspark.ml.clustering import KMeans
+
+import random
+import numpy as np
+from collections import Counter, defaultdict
+
+# make a markov chain for the null distribution                                                                                                                               
+# the idea is to keep the structure of english langue --                                                                                                                      
+# -- the marginal markov conditional probability rates accross all documents                                                                                                  
+# -- but then beyond that, we want to know if there are *yet further* structures                                                                                              
+# within documents that separate them out...                                                                                                                                   
+def add(a, b):
+    return a+b
+    
+novel = DSJP_df.select("words").rdd.flatMap(lambda x: x).reduce(add)
+mc = defaultdict(list)
+mc_order = 5
+for i in range(len(novel)-mc_order):
+    mc[tuple(novel[i:(i+mc_order)])].append(novel[i+mc_order])
+
+def get_markov_doc(seed, number):
+    out = list(seed)
+    for i in range(mc_order, number):
+        out.append(random.choice(mc[tuple(out[(i-mc_order):i])]))
+    return(out)
+
+kmeans = KMeans(k=4, featuresCol="vector_tf_idf_L2", seed=1)
+model = kmeans.fit(DSJP_df) # automatically uses the "features" column                                                                                                        
+len(model.clusterCenters())
+DSJP_df = model.transform(DSJP_df).cache()
+
+# ---------- cluster sizes ---------------                                                                                                                                    Counter(DSJP_df.select("prediction").rdd.flatMap(lambda x: x).collect())
+
+# ------------- centroids ---------------                                                                                                                                     # super cool -- gives the dimensions with the highest weights... so what the clusters actually mean...                                                                        [[cv_model.vocabulary[i] for i in arr.argsort()[-10:][::-1]] for arr in model.clusterCenters()]
+
+# --------- cluster content --------------                                                                                                                                    DSJP_df.where("prediction = 0").select("text").rdd.flatMap(lambda x: x).collect()
+
+# -------- doc length in cluster ---------                                                                                                                                    DSJP_df.where("prediction = 0").select("text","woSW_wc").show()
+DSJP_df.where("prediction = 1").select("text","woSW_wc").show()
+
+# -------------choosing k------------------                                                                                                                                   
+n = DSJP_df.select("stem").count()
+
+everything = DSJP_df.select("stem").rdd.map(lambda x: x["stem"]).reduce(add)
+len(everything)
+nulldoc = lambda x: np.random.choice(everything, x).tolist()
+nulls = spark.createDataFrame(DSJP_df.select("woSW_wc").rdd.map(lambda x: x['woSW_wc']).map(nulldoc).map(Row)).toDF("stem").cache()
+nulls = cv_model.transform(nulls).cache()
+nulls = idfModel.transform(nulls).cache()
+nulls = normalizer.transform(nulls).select("stem", "vector_tf_idf_L2").cache()
+nulls.show()
+nulls.count()
+
+nulls = spark.createDataFrame(DSJP_df.select("words").rdd.map(lambda x: x['words']).map(lambda x: get_markov_doc(x[0:mc_order], len(x))).map(Row)).toDF("words").cache()
+whatwegot = nulls.select("words").rdd.flatMap(lambda x: x).map(lambda x: " ".join(x)).collect()
+actuals = DSJP_df.select("words").rdd.flatMap(lambda x: x).map(lambda x: " ".join(x)).collect()
+nulls = sw_remover.transform(nulls)
+nulls = nulls.withColumn("woSW_wc", countTokens(col("woSW"))).cache()
+nulls = nulls.withColumn("stem",stemit(col("woSW"))).cache()
+nulls = cv_model.transform(nulls).cache()
+nulls = idfModel.transform(nulls).cache()
+nulls = normalizer.transform(nulls).select("stem", "vector_tf_idf_L2").cache()
+nulls.show()
+
+# -------------Gap Statistics------------------                                                                                                                       
+random.seed(1)
+nul_score_mean = []
+for k in range(2, 50, 2):
+    nul_score = []
+    for j in range(10):
+        DSJP_df2 = nulls
+        kmeans = KMeans(k=k, featuresCol="vector_tf_idf_L2", seed=random.randint(1,1000000))#, seed=1)                                                                         
+        model = kmeans.fit(DSJP_df2)
+        DSJP_df2 = model.transform(DSJP_df2)
+        clusterCenters = model.clusterCenters()
+        nul_score.append(DSJP_df2.select("prediction").rdd.flatMap(lambda x: x).\
+                         zip(DSJP_df.select("vector_tf_idf_L2").rdd.flatMap(lambda x: x)).map(lambda x: x[1].dot(clusterCenters[x[0]])).sum())
+    print(k, n-np.mean(nul_score), np.std(nul_score))
+    nul_score_mean.append(n-np.mean(nul_score))
+
+dat_score_mean = []
+for k in range(2, 50, 2):
+    dat_score = []
+    for j in range(10):
+        DSJP_df2 = DSJP_df.drop("prediction")
+        kmeans = KMeans(k=k, featuresCol="vector_tf_idf_L2", seed=random.randint(1,1000000))#, seed=1)                                                                         
+        model = kmeans.fit(DSJP_df2)
+        DSJP_df2 = model.transform(DSJP_df2)
+        clusterCenters = model.clusterCenters()
+        dat_score.append(DSJP_df2.select("prediction").rdd.flatMap(lambda x: x).\
+                         zip(DSJP_df.select("vector_tf_idf_L2").rdd.flatMap(lambda x: x)).map(lambda x: x[1].dot(clusterCenters[x[0]])).sum())
+    print(k, n-np.mean(dat_score), np.std(dat_score))
+    dat_score_mean.append(n-np.mean(dat_score))
+```
+</details>
 
 
 
