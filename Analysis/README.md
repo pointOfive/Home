@@ -479,7 +479,7 @@ bst.predict(dtrain, ntree_limit=bst.best_ntree_limit)
 
 Model interpretation does not factor into prediction-based decision making.
 When models are used for purely predictive purposes it does not matter
-if there is confounding (observed or otherwise) and if ([as discussed in the next section](interpreting-feature-effects))
+if there is confounding (observed or otherwise) and if ([as discussed in the next section](#interpreting-feature-effects)) 
 this limits the ability to attribute and interpret associations to specific features
 within the context of the model: all that matters is raw predictive performance.
 The following example demonstrates *profit curves* based on *cost-benefit* and *confusion matrices*.
