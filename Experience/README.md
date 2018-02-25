@@ -89,7 +89,7 @@ Research Associate (click to expand)
   - RNA, TAG, WGSl, RAD, and Bisulfite-seq
 - [Pipeline creation, maintenance, and use](https://github.com/pointOfive/Examples/tree/master/Compute#open-source-tools)
   - (e)QTL/GWAS and bulk segregation
-- [Data analysis and visualization support](https://github.com/pointOfive/Examples/tree/master/Publications)
+- [Data analysis and visualization support](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 - Bioinformatics and statistics mentoring
 
     </td>
