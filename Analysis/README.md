@@ -501,7 +501,7 @@ specifically, it is feature correlation which limits association attribution and
 risk of actual confounding that renders associations non causative.
 Of course if [interest lies in prediction alone this is immaterial](#model-based-decision-making).
 But if interest lies in ["interpretation of feature effect"](#the-black-box-myth) then
-for all models -- flexible `Unsupervised Machine Learning Models` just as much as `Linear Models` -- 
+for all models -- flexible `Supervised Machine Learning Models` just as much as `Linear Models` -- 
 one must be intentional with sampling across features in order to provide uncorrelated
 features and hence unconfounded association interpretation.
 *Multicollinearity Structure*, particularly the kind affecting `Linear Models` can be examined through
