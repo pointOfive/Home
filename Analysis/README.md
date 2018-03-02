@@ -515,7 +515,7 @@ the attractive approach to address correlated features through *Principal Compon
 
 
 Pairwise correlations are also worth examining directly. For example,
-correlated features directly complete for association attribution in
+correlated features directly compete for association attribution in
 tree based ensembles.
 But any model fit in the presence of associations between features
 will estimate association attributions as "tradeoffs" between associated features;
