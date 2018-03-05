@@ -10,7 +10,7 @@ On this site you will find
 - [computational framework notes](https://github.com/pointOfive/Examples/tree/master/Compute#computing)
 
 In addition, you will also find
-- [data science lecture material](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
+- [data science lecture material](https://github.com/pointOfive/Lectures#lecture-material)
 - [work history](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience) and [bio](https://github.com/pointOfive/Examples/tree/master/Bio#about)
 - [publication record](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
