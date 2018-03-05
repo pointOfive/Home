@@ -1,4 +1,0 @@
-# svm
-
-afpc 
-# SVM2
