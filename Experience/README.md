@@ -15,7 +15,7 @@ Data Science Teacher and Mentor (click to expand)
 
 #### Responsibilities
 
-- [Curriculum specification and development](https://github.com/pointOfive/Home/tree/master/Lectures#lecture-material)
+- [Curriculum specification and development](https://github.com/pointOfive/Lectures#lecture-material)
 - [Fully interactive content delivery and guidance](http://ec2-54-90-249-36.compute-1.amazonaws.com/)
 - [Practice exercise creation and evaluation](https://github.com/pointOfive/Home/tree/master/Code#coding)
 - Job search and career growth mentoring    
@@ -62,9 +62,9 @@ Instructor, Sr. Data Scientist (click to expand)
 
 #### Highlights
 - 6 cohorts and 49 students taught and mentored
-- [44 lectures and 4 special topics created campus](https://github.com/pointOfive/Examples/tree/master/Lectures#lecture-material)
-- [40 hours (30 sections, 200 Q&A's) on-boarding material](https://github.com/pointOfive/Home/tree/master/Lectures#introductory-materials)   
-- [10 hours (10 sections, 50 Q&A's) workshop material](https://github.com/pointOfive/Home/tree/master/Lectures#introductory-materials)
+- [44 lectures and 4 special topics created campus](https://github.com/pointOfive/Lectures#lecture-material)
+- [40 hours (30 sections, 200 Q&A's) on-boarding material](https://github.com/pointOfive/Lectures#introductory-materials)   
+- [10 hours (10 sections, 50 Q&A's) workshop material](https://github.com/pointOfive/Lectures#introductory-materials)
 - 40% salary increase with promotion to NYC
 
     </td>
