@@ -176,7 +176,7 @@ Because of this I grew up viewing learning as a privilege to be taken seriously 
 I think this is why I viewed Trinity as such an amazing opportunity (as it indeed proved to be),
 why the opportunity to attend Trinity materialized in the first place, 
 and why I was ready and able to excel and thrive in a student-athlete role.
-Actually, because of my families views on learning I had been homeschooled until 8th grade, which
+Actually, because of my family's views on learning I had been homeschooled until 8th grade, which
 has proven to be the singly most advantageous event in my life. 
 It also meant that I grew up in a household with a very wide, open and accepting worldview. 
 My parents had been missionaries in Mexico City and Costa Rica before I was born
