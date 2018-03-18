@@ -1066,24 +1066,25 @@ of the plot.
 ## Bayes with *PyMC3*
 
 My most recent project was to use *PyMC3*
-to do a trivariate regression.
-This allowed the dependency structure in the three outcome variables to be
-directly modeled and assessed as a single joint variable, as opposed to
-being assessed in a marginal manner. 
+to create a Bayesian trivariate regression inference analysis.
+This model allows the dependency structure in the three outcome variables to be
+directly modeled and characterized as a single joint variable, as opposed to
+being assessed in an *ad hoc* marginal manner. 
 The benefits of this approach are that it provides
-1. **any desired quality metric* based on the joint outcome
+1. **any desired quality metric** based on the joint outcome
 2. **outcome comparison** accounting for internal dependency within the joint outcome
 3. **ranking** to separate good subjects from bad subjects
 4. **dependency estimation** for inference on internal outcome associations
 5. **proper and complete uncertainty quantifications** on which to based sound conclusions
 
-The model specification and example inference are given below.
+The model specification and example inference are given below
+and a summary of the analysis is given [in this paper](schwartz-pyMC3-trigression.pdf).
 
 <p align="center">
-<a href="schwartz-pyMC3-trigression.pdf"><img src="images/bayes1.jpg"/></a>
+<a href="schwartz-pyMC3-trigression.pdf"><img src="images/bayes1.jpeg"/></a>
 </p>
 <p align="center">
-<a href="schwartz-pyMC3-trigression.pdf"><img src="images/bayes2.jpg"/></a>
+<a href="schwartz-pyMC3-trigression.pdf"><img src="images/bayes2.jpeg"/></a>
 </p>
 
 
