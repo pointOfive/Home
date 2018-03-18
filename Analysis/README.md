@@ -13,6 +13,8 @@ provides the following python-based data analysis examples:
 - [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
 - [Web Scraping Database Server](#web-scraping-database-server)
 - [Spark NLP Clustering Pipeline](#nlp-and-clustering-with-spark)
+- [ML Pipeline Produciton Readiness](#ml-production-readiness)
+- [Bayesian Trivariate Regression](#bayes-with-pymc3)
 - [Interpreting P-Values Correctly](#afterward-p-values)
 
 
@@ -1040,6 +1042,52 @@ for k in range(2, 50, 2):
     dat_score_mean.append(n-np.mean(dat_score))
 ```
 </details>
+
+
+
+## ML Production Readiness
+
+As discussed in [this paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45742.pdf),
+"Using machine learning in real-world production systems is complicated by a
+host of issues not found in small toy examples or even large offline research
+experiments. Testing and monitoring are key considerations for assessing the
+production-readiness of an ML system."
+The following prototype provides an *ML Test Score Rubric*  based on a set of actionable tests to
+help quantify ML pipeline production readiness and
+give an indication of how much testing and monitoring is enough.
+Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#production_readiness) to explore the live interactive version
+of the plot.
+
+<p align="center">
+<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#production_readiness"><img src="images/prodready.jpeg"/></a>
+</p>
+
+
+## Bayes with *PyMC3*
+
+My most recent project was to use *PyMC3*
+to do a trivariate regression.
+This allowed the dependency structure in the three outcome variables to be
+directly modeled and assessed as a single joint variable, as opposed to
+being assessed in a marginal manner. 
+The benefits of this approach are that it provides
+1. **any desired quality metric* based on the joint outcome
+2. **outcome comparison** accounting for internal dependency within the joint outcome
+3. **ranking** to separate good subjects from bad subjects
+4. **dependency estimation** for inference on internal outcome associations
+5. **proper and complete uncertainty quantifications** on which to based sound conclusions
+
+The model specification and example inference are given below.
+
+<p align="center">
+<a href="schwartz-pyMC3-trigression.pdf"><img src="images/bayes1.jpg"/></a>
+</p>
+<p align="center">
+<a href="schwartz-pyMC3-trigression.pdf"><img src="images/bayes2.jpg"/></a>
+</p>
+
+
+
 
 
 
