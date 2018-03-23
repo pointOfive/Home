@@ -13,7 +13,7 @@ provides the following python-based data analysis examples:
 - [Setting Model Tuning Parameters](#selecting-model-tuning-parameters)
 - [Web Scraping Database Server](#web-scraping-database-server)
 - [Spark NLP Clustering Pipeline](#nlp-and-clustering-with-spark)
-- [ML Pipeline Produciton Readiness](#ml-production-readiness)
+- [ML Pipeline Production Readiness](#ml-production-readiness)
 - [Bayesian Trivariate Regression](#bayes-with-pymc3)
 - [Interpreting P-Values Correctly](#afterward-p-values)
 
