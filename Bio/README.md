@@ -1,6 +1,6 @@
 # About
 
-## [Covera Health](https://www.coverahealth.com/)
+## [Covera](https://www.coverahealth.com/)
 
 [<img src="images/un.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
