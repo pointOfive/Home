@@ -5,6 +5,7 @@ I have additionally contributed bioinformatic and statistical analysis support o
 
 | Topic | Journal | Year | Team |
 |:------|:--------|:-----|:-----|
+| [Photperiodic Response in Switchgrass](https://onlinelibrary.wiley.com/doi/abs/10.1111/pce.13546) | Cancer Prevention Research | 2019 | [TAMU](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
 | [High Fat and Sugar Diets in Mice](http://cancerpreventionresearch.aacrjournals.org/content/10/10/553.long) | Cancer Prevention Research | 2017 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
 | [Drought Response in Switchgrass](http://www.plantphysiol.org/content/172/2/734) | Plant Physiology | 2016 | [UT](https://github.com/pointOfive/Examples/tree/master/Bio#ut) |
 | [Allele Specific Expression in Switchgrass](http://genome.cshlp.org/content/early/2016/03/07/gr.198135.115) | Genome Research | 2016 | [UT](https://github.com/pointOfive/Examples/tree/master/Bio#ut) |
