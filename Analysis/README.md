@@ -1,9 +1,8 @@
 # Data Analysis with Python
 
-To see data analysis work done using the R programming language
+This page provides the following python-based data analysis examples. To see data analysis work done using the R programming language
 please visit the [Model-Based Recursive Partitioning project](https://github.com/pointOfive/Home/tree/master/Code#r)
-on the [coding page](https://github.com/pointOfive/Home/tree/master/Code#coding). This page
-provides the following python-based data analysis examples:
+on the [coding page](https://github.com/pointOfive/Home/tree/master/Code#coding). 
 
 - [Data Pipelining Functionality](#data-pipelining-functionality)
 - [Regularized Confidence Intervals](#classical-meets-modern)
