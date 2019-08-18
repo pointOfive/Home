@@ -1,9 +1,11 @@
 
 # Welcome
 
-I am a formally trained Bayesian statistician,
-have worked extensively in bioinformatics pipelines,
-and am fully fluent in the modern data science toolkit.
+I am a formally trained Bayesian statistician
+currently working in the health tech startup sector in NYC
+on multivariate hierarchical multinomial models.
+In the past I have taught data science immersives in the 
+sklearn data science toolkit and have worked extensively in bioinformatics pipelines.
 On this site you will find
 - [data analysis examples](https://github.com/pointOfive/Home/tree/master/Analysis#data-analysis-with-python)
 - [programming challenges](https://github.com/pointOfive/Examples/tree/master/Code#coding)
@@ -28,5 +30,4 @@ Note: If I have an arrow in front of me like this I'm clickable.
 
 I expand to reveal further information.
 </details>
-
 
