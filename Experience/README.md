@@ -1,8 +1,52 @@
 
+## Education
+
+- *PhD Statistics, Duke University, 2010*
+- *BS Computer Science, Trinity University, 2005*
+- *BA Mathematics, Trinity University, 2005*
+
 
 ## Work Experience
 
-### [2017-Present: Data Science Instructor, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
+
+### [2018-Present: Covera Heath, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
+<details>
+
+<summary>
+Senior Data Scientist (click to expand)
+</summary>
+
+<table style="width:100%">
+  <tr>
+    <td>
+
+#### Responsibilities
+
+- Multivariate Hierarchical Multinomial Scoring Model
+- Inter-Reviewer Concordance Uncertainty Propegation 
+- Clinical Impact Significance Modelilng and Prediction
+- Sample Size Requirements Calculations
+
+    </td>
+    <td>
+
+#### Highlights
+
+- Owned Core Analytics Product 
+- Produced Utilized Scores
+- $10k Raise After First Year
+- Catalyzed Data Science Team Growth
+
+    </td>
+  </tr>
+</table>
+
+</details>
+
+
+
+
+### [2017-2018: Data Science Instructor, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
 <details>
 
 <summary>
@@ -215,9 +259,4 @@ Graduate Student, Research Assistant (click to expand)
 
 </details>
 
-## Education
-
-- *PhD Statistics, Duke University, 2010*
-- *BS Computer Science, Trinity University, 2005*
-- *BA Mathematics, Trinity University, 2005*
 
