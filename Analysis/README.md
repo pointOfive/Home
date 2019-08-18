@@ -417,11 +417,11 @@ but they allow us to carry desirable statistical analysis capabilities forward i
 the modern supervised learning framework. The following example demonstrates the
 synergistic integration of regularization and uncertainty quantification
 in the context of multiplicative association identification in classification settings.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals) to explore the live interactive version
+Click on the plot or [this link](http://ec2-3-92-135-120.compute-1.amazonaws.com/#regularized_confidence_intervals) to explore the live interactive version
 of the plot. 
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
+<a href="http://ec2-3-92-135-120.compute-1.amazonaws.com/#regularized_confidence_intervals"><img src="images/regularize.jpeg"/></a>
 </p>
 
 Methodologies such as `Random Forests`,
@@ -453,11 +453,11 @@ The following example demonstrates the former *Partial Dependency Plots* for the
 `Logistic Regression`, `Random Forest`, and `Support Vector Machine` classifier pipelines above.
 In addition the `Gradient Boosted Tree` classifier from the `XGBoost` package is also provided
 for further comparison.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots) to explore the live interactive version
+Click on the plot or [this link](http://ec2-3-92-135-120.compute-1.amazonaws.com/#association_plots) to explore the live interactive version
 of the plot.
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
+<a href="http://ec2-3-92-135-120.compute-1.amazonaws.com/#association_plots"><img src="images/effects.jpeg"/></a>
 </p>
 
 The actual predicted associations -- i.e., per-person individualized effects -- are given in the upper right plot,
@@ -486,11 +486,11 @@ within the context of the model: all that matters is raw predictive performance.
 The following example demonstrates *profit curves* based on *cost-benefit* and *confusion matrices*.
 Specification of the cost-benefit allows us to tune our *classification threshold* to optimize
 the interplay of the *confusion* and *cost-benefit matrices*.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit) to explore the live interactive version
+Click on the plot or [this link](http://ec2-3-92-135-120.compute-1.amazonaws.com/#cost_benefit) to explore the live interactive version
 of the plot.
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
+<a href="http://ec2-3-92-135-120.compute-1.amazonaws.com/#cost_benefit"><img src="images/costbenefit.jpeg"/></a>
 </p>
 
 
@@ -615,11 +615,11 @@ associations, and in particular being willing to reduce the complexity of associ
 available data does not sufficiently justify the inference. 
 The following example sorts in and out of sample scores by their difference,
 and allows the user to hover over the plots to facilitate identification of appropriate tuning parameter settings.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning) to explore the live interactive version
+Click on the plot or [this link](http://ec2-3-92-135-120.compute-1.amazonaws.com/#tuning) to explore the live interactive version
 of the plot.
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
+<a href="http://ec2-3-92-135-120.compute-1.amazonaws.com/#tuning"><img src="images/hover.jpg"/></a>
 </p>
 
 
@@ -1054,11 +1054,11 @@ production-readiness of an ML system."
 The following prototype provides an *ML Test Score Rubric*  based on a set of actionable tests to
 help quantify ML pipeline production readiness and
 give an indication of how much testing and monitoring is enough.
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#production_readiness) to explore the live interactive version
+Click on the plot or [this link](http://ec2-3-92-135-120.compute-1.amazonaws.com/#production_readiness) to explore the live interactive version
 of the plot.
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#production_readiness"><img src="images/prodready.jpeg"/></a>
+<a href="http://ec2-3-92-135-120.compute-1.amazonaws.com/#production_readiness"><img src="images/prodready.jpeg"/></a>
 </p>
 
 
@@ -1126,9 +1126,9 @@ have an direct correlation with the proportion of null hypotheses that are true 
 
 The following simulation dashboard shows the correlation of p-value and null hypotheses truthfulness
 by plotting the proportion of true null hypotheses rejected at a given p-value level under various settings. 
-Click on the plot or [this link](http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values) to explore the live interactive version
+Click on the plot or [this link](http://ec2-3-92-135-120.compute-1.amazonaws.com/#p_values) to explore the live interactive version
 of the plot.
 
 <p align="center">
-<a href="http://ec2-54-90-249-36.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
+<a href="http://ec2-3-92-135-120.compute-1.amazonaws.com/#p_values"><img src="images/pvals.jpeg"/></a>
 </p>
