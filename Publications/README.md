@@ -5,7 +5,7 @@ I have additionally contributed bioinformatic and statistical analysis support o
 
 | Topic | Journal | Year | Team |
 |:------|:--------|:-----|:-----|
-| [Transcription Start Site Promotion](https://www.biorxiv.org/content/10.1101/810127v1.full) | Genome Biology | 2020 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
+| [Transcription Start Site Context Promoters](https://www.biorxiv.org/content/10.1101/810127v1.full) | Genome Biology | 2020 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
 | [Photperiodic Response in Switchgrass](https://onlinelibrary.wiley.com/doi/abs/10.1111/pce.13546) | Plant Cell and Environment | 2019 | [UT](https://github.com/pointOfive/Examples/tree/master/Bio#ut) |
 | [High Fat and Sugar Diets in Mice](http://cancerpreventionresearch.aacrjournals.org/content/10/10/553.long) | Cancer Prevention Research | 2017 | [TAMU II](https://github.com/pointOfive/Examples/tree/master/Bio#tamu) |
 | [Drought Response in Switchgrass](http://www.plantphysiol.org/content/172/2/734) | Plant Physiology | 2016 | [UT](https://github.com/pointOfive/Examples/tree/master/Bio#ut) |
@@ -18,6 +18,6 @@ I have additionally contributed bioinformatic and statistical analysis support o
 | [microRNA and mRNA Carcinogen Response](http://www.physiology.org/doi/pdf/10.1152/physiolgenomics.00213.2010) | Physiological Genomics | 2011 | [TAMU I](https://github.com/pointOfive/Examples/tree/master/Bio#postdoc) |
 | [Dirichlet Process Principal Stratification](https://www.jstor.org/stable/23239541?seq=1#page_scan_tab_contents) | JASA | 2011 | [Duke](https://github.com/pointOfive/Examples/tree/master/Bio#duke) |
 | [Birthweight and Censored Gestational Age](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5013733/) | Statistics in Medicine | 2010 | [Duke](https://github.com/pointOfive/Examples/tree/master/Bio#duke) |
-| [Bayesian Mixture Modeling of Intermediate Variables](https://dukespace.lib.duke.edu/dspace/handle/10161/2983) | PhD Dissertation | 2010 | [Duke](https://github.com/pointOfive/Examples/tree/master/Bio#duke) |
+| [Mixture Modeling of Intermediate Variables](https://dukespace.lib.duke.edu/dspace/handle/10161/2983) | PhD Dissertation | 2010 | [Duke](https://github.com/pointOfive/Examples/tree/master/Bio#duke) |
 
 
