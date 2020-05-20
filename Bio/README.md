@@ -19,12 +19,13 @@ and everyone freaked out (with Sweden freaking out the least of all and everyone
 Sweden for not freaking out enough).
 As this all went down I took the opportunity to return to my Bayesian roots in the unlikely guise of 
 [TensorFlow]([https://www.tensorflow.org/) whose [TensorFlow Probability](https://www.tensorflow.org/probability)
-library got me [reading](RL.md) about
+library got me [reading](RL.md#outline--reading-list) about
 [HMC](https://github.com/pointOfive/Home/tree/master/Analysis/OneOffs/PyMC#modern-bayesian-analysis),
 [KL divergence and Variational Inference](RL.md),
 [VAEs, BCNNs, Generative Models and Normalizing Flows](RL.md),
-and how batch normalization, dropout, Bayes by Backprop,
-randomized prior functions, and Gaussian processes 
+and how
+[batch normalization, dropout, Bayes by Backprop,
+randomized prior functions, and Gaussian processes](RL.md) 
 can be used for Bayesian Deep Learning and Bayesian Neural Networks.
 It's all really awesome, and I'm very excited about
 having returned to some of the topics I encountered while in graduate school
