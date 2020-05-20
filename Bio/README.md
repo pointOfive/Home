@@ -1,6 +1,12 @@
-# About
+# AboutA
 
-## [Covera](https://www.coverahealth.com/)
+## [Stockholm](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
+
+[<img src="images/sthlm.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
+
+
+
+## [Covera](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 [<img src="images/un.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
