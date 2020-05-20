@@ -7,19 +7,17 @@ lets one make a *Dockerfile > Image > Container*
 
 ## <a href="http://ec2-54-147-151-121.compute-1.amazonaws.com/app3">Bokeh Server Environment</a>
 
+- Bokeh server running `app.py` 
+- in Conda/Python/Bokeh container
+- on a simple Amazon EC2 instance
+
 <a href="http://ec2-54-147-151-121.compute-1.amazonaws.com/app3">
 <img src="covid.jpeg">
 </a>
 
 
-
-- Bokeh server running `app.py` 
-- in Conda/Python/Bokeh container
-- on a simple Amazon EC2 instance
-
 ## Setup
 
-After
 1. create a [dockerhub](https://hub.docker.com/) user account
 2. download and install [docker desktop](https://www.docker.com/products/docker-desktop)
 3. create a [Dockerfile](Dockerfile) (named "Dockerfile")
@@ -54,8 +52,10 @@ After
 `docker run -it -p 80:5006 -v /home/ec2-user:/usr/src/app --name BokehServer winter4green/bokeh:latest`
 
 - `-p` maps Bokeh's default port 5006 to the public address
+
   `http://ec2-XXX-YYY-ZZZ-AAA.compute-1.amazonaws.com/app:80`
-- `-v` persists any changes made in the container's `/usr/src/app` directory (see [WORKDIR](Dockerfile))  
+- `-v` persists any changes made in the container's `/usr/src/app` directory (see [WORKDIR](Dockerfile))
+
   in the copied `ec2-XXX-YYY-ZZZ-AAA.compute-1.amazonaws.com/home/ec2-user/` directory (see [COPY](Dockerfile))
 - the result is a `/bin/bash` call (see [CMD](Dockerfile)) that puts us in the container and we can then call
   - `conda activate py37`
