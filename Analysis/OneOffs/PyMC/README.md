@@ -8,8 +8,8 @@
 Modern Bayesian analysis leverages
 - [Probabilistic Programming](https://docs.pymc.io/)
   - with automatic MCMC posterior sampler construction and no need to manually define
-    - Metropolis-Hastings Accept-Reject 
-    - Gibbs sampler full conditionals
+    - Metropolis-Hastings Acceptance-Rejection criteria
+    - Gibbs samplers with derived full conditional distributions
 - [Hamiltonian Monte Carlo](https://arxiv.org/abs/1701.02434) (HMC) Posterior Sampling
   - which greatly increases sampling speed
   - the [No-U-Turn Sampler](https://arxiv.org/abs/1111.4246) (NUTS) is a popular/ubiquetous example of this
