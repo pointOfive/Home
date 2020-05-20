@@ -13,8 +13,8 @@ pushed it over the edge.
 
 - I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
 (and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7))
-- [Bijectors](https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector)
-  - which are just "change of variables" operators, but readily lead to Normalizing Flows outlined below
+- [Bijectors](https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector): "change of variables" operators
+  forming the basis of https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector via Normalizing Flows 
 - Gaussian Processes as DNN [priors](https://slideslive.com/38922672/invited-talk-functional-variational-bayesian-neural-networks?ref=account-folder-43024-folders)) and [DNNs themselves](https://twitter.com/EmtiyazKhan/status/1260842226822680576)
 - from there I worked through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
 - eventually I learned about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which is an area I'm quite curious about/interested in)
