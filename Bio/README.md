@@ -1,9 +1,30 @@
-# AboutA
+# About
 
 ## [Stockholm](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 [<img src="images/sthlm.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
+In New York I met Staesha Orly Rath, a nice New York Jewish girl who was actually from Vancouver, BC.
+She was everything I ever wanted, and we were soon (secretly) married (so we can have our actual "wedding" later with her parents). 
+Because Staesha's Canadian (and hence not too unfamiliar with the idea) -- and I had always loved the idea --
+we began discussing the possibility of a move out of the states. Staesha wasn't so sure we could make a move a reality,
+but she was willing to leave her job as a fancy NYC lawyer if the right opportunity presented itself.
+And it did, in the form of Stockholm, Sweden. Stockholm is a truly beautiful city.
+We live on a cliff in Kungsholmen, overlooking Stora Essingen, connected to Lilla Essingen by a bridge,
+and across the way from Alvik. These are beautiful, beautiful places. Especially with our favorite fika blend and some Kardemummabullar. 
+But then a very strange thing happened. The world went sideways with COVID-19.
+Everyone freaked out, with Sweden freaking out the least of all and everyone else freaking out even more at
+Sweden for not freaking out enough.
+As this has all gone down I've taken the opportunity to return to my Bayesian roots in the unlikely guise of 
+[TensorFlow]([https://www.tensorflow.org/) whose (TensorFlow Probability)[https://www.tensorflow.org/probability]
+library got me [reading](www) about
+[HMC](https://github.com/pointOfive/Home/tree/master/Analysis/OneOffs/PyMC#modern-bayesian-analysis),
+[KL divergence and Variational Inference](www),
+[VAEs, BCNNs, Generative Models and Normalizing Flows](www),
+and how
+batch normalization, dropout, Bayes by Backprop,
+randomized prior functions, and Gaussian processes 
+can be used for BNNs. 
 
 
 ## [Covera](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
