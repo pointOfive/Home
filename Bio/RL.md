@@ -3,7 +3,7 @@
 
 The upcoming [PyMC4](https://pypi.org/project/pymc4/) releases
 move from the discontinued Theano backend to
-[TensorFlow-Probability](https://www.tensorflow.org/probability),
+[TensorFlow-Probability](https://www.tensorflow.org/probability) 
 peaked my interest.
 But [TFPs](https://github.com/tensorflow/probability)
 [Advertisement](https://medium.com/tensorflow/regression-with-probabilistic-layers-in-tensorflow-probability-e46ff5d37baf)
@@ -13,18 +13,18 @@ pushed it over the edge.
 
 - I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
 (and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7))
-- working through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
-  - and other implementation examples such as [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/)
+- and working through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
+  - as well as other implementation examples such as [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/)
   and those linked [below](RL.md#outline--reading-list)
 - in order to eventually learned about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which is an area I'm quite curious about/interested in)
 
 On the way I had a chance to revisit and reconsider some foundational statistics topics: 
-- [Bijectors](https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector): "change of variables" operators
-  forming the basis of Generative Modeling via Normalizing Flows 
+- Change of Variables "[Bijectors](https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector)" 
+  forming the basis of Normalizing Flows Generative Modeling 
 - Gaussian Processes as [priors](https://slideslive.com/38922672/invited-talk-functional-variational-bayesian-neural-networks?ref=account-folder-43024-folders) for DNNs and as [DNNs](https://twitter.com/EmtiyazKhan/status/1260842226822680576) themselves
 
 
-A few things I would like to spend soem time on but haven't yet gotten to are
+A few things I would like to spend some time on but haven't yet gotten to are
 - [More Keras Examples](https://github.com/keras-team/keras/tree/master/examples)
 - GANs and Reinforcement learning
   - though the former, as a generative modeling approach, is highly connected to a number of topics I have explored
