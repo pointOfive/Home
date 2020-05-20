@@ -9,7 +9,7 @@
 ## Work Experience
 
 
-### [2018-2019: Tink, Stockholm, Sweden](https://github.com/pointOfive/Examples/tree/master/Bio#stockholm)
+### [2019-2020: Tink, Stockholm, Sweden](https://github.com/pointOfive/Examples/tree/master/Bio#stockholm)
 <details>
 
 <summary>
@@ -56,8 +56,8 @@ Senior Data Scientist (click to expand)
 #### Responsibilities
 
 - Multivariate Hierarchical Multinomial Scoring Model
-- Inter-Reviewer Concordance Uncertainty Propegation 
-- Clinical Impact Significance Modelilng and Prediction
+- Inter-Reviewer Concordance Uncertainty Propagation
+- Clinical Impact Significance Modeling and Prediction
 - Sample Size Requirements Calculations
 
     </td>
