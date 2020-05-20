@@ -9,7 +9,40 @@
 ## Work Experience
 
 
-### [2018-Present: Covera Heath, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
+### [2018-2019: Tink, Stockholm, Sweden](https://github.com/pointOfive/Examples/tree/master/Bio#stockholm)
+<details>
+
+<summary>
+Data Scientist (click to expand)
+</summary>
+
+<table style="width:100%">
+  <tr>
+    <td>
+
+#### Responsibilities
+
+- Transaction categorization cold-start
+- Data collection prioritization
+- Subscription and income verification 
+
+    </td>
+    <td>
+
+#### Highlights
+
+- Exhaustive-featurization for space definition
+- Model performance monitoring methodology
+- Recurring transaction identification model
+
+    </td>
+  </tr>
+</table>
+
+</details>
+
+
+### [2018-2019: Covera Heath, New York City](https://github.com/pointOfive/Examples/tree/master/Bio#nyc)
 <details>
 
 <summary>
