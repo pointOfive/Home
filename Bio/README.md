@@ -8,7 +8,7 @@
 
 ## [Covera](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
-[<img src="images/un.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
+[<img src="images/theUN.jpg" width=100%>](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
 
 After landing in New York and spending some time teaching data science, I took a position with a disruptive
 health tech startup redefining radiology care called Spreemo Health.  During our [tremondous success](https://www.coverahealth.com/press)
