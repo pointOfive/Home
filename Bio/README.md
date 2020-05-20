@@ -21,11 +21,11 @@ As this all went down I took the opportunity to return to my Bayesian roots in t
 [TensorFlow]([https://www.tensorflow.org/) whose [TensorFlow Probability](https://www.tensorflow.org/probability)
 library got me [reading](RL.md#outline--reading-list) about
 [HMC](https://github.com/pointOfive/Home/tree/master/Analysis/OneOffs/PyMC#modern-bayesian-analysis),
-[KL divergence and Variational Inference](RL.md),
-[VAEs, BCNNs, Generative Models and Normalizing Flows](RL.md),
+[KL divergence and Variational Inference](RL.md#tensorflow--keras),
+[VAEs, BCNNs, Generative Models and Normalizing Flows](RL.md#tensorflow--keras),
 and how
 [batch normalization, dropout, Bayes by Backprop,
-randomized prior functions, and Gaussian processes](RL.md) 
+randomized prior functions, and Gaussian processes](RL.md#tensorflow--keras) 
 can be used for Bayesian Deep Learning and Bayesian Neural Networks.
 It's all really awesome, and I'm very excited about
 having returned to some of the topics I encountered while in graduate school
