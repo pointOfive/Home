@@ -21,4 +21,4 @@
 
 - The Bayesian Deep Learning [Research Community](http://bayesiandeeplearning.org/) is becoming increasingly active
 - The benefits of [Integration over Optimization](https://arxiv.org/abs/2001.10995) are clearly defined and highly promising
-- ALL Optimizaton procedures can be seen to follow from a [Bayesian Learning Principle](https://arxiv.org/abs/1906.02506) Framework
+- ALL applied Optimizaton procedures can be seen to derive as [Bayesian Learning Principles](https://arxiv.org/abs/1906.02506)
