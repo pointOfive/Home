@@ -12,15 +12,18 @@ and [Repo](https://github.com/tensorflow/probability/blob/master/tensorflow_prob
 pushed it over the edge.
 
 - I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
-(see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7)) 
+(and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7)) 
 - from there I worked through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
-- and eventually I learned about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which is an area I'm quite curious about/interested in)
-- and I read a lot of really good material along the way, such as [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/),
-  and the stuff I link below
+- eventually I learned about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which is an area I'm quite curious about/interested in)
+- and on the way I read a lot of really good material
+  - e.g., [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/) sort of stuff, and everything I link below
 
-A few things I haven't yet gotten to are
+A few things I would like to cover but haven't yet gotten to are
 - [More Keras Examples](https://github.com/keras-team/keras/tree/master/examples)
 - GANs and Reinforcement learning
+  - though the former, as a generative modeling approach, is highly connected to a number of topics I have explored
+  - and the latter should be of more interested to me than I've given it as it's an area dominated by Bayesian thinking
+
 
 ## Outline / Reading List
 
