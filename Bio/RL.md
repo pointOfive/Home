@@ -14,7 +14,8 @@ pushed it over the edge.
 - I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
 (and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7))
 - working through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
-- and other stuff like [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/) sort of and everything linked below
+- and other implementation examples such as [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/)
+  and those linked [below](outline--reading-list)
 - in order to eventually learned about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which is an area I'm quite curious about/interested in)
 
 On the way I had a chance to bolster my understanding of some foundational statistics topics: 
