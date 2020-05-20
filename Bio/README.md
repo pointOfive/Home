@@ -12,6 +12,8 @@ but she was willing to leave her job as a fancy NYC lawyer if the right opportun
 And it did, in the form of Stockholm, Sweden. Stockholm is a truly beautiful city.
 We live on a cliff in Kungsholmen, overlooking Stora Essingen, connected to Lilla Essingen by a bridge,
 and across the way from Alvik. These are beautiful, beautiful places. Especially with our favorite fika blend and some Kardemummabullar. 
+
+
 But then a very strange thing happened. The world went sideways with COVID-19.
 Everyone freaked out, with Sweden freaking out the least of all and everyone else freaking out even more at
 Sweden for not freaking out enough.
