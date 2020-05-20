@@ -1,7 +1,7 @@
-# Welcome
+# AWS Deployment
 
 ## Proceed as follows:
-1. Read the one-page [report](2020_03_12_Pr_Default.pdf)
+1. Read the one-page [report](Pr_Default.pdf)
 2. Visit the API call [generator](https://3.94.204.113:5000/generate)
    - Each new session requires acceptance of the Flask server's dummy certificate as shown for Firefox below
    - (this is because I do not proxy HTTP traffic through apache2 to my Flask server to have a "valid" certificate)
