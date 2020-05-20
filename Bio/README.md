@@ -14,19 +14,20 @@ We live on a cliff in Kungsholmen, overlooking Stora Essingen, connected to Lill
 and across the way from Alvik. These are beautiful, beautiful places. Especially with our favorite fika blend and some Kardemummabullar. 
 
 
-But then a very strange thing happened. The world went sideways with COVID-19.
-Everyone freaked out, with Sweden freaking out the least of all and everyone else freaking out even more at
-Sweden for not freaking out enough.
-As this has all gone down I've taken the opportunity to return to my Bayesian roots in the unlikely guise of 
+But then a very strange thing happened. The world went sideways with COVID-19
+and everyone freaked out (with Sweden freaking out the least of all and everyone else freaking out even more at
+Sweden for not freaking out enough).
+As this all went down I took the opportunity to return to my Bayesian roots in the unlikely guise of 
 [TensorFlow]([https://www.tensorflow.org/) whose (TensorFlow Probability)[https://www.tensorflow.org/probability]
 library got me [reading](www) about
 [HMC](https://github.com/pointOfive/Home/tree/master/Analysis/OneOffs/PyMC#modern-bayesian-analysis),
 [KL divergence and Variational Inference](www),
 [VAEs, BCNNs, Generative Models and Normalizing Flows](www),
-and how
-batch normalization, dropout, Bayes by Backprop,
+and how batch normalization, dropout, Bayes by Backprop,
 randomized prior functions, and Gaussian processes 
-can be used for BNNs. 
+can be used for Bayesian Deep Learning and Bayesian Neural Networks.
+It's all really cool and I'm now in the midst of
+looking for the right opportunity to put it all to use. 
 
 
 ## [Covera](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience)
