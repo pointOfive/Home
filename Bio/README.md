@@ -7,8 +7,8 @@
 In New York I met Staesha Orly Rath, a nice New York Jewish girl who was actually from Vancouver, BC.
 She was everything I ever wanted, and we were soon (secretly) married (so we can have our actual "wedding" later with her parents). 
 Because Staesha's Canadian (and hence not too unfamiliar with the idea) -- and I had always loved the idea --
-we began discussing the possibility of a move out of the states. Staesha wasn't so sure we could make a move a reality,
-but she was willing to leave her job as a fancy NYC lawyer if the right opportunity presented itself.
+we began discussing the possibility of a move out of the states. Staesha wasn't so sure we could make it happen,
+but she was willing to give up being a fancy NYC lawyer if it did.
 And it did, in the form of Stockholm, Sweden. Stockholm is a truly beautiful city.
 We live on a cliff in Kungsholmen, overlooking Stora Essingen, connected to Lilla Essingen by a bridge,
 and across the way from Alvik. These are beautiful, beautiful places. Especially with our favorite fika blend and some Kardemummabullar. 
