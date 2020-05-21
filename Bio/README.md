@@ -10,7 +10,7 @@ Because Staesha's Canadian (and hence not too unfamiliar with the idea) -- and I
 we began discussing the possibility of a move away from the states. Staesha wasn't so sure we could make it happen,
 but she was willing to give her fancy NYC lawyer job if it did.
 And it did, in the form of Stockholm, Sweden. Stockholm is a truly beautiful city.
-We live on a cliff in Kungsholmen, overlooking Stora Essingen, connected to Lilla Essingen by a bridge,
+We live on a cliff in Kungsholmen, overlooking Stora Essingen, connected to Lilla Essingen by a little bridge,
 and across the way from Alvik. These are beautiful, beautiful places. Especially with our favorite fika blend and some Kardemummabullar. 
 
 
