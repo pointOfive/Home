@@ -3,7 +3,7 @@
 
 - [Trivariate Regression](https://github.com/pointOfive/Home/tree/master/Analysis#bayes-with-pymc3)
 - [Experiemental Design](schwartz_farmersdog.pdf)
-- More Coming Soon...
+- More coming soon...
 
 ## Modern Bayesian Analysis
 - [Probabilistic Programming](https://docs.pymc.io/)
