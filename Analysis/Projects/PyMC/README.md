@@ -8,7 +8,7 @@
 ## Modern Bayesian Analysis
 - [Probabilistic Programming](https://docs.pymc.io/)
   - with automatic MCMC posterior sampler construction and no need to manually define
-    - Metropolis-Hastings Acceptance-Rejection criteria
+    - Metropolis-Hastings acceptance-rejection criteria
     - Gibbs samplers with derived full conditional distributions
 - [Hamiltonian Monte Carlo](https://arxiv.org/abs/1701.02434) (HMC) Posterior Sampling
   - which greatly increases sampling speed
