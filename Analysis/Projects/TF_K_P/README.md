@@ -11,12 +11,12 @@ After seeing [TFPs](https://github.com/tensorflow/probability)
 and [Repo](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Probabilistic_Layers_Regression.ipynb)
 I was on the hype train. 
 
-- I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
+- I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py),
 (and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7))
-- and working through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
+- working through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
   - as well as other implementation examples such as [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/)
-  and those linked [below](README.md#outline--reading-list)
-- in order to eventually learned about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which is an area I'm quite curious about/interested in)
+  and those linked [below](README.md#outline--reading-list),
+- and eventually learning about [Attention](https://www.tensorflow.org/tutorials/text/nmt_with_attention) for [NLP](https://www.youtube.com/watch?v=S27pHKBEp30) (which was my initial target as I'm quite interested in this area).
 
 On the way I had a chance to revisit and reconsider some foundational statistics topics: 
 - Change of Variables "[Bijectors](https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector)" 
