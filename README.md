@@ -18,7 +18,7 @@ as well as
 - [work history](https://github.com/pointOfive/Examples/tree/master/Experience#work-experience) and [bio](https://github.com/pointOfive/Examples/tree/master/Bio#about)
 - [publication record](https://github.com/pointOfive/Examples/tree/master/Publications#publications)
 
-and my formal resume/CV, which is available [here](SchwartzCV.pdf). 
+and my formal resume/CV, which is available [here](schwartz2020_.pdf). 
 
 ##  
 
