@@ -35,12 +35,12 @@ A few things I would like to spend some time on but haven't yet gotten to are
 ## Outline / Reading List
 
 - [Optimization is Bayesian Learning Approximated](https://arxiv.org/abs/1906.02506)
-  - As discussed in this [Video](https://slideslive.com/38923183/deep-learning-with-bayesian-principles) from [Mohammad Emtiyaz Khan](https://emtiyaz.github.io/)
+  - as discussed in this [video](https://slideslive.com/38923183/deep-learning-with-bayesian-principles) from [Mohammad Emtiyaz Khan](https://emtiyaz.github.io/)
 - Generative Modeling
   - [VAEs](https://arxiv.org/abs/1312.6114)
-    - and some [Notes](https://deepgenerativemodels.github.io/notes/index.html) that help clarify what they're doing
+    - and some [notes](https://deepgenerativemodels.github.io/notes/index.html) that help clarify what they're doing
   - [Normalizing Flows](https://arxiv.org/abs/1908.09257)
-    - and a great [Lecture](https://www.youtube.com/watch?v=3KUvxIOJD0k), [Blog](https://blog.evjang.com/2018/01/nf1.html), and [Course](https://deepgenerativemodels.github.io/notes/flow/) that explain them
+    - and a great [lecture](https://www.youtube.com/watch?v=3KUvxIOJD0k), [blog](https://blog.evjang.com/2018/01/nf1.html), and [course](https://deepgenerativemodels.github.io/notes/flow/) that explain them
     - [Masked Autoregressive Flows](https://arxiv.org/abs/1705.07057)
 - Semi-Supervised Learning
   - using [VAEs](https://arxiv.org/abs/1406.5298)
@@ -50,7 +50,7 @@ A few things I would like to spend some time on but haven't yet gotten to are
   - [Bayes by Backprop](https://arxiv.org/abs/1505.05424)
     - and the key [reference](https://papers.nips.cc/paper/4329-practical-variational-inference-for-neural-networks) therein
   - [Bayesian Dropout](https://arxiv.org/abs/1506.02142)
-    - along with some [Concerns](https://www.semanticscholar.org/paper/Risk-versus-Uncertainty-in-Deep-Learning-%3A-Bayes-%2C-Osband/dde4b95be20a160253a6cc9ecd75492a13d60c10) and [Comments](https://www.reddit.com/r/MachineLearning/comments/7bm4b2/d_what_is_the_current_state_of_dropout_as/),
+    - along with some [concerns](https://www.semanticscholar.org/paper/Risk-versus-Uncertainty-in-Deep-Learning-%3A-Bayes-%2C-Osband/dde4b95be20a160253a6cc9ecd75492a13d60c10) and [comments](https://www.reddit.com/r/MachineLearning/comments/7bm4b2/d_what_is_the_current_state_of_dropout_as/),
     [ect.](https://www.reddit.com/r/MachineLearning/comments/8w0v9m/d_ian_osband_dropout_posteriors_give_bad/) about them
   - [Randomized Prior Functions](https://arxiv.org/abs/1806.03335)
     - and a [great implementation example](https://gdmarmerola.github.io/intro-randomized-prior-functions/), [etc.](https://gdmarmerola.github.io/risk-and-uncertainty-deep-learning/) about them
