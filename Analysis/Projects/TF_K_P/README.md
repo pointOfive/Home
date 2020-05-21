@@ -11,8 +11,8 @@ After seeing [TFPs](https://github.com/tensorflow/probability)
 and [Repo](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Probabilistic_Layers_Regression.ipynb)
 I was on the hype train. 
 
-- I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py),
-(and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7))
+- I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
+(and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7)), 
 - working through all the [TF Tutorial and Guide Material](https://www.tensorflow.org/overview)
   - as well as other implementation examples such as [this](http://krasserm.github.io/2019/03/14/bayesian-neural-networks/)
   and those linked [below](README.md#outline--reading-list),
