@@ -1,7 +1,7 @@
 
 # TensorFlow + Keras
 
-The upcoming [PyMC4](https://pypi.org/project/pymc4/) releases
+The upcoming [PyMC4](https://pypi.org/project/pymc4/) releases's
 move from the discontinued Theano backend to
 [TensorFlow-Probability](https://www.tensorflow.org/probability) 
 peaked my interest.
