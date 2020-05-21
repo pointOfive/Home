@@ -25,10 +25,10 @@ On the way I had a chance to revisit and reconsider some foundational statistica
 
 
 A few things I would like to spend some time on but haven't yet gotten to are
-- [More Keras Examples](https://github.com/keras-team/keras/tree/master/examples)
+- [More Keras Examples](https://github.com/keras-team/keras/tree/master/examples), and
 - GANs and Reinforcement learning
   - though the former, as a generative modeling approach, is highly connected to a number of topics I have explored
-  - and the latter should be of more interested to me than I've given it as it's an area dominated by Bayesian thinking
+  - while the latter may prove highly productive for me as it's an area where being Bayesian has proven extremely valuable.
 
 
 ## Outline / Reading List
