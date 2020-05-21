@@ -4,7 +4,7 @@
 With the upcoming [PyMC4](https://pypi.org/project/pymc4/)
 release moving from the discontinued Theano backend to
 [TensorFlow-Probability](https://www.tensorflow.org/probability) 
-it seemed a good time to check out what TensorFlow was all about.
+it seemed a good time to see what TensorFlow was all about.
 After seeing [TFPs](https://github.com/tensorflow/probability)
 [Advertisement](https://medium.com/tensorflow/regression-with-probabilistic-layers-in-tensorflow-probability-e46ff5d37baf)
 [Video](https://www.youtube.com/watch?v=BrwKURU-wpk)
