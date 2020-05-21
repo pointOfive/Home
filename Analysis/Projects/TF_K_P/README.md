@@ -20,8 +20,8 @@ I was on the hype train.
 
 On the way I had a chance to revisit and reconsider some foundational statistical topics: 
 - Change of Variables, or [Bijectors](https://www.tensorflow.org/probability/api_docs/python/tfp/bijectors/Bijector),
-  which form the basis of Normalizing Flows Generative Modeling  
-- Gaussian Processes as [priors](https://slideslive.com/38922672/invited-talk-functional-variational-bayesian-neural-networks?ref=account-folder-43024-folders) for DNNs and as [DNNs](https://twitter.com/EmtiyazKhan/status/1260842226822680576) themselves
+  which form the basis of Normalizing Flows Generative Modeling, and 
+- Gaussian Processes as [priors](https://slideslive.com/38922672/invited-talk-functional-variational-bayesian-neural-networks?ref=account-folder-43024-folders) for DNNs and as [DNNs](https://twitter.com/EmtiyazKhan/status/1260842226822680576) themselves.
 
 
 A few things I would like to spend some time on but haven't yet gotten to are
