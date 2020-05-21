@@ -19,13 +19,13 @@ and everyone freaked out (with Sweden freaking out the least of all and everyone
 Sweden for not freaking out enough).
 As this all went down I took the opportunity to return to my Bayesian roots in the unlikely guise of 
 [TensorFlow]([https://www.tensorflow.org/) whose [TensorFlow Probability](https://www.tensorflow.org/probability)
-library got me [reading](RL.md#outline--reading-list) about
-[HMC](https://github.com/pointOfive/Home/tree/master/Analysis/OneOffs/PyMC#modern-bayesian-analysis),
-[KL divergence and Variational Inference](RL.md#tensorflow--keras),
-[VAEs, BCNNs, Generative Models and Normalizing Flows](RL.md#tensorflow--keras),
+library got me [reading](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/TF_K_P#outline--reading-list) about
+[HMC](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/PyMC#modern-bayesian-analysis),
+[KL divergence and Variational Inference](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/TF_K_P#tensorflow--keras),
+[VAEs, BCNNs, Generative Models and Normalizing Flows](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/TF_K_P#tensorflow--keras),
 and how
 [batch normalization, dropout, Bayes by Backprop,
-randomized prior functions, and Gaussian processes](RL.md#tensorflow--keras) 
+randomized prior functions, and Gaussian processes](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/TF_K_P#tensorflow--keras) 
 can be used for Bayesian Deep Learning and Bayesian Neural Networks.
 It's all really awesome, and I'm very excited about
 having returned to some of the topics I encountered while in graduate school

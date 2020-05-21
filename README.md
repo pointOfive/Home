@@ -3,8 +3,8 @@
 
 I am a formally trained Bayesian statistician
 currently working on
-[Bayesian Neural Networks using TensorFlow](https://github.com/pointOfive/Home/blob/master/Bio/RL.md#tensorflow--keras)
-and [multivariate hierarchical models using PyMC](https://github.com/pointOfive/Home/tree/master/Analysis/OneOffs/PyMC#pymc-examples).
+[Bayesian Neural Networks using TensorFlow](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/TF_K_P#tensorflow--keras)
+and [multivariate hierarchical models using PyMC](https://github.com/pointOfive/Home/tree/master/Analysis/Projects/PyMC#pymc-examples).
 In the past I have taught data science immersives leveraging the 
 sklearn toolkit and have worked extensively on bioinformatics pipelines.
 While the two links above provide access to my most recent work,
