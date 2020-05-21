@@ -3,13 +3,13 @@
 
 With the upcoming [PyMC4](https://pypi.org/project/pymc4/)
 release moving from the discontinued Theano backend to
-[TensorFlow-Probability](https://www.tensorflow.org/probability),
-it seemed a good time to check out what the TensorFlow hype was about.
+[TensorFlow-Probability](https://www.tensorflow.org/probability) 
+it seemed a good time to check out what TensorFlow was all about.
 After seeing [TFPs](https://github.com/tensorflow/probability)
 [Advertisement](https://medium.com/tensorflow/regression-with-probabilistic-layers-in-tensorflow-probability-e46ff5d37baf)
 [Video](https://www.youtube.com/watch?v=BrwKURU-wpk)
 and [Repo](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Probabilistic_Layers_Regression.ipynb)
-I was on board the hype train. 
+I was on the hype train. 
 
 - I began by exploring KL divergence and [VAEs](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/vae.py)
 (and see also [here](https://medium.com/tensorflow/variational-autoencoders-with-tensorflow-probability-layers-d06c658931b7))
